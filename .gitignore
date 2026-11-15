@@ -12,3 +12,6 @@ results/*
 # Your official-check log (K4 costs $1 each). Private by default;
 # remove this line to share it with collaborators.
 submissions.csv
+
+# campaign scratch
+campaign/STATUS.smoke.md

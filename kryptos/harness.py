@@ -20,13 +20,19 @@ import heapq
 import json
 import time
 from datetime import datetime, timezone
+from pathlib import Path
 
 from .data import ROOT, letters
 from .check import crib_hits, passes_cribs
 from .score import quadgram_score
 
+import os as _os
+
 RESULTS_DIR = ROOT / "results"
 LEDGER = ROOT / "experiments" / "ledger.csv"
+if _os.environ.get("KRYPTOS_SMOKE"):  # smoke-test mode: keep the real ledger clean
+    RESULTS_DIR = Path(_os.environ["KRYPTOS_SMOKE"]) / "results"
+    LEDGER = Path(_os.environ["KRYPTOS_SMOKE"]) / "ledger.csv"
 LEDGER_FIELDS = ["timestamp", "puzzle", "experiment", "tried", "seconds", "best_cribs",
                  "full_passes", "best_score", "best_plaintext", "best_params", "notes"]
 
@@ -87,7 +93,8 @@ class Experiment:
         best = self.best
         stamp = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H%M%SZ")
         self.results_dir.mkdir(parents=True, exist_ok=True)
-        out = self.results_dir / f"{stamp}_{self.puzzle}_{self.name}.json"
+        safe = "".join(ch if ch.isalnum() or ch in "+-_." else "-" for ch in self.name)
+        out = self.results_dir / f"{stamp}_{self.puzzle}_{safe}.json"
         with open(out, "w") as f:
             json.dump({"experiment": self.name, "puzzle": self.puzzle, "notes": self.notes,
                        "tried": self.tried, "seconds": secs, "interrupted": interrupted,
@@ -124,7 +131,11 @@ class Experiment:
         if self.use_cribs:
             print(f"  full crib passes: {len(self.passes)}")
         if out_path:
-            print(f"  saved -> {out_path.relative_to(ROOT)}  (+1 line in experiments/ledger.csv)")
+            try:
+                shown = out_path.relative_to(ROOT)
+            except ValueError:
+                shown = out_path
+            print(f"  saved -> {shown}  (+1 line in {self.ledger.name})")
 
 
 def fingerprint(text):
