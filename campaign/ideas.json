@@ -75,5 +75,37 @@
   "script": "attacks/18_fingerprint_ranking.py",
   "est_min": 15,
   "why": "No key search. Ranks ~30 families by how often their output shows K4's oddities (flat IoC, lag-4 run, mod-7 doublets, width-21 repeats, close letters), as a soft prior for where to search next."
+ },
+ {
+  "id": "21",
+  "title": "Practice puzzles: decrypt PK1-PK9 from the public keys, test our blind solvers",
+  "script": "attacks/21_pk_calibration.py",
+  "est_min": 10,
+  "why": "Ground truth for calibration: shows how far our toolkit reaches on Paradigm's idea of 'Kryptos-like' ciphers."
+ },
+ {
+  "id": "20",
+  "title": "Quagmire I/II (one hidden alphabet) at every key length; undecidable lengths completed by annealing",
+  "script": "attacks/20_quagmire_I_II_open_lengths.py",
+  "est_min": 20,
+  "why": "Lengths 13, 16, 19, 20, 23, 24, 26 can't be decided by the clues (open gap); English completion vs planted and shuffled controls can."
+ },
+ {
+  "id": "19",
+  "title": "Gromark / chain-addition keys with both alphabets hidden; survivors completed by annealing",
+  "script": "attacks/19_gromark_free_alphabets.py",
+  "est_min": 120,
+  "why": "A top fingerprint family. Bean's 39 survivors 'can be completed several ways' - this does the completion and compares with controls."
+ },
+ {
+  "id": "22",
+  "title": "Fingerprint ranking again, with the new hidden-alphabet families",
+  "script": "attacks/18_fingerprint_ranking.py",
+  "args": [
+   "--idea",
+   "22"
+  ],
+  "est_min": 20,
+  "why": "Do Gromark-with-hidden-alphabets and Quagmire I/II/IV look K4-like?"
  }
 ]

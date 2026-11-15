@@ -180,6 +180,27 @@ def families(text):
             lambda pt, rng: _with_map(pt, rng, lambda r: S.decimation_map(r.randint(2, 95), r.randrange(97)),
                                       _periodic(4, 14), "after"),
     }
+    from .solvers import freealpha as FA
+
+    def _fa(model, **kw):
+        def f(pt, rng):
+            if model == "gromark":
+                kw2 = {"key": FA.gromark_stream([rng.randrange(10) for _ in range(5)])}
+            else:
+                kw2 = {"period": rng.randint(*kw["periods"])}
+            return FA.plant(model, pt, rng, **kw2)[0]
+        return f
+
+    def _quag4(pt, rng):
+        PA, CA = "".join(rng.sample(AZ, 26)), "".join(rng.sample(AZ, 26))
+        L = rng.randint(8, 14)
+        key = [rng.randrange(26) for _ in range(L)]
+        return "".join(CA[(PA.index(p) + key[i % L]) % 26] for i, p in enumerate(pt))
+
+    F["Gromark, both alphabets hidden"] = _fa("gromark")
+    F["Quagmire I (hidden plain alphabet), period 13-26"] = _fa("quag1", periods=(13, 26))
+    F["Quagmire II (hidden cipher alphabet), period 13-26"] = _fa("quag2", periods=(13, 26))
+    F["Quagmire IV (two hidden alphabets), period 8-14"] = _quag4
     for p in (4, 5, 6, 7, 8, 10, 12, 14, 21):  # where in "period space" do K4's oddities come from?
         F[f"periodic Vigenere, period {p} exactly, A-Z"] = (
             lambda pt, rng, p=p: _with_map(pt, rng, IDENT, _periodic(p, p), "after"))

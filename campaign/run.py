@@ -94,7 +94,7 @@ def main():
         limit = 60 * max(20, 4 * idea["est_min"]) if not smoke else 600
         with open(log, "w") as lf:
             try:
-                rc = subprocess.run([sys.executable, str(ROOT / idea["script"])], cwd=ROOT, env=env,
+                rc = subprocess.run([sys.executable, str(ROOT / idea["script"])] + idea.get("args", []), cwd=ROOT, env=env,
                                     stdout=lf, stderr=subprocess.STDOUT, timeout=limit).returncode
                 status = "done" if rc == 0 and (results_dir / f"{i}.json").exists() else f"failed (exit {rc})"
             except subprocess.TimeoutExpired:

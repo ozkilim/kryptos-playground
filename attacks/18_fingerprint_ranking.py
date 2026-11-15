@@ -35,6 +35,7 @@ def _sim(args):
 
 
 if __name__ == "__main__":
+    IDEA = sys.argv[sys.argv.index("--idea") + 1] if "--idea" in sys.argv else "18"
     t0 = time.time()
     names = list(FP.families("X" * 200).keys())
     with Pool(cpu_count(), initializer=_init) as pool:
@@ -75,14 +76,15 @@ if __name__ == "__main__":
     lines += [f"| {f} | {r:g} |" for f, r in calib.items()]
     lines += ["", "Caveat: K4's oddities were noticed post hoc, so treat this as a soft prior on where to search, "
               "not as evidence for any one family."]
-    out = CAMPAIGN / ("FINGERPRINTS.md" if not SMOKE else "FINGERPRINTS.smoke.md")
+    out = CAMPAIGN / (("FINGERPRINTS.md" if IDEA == "18" else f"FINGERPRINTS_{IDEA}.md") if not SMOKE
+                      else "FINGERPRINTS.smoke.md")
     out.write_text("\n".join(lines) + "\n")
     top = [f"{fam} ({score:.2f})" for score, fam, _ in ranking[:3]]
     bottom = [f"{fam} ({score:.2f})" for score, fam, _ in ranking[-3:]]
-    verdict = f"most K4-like: {'; '.join(top)}. Least: {'; '.join(bottom)}. See campaign/FINGERPRINTS.md"
-    report("18", name="fingerprint ranking of cipher families", k4_stats=k4, sims_per_family=M,
+    verdict = f"most K4-like: {'; '.join(top)}. Least: {'; '.join(bottom)}. See {out.relative_to(CAMPAIGN.parent)}"
+    report(IDEA, name="fingerprint ranking of cipher families", k4_stats=k4, sims_per_family=M,
            ranking=[{"family": f, "score": round(s, 3), **{k: round(v, 4) for k, v in tp.items()}}
                     for s, f, tp in ranking], calibration=calib, verdict=verdict,
            minutes=round((time.time() - t0) / 60, 1))
-    print("[18]", verdict)
+    print(f"[{IDEA}]", verdict)
     print("calibration:", calib)
