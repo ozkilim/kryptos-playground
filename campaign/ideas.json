@@ -135,5 +135,38 @@
   "script": "attacks/24_weltzeituhr_1989.py",
   "est_min": 20,
   "why": "Sanborn (2025): BERLINCLOCK = the World Clock at Alexanderplatz and the 1989 Wall fall matters. Everyone used the post-1997 plates; we reconstructed the 1989 ones from dated photos."
+ },
+ {
+  "id": "30",
+  "title": "Visual letter transforms: semaphore rotations/mirrors and Morse reverse/invert, alone or stacked with key layers",
+  "script": "attacks/30_visual_transforms.py",
+  "est_min": 15,
+  "why": "Sanborn's 'visual systems'; semaphore is two hands on a dial (Berlin Clock-shaped). Never tested."
+ },
+ {
+  "id": "31",
+  "title": "Compass-bearing keys read across the exact carved layout (cipher panel, tableau, mirrored tableau)",
+  "script": "attacks/31_compass_bearings.py",
+  "est_min": 5,
+  "why": "EAST NORTHEAST is in the clue; physical/visual steps; uses the verified carved line layout."
+ },
+ {
+  "id": "28",
+  "title": "SLM cipher detective: small neural net trained on ~100k synthetic K4-like ciphertexts names K4's family",
+  "script": "attacks/28_slm_cipher_detective.py",
+  "python": [
+   "arch",
+   "-arm64",
+   "/usr/bin/python3"
+  ],
+  "est_min": 20,
+  "why": "A learned, richer version of the fingerprint ranking; training on K4 itself can't work (97 letters)."
+ },
+ {
+  "id": "29",
+  "title": "Local LLM (Qwen2.5-7B) as English judge for the blind stacked-key region, plus what it generates as K4",
+  "script": "attacks/29_llm_judge_and_generator.py",
+  "est_min": 45,
+  "why": "Quadgrams can't tell real from fake English where ~20 key letters are free; an LLM judge might, calibrated on planted vs shuffled."
  }
 ]
