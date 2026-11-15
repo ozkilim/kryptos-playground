@@ -65,5 +65,19 @@ def test_long_period_attack_recovers_planted_english():
         assert sum(x == y for x, y in zip(got, pt)) >= 85, got
 
 
+
+def test_double_columnar_scan_finds_planted_stack():
+    from kryptos.solvers import double_columnar as a
+    from kryptos.ciphers import columnar_encrypt
+    o1, o2 = (2, 0, 1, 3), (1, 3, 0, 4, 2)
+    mid = vigenere_encrypt(columnar_encrypt(PT, list(o1)), "CLOCK", KRYPTOS_ALPHABET)  # T1, then S
+    ct = columnar_encrypt(mid, list(o2))                                                 # then T2
+    orders = a.all_orders(2, 5)
+    tested, hits = a.scan(ct, CRIBS, [o1], orders, procs=2)
+    assert (o1, o2, "KRYPTOS", "vigenere", "middle", 5) in [h[:6] for h in hits]
+    got = a.decrypt(ct, CRIBS, o1, o2, "KRYPTOS", "vigenere", "middle", 5)
+    assert got == PT
+
+
 if __name__ == "__main__":
     _runner.run(globals())

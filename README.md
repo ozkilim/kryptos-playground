@@ -111,8 +111,9 @@ Examples in the repo:
 * `04_running_key.py`: the key is a long text (K1–K3, the sculpture itself, or anything in `data/texts/`) from every starting point.
 * `05_keyword_alphabets.py`: Quagmire I/II/III, a repeating key on an alphabet scrambled by any dictionary word. 8 million hypotheses in about 20 seconds.
 * `06_long_period_27_29.py`: an open gap. At key lengths 27–29 the clues force 85–90% of the plaintext, so the 3–5 free key letters are solved and the result is scored against shuffled-K4 noise.
+* `07_double_columnar.py`: an open gap. Two columnar transposition layers plus a repeating key placed before, between or after them. All orders at widths 2–7 on both layers and themed keywords up to width 15, 11 billion hypotheses on 14 cores in about 30 minutes. The engine is in `kryptos/solvers/double_columnar.py`.
 
-All six come back empty on K4 so far; see `negatives/NEGATIVES.md`. `kryptos/cribtools.py` holds the shared "test it with only the 24 clue letters" helpers.
+All seven come back empty on K4 so far; see `negatives/NEGATIVES.md`. `kryptos/cribtools.py` holds the shared "test it with only the 24 clue letters" helpers.
 
 ## Checking on the website
 
