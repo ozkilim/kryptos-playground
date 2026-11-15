@@ -168,5 +168,47 @@
   "script": "attacks/29_llm_judge_and_generator.py",
   "est_min": 45,
   "why": "Quadgrams can't tell real from fake English where ~20 key letters are free; an LLM judge might, calibrated on planted vs shuffled."
+ },
+ {
+  "id": "32",
+  "title": "Key-shape forensics: period signatures in letter differences; could the key be a slowly turning dial?",
+  "script": "attacks/32_key_shape.py",
+  "est_min": 15,
+  "why": "NSA's 'pattern every 7', the mod-7 doublets, Bean's width 21 and the neural detective's 'progressive' all hint at key shape."
+ },
+ {
+  "id": "33",
+  "title": "Self-masking: K4 keyed by its own plaintext or ciphertext read in a scrambled order",
+  "script": "attacks/33_self_masking.py",
+  "est_min": 20,
+  "why": "Scheidt's 'masking' on a plain alphabet; natural-order self-keying (autokey) is dead, scrambled never tried."
+ },
+ {
+  "id": "34",
+  "title": "Baudot/Vernam teleprinter cipher (ITA2 XOR): periodic, stacked, autokey, word and text keys",
+  "script": "attacks/34_baudot_vernam.py",
+  "est_min": 10,
+  "why": "K2's 'transmitted underground' = the CIA Berlin Tunnel tapping teleprinter lines; never tested on K4."
+ },
+ {
+  "id": "36",
+  "title": "Lorenz-style teleprinter wheels: each of the 5 bits with its own short repeating wheel",
+  "script": "attacks/36_lorenz_wheels.py",
+  "est_min": 5,
+  "why": "The Cold War teleprinter machine family; each bit plane is exactly testable on its own."
+ },
+ {
+  "id": "35",
+  "title": "Paper strips: K4's carved rows or equal-width strips, reordered and flipped, x every key model",
+  "script": "attacks/35_paper_strips.py",
+  "est_min": 30,
+  "why": "Kobek found the plaintext as strips taped out of order; the verified carved layout gives the strips."
+ },
+ {
+  "id": "37",
+  "title": "Egypt-era alphabets (hieroglyph, Coptic, Greek, Phoenician, Arabic orders) x key models, Quagmire, stacked keys",
+  "script": "attacks/37_egypt_alphabets.py",
+  "est_min": 20,
+  "why": "Sanborn: the 1986 Egypt trip figures in the solution; near-plain alphabets are what the fingerprint favours."
  }
 ]
