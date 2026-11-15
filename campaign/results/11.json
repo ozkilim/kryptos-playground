@@ -1,0 +1,24 @@
+{
+ "name": "decimation+routes+rotations x all key models",
+ "hypotheses": 41759874,
+ "survivors": 0,
+ "control": [
+  {
+   "hypotheses": 41759874,
+   "survivors": 0
+  },
+  {
+   "hypotheses": 41759874,
+   "survivors": 0
+  }
+ ],
+ "k4_rate": 0.0,
+ "control_rate": 0.0,
+ "best_quadgram": null,
+ "top": [],
+ "verdict": "dead: 0 survivors",
+ "minutes": 0.6,
+ "notes": "decimation (all a,b mod 97), grid routes 97-104 cells (6 routes x flip), K3 double rotation padded 98-104; periodic<=26, progressive, ct/pt autokey<=60, shifts; before/after; AZ+KRYPTOS",
+ "idea": "11",
+ "finished": "2026-11-15T17:22:04+00:00"
+}

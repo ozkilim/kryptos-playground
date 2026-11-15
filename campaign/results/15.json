@@ -1,0 +1,30 @@
+{
+ "name": "sanborn2025-theme-columnar x theme-alphabets",
+ "hypotheses": 15041916,
+ "survivors": 0,
+ "control": [
+  {
+   "hypotheses": 15041916,
+   "survivors": 0
+  },
+  {
+   "hypotheses": 15041916,
+   "survivors": 0
+  }
+ ],
+ "k4_rate": 0.0,
+ "control_rate": 0.0,
+ "best_quadgram": null,
+ "top": [],
+ "verdict": "(a) dead: no theme-word combination places all 24 clue letters; (b) dead: 0 survivors",
+ "minutes": 1.8,
+ "notes": "82 theme-keyword columnar orders x 86 theme alphabets x periodic<=26, progressive, ct/pt autokey<=60, shifts, before/after",
+ "idea": "15",
+ "finished": "2026-11-15T17:21:29+00:00",
+ "quagmire_part": {
+  "hypotheses": 1257320,
+  "alphabets": 86,
+  "full_crib_matches": 0,
+  "verdict": "dead: no theme-word combination places all 24 clue letters"
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "name": "statistics: Stehle run and doublet clustering",
+ "stehle": [
+  5,
+  4,
+  55
+ ],
+ "doublets": [
+  4.142857142857143,
+  6,
+  7
+ ],
+ "p_stehle": 0.0032399838000809994,
+ "p_doublets": 0.0010799946000269998,
+ "simulations": 200000,
+ "verdict": "Stehle run (length 5 at lag 4): p=0.0032 vs shuffles; doublet mod-7 clustering: p=0.0011 (193/26628 shuffles with >=6 doublets match it)",
+ "minutes": 1.1,
+ "idea": "16",
+ "finished": "2026-11-15T17:19:43+00:00"
+}

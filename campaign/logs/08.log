@@ -1,0 +1,5 @@
+
+[columnar+digit-or-small-shift-key] tried 791,184,816 candidates on K4
+  full crib passes: 0
+  saved -> results/2026-11-15T173826Z_k4_columnar+digit-or-small-shift-key.json  (+1 line in ledger.csv)
+[08] columnar+digit-or-small-shift-key: 791,184,816 hypotheses, 0 survivors (controls [0, 0]), best q=None -> dead: 0 survivors

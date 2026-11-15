@@ -1,15 +1,15 @@
 # Campaign status
 
-Updated 2026-11-15 17:18 UTC. Rebuilt automatically by `campaign/run.py` after every idea.
+Updated 2026-11-15 17:38 UTC. Rebuilt automatically by `campaign/run.py` after every idea.
 
 | # | Idea | Status | Hypotheses | Survivors | Verdict | Minutes |
 |---|---|---|---|---|---|---|
-| 16 | Statistics: are Stehle's DIAWINFBN run and the mod-7 doublets real? | queued | - | - |  |  |
-| 15 | Sanborn's 2025 hints as keywords everywhere (Quagmire I-IV + theme-keyword columnar x all key models) | queued | - | - |  |  |
-| 11 | Decimation (97 is prime), grid routes, K3 rotations x every key model | queued | - | - |  |  |
-| 12 | Myszkowski from ~190k dictionary words x every key model | queued | - | - |  |  |
-| 08 | Columnar (every order, widths 2-11) + digit / small-shift key | queued | - | - |  |  |
-| 17 | Double columnar (widths 2-6 x 2-6) x progressive / autokey / digit keys | queued | - | - |  |  |
+| 16 | Statistics: are Stehle's DIAWINFBN run and the mod-7 doublets real? | done | - | - | Stehle run (length 5 at lag 4): p=0.0032 vs shuffles; doublet mod-7 clustering: p=0.0011 (193/26628 shuffles with >=6 doublets match it) | 1.1 |
+| 15 | Sanborn's 2025 hints as keywords everywhere (Quagmire I-IV + theme-keyword columnar x all key models) | done | 15,041,916 | 0 | (a) dead: no theme-word combination places all 24 clue letters; (b) dead: 0 survivors | 1.8 |
+| 11 | Decimation (97 is prime), grid routes, K3 rotations x every key model | done | 41,759,874 | 0 | dead: 0 survivors | 0.6 |
+| 12 | Myszkowski from ~190k dictionary words x every key model | done | 809,443,638 | 0 | dead: 0 survivors | 3.7 |
+| 08 | Columnar (every order, widths 2-11) + digit / small-shift key | done | 791,184,816 | 0 | dead: 0 survivors | 12.6 |
+| 17 | Double columnar (widths 2-6 x 2-6) x progressive / autokey / digit keys | running | - | - |  |  |
 | 10 | Columnar (every order, widths 2-10) + autokey (ciphertext or plaintext feeds the key) | queued | - | - |  |  |
 | 09 | Columnar (every order, widths 2-10) + progressive key | queued | - | - |  |  |
 | 14 | Keyword alphabets at key lengths 14-26, forced plaintext scored for English | queued | - | - |  |  |
@@ -23,37 +23,49 @@ Verdict key: **dead** = ruled out within the stated scope (each engine has a pla
 
 - **Why:** Two famous K4 oddities nobody has put a corrected p-value on. Cheap; tells us whether to chase 4- or 7-spaced structure.
 - **Script:** `attacks/16_statistics.py`  ·  log: `campaign/logs/16.log`
-- **Status:** queued
+- **Status:** done
+- **Verdict:** Stehle run (length 5 at lag 4): p=0.0032 vs shuffles; doublet mod-7 clustering: p=0.0011 (193/26628 shuffles with >=6 doublets match it)
+- p_stehle: `0.0032399838000809994`
+- p_doublets: `0.0010799946000269998`
 
 ### 15. Sanborn's 2025 hints as keywords everywhere (Quagmire I-IV + theme-keyword columnar x all key models)
 
 - **Why:** Newest clues (Egypt 1986, Berlin Wall, delivering a message, World Clock) are barely mined.
 - **Script:** `attacks/15_sanborn_2025_hints.py`  ·  log: `campaign/logs/15.log`
-- **Status:** queued
+- **Status:** done
+- **Verdict:** (a) dead: no theme-word combination places all 24 clue letters; (b) dead: 0 survivors
+- control: `[{"hypotheses": 15041916, "survivors": 0}, {"hypotheses": 15041916, "survivors": 0}]`
+- quagmire_part: `{"hypotheses": 1257320, "alphabets": 86, "full_crib_matches": 0, "verdict": "dead: no theme-word combination places all 24 clue letters"}`
 
 ### 11. Decimation (97 is prime), grid routes, K3 rotations x every key model
 
 - **Why:** Others tried these scrambles with repeating keys only; progressive, autokey and digit keys behind them are untested.
 - **Script:** `attacks/11_routes_decimation_rotation.py`  ·  log: `campaign/logs/11.log`
-- **Status:** queued
+- **Status:** done
+- **Verdict:** dead: 0 survivors
+- control: `[{"hypotheses": 41759874, "survivors": 0}, {"hypotheses": 41759874, "survivors": 0}]`
 
 ### 12. Myszkowski from ~190k dictionary words x every key model
 
 - **Why:** Myszkowski was only covered at widths 3-9 with a periodic key.
 - **Script:** `attacks/12_myszkowski.py`  ·  log: `campaign/logs/12.log`
-- **Status:** queued
+- **Status:** done
+- **Verdict:** dead: 0 survivors
+- control: `[{"hypotheses": 80627400, "survivors": 0}]`
 
 ### 08. Columnar (every order, widths 2-11) + digit / small-shift key
 
 - **Why:** Digit keys are dead alone but untested behind a transposition; fits Bean's 'letters sit close' finding.
 - **Script:** `attacks/08_columnar_digit_keys.py`  ·  log: `campaign/logs/08.log`
-- **Status:** queued
+- **Status:** done
+- **Verdict:** dead: 0 survivors
+- control: `[{"hypotheses": 832176, "survivors": 0}, {"hypotheses": 832176, "survivors": 0}]`
 
 ### 17. Double columnar (widths 2-6 x 2-6) x progressive / autokey / digit keys
 
 - **Why:** Attack 07 did double columnar with periodic keys only.
 - **Script:** `attacks/17_double_columnar_new_keys.py`  ·  log: `campaign/logs/17.log`
-- **Status:** queued
+- **Status:** running
 
 ### 10. Columnar (every order, widths 2-10) + autokey (ciphertext or plaintext feeds the key)
 

@@ -1,0 +1,10 @@
+
+[sanborn2025-theme-quagmire] tried 1,257,320 candidates on K4
+  full crib passes: 0
+  saved -> results/2026-11-15T171944Z_k4_sanborn2025-theme-quagmire.json  (+1 line in ledger.csv)
+[15a] 1,257,320 Quagmire combos over 86 alphabets: 0 hits
+
+[sanborn2025-theme-columnar x theme-alphabets] tried 15,041,916 candidates on K4
+  full crib passes: 0
+  saved -> results/2026-11-15T172129Z_k4_sanborn2025-theme-columnar-x-theme-alphabets.json  (+1 line in ledger.csv)
+[15] sanborn2025-theme-columnar x theme-alphabets: 15,041,916 hypotheses, 0 survivors (controls [0, 0]), best q=None -> dead: 0 survivors

@@ -1,0 +1,24 @@
+{
+ "name": "columnar+digit-or-small-shift-key",
+ "hypotheses": 791184816,
+ "survivors": 0,
+ "control": [
+  {
+   "hypotheses": 832176,
+   "survivors": 0
+  },
+  {
+   "hypotheses": 832176,
+   "survivors": 0
+  }
+ ],
+ "k4_rate": 0.0,
+ "control_rate": 0.0,
+ "best_quadgram": null,
+ "top": [],
+ "verdict": "dead: 0 survivors",
+ "minutes": 12.6,
+ "notes": "columnar all orders w2-11 + aperiodic key in {0-9} / +-3 / +-5, vig/beau/varbeau, AZ+KRYPTOS",
+ "idea": "08",
+ "finished": "2026-11-15T17:38:26+00:00"
+}
