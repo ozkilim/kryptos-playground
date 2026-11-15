@@ -81,7 +81,7 @@ tests/                    pytest or plain `python tests/test_x.py`
 
 [`negatives/NEGATIVES.md`](negatives/NEGATIVES.md) is one big, growing context file of what K4 is **not**:
 
-* **169 community negatives** gathered from public GitHub elimination ledgers (keithadler, gereon, Barneyjm and others), Richard Bean's 2021 paper, blogs, Elonka's FAQ and news. Each one has its scope, who and when, the outcome, a source, and a confidence level.
+* **300 community negatives** gathered from public GitHub elimination ledgers (keithadler, gereon, Barneyjm, scott-dunphy, markmnl, reggiechan74 and others), Richard Bean's 2021 paper, blogs, Elonka's FAQ, news, and a contributed TRIED.md compilation. Each one has its scope, who and when, the outcome, a source, and a confidence level.
 * **Sanborn and Scheidt's own constraints**, for example "Who says it is even a math solution?" and that K5 shares coded words with K4 at the same positions.
 * **Rejected claimed solutions**, including the AI wave and the back-solved keys.
 * **Every one of our null K4 runs**, added automatically whenever an experiment finishes.
@@ -110,8 +110,9 @@ Examples in the repo:
 * `03_autokey.py`: the key is the message itself, a few letters back (ciphertext or plaintext autokey).
 * `04_running_key.py`: the key is a long text (K1–K3, the sculpture itself, or anything in `data/texts/`) from every starting point.
 * `05_keyword_alphabets.py`: Quagmire I/II/III, a repeating key on an alphabet scrambled by any dictionary word. 8 million hypotheses in about 20 seconds.
+* `06_long_period_27_29.py`: an open gap. At key lengths 27–29 the clues force 85–90% of the plaintext, so the 3–5 free key letters are solved and the result is scored against shuffled-K4 noise.
 
-All five come back empty on K4 so far; see `negatives/NEGATIVES.md`. `kryptos/cribtools.py` holds the shared "test it with only the 24 clue letters" helpers.
+All six come back empty on K4 so far; see `negatives/NEGATIVES.md`. `kryptos/cribtools.py` holds the shared "test it with only the 24 clue letters" helpers.
 
 ## Checking on the website
 

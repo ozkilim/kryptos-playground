@@ -33,12 +33,15 @@ LEDGER_FIELDS = ["timestamp", "puzzle", "experiment", "tried", "seconds", "best_
 
 class Experiment:
     def __init__(self, name, puzzle="k4", notes="", keep=50, quiet=False,
-                 results_dir=None, ledger=None):
+                 results_dir=None, ledger=None, cribs_forced=False):
         self.name, self.puzzle, self.notes = name, puzzle.lower(), notes
         self.keep, self.quiet = keep, quiet
         self.results_dir = results_dir or RESULTS_DIR
         self.ledger = ledger or LEDGER
         self.use_cribs = self.puzzle == "k4"
+        # Attacks that build candidates FROM the cribs pass them by construction,
+        # so a "full crib pass" means nothing there; don't count or shout about it.
+        self.cribs_forced = cribs_forced
         self.tried = 0
         self.passes = []
         self._heap = []  # (rank tuple, counter, record)
@@ -60,7 +63,7 @@ class Experiment:
         score = quadgram_score(p)
         rank = (hits, score)
         rec = {"cribs": hits, "score": round(score, 3), "plaintext": p, "params": params}
-        if self.use_cribs and passes_cribs(p):
+        if self.use_cribs and not self.cribs_forced and passes_cribs(p):
             self.passes.append(rec)
             if not self.quiet:
                 print(f"\n*** FULL CRIB PASS *** {params}\n{p}\n")

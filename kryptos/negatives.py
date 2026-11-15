@@ -83,7 +83,7 @@ def load_ours(path=None):
                 "who": "this repo", "when": r["timestamp"][:10],
                 "outcome": "0 full crib passes" + (
                     f"; best decrypt matched {r['best_cribs']}/24 clue letters"
-                    if r.get("best_cribs") not in ("", "0", None) else ""),
+                    if r.get("best_cribs") not in ("", "0", "24", None) else ""),
                 "confidence": "solid", "source": "experiments/ledger.csv",
             })
     return out

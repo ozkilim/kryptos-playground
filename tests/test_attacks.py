@@ -49,5 +49,21 @@ def test_quagmire_scan_finds_planted_keyword_alphabet():
     assert ("LODESTONE", "III", 8) in survivors
 
 
+
+def test_long_period_attack_recovers_planted_english():
+    import random
+    from kryptos import load
+    a = _attack(6)
+    pt = load("k3")["plaintext"][40:137]  # real English, 97 letters
+    rng = random.Random(5)
+    for L in (27, 29):
+        key = "".join(rng.choice(AZ) for _ in range(L))
+        ct = vigenere_encrypt(pt, key, KRYPTOS_ALPHABET)
+        cribs = {i: pt[i] for i in list(range(21, 34)) + list(range(63, 74))}
+        score, got, params = a.run(ct, cribs, {"KRYPTOS": KRYPTOS_ALPHABET}, rng)[0]
+        assert params["period"] == L and score > -5.2, (L, score)
+        assert sum(x == y for x, y in zip(got, pt)) >= 85, got
+
+
 if __name__ == "__main__":
     _runner.run(globals())
