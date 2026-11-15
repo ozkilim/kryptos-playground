@@ -1,0 +1,402 @@
+{
+ "name": "quagmire-I-II-free-alphabet",
+ "exact_open": [
+  [
+   "quag1",
+   "AZ",
+   13
+  ],
+  [
+   "quag1",
+   "AZ",
+   16
+  ],
+  [
+   "quag1",
+   "AZ",
+   19
+  ],
+  [
+   "quag1",
+   "AZ",
+   23
+  ],
+  [
+   "quag1",
+   "AZ",
+   24
+  ],
+  [
+   "quag1",
+   "AZ",
+   26
+  ],
+  [
+   "quag1",
+   "KRYPTOS",
+   16
+  ],
+  [
+   "quag1",
+   "KRYPTOS",
+   19
+  ],
+  [
+   "quag1",
+   "KRYPTOS",
+   20
+  ],
+  [
+   "quag1",
+   "KRYPTOS",
+   23
+  ],
+  [
+   "quag1",
+   "KRYPTOS",
+   24
+  ],
+  [
+   "quag1",
+   "KRYPTOS",
+   26
+  ],
+  [
+   "quag2",
+   "AZ",
+   16
+  ],
+  [
+   "quag2",
+   "AZ",
+   19
+  ],
+  [
+   "quag2",
+   "AZ",
+   20
+  ],
+  [
+   "quag2",
+   "AZ",
+   23
+  ],
+  [
+   "quag2",
+   "AZ",
+   24
+  ],
+  [
+   "quag2",
+   "AZ",
+   26
+  ],
+  [
+   "quag2",
+   "KRYPTOS",
+   16
+  ],
+  [
+   "quag2",
+   "KRYPTOS",
+   19
+  ],
+  [
+   "quag2",
+   "KRYPTOS",
+   20
+  ],
+  [
+   "quag2",
+   "KRYPTOS",
+   24
+  ],
+  [
+   "quag2",
+   "KRYPTOS",
+   26
+  ]
+ ],
+ "exact_dead_quag1_AZ": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  14,
+  15,
+  17,
+  18,
+  20,
+  21,
+  22,
+  25
+ ],
+ "table": [
+  {
+   "model": "quag1",
+   "fixed": "AZ",
+   "L": 13,
+   "k4_q": -6.407,
+   "ctrl_best": [],
+   "plant_q": -4.687,
+   "plant_acc": 97,
+   "engine_can_detect": true,
+   "k4_beats_controls": false
+  },
+  {
+   "model": "quag1",
+   "fixed": "AZ",
+   "L": 16,
+   "k4_q": -6.021,
+   "ctrl_best": -6.002,
+   "plant_q": -4.915,
+   "plant_acc": 87,
+   "engine_can_detect": true,
+   "k4_beats_controls": false
+  },
+  {
+   "model": "quag1",
+   "fixed": "AZ",
+   "L": 19,
+   "k4_q": -5.678,
+   "ctrl_best": [],
+   "plant_q": -4.687,
+   "plant_acc": 97,
+   "engine_can_detect": true,
+   "k4_beats_controls": false
+  },
+  {
+   "model": "quag1",
+   "fixed": "AZ",
+   "L": 23,
+   "k4_q": -5.593,
+   "ctrl_best": -5.518,
+   "plant_q": -5.185,
+   "plant_acc": 42,
+   "engine_can_detect": false,
+   "k4_beats_controls": false
+  },
+  {
+   "model": "quag1",
+   "fixed": "AZ",
+   "L": 24,
+   "k4_q": -5.618,
+   "ctrl_best": -5.445,
+   "plant_q": -5.231,
+   "plant_acc": 49,
+   "engine_can_detect": false,
+   "k4_beats_controls": false
+  },
+  {
+   "model": "quag1",
+   "fixed": "AZ",
+   "L": 26,
+   "k4_q": -5.488,
+   "ctrl_best": -5.494,
+   "plant_q": -5.294,
+   "plant_acc": 32,
+   "engine_can_detect": false,
+   "k4_beats_controls": false
+  },
+  {
+   "model": "quag1",
+   "fixed": "KRYPTOS",
+   "L": 16,
+   "k4_q": -5.969,
+   "ctrl_best": -5.901,
+   "plant_q": -4.687,
+   "plant_acc": 97,
+   "engine_can_detect": true,
+   "k4_beats_controls": false
+  },
+  {
+   "model": "quag1",
+   "fixed": "KRYPTOS",
+   "L": 19,
+   "k4_q": -5.868,
+   "ctrl_best": [],
+   "plant_q": -4.687,
+   "plant_acc": 97,
+   "engine_can_detect": true,
+   "k4_beats_controls": false
+  },
+  {
+   "model": "quag1",
+   "fixed": "KRYPTOS",
+   "L": 20,
+   "k4_q": -5.671,
+   "ctrl_best": [],
+   "plant_q": -4.682,
+   "plant_acc": 90,
+   "engine_can_detect": true,
+   "k4_beats_controls": false
+  },
+  {
+   "model": "quag1",
+   "fixed": "KRYPTOS",
+   "L": 23,
+   "k4_q": -5.538,
+   "ctrl_best": -5.58,
+   "plant_q": -5.352,
+   "plant_acc": 41,
+   "engine_can_detect": false,
+   "k4_beats_controls": false
+  },
+  {
+   "model": "quag1",
+   "fixed": "KRYPTOS",
+   "L": 24,
+   "k4_q": -5.475,
+   "ctrl_best": -5.531,
+   "plant_q": -5.19,
+   "plant_acc": 50,
+   "engine_can_detect": false,
+   "k4_beats_controls": false
+  },
+  {
+   "model": "quag1",
+   "fixed": "KRYPTOS",
+   "L": 26,
+   "k4_q": -5.479,
+   "ctrl_best": -5.377,
+   "plant_q": -5.157,
+   "plant_acc": 38,
+   "engine_can_detect": false,
+   "k4_beats_controls": false
+  },
+  {
+   "model": "quag2",
+   "fixed": "AZ",
+   "L": 16,
+   "k4_q": -5.892,
+   "ctrl_best": -5.794,
+   "plant_q": -4.687,
+   "plant_acc": 97,
+   "engine_can_detect": true,
+   "k4_beats_controls": false
+  },
+  {
+   "model": "quag2",
+   "fixed": "AZ",
+   "L": 19,
+   "k4_q": -5.667,
+   "ctrl_best": [],
+   "plant_q": -5.417,
+   "plant_acc": 36,
+   "engine_can_detect": false,
+   "k4_beats_controls": false
+  },
+  {
+   "model": "quag2",
+   "fixed": "AZ",
+   "L": 20,
+   "k4_q": -5.482,
+   "ctrl_best": -5.62,
+   "plant_q": -4.935,
+   "plant_acc": 58,
+   "engine_can_detect": true,
+   "k4_beats_controls": false
+  },
+  {
+   "model": "quag2",
+   "fixed": "AZ",
+   "L": 23,
+   "k4_q": -5.569,
+   "ctrl_best": -5.617,
+   "plant_q": -5.463,
+   "plant_acc": 34,
+   "engine_can_detect": false,
+   "k4_beats_controls": false
+  },
+  {
+   "model": "quag2",
+   "fixed": "AZ",
+   "L": 24,
+   "k4_q": -5.427,
+   "ctrl_best": -5.585,
+   "plant_q": -5.093,
+   "plant_acc": 37,
+   "engine_can_detect": false,
+   "k4_beats_controls": false
+  },
+  {
+   "model": "quag2",
+   "fixed": "AZ",
+   "L": 26,
+   "k4_q": -5.49,
+   "ctrl_best": -5.49,
+   "plant_q": -5.194,
+   "plant_acc": 39,
+   "engine_can_detect": false,
+   "k4_beats_controls": false
+  },
+  {
+   "model": "quag2",
+   "fixed": "KRYPTOS",
+   "L": 16,
+   "k4_q": -5.842,
+   "ctrl_best": -6.004,
+   "plant_q": -5.337,
+   "plant_acc": 78,
+   "engine_can_detect": false,
+   "k4_beats_controls": false
+  },
+  {
+   "model": "quag2",
+   "fixed": "KRYPTOS",
+   "L": 19,
+   "k4_q": -5.652,
+   "ctrl_best": [],
+   "plant_q": -5.26,
+   "plant_acc": 48,
+   "engine_can_detect": false,
+   "k4_beats_controls": false
+  },
+  {
+   "model": "quag2",
+   "fixed": "KRYPTOS",
+   "L": 20,
+   "k4_q": -5.44,
+   "ctrl_best": [],
+   "plant_q": -4.762,
+   "plant_acc": 81,
+   "engine_can_detect": true,
+   "k4_beats_controls": false
+  },
+  {
+   "model": "quag2",
+   "fixed": "KRYPTOS",
+   "L": 24,
+   "k4_q": -5.544,
+   "ctrl_best": -5.541,
+   "plant_q": -5.36,
+   "plant_acc": 42,
+   "engine_can_detect": false,
+   "k4_beats_controls": false
+  },
+  {
+   "model": "quag2",
+   "fixed": "KRYPTOS",
+   "L": 26,
+   "k4_q": -5.579,
+   "ctrl_best": -5.424,
+   "plant_q": -5.261,
+   "plant_acc": 34,
+   "engine_can_detect": false,
+   "k4_beats_controls": false
+  }
+ ],
+ "verdict": "dead: at every undecidable length K4's best completion scores like shuffled K4s",
+ "top": [],
+ "minutes": 5.4,
+ "idea": "20",
+ "finished": "2026-11-15T20:40:14+00:00"
+}

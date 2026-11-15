@@ -1,0 +1,13 @@
+
+[gromark-free-alphabets+english-completion] tried 1,586,358 candidates on K4
+  24/24  q= -5.36  EASIEYSFMOSUATEDOUTSMEASTNORTHEASTIMENULQZTLYRWVJR  {'base': 10, 'primer': '659991', 'completion_q': -5.364}
+  24/24  q= -5.39  TYSIULERUWUMGVARSORTHEASTNORTHEASTLONINTESINEXIVIA  {'base': 10, 'primer': '292930', 'completion_q': -5.387}
+  24/24  q= -5.39  EZIRRAJNYSPOSINVMYSITEASTNORTHEASTEXCIXTESIMISUBJI  {'base': 10, 'primer': '015935', 'completion_q': -5.39}
+  24/24  q= -5.42  MFFSCXANDCHEEXIFPREEFEASTNORTHEASTINENUMENTHEFMHUY  {'base': 10, 'primer': '519153', 'completion_q': -5.421}
+  24/24  q= -5.44  GXEFORSTSANOTPRECUTICEASTNORTHEASTFRAITTHSFLOASYWX  {'base': 10, 'primer': '747245', 'completion_q': -5.441}
+  24/24  q= -5.44  HFNEWDZIQHKFIFINTRIPTEASTNORTHEASTHAVIATERFUNDSMYF  {'base': 10, 'primer': '035795', 'completion_q': -5.443}
+  24/24  q= -5.47  CJFCQUIMASSCOPMCEENITEASTNORTHEASTCONSTDQWUDYBUGSN  {'base': 10, 'primer': '450712', 'completion_q': -5.466}
+  24/24  q= -5.47  SPKWOIJTSNOPODTOSYFILEASTNORTHEASTIFXIOTWORSUILDCO  {'base': 10, 'primer': '944620', 'completion_q': -5.468}
+  full crib passes: 0
+  saved -> results/2026-11-15T214943Z_k4_gromark-free-alphabets+english-completion.json  (+1 line in ledger.csv)
+[19] consistent 8144, survivors 454 (5-digit base10: 39), best -5.36396977248201 vs controls [{'consistent': 1586328, 'survivors': 12477, 'best_q': -5.506}, {'consistent': 129424, 'survivors': 26194, 'best_q': -5.634}] -> dead: 454 primers survive the clues but their best English completion (-5.36) is no better than shuffled K4s (-5.506); planted Gromark texts reach -5.78..-4.30 through the same pipeline

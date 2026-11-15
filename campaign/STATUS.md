@@ -1,6 +1,6 @@
 # Campaign status
 
-Updated 2026-11-15 19:57 UTC. Rebuilt automatically by `campaign/run.py` after every idea.
+Updated 2026-11-15 21:51 UTC. Rebuilt automatically by `campaign/run.py` after every idea.
 
 | # | Idea | Status | Hypotheses | Survivors | Verdict | Minutes |
 |---|---|---|---|---|---|---|
@@ -15,6 +15,10 @@ Updated 2026-11-15 19:57 UTC. Rebuilt automatically by `campaign/run.py` after e
 | 14 | Keyword alphabets at key lengths 14-26, forced plaintext scored for English | done | 10,849,696 | - | dead: K4's best forced plaintext scores like shuffled K4s | 0.4 |
 | 13 | Double columnar width 8 x widths 2-6 + periodic key | done | 21,939,240,960 | 4 | dead: 4 survivors, all at the minimum 6 clue equalities (key length 25, one family of near-identical orders); decrypts are noise (q -6.53 to -6.57, English ~ -4.7) | 50.1 |
 | 18 | Fingerprint ranking: which cipher families produce K4-like statistics? | done | - | - | most K4-like: periodic Vigenere, period 6 exactly, A-Z (-5.66); periodic Vigenere, period 4 exactly, A-Z (-5.73); small shifts +-3 (aperiodic) (-5.82). Least: two periodic keys summed (7 + 11) (-8.01); running key (English text), A-Z (-8.73); running key (English text), KRYPTOS (-9.47). See campaign/FINGERPRINTS.md | 0.6 |
+| 21 | Practice puzzles: decrypt PK1-PK9 from the public keys, test our blind solvers | done | - | - | 8/9 practice puzzles decrypted from the public keys (PK1, PK2, PK3, PK4, PK5, PK6, PK8, PK9); blind period solver recovers PK1: True, PK3 (two keys, period 40): False; PK7 (Hill 3x3 + Quagmire) not recovered by the simple Hill row attack; PK10 (all layers reversed) not attempted | 0.2 |
+| 20 | Quagmire I/II (one hidden alphabet) at every key length; undecidable lengths completed by annealing | done | - | - | dead: at every undecidable length K4's best completion scores like shuffled K4s | 5.4 |
+| 19 | Gromark / chain-addition keys with both alphabets hidden; survivors completed by annealing | done | 1,586,328 | 454 | dead: 454 primers survive the clues but their best English completion (-5.36) is no better than shuffled K4s (-5.506); planted Gromark texts reach -5.78..-4.30 through the same pipeline | 69.5 |
+| 22 | Fingerprint ranking again, with the new hidden-alphabet families | done | - | - | most K4-like: periodic Vigenere, period 6 exactly, A-Z (-5.62); periodic Vigenere, period 4 exactly, A-Z (-5.75); periodic Vigenere, period 10 exactly, A-Z (-5.78). Least: two periodic keys summed (7 + 11) (-8.01); running key (English text), A-Z (-8.73); running key (English text), KRYPTOS (-9.47). See campaign/FINGERPRINTS_22.md | 0.6 |
 
 Verdict key: **dead** = ruled out within the stated scope (each engine has a planted-answer test); **WORTH A LOOK** = beats shuffled-K4 controls, needs a human look.
 
@@ -111,4 +115,37 @@ Verdict key: **dead** = ruled out within the stated scope (each engine has a pla
 - **Script:** `attacks/18_fingerprint_ranking.py`  ·  log: `campaign/logs/18.log`
 - **Status:** done
 - **Verdict:** most K4-like: periodic Vigenere, period 6 exactly, A-Z (-5.66); periodic Vigenere, period 4 exactly, A-Z (-5.73); small shifts +-3 (aperiodic) (-5.82). Least: two periodic keys summed (7 + 11) (-8.01); running key (English text), A-Z (-8.73); running key (English text), KRYPTOS (-9.47). See campaign/FINGERPRINTS.md
+
+### 21. Practice puzzles: decrypt PK1-PK9 from the public keys, test our blind solvers
+
+- **Why:** Ground truth for calibration: shows how far our toolkit reaches on Paradigm's idea of 'Kryptos-like' ciphers.
+- **Script:** `attacks/21_pk_calibration.py`  ·  log: `campaign/logs/21.log`
+- **Status:** done
+- **Verdict:** 8/9 practice puzzles decrypted from the public keys (PK1, PK2, PK3, PK4, PK5, PK6, PK8, PK9); blind period solver recovers PK1: True, PK3 (two keys, period 40): False; PK7 (Hill 3x3 + Quagmire) not recovered by the simple Hill row attack; PK10 (all layers reversed) not attempted
+
+### 20. Quagmire I/II (one hidden alphabet) at every key length; undecidable lengths completed by annealing
+
+- **Why:** Lengths 13, 16, 19, 20, 23, 24, 26 can't be decided by the clues (open gap); English completion vs planted and shuffled controls can.
+- **Script:** `attacks/20_quagmire_I_II_open_lengths.py`  ·  log: `campaign/logs/20.log`
+- **Status:** done
+- **Verdict:** dead: at every undecidable length K4's best completion scores like shuffled K4s
+
+### 19. Gromark / chain-addition keys with both alphabets hidden; survivors completed by annealing
+
+- **Why:** A top fingerprint family. Bean's 39 survivors 'can be completed several ways' - this does the completion and compares with controls.
+- **Script:** `attacks/19_gromark_free_alphabets.py`  ·  log: `campaign/logs/19.log`
+- **Status:** done
+- **Verdict:** dead: 454 primers survive the clues but their best English completion (-5.36) is no better than shuffled K4s (-5.506); planted Gromark texts reach -5.78..-4.30 through the same pipeline
+- control: `[{"consistent": 1586328, "survivors": 12477, "best_q": -5.506}, {"consistent": 129424, "survivors": 26194, "best_q": -5.634}]`
+- best_quadgram: `-5.36396977248201`
+  - top: `{"q": -5.364, "base": 10, "primer": "659991", "plaintext": "EASIEYSFMOSUATEDOUTSMEASTNORTHEASTIMENULQZTLYRWVJRIFTHEANAGRONTBERLINCLOCKWITHELEFIHNEHEEVALPCETY"}`
+  - top: `{"q": -5.387, "base": 10, "primer": "292930", "plaintext": "TYSIULERUWUMGVARSORTHEASTNORTHEASTLONINTESINEXIVIASBYTHINAFINBABERLINCLOCKWPXYYCSEDITCODEFLEDSPRZ"}`
+  - top: `{"q": -5.39, "base": 10, "primer": "015935", "plaintext": "EZIRRAJNYSPOSINVMYSITEASTNORTHEASTEXCIXTESIMISUBJIIQDATTINGWHEDBERLINCLOCKTOTDLDMULTMESTSBITINFOS"}`
+
+### 22. Fingerprint ranking again, with the new hidden-alphabet families
+
+- **Why:** Do Gromark-with-hidden-alphabets and Quagmire I/II/IV look K4-like?
+- **Script:** `attacks/18_fingerprint_ranking.py`  ·  log: `campaign/logs/22.log`
+- **Status:** done
+- **Verdict:** most K4-like: periodic Vigenere, period 6 exactly, A-Z (-5.62); periodic Vigenere, period 4 exactly, A-Z (-5.75); periodic Vigenere, period 10 exactly, A-Z (-5.78). Least: two periodic keys summed (7 + 11) (-8.01); running key (English text), A-Z (-8.73); running key (English text), KRYPTOS (-9.47). See campaign/FINGERPRINTS_22.md
 

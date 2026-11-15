@@ -64,5 +64,29 @@
   "started": "2026-11-15 19:55 UTC",
   "finished": "2026-11-15 19:56 UTC",
   "minutes": 0.6
+ },
+ "21": {
+  "status": "done",
+  "started": "2026-11-15 20:34 UTC",
+  "finished": "2026-11-15 20:34 UTC",
+  "minutes": 0.2
+ },
+ "20": {
+  "status": "done",
+  "started": "2026-11-15 20:34 UTC",
+  "finished": "2026-11-15 20:40 UTC",
+  "minutes": 5.5
+ },
+ "19": {
+  "status": "done",
+  "started": "2026-11-15 20:40 UTC",
+  "finished": "2026-11-15 21:49 UTC",
+  "minutes": 69.5
+ },
+ "22": {
+  "status": "done",
+  "started": "2026-11-15 21:49 UTC",
+  "finished": "2026-11-15 21:50 UTC",
+  "minutes": 0.6
  }
 }

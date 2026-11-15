@@ -1,7 +1,7 @@
 {
   "id": "pk2",
   "name": "Paradigm Kryptos 2 (PK2)",
-  "status": "cracked-unverified",
+  "status": "solved",
   "length": 350,
   "ciphertext": "HNETIOCOIOISNNENEELOWYTTLQUBDBTHTEOTRRASAHCDSEETONVRCESHRRETUPCITEWIGNIUNIGANLHJRAHMSRUINHERAEEAEAJEEEEKEEDATIIAONIXRNRHCNTLGLOIIUNSEESEGNBANTVTCSFREDIUROTNENHMRIIEROLTLSDAOOAEQIEOAPUHITHAIKHTIEUHGSLAFFSNVRSRHNNSMASTIPIAHAOEEUDESSOEONCDHAOTOOEOTSEECLADNHNTOUVSGAGTATSNEWHSATEUEETEURTRNEOGITREHMPPROBEOETOERICETGSMTEITENNSGSDRNOVTTFBTTATMLOSOPLSTARATE",
   "method": "columnar",
@@ -26,7 +26,7 @@
     "first_solved_utc": "2026-06-12",
     "note": "Prize already won; puzzle still checkable for free."
   },
-  "notes": "Cracked here 2026-11-15; reads as clean English but not yet confirmed on the CTF page (free check). Set status to 'solved' once the site accepts it.",
+  "notes": "Decrypted here from the public write-up's keys (reads as English). Original solvers: see prize field.",
   "source": "https://paradigm.xyz/kryptos-ctf/pk2",
-  "how_found": "python -m kryptos crack pk2 (columnar solver, blind)"
+  "how_found": "keys from https://github.com/saul-g/kryptos-ctf-2026; columnar MARGINS"
 }

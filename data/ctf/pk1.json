@@ -1,7 +1,7 @@
 {
   "id": "pk1",
   "name": "Paradigm Kryptos 1 (PK1)",
-  "status": "cracked-unverified",
+  "status": "solved",
   "length": 192,
   "ciphertext": "MQRALWVSJIMSXGJSVWQPHJMDINKXGIMHNKYUTXTTGJCYIABTJUMQEOFBITNBMONGVWETDLAIJPQYMZIKBQVRXZHUIJVDJLTQHIQYHEQKFTPTJYCONAFXYWQIBONAYXGWJFFIQMVXNVQYQFMWKFEJQYZFBWKXBKDQLJRELWGWDKHECRSFBKOVQJCPYDNKXYHE",
   "method": "vigenere",
@@ -18,8 +18,8 @@
     "first_solved_utc": "2026-06-12",
     "note": "Prize already won; puzzle still checkable for free."
   },
-  "notes": "Cracked here 2026-11-15; reads as clean English but not yet confirmed on the CTF page (free check). Set status to 'solved' once the site accepts it.",
+  "notes": "Decrypted here from the public write-up's keys (reads as English). Original solvers: see prize field.",
   "source": "https://paradigm.xyz/kryptos-ctf/pk1",
   "alphabet_keyword": "KRYPTOS",
-  "how_found": "python -m kryptos crack pk1 (periodic solver, blind)"
+  "how_found": "keys from https://github.com/saul-g/kryptos-ctf-2026; vig PROVENANCE"
 }

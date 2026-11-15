@@ -33,9 +33,10 @@ K4 is hard to solve but easy to check. The answer exists: Paradigm bought it in 
 | K1 | Vigenère, KRYPTOS alphabet, key PALIMPSEST | dictionary attack | ✅ |
 | K2 | Vigenère, KRYPTOS alphabet, key ABSCISSA | period detection + hill-climb | ✅ |
 | K3 | double grid rotation (24 then 8 wide) | tries every grid shape | ✅ |
-| PK1 | Vigenère, KRYPTOS alphabet, key PROVENANCE | period detection + hill-climb | ✅ not yet confirmed on site |
-| PK2 | 7-column columnar transposition | tries every column order | ✅ not yet confirmed on site |
-| PK3–PK10 | ? | | open |
+| PK1 | Vigenère, KRYPTOS alphabet, key PROVENANCE | period detection + hill-climb | ✅ matches the public write-up |
+| PK2 | 7-column columnar transposition (MARGINS) | tries every column order | ✅ matches the public write-up |
+| PK3–6, PK8, PK9 | stacked Quagmire III / columnar / spiral / running key | decrypted from the public write-up's keys (attack 21) | ✅ |
+| PK7, PK10 | Hill 3×3 + Quagmire; everything reversed | | open |
 | **K4** | **?** | | **open** |
 
 ## Quick start
@@ -115,7 +116,9 @@ Examples in the repo:
 
 All seven come back empty on K4 so far; see `negatives/NEGATIVES.md`.
 
-**Campaign 1** (`campaign/`, attacks 08–18) ran 11 more ideas unattended, about 43 billion hypotheses, and all are dead. It also includes a statistical fingerprint ranking of cipher families. Start with [`campaign/SUMMARY.md`](campaign/SUMMARY.md), then [`campaign/STATUS.md`](campaign/STATUS.md) and [`campaign/FINGERPRINTS.md`](campaign/FINGERPRINTS.md). To queue your own ideas, see [`campaign/README.md`](campaign/README.md). `kryptos/cribtools.py` holds the shared "test it with only the 24 clue letters" helpers.
+**Campaign 1** (`campaign/`, attacks 08–18) ran 11 more ideas unattended, about 43 billion hypotheses, and all are dead. It also includes a statistical fingerprint ranking of cipher families. Start with [`campaign/SUMMARY.md`](campaign/SUMMARY.md), then [`campaign/STATUS.md`](campaign/STATUS.md) and [`campaign/FINGERPRINTS.md`](campaign/FINGERPRINTS.md). To queue your own ideas, see [`campaign/README.md`](campaign/README.md).
+
+**Campaign 2** (attacks 19–22) added a hidden-alphabet engine, `kryptos/solvers/freealpha.py`. It reproduces Bean's 39 Gromark survivors exactly, and it reports what a planted real answer would score, so "dead" and "can't tell" stay separate. It also decrypted 8 of the 10 practice puzzles from public keys. See [`campaign/SUMMARY_2.md`](campaign/SUMMARY_2.md). `kryptos/cribtools.py` holds the shared "test it with only the 24 clue letters" helpers.
 
 ## Checking on the website
 

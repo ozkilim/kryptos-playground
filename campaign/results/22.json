@@ -1,0 +1,355 @@
+{
+ "name": "fingerprint ranking of cipher families",
+ "k4_stats": {
+  "ioc": 0.03608247422680412,
+  "stehle": 5,
+  "doublets": 4.142857142857143,
+  "vpairs": 11,
+  "close": 12
+ },
+ "sims_per_family": 4000,
+ "ranking": [
+  {
+   "family": "periodic Vigenere, period 6 exactly, A-Z",
+   "score": -5.625,
+   "ioc": 0.2527,
+   "stehle": 0.0477,
+   "doublets": 0.0017,
+   "vpairs": 0.6951,
+   "close": 0.1617,
+   "joint": 0.0002
+  },
+  {
+   "family": "periodic Vigenere, period 4 exactly, A-Z",
+   "score": -5.75,
+   "ioc": 0.0997,
+   "stehle": 0.056,
+   "doublets": 0.0017,
+   "vpairs": 0.8495,
+   "close": 0.2144,
+   "joint": 0.0002
+  },
+  {
+   "family": "periodic Vigenere, period 10 exactly, A-Z",
+   "score": -5.784,
+   "ioc": 0.4211,
+   "stehle": 0.035,
+   "doublets": 0.0025,
+   "vpairs": 0.5204,
+   "close": 0.0857,
+   "joint": 0.0002
+  },
+  {
+   "family": "periodic Vigenere, period 5 exactly, A-Z",
+   "score": -5.806,
+   "ioc": 0.1647,
+   "stehle": 0.05,
+   "doublets": 0.002,
+   "vpairs": 0.7698,
+   "close": 0.1232,
+   "joint": 0.0002
+  },
+  {
+   "family": "small shifts +-3 (aperiodic)",
+   "score": -5.823,
+   "ioc": 0.4459,
+   "stehle": 0.003,
+   "doublets": 0.0027,
+   "vpairs": 0.4086,
+   "close": 1.0,
+   "joint": 0.0002
+  },
+  {
+   "family": "periodic Vigenere, period 7 exactly, A-Z",
+   "score": -5.861,
+   "ioc": 0.2937,
+   "stehle": 0.031,
+   "doublets": 0.0022,
+   "vpairs": 0.6236,
+   "close": 0.108,
+   "joint": 0.0002
+  },
+  {
+   "family": "periodic Vigenere 4-14, KRYPTOS (K1/K2 style)",
+   "score": -6.004,
+   "ioc": 0.3297,
+   "stehle": 0.0355,
+   "doublets": 0.0035,
+   "vpairs": 0.6133,
+   "close": 0.0395,
+   "joint": 0.0002
+  },
+  {
+   "family": "Quagmire III (random keyword alphabet), period 4-14",
+   "score": -6.041,
+   "ioc": 0.3392,
+   "stehle": 0.039,
+   "doublets": 0.0025,
+   "vpairs": 0.6021,
+   "close": 0.0457,
+   "joint": 0.0002
+  },
+  {
+   "family": "Gromark (chain-addition digits, KRYPTOS alphabet)",
+   "score": -6.248,
+   "ioc": 0.6233,
+   "stehle": 0.0032,
+   "doublets": 0.002,
+   "vpairs": 0.3054,
+   "close": 0.4571,
+   "joint": 0.0002
+  },
+  {
+   "family": "periodic Vigenere, period 8 exactly, A-Z",
+   "score": -6.275,
+   "ioc": 0.3529,
+   "stehle": 0.022,
+   "doublets": 0.001,
+   "vpairs": 0.5846,
+   "close": 0.117,
+   "joint": 0.0002
+  },
+  {
+   "family": "periodic Vigenere, period 12 exactly, A-Z",
+   "score": -6.393,
+   "ioc": 0.4769,
+   "stehle": 0.0192,
+   "doublets": 0.0015,
+   "vpairs": 0.4704,
+   "close": 0.0625,
+   "joint": 0.0002
+  },
+  {
+   "family": "periodic Vigenere, period 14 exactly, A-Z",
+   "score": -6.499,
+   "ioc": 0.5139,
+   "stehle": 0.018,
+   "doublets": 0.0012,
+   "vpairs": 0.4351,
+   "close": 0.063,
+   "joint": 0.0002
+  },
+  {
+   "family": "periodic Beaufort 4-14, A-Z",
+   "score": -6.666,
+   "ioc": 0.3477,
+   "stehle": 0.0352,
+   "doublets": 0.0025,
+   "vpairs": 0.6001,
+   "close": 0.0117,
+   "joint": 0.0002
+  },
+  {
+   "family": "random digit key (Gronsfeld, aperiodic)",
+   "score": -6.674,
+   "ioc": 0.6421,
+   "stehle": 0.0035,
+   "doublets": 0.0015,
+   "vpairs": 0.2934,
+   "close": 0.2144,
+   "joint": 0.0002
+  },
+  {
+   "family": "Quagmire IV (two hidden alphabets), period 8-14",
+   "score": -6.678,
+   "ioc": 0.4391,
+   "stehle": 0.0322,
+   "doublets": 0.002,
+   "vpairs": 0.5301,
+   "close": 0.014,
+   "joint": 0.0002
+  },
+  {
+   "family": "progressive key",
+   "score": -6.732,
+   "ioc": 0.7581,
+   "stehle": 0.045,
+   "doublets": 0.0015,
+   "vpairs": 0.2459,
+   "close": 0.0147,
+   "joint": 0.0002
+  },
+  {
+   "family": "columnar then ciphertext autokey",
+   "score": -7.133,
+   "ioc": 0.6488,
+   "stehle": 0.009,
+   "doublets": 0.002,
+   "vpairs": 0.5254,
+   "close": 0.012,
+   "joint": 0.0002
+  },
+  {
+   "family": "ciphertext autokey",
+   "score": -7.143,
+   "ioc": 0.6568,
+   "stehle": 0.0065,
+   "doublets": 0.0025,
+   "vpairs": 0.5194,
+   "close": 0.013,
+   "joint": 0.0002
+  },
+  {
+   "family": "Quagmire I (hidden plain alphabet), period 13-26",
+   "score": -7.143,
+   "ioc": 0.5596,
+   "stehle": 0.0112,
+   "doublets": 0.002,
+   "vpairs": 0.3879,
+   "close": 0.0147,
+   "joint": 0.0002
+  },
+  {
+   "family": "periodic Vigenere, period 21 exactly, A-Z",
+   "score": -7.272,
+   "ioc": 0.6131,
+   "stehle": 0.0042,
+   "doublets": 0.001,
+   "vpairs": 0.3492,
+   "close": 0.0587,
+   "joint": 0.0002
+  },
+  {
+   "family": "Quagmire II (hidden cipher alphabet), period 13-26",
+   "score": -7.295,
+   "ioc": 0.5819,
+   "stehle": 0.0112,
+   "doublets": 0.0015,
+   "vpairs": 0.3754,
+   "close": 0.0137,
+   "joint": 0.0002
+  },
+  {
+   "family": "periodic key then columnar",
+   "score": -7.379,
+   "ioc": 0.3457,
+   "stehle": 0.0065,
+   "doublets": 0.0022,
+   "vpairs": 0.5429,
+   "close": 0.0152,
+   "joint": 0.0002
+  },
+  {
+   "family": "periodic Vigenere 20-40, A-Z",
+   "score": -7.39,
+   "ioc": 0.6516,
+   "stehle": 0.0042,
+   "doublets": 0.0015,
+   "vpairs": 0.3047,
+   "close": 0.0322,
+   "joint": 0.0002
+  },
+  {
+   "family": "columnar then small shifts +-3",
+   "score": -7.451,
+   "ioc": 0.4521,
+   "stehle": 0.0032,
+   "doublets": 0.0037,
+   "vpairs": 0.3894,
+   "close": 0.0165,
+   "joint": 0.0002
+  },
+  {
+   "family": "Gromark, both alphabets hidden",
+   "score": -7.566,
+   "ioc": 0.4904,
+   "stehle": 0.0057,
+   "doublets": 0.0015,
+   "vpairs": 0.3892,
+   "close": 0.0165,
+   "joint": 0.0002
+  },
+  {
+   "family": "columnar then periodic key",
+   "score": -7.651,
+   "ioc": 0.3637,
+   "stehle": 0.0035,
+   "doublets": 0.0022,
+   "vpairs": 0.5571,
+   "close": 0.014,
+   "joint": 0.0002
+  },
+  {
+   "family": "decimation mod 97 + periodic key",
+   "score": -7.688,
+   "ioc": 0.3652,
+   "stehle": 0.0035,
+   "doublets": 0.002,
+   "vpairs": 0.5944,
+   "close": 0.0135,
+   "joint": 0.0002
+  },
+  {
+   "family": "plaintext autokey",
+   "score": -7.717,
+   "ioc": 0.4789,
+   "stehle": 0.0292,
+   "doublets": 0.0017,
+   "vpairs": 0.4471,
+   "close": 0.0017,
+   "joint": 0.0002
+  },
+  {
+   "family": "double columnar + periodic key",
+   "score": -7.798,
+   "ioc": 0.3439,
+   "stehle": 0.004,
+   "doublets": 0.0015,
+   "vpairs": 0.5714,
+   "close": 0.0135,
+   "joint": 0.0002
+  },
+  {
+   "family": "random letters (one-time pad)",
+   "score": -7.874,
+   "ioc": 0.7448,
+   "stehle": 0.0027,
+   "doublets": 0.0017,
+   "vpairs": 0.2334,
+   "close": 0.016,
+   "joint": 0.0002
+  },
+  {
+   "family": "two periodic keys summed (7 + 11)",
+   "score": -8.009,
+   "ioc": 0.7223,
+   "stehle": 0.0025,
+   "doublets": 0.0017,
+   "vpairs": 0.2482,
+   "close": 0.0125,
+   "joint": 0.0002
+  },
+  {
+   "family": "running key (English text), A-Z",
+   "score": -8.726,
+   "ioc": 0.5301,
+   "stehle": 0.0045,
+   "doublets": 0.0012,
+   "vpairs": 0.3604,
+   "close": 0.0017,
+   "joint": 0.0002
+  },
+  {
+   "family": "running key (English text), KRYPTOS",
+   "score": -9.469,
+   "ioc": 0.5256,
+   "stehle": 0.0057,
+   "doublets": 0.0012,
+   "vpairs": 0.3602,
+   "close": 0.0002,
+   "joint": 0.0002
+  }
+ ],
+ "calibration": {
+  "columnar then periodic key": 14.0,
+  "ciphertext autokey": 9.0,
+  "periodic Vigenere 4-14, KRYPTOS (K1/K2 style)": 6.0,
+  "running key (English text), A-Z": 27.0,
+  "double columnar + periodic key": 11.0,
+  "random letters (one-time pad)": 25.0
+ },
+ "verdict": "most K4-like: periodic Vigenere, period 6 exactly, A-Z (-5.62); periodic Vigenere, period 4 exactly, A-Z (-5.75); periodic Vigenere, period 10 exactly, A-Z (-5.78). Least: two periodic keys summed (7 + 11) (-8.01); running key (English text), A-Z (-8.73); running key (English text), KRYPTOS (-9.47). See campaign/FINGERPRINTS_22.md",
+ "minutes": 0.6,
+ "idea": "22",
+ "finished": "2026-11-15T21:50:18+00:00"
+}

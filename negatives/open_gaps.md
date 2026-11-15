@@ -65,3 +65,10 @@ See `campaign/SUMMARY.md`. Each item has a planted-answer test.
 ## Pointers from campaign 1 statistics (where to look next)
 - **Stehle lag-4 run (p=0.003) and mod-7 doublets (p=0.001)** survive a look-elsewhere-corrected shuffle test (post hoc caveat). Any proposed method should explain them.
 - **Fingerprint ranking:** direct substitution with a short or structured key and no transposition looks most K4-like; transposition stacks and running keys look least like it. Top open targets: Gromark with arbitrary alphabets, small-shift keys under an unknown mixed alphabet, Quagmire IV with structured keys scored for English. Source: campaign/FINGERPRINTS.md
+
+## Closed or narrowed by campaign 2 (2026-11-15, this repo)
+See `campaign/SUMMARY_2.md`. Each result reports what a planted real answer would have scored.
+- **Quagmire I/II with one hidden alphabet**: dead where our annealer recovers planted English: Quagmire I (A-Z or KRYPTOS fixed side) at lengths 13, 16, 19, 20; Quagmire II at 16 and 20. **Still open**: lengths 23, 24, 26 and several Quagmire II settings, where the annealer can't recover planted English (detection power too low).
+- **Gromark with both alphabets hidden**: 1.6M primers, 454 survive the clues (39 five-digit, matching Bean). Best English completion -5.36 vs shuffled -5.51/-5.63; planted Gromark texts land -5.78..-4.30. Weakly disfavoured (about 50% detection power), not ruled out.
+- **Fingerprint**: hidden-alphabet families rank in the bottom half; K4's statistics favour a plain or near-plain alphabet with a structured key.
+- **Known blind spots of our tools**: hidden-alphabet keys of length 23+, stacked keys (PK3: right length found, not exact), Hill 3x3 (PK7 not recovered).

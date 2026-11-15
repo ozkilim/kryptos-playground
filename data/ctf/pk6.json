@@ -1,12 +1,12 @@
 {
   "id": "pk6",
   "name": "Paradigm Kryptos 6 (PK6)",
-  "status": "unsolved-here",
+  "status": "solved",
   "length": 315,
   "ciphertext": "BXFIVOAJFNMLKEVEHDFJQCMVLMGNVOHCJNBOAEVRRWIJFMCWMNOOMMOSRNKYOCFRYWKHBNMYCYHDECQCFNTOXNOBKBHWBOMNHFIIZDBJRNXBABFRCBLIIBLDCINOHNLXSBKVMSBNVOFVNBFYDJEVUGMNOBMLCQACBLGNABEBCJXBEYUIBDTFOSOULYCQHBXUHSEYMCBJIIHWDCFSEVLDMMUOVFADHUMKXCGUCQIRGBCEIJFYIXOEJYHDJHMXTDIEXNDAFBMOJMYAEYBVYNFSCXBWNYOVFDXDHWFCERDEBWZUKDIJTUGCJMMVQII",
   "method": null,
   "key": null,
-  "plaintext": null,
+  "plaintext": "THEWHITESMITHSWORKSHOPISFILLEDWITHTHEOLDTOOLSOFHISTRADEMYEYESAREDRAWNTOTHEGUTTERALONGTHEWALLWHICHISSTREWNWITHEXQUISITENEEDLESTHEWHITESMITHSAYSHEMAKESONEEVERYDAYANDLOSTCOUNTLONGAGOIASKWHATHEDOESWITHTHEMANDHESAYSTHEYAREONLYTHERESIDUEOFHISPRACTICEHETELLSMETHATIFISTUDYUNDERHIMFORTENYEARSHEWILLLETMETAKEONEOFMYOWNMAKING",
   "check": {
     "url": "https://paradigm.xyz/kryptos-ctf/pk6",
     "cost_usd": 0,
@@ -18,6 +18,7 @@
     "first_solved_utc": "2026-06-12",
     "note": "Prize already won; puzzle still checkable for free."
   },
-  "notes": "Captured from the CTF page on 2026-11-15. Fill in method/key/plaintext here once we crack it.",
-  "source": "https://paradigm.xyz/kryptos-ctf/pk6"
+  "notes": "Decrypted here from the public write-up's keys (reads as English). Original solvers: see prize field.",
+  "source": "https://paradigm.xyz/kryptos-ctf/pk6",
+  "how_found": "keys from https://github.com/saul-g/kryptos-ctf-2026; vig PORTAL -> columnar SMITHWORK -> columnar HANDIWORK"
 }

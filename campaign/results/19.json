@@ -1,0 +1,99 @@
+{
+ "name": "gromark-free-alphabets",
+ "hypotheses": 1586328,
+ "crib_consistent": 8144,
+ "survivors": 454,
+ "five_digit_base10_survivors": 39,
+ "completed": 454,
+ "best_quadgram": -5.36396977248201,
+ "control": [
+  {
+   "consistent": 1586328,
+   "survivors": 12477,
+   "best_q": -5.506
+  },
+  {
+   "consistent": 129424,
+   "survivors": 26194,
+   "best_q": -5.634
+  }
+ ],
+ "planted_power": [
+  {
+   "q": -5.275,
+   "letters_right": 73
+  },
+  {
+   "q": -4.305,
+   "letters_right": 84
+  },
+  {
+   "q": -4.771,
+   "letters_right": 80
+  },
+  {
+   "q": -5.402,
+   "letters_right": 38
+  },
+  {
+   "q": -5.253,
+   "letters_right": 57
+  },
+  {
+   "q": -5.391,
+   "letters_right": 64
+  },
+  {
+   "q": -5.005,
+   "letters_right": 66
+  },
+  {
+   "q": -4.948,
+   "letters_right": 88
+  },
+  {
+   "q": -5.784,
+   "letters_right": 44
+  },
+  {
+   "q": -5.414,
+   "letters_right": 50
+  }
+ ],
+ "top": [
+  {
+   "q": -5.364,
+   "base": 10,
+   "primer": "659991",
+   "plaintext": "EASIEYSFMOSUATEDOUTSMEASTNORTHEASTIMENULQZTLYRWVJRIFTHEANAGRONTBERLINCLOCKWITHELEFIHNEHEEVALPCETY"
+  },
+  {
+   "q": -5.387,
+   "base": 10,
+   "primer": "292930",
+   "plaintext": "TYSIULERUWUMGVARSORTHEASTNORTHEASTLONINTESINEXIVIASBYTHINAFINBABERLINCLOCKWPXYYCSEDITCODEFLEDSPRZ"
+  },
+  {
+   "q": -5.39,
+   "base": 10,
+   "primer": "015935",
+   "plaintext": "EZIRRAJNYSPOSINVMYSITEASTNORTHEASTEXCIXTESIMISUBJIIQDATTINGWHEDBERLINCLOCKTOTDLDMULTMESTSBITINFOS"
+  },
+  {
+   "q": -5.421,
+   "base": 10,
+   "primer": "519153",
+   "plaintext": "MFFSCXANDCHEEXIFPREEFEASTNORTHEASTINENUMENTHEFMHUYNFTERBOOYCMWKBERLINCLOCKEDWILLHADICETWOXOPGIVEI"
+  },
+  {
+   "q": -5.441,
+   "base": 10,
+   "primer": "747245",
+   "plaintext": "GXEFORSTSANOTPRECUTICEASTNORTHEASTFRAITTHSFLOASYWXJIZAOGXGEWDKRBERLINCLOCKWARESSSINGMODPOJWKJZNCL"
+  }
+ ],
+ "verdict": "dead: 454 primers survive the clues but their best English completion (-5.36) is no better than shuffled K4s (-5.506); planted Gromark texts reach -5.78..-4.30 through the same pipeline",
+ "minutes": 69.5,
+ "idea": "19",
+ "finished": "2026-11-15T21:49:43+00:00"
+}

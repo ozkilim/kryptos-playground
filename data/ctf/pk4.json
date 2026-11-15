@@ -1,12 +1,12 @@
 {
   "id": "pk4",
   "name": "Paradigm Kryptos 4 (PK4)",
-  "status": "unsolved-here",
+  "status": "solved",
   "length": 224,
   "ciphertext": "YOVISYUAFKUQNRJQLZTAZTMQOUKELJKCYUWIDSPSWRJRUEZNIFPUMUHQFFVBGOBEPWNTZGKVUTOVFSADUJUAYGWKQYOGNKHZVQMEWHSJGJFOBPHXKAPEXPWRJTSPSIJLCSXYTLDFBNZNPUAZNBZPKRFCUZDDZHZULZVPVWCXSIUVSCCFATGSJPNIGCJVTMUPTCGRTOFRXWCYKOMXOJKCECRUCKBDCIYJ",
   "method": null,
   "key": null,
-  "plaintext": null,
+  "plaintext": "TWOYEARSINTHENEEDLESTRAILLEDMETOACRAFTSMANNAMEDTHEWHITESMITHONTHEROADTOHISALPINEWORKSHOPIREREADHISPERFUNCTORYLETTERSHEMETMEATTHEGATESANDLEDMETOASTONEBARNSTACKEDWITHWINTERFODDERONEOFHISNEEDLESISHIDDENINTHEBARNIHAVEBEGUNTOWORK",
   "check": {
     "url": "https://paradigm.xyz/kryptos-ctf/pk4",
     "cost_usd": 0,
@@ -18,6 +18,7 @@
     "first_solved_utc": "2026-06-12",
     "note": "Prize already won; puzzle still checkable for free."
   },
-  "notes": "Captured from the CTF page on 2026-11-15. Fill in method/key/plaintext here once we crack it.",
-  "source": "https://paradigm.xyz/kryptos-ctf/pk4"
+  "notes": "Decrypted here from the public write-up's keys (reads as English). Original solvers: see prize field.",
+  "source": "https://paradigm.xyz/kryptos-ctf/pk4",
+  "how_found": "keys from https://github.com/saul-g/kryptos-ctf-2026; vig VERDIGRIS+OCHRE -> columnar UNDERLAY"
 }
