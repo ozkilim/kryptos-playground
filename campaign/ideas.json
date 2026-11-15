@@ -128,5 +128,12 @@
   "script": "attacks/27_misspelling_alphabets.py",
   "est_min": 20,
   "why": "Sanborn: K1-K3 answers hold clues and the misspellings are deliberate; as alphabet swaps they give the near-plain alphabets our fingerprint favours. Untested in this form."
+ },
+ {
+  "id": "24",
+  "title": "World Clock (Weltzeituhr) as of 1989: city names, initials and UTC offsets as keys",
+  "script": "attacks/24_weltzeituhr_1989.py",
+  "est_min": 20,
+  "why": "Sanborn (2025): BERLINCLOCK = the World Clock at Alexanderplatz and the 1989 Wall fall matters. Everyone used the post-1997 plates; we reconstructed the 1989 ones from dated photos."
  }
 ]

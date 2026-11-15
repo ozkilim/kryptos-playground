@@ -1,0 +1,1383 @@
+{
+ "title": "Urania-Weltzeituhr, Alexanderplatz Berlin - city plates c.1989 (pre-1997 renovation) vs post-1997",
+ "compiled": "2026-11-15",
+ "sources": [
+  "http://www.weltzeituhr-berlin.de/en/places-worldtimeclock",
+  "https://commons.wikimedia.org/wiki/File:19700131040NR_Berlin_Weltzeituhr_am_Alexanderplatz.jpg",
+  "https://commons.wikimedia.org/wiki/File:Berlin_Alexanderplatz_Kaufhof.jpg",
+  "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-1984-1419-014,_Berlin,_Weltzeituhr_am_Alexanderplatz.jpg",
+  "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-1989-0830-028,_Berlin,_Fernsehturm,_Weltzeituhr.jpg",
+  "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-W0715-0026,_Berlin,_Alexanderplatz,_Weltzeituhr.jpg",
+  "https://commons.wikimedia.org/wiki/File:Kelet-Berlin,_Alexanderplatz,_a_vil%C3%A1g%C3%B3ra._Fortepan_73787.jpg",
+  "https://commons.wikimedia.org/wiki/File:Kelet-Berlin,_Alexanderplatz,_el%C5%91t%C3%A9rben_a_vil%C3%A1g%C3%B3ra,_balra_a_Haus_des_Lehrers._Fortepan_61101.jpg",
+  "https://commons.wikimedia.org/wiki/File:Kelet-Berlin,_Alexanderplatz._Fortepan_60040.jpg",
+  "https://de.wikipedia.org/wiki/Weltzeituhr_(Alexanderplatz)",
+  "https://en.wikipedia.org/wiki/World_Clock_(Alexanderplatz)",
+  "https://github.com/nitsuah/kryptos/blob/main/docs/analysis/K4_WORLD_CLOCK_HISTORICAL_SOURCES.md",
+  "https://github.com/zeyeteam-debug/kryptos-k4-eliminations",
+  "https://hu.wikipedia.org/wiki/Ur%C3%A1nia_vil%C3%A1g%C3%B3ra",
+  "https://taz.de/!1367509/",
+  "https://www.berliner-zeitung.de/15998478",
+  "https://www.berliner-zeitung.de/20-staedtenamen-wurden-bei-der-restaurierung-ergaenzt-frisch-poliert-die-weltzeituhr-dreht-sich-bald-li.7079",
+  "https://www.tagesspiegel.de/berlin/die-weltzeituhr-kennt-jeder-niemand-ihren-erfinder-6541270.html",
+  "https://www.weltzeituhr-berlin.de/en/urania-worldtimeclock"
+ ],
+ "notes": "24 facets = UTC -11 ... +12 (de-wiki: 24-sided drum, one side per main time zone; post-1997 grouping per hu-wiki and 2017 photo transcription). Each facet has an upper plate (above the rotating hour ring) and a lower plate (below it); 'cities_1989' = upper list then lower list, each read top-to-bottom as cut. Spellings are as cut on the plates (German exonyms, all caps). '+' / '(+30')' marks half-hour zones (en-wiki: 'NEW DELHI +30`'). Facet order: UTC increases left-to-right as seen from outside, i.e. counter-clockwise seen from above (all photos agree). order_on_drum counts from the UTC+1 (Berlin) facet in increasing-UTC direction. The '1989' readings come from photos dated 15 Jul 1980 (Bundesarchiv), Apr 1984 (Bundesarchiv), 30 Aug 1989 (Bundesarchiv) and a c.1991 colour photo (Commons 'Berlin Alexanderplatz Kaufhof', caption 1991; shows LENINGRAD, GORKI, SWERDLOWSK, ALMA-ATA so it is unambiguously pre-1997). Assumption: no plate changes between Nov 1989 and the c.1991 photo (no works documented before Oct-Dec 1997). Plates WERE changed between 1970 and 1980 and again between 1980 and c.1991 (consistent with a reported 1985 maintenance), so 1970s photos are NOT a substitute for 1989; they are given only under 'earlier_states'. 1997 renovation (Oct-Dec 1997, 350,000 DM): 20 names added (documented examples: Oslo, Kapstadt, Tel Aviv, Jerusalem, Seoul, Istanbul), renames (Leningrad->St. Petersburg, Alma-Ata->Almaty, plus photo-evidenced Gorki->Nischnij Nowgorod, Swerdlowsk->Jekaterinburg, Tbilissi->Tiflis, Jerewan->Eriwan, Aschchabad->Aschgabat, Delhi->New Delhi, Dacca->Dhaka, Saná->Sanaa, Phoengjang->Pjöngjang), Kiew moved +3->+2, and photo-evidenced removals of ALGIER, BRAZZAVILLE, LUANDA, KHARTUM, LUSAKA, MAPUTO. Counts disagree across sources: official site says 80 original names (1969) and 146 now; Erich John (B.Z. 2019) 97 original / 148; Tagesspiegel 2019 caption 147; de-wiki 146 + date-line entry.",
+ "completeness": "7 of 24 facets have a full pre-1997 (c.1989-91) list read from period photos (UTC 0, +1..+6; +3 bottom has one illegible 9th line). +7..+12: upper plates verified (1984/1989 photos), lower plates unknown or partial (+8 starts PEKING, SHANGHAI; +9 starts PHOENGJANG). -6..-2: best available is a c.1978 reading (marked reconstructed; may have changed in the 1985 maintenance). -11..-8 and -1: no usable post-1980 photo; only 1971 states and post-1997 lists. About 80 names are directly verified from 1980-1991 photos (70 on the 7 complete facets + ~11 on upper plates / first lines of +7..+12), out of an estimated ~130 pre-1997 names (146 now - 20 added in 1997 + at least 6 removed). The post-1997 list (146 names + DATUMSGRENZE) is complete.",
+ "orientation": "No source documents the compass orientation of the facets; nothing found says which facet faces east-northeast. The drum and plates are fixed; only the hour ring and the planetary model rotate. Rough photo-based estimate (subject to large uncertainty, +/-2 facets): photos looking toward the Fernsehturm (which lies WSW of the clock, bearing ~263 deg) show the +7..+10 facets frontal (Apr 1984, 30 Aug 1989), and photos looking north toward the Kaufhof/Centrum store show +3/+4 frontal. Since UTC increases counter-clockwise seen from above (facet bearing drops ~15 deg per +1 h), this implies the Berlin (+1) facet faces roughly S-SW (~175-235 deg) and the facet facing ENE (67.5 deg) is one of +8..+12 (Ulan Bator/Irkutsk ... Kamtschatka), most likely around +10/+11 (CHABAROWSK/WLADIWOSTOK or MAGADAN/SACHALIN). The pavement compass rose (stone mosaic, de-wiki) would settle this on site; this needs a compass bearing taken at the clock or a georeferenced photo of the drum.",
+ "other_features": {
+  "planetary_model": "Simplified solar-system sculpture of spheres (planets) on steel-ring orbits above the drum; rotates once per minute (de-wiki citing Erich John). Photos show a ringed sphere (Saturn). Total height 10 m, mass 16 t.",
+  "hour_ring": "Rotating ring with numerals 1-24 in colour-coded rectangles (film-strip style frames in 1970s photos); colours reportedly follow Goethe's colour theory (hu-wiki citing kreuzberged.com 2017). Since 1997 the motor runs 5% fast and stops on hourly cams synchronised to DCF77 (Mainflingen).",
+  "column": "2.7 m column, 1.5 m diameter, tiled with a world map, four small analogue clocks around it (en-wiki; visible in 1970 and Aug 1989 photos).",
+  "compass_rose": "Stone mosaic in the form of a compass rose (Windrose) set into the pavement under the column (de-wiki). No text documented.",
+  "base_inscriptions": "No inscription texts on the base were found in any source. The only text elements documented are the city names, the half-hour '+30'' marks and the 'DATUMSGRENZE' (date-line) entry.",
+  "dates": "Inaugurated 30 Sep 1969 (some sources: 7 Oct 1969); designer Erich John; metalwork Hans-Joachim Kunsch; protected monument since July 2015."
+ },
+ "facets": [
+  {
+   "utc_offset": "+1",
+   "order_on_drum": 0,
+   "cities_1989": [
+    "AMSTERDAM",
+    "BERLIN",
+    "BRÜSSEL",
+    "BUDAPEST",
+    "MADRID",
+    "PARIS",
+    "PRAG",
+    "STOCKHOLM",
+    "WARSCHAU",
+    "KOPENHAGEN",
+    "WIEN",
+    "BERN",
+    "BELGRAD",
+    "ROM",
+    "TUNIS",
+    "BRAZZAVILLE",
+    "KINSHASA",
+    "LUANDA"
+   ],
+   "cities_1989_top": [
+    "AMSTERDAM",
+    "BERLIN",
+    "BRÜSSEL",
+    "BUDAPEST",
+    "MADRID",
+    "PARIS",
+    "PRAG",
+    "STOCKHOLM",
+    "WARSCHAU"
+   ],
+   "cities_1989_bottom": [
+    "KOPENHAGEN",
+    "WIEN",
+    "BERN",
+    "BELGRAD",
+    "ROM",
+    "TUNIS",
+    "BRAZZAVILLE",
+    "KINSHASA",
+    "LUANDA"
+   ],
+   "cities_1989_top_status": "pre-1997 verified",
+   "cities_1989_bottom_status": "pre-1997 verified",
+   "cities_post_1997": [
+    "AMSTERDAM",
+    "BERLIN",
+    "BRÜSSEL",
+    "BUDAPEST",
+    "MADRID",
+    "PARIS",
+    "PRAG",
+    "STOCKHOLM",
+    "WARSCHAU",
+    "OSLO",
+    "KOPENHAGEN",
+    "WIEN",
+    "BERN",
+    "PRESSBURG",
+    "BELGRAD",
+    "ROM",
+    "TUNIS",
+    "KINSHASA"
+   ],
+   "cities_post_1997_top": [
+    "AMSTERDAM",
+    "BERLIN",
+    "BRÜSSEL",
+    "BUDAPEST",
+    "MADRID",
+    "PARIS",
+    "PRAG",
+    "STOCKHOLM",
+    "WARSCHAU"
+   ],
+   "cities_post_1997_bottom": [
+    "OSLO",
+    "KOPENHAGEN",
+    "WIEN",
+    "BERN",
+    "PRESSBURG",
+    "BELGRAD",
+    "ROM",
+    "TUNIS",
+    "KINSHASA"
+   ],
+   "status": "pre-1997 verified",
+   "evidence": "Top: identical in 1970, 1978, 1980 and c.1991 photos. Bottom: c.1991 Kaufhof photo (low-res but all 9 lines legible).",
+   "notes": "1997: OSLO and PRESSBURG added (Oslo named in BZ/taz 1997; Pressburg controversy BZ 20.12.1997); BRAZZAVILLE and LUANDA removed. No 'BRATISLAVA' is visible on either +1 plate in c.1991, so 'Bratislava renamed Pressburg' (de-wiki) looks like an addition of PRESSBURG rather than a rename on this facet.",
+   "sources": [
+    "http://www.weltzeituhr-berlin.de/en/places-worldtimeclock",
+    "https://commons.wikimedia.org/wiki/File:Berlin_Alexanderplatz_Kaufhof.jpg",
+    "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-W0715-0026,_Berlin,_Alexanderplatz,_Weltzeituhr.jpg",
+    "https://commons.wikimedia.org/wiki/File:Kelet-Berlin,_Alexanderplatz,_a_vil%C3%A1g%C3%B3ra._Fortepan_73787.jpg",
+    "https://commons.wikimedia.org/wiki/File:Kelet-Berlin,_Alexanderplatz._Fortepan_60040.jpg",
+    "https://github.com/zeyeteam-debug/kryptos-k4-eliminations",
+    "https://hu.wikipedia.org/wiki/Ur%C3%A1nia_vil%C3%A1g%C3%B3ra",
+    "https://taz.de/!1367509/",
+    "https://www.berliner-zeitung.de/15998478",
+    "https://www.berliner-zeitung.de/20-staedtenamen-wurden-bei-der-restaurierung-ergaenzt-frisch-poliert-die-weltzeituhr-dreht-sich-bald-li.7079"
+   ],
+   "earlier_states": {
+    "1970_summer_fortepan60040": {
+     "top": [
+      "AMSTERDAM",
+      "BERLIN",
+      "BRÜSSEL",
+      "BUDAPEST",
+      "MADRID",
+      "PARIS",
+      "PRAG",
+      "STOCKHOLM",
+      "WARSCHAU"
+     ],
+     "bottom": [
+      "KOPENHAGEN",
+      "LONDON",
+      "WIEN",
+      "ROM",
+      "BELGRAD",
+      "TUNIS"
+     ]
+    },
+    "c1978_fortepan73787": {
+     "bottom": [
+      "KOPENHAGEN",
+      "LONDON",
+      "WIEN",
+      "ROM",
+      "BELGRAD",
+      "TUNIS",
+      "[blanked slot]",
+      "BRAZZAVILLE"
+     ]
+    }
+   }
+  },
+  {
+   "utc_offset": "+2",
+   "order_on_drum": 1,
+   "cities_1989": [
+    "BUKAREST",
+    "HELSINKI",
+    "SOFIA",
+    "ATHEN",
+    "NIKOSIA",
+    "BEIRUT",
+    "DAMASKUS",
+    "KAIRO",
+    "KHARTUM",
+    "LUSAKA",
+    "MAPUTO"
+   ],
+   "cities_1989_top": [
+    "BUKAREST",
+    "HELSINKI",
+    "SOFIA",
+    "ATHEN",
+    "NIKOSIA"
+   ],
+   "cities_1989_bottom": [
+    "BEIRUT",
+    "DAMASKUS",
+    "KAIRO",
+    "KHARTUM",
+    "LUSAKA",
+    "MAPUTO"
+   ],
+   "cities_1989_top_status": "pre-1997 verified",
+   "cities_1989_bottom_status": "pre-1997 verified",
+   "cities_post_1997": [
+    "HELSINKI",
+    "RIGA",
+    "TALLINN",
+    "WILNA",
+    "MINSK",
+    "KIEW",
+    "BUKAREST",
+    "SOFIA",
+    "NIKOSIA",
+    "ANKARA",
+    "ISTANBUL",
+    "ATHEN",
+    "TEL AVIV",
+    "JERUSALEM",
+    "BEIRUT",
+    "DAMASKUS",
+    "KAIRO",
+    "KAPSTADT"
+   ],
+   "cities_post_1997_top": [
+    "HELSINKI",
+    "RIGA",
+    "TALLINN",
+    "WILNA",
+    "MINSK",
+    "KIEW",
+    "BUKAREST",
+    "SOFIA",
+    "NIKOSIA"
+   ],
+   "cities_post_1997_bottom": [
+    "ANKARA",
+    "ISTANBUL",
+    "ATHEN",
+    "TEL AVIV",
+    "JERUSALEM",
+    "BEIRUT",
+    "DAMASKUS",
+    "KAIRO",
+    "KAPSTADT"
+   ],
+   "status": "pre-1997 verified",
+   "evidence": "Top: 15 Jul 1980 Bundesarchiv and c.1991 photo agree. Bottom: c.1991 photo; KHARTUM/LUSAKA legible, MAPUTO blurred (probable). Blank gap between KAIRO and KHARTUM.",
+   "notes": "1997: RIGA, TALLINN, WILNA, MINSK, ISTANBUL, TEL AVIV, JERUSALEM, KAPSTADT added; KIEW moved here from +3; ANKARA moved here from +3; ATHEN moved top->bottom; KHARTUM, LUSAKA, MAPUTO removed. Kapstadt/Jerusalem/Tel Aviv/Istanbul explicitly documented as 1997 additions.",
+   "sources": [
+    "http://www.weltzeituhr-berlin.de/en/places-worldtimeclock",
+    "https://commons.wikimedia.org/wiki/File:Berlin_Alexanderplatz_Kaufhof.jpg",
+    "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-W0715-0026,_Berlin,_Alexanderplatz,_Weltzeituhr.jpg",
+    "https://commons.wikimedia.org/wiki/File:Kelet-Berlin,_Alexanderplatz._Fortepan_60040.jpg",
+    "https://en.wikipedia.org/wiki/World_Clock_(Alexanderplatz)",
+    "https://github.com/zeyeteam-debug/kryptos-k4-eliminations",
+    "https://hu.wikipedia.org/wiki/Ur%C3%A1nia_vil%C3%A1g%C3%B3ra",
+    "https://taz.de/!1367509/",
+    "https://www.berliner-zeitung.de/20-staedtenamen-wurden-bei-der-restaurierung-ergaenzt-frisch-poliert-die-weltzeituhr-dreht-sich-bald-li.7079",
+    "https://www.tagesspiegel.de/berlin/die-weltzeituhr-kennt-jeder-niemand-ihren-erfinder-6541270.html"
+   ],
+   "earlier_states": {
+    "1970_summer_fortepan60040": {
+     "top": [
+      "BUKAREST",
+      "HELSINKI",
+      "SOFIA"
+     ],
+     "bottom": [
+      "ANKARA",
+      "DAMASKUS",
+      "KAIRO"
+     ]
+    }
+   }
+  },
+  {
+   "utc_offset": "+3",
+   "order_on_drum": 2,
+   "cities_1989": [
+    "MURMANSK",
+    "LENINGRAD",
+    "MOSKAU",
+    "KIEW",
+    "ANKARA",
+    "TEHERAN +",
+    "BAGDAD",
+    "ADEN",
+    "SANÁ",
+    "ADDIS ABEBA",
+    "MOGADISCHU",
+    "DARESSALAM",
+    "[9th line illegible]"
+   ],
+   "cities_1989_top": [
+    "MURMANSK",
+    "LENINGRAD",
+    "MOSKAU",
+    "KIEW"
+   ],
+   "cities_1989_bottom": [
+    "ANKARA",
+    "TEHERAN +",
+    "BAGDAD",
+    "ADEN",
+    "SANÁ",
+    "ADDIS ABEBA",
+    "MOGADISCHU",
+    "DARESSALAM",
+    "[9th line illegible]"
+   ],
+   "cities_1989_top_status": "pre-1997 verified",
+   "cities_1989_bottom_status": "pre-1997 verified",
+   "cities_post_1997": [
+    "MURMANSK",
+    "ST. PETERSBURG",
+    "MOSKAU",
+    "TEHERAN +30′",
+    "BAGDAD",
+    "ADEN",
+    "SANAA",
+    "ADDIS ABEBA",
+    "MOGADISCHU",
+    "DARESSALAM",
+    "ANTANANARIVO",
+    "KUWAIT"
+   ],
+   "cities_post_1997_top": [
+    "MURMANSK",
+    "ST. PETERSBURG",
+    "MOSKAU"
+   ],
+   "cities_post_1997_bottom": [
+    "TEHERAN +30′",
+    "BAGDAD",
+    "ADEN",
+    "SANAA",
+    "ADDIS ABEBA",
+    "MOGADISCHU",
+    "DARESSALAM",
+    "ANTANANARIVO",
+    "KUWAIT"
+   ],
+   "status": "pre-1997 verified",
+   "evidence": "Top: 1980 and c.1991 agree. Bottom: c.1991 photo, lines 1-8 legible, line 9 too blurred (length fits ANTANANARIVO but unverified). '+' after TEHERAN refers to the '+30'' half-hour footnote.",
+   "notes": "1997: LENINGRAD->ST. PETERSBURG (documented); KIEW moved to +2 (documented); ANKARA moved to +2; SANÁ->SANAA; KUWAIT added.",
+   "sources": [
+    "http://www.weltzeituhr-berlin.de/en/places-worldtimeclock",
+    "https://commons.wikimedia.org/wiki/File:Berlin_Alexanderplatz_Kaufhof.jpg",
+    "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-W0715-0026,_Berlin,_Alexanderplatz,_Weltzeituhr.jpg",
+    "https://commons.wikimedia.org/wiki/File:Kelet-Berlin,_Alexanderplatz._Fortepan_60040.jpg",
+    "https://de.wikipedia.org/wiki/Weltzeituhr_(Alexanderplatz)",
+    "https://github.com/zeyeteam-debug/kryptos-k4-eliminations",
+    "https://hu.wikipedia.org/wiki/Ur%C3%A1nia_vil%C3%A1g%C3%B3ra",
+    "https://www.berliner-zeitung.de/20-staedtenamen-wurden-bei-der-restaurierung-ergaenzt-frisch-poliert-die-weltzeituhr-dreht-sich-bald-li.7079"
+   ],
+   "earlier_states": {
+    "1970_summer_fortepan60040": {
+     "top": [
+      "LENINGRAD",
+      "MOSKAU"
+     ],
+     "bottom": [
+      "BAGDAD",
+      "TEHERAN +",
+      "ADDIS ABEBA",
+      "(+30')"
+     ]
+    }
+   }
+  },
+  {
+   "utc_offset": "+4",
+   "order_on_drum": 3,
+   "cities_1989": [
+    "GORKI",
+    "WOLGOGRAD",
+    "BAKU",
+    "TBILISSI",
+    "JEREWAN",
+    "KABUL +",
+    "(+30')"
+   ],
+   "cities_1989_top": [
+    "GORKI",
+    "WOLGOGRAD",
+    "BAKU",
+    "TBILISSI",
+    "JEREWAN"
+   ],
+   "cities_1989_bottom": [
+    "KABUL +",
+    "(+30')"
+   ],
+   "cities_1989_top_status": "pre-1997 verified",
+   "cities_1989_bottom_status": "pre-1997 verified",
+   "cities_post_1997": [
+    "NISCHNIJ NOWGOROD",
+    "WOLGOGRAD",
+    "BAKU",
+    "TIFLIS",
+    "ERIWAN",
+    "KABUL +30′",
+    "MAURITIUS"
+   ],
+   "cities_post_1997_top": [
+    "NISCHNIJ NOWGOROD",
+    "WOLGOGRAD",
+    "BAKU",
+    "TIFLIS",
+    "ERIWAN"
+   ],
+   "cities_post_1997_bottom": [
+    "KABUL +30′",
+    "MAURITIUS"
+   ],
+   "status": "pre-1997 verified",
+   "evidence": "Top: 1980 and c.1991 agree. Bottom: c.1991 photo, KABUL + with '+30'' note low on the plate.",
+   "notes": "1997: GORKI->NISCHNIJ NOWGOROD, TBILISSI->TIFLIS, JEREWAN->ERIWAN; MAURITIUS moved here from +5.",
+   "sources": [
+    "http://www.weltzeituhr-berlin.de/en/places-worldtimeclock",
+    "https://commons.wikimedia.org/wiki/File:Berlin_Alexanderplatz_Kaufhof.jpg",
+    "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-W0715-0026,_Berlin,_Alexanderplatz,_Weltzeituhr.jpg",
+    "https://github.com/zeyeteam-debug/kryptos-k4-eliminations",
+    "https://hu.wikipedia.org/wiki/Ur%C3%A1nia_vil%C3%A1g%C3%B3ra"
+   ]
+  },
+  {
+   "utc_offset": "+5",
+   "order_on_drum": 4,
+   "cities_1989": [
+    "SWERDLOWSK",
+    "ASCHCHABAD",
+    "DELHI +",
+    "KARACHI",
+    "COLOMBO +",
+    "MAURITIUS",
+    "(+30')"
+   ],
+   "cities_1989_top": [
+    "SWERDLOWSK",
+    "ASCHCHABAD"
+   ],
+   "cities_1989_bottom": [
+    "DELHI +",
+    "KARACHI",
+    "COLOMBO +",
+    "MAURITIUS",
+    "(+30')"
+   ],
+   "cities_1989_top_status": "pre-1997 verified",
+   "cities_1989_bottom_status": "pre-1997 verified",
+   "cities_post_1997": [
+    "JEKATERINBURG",
+    "ASCHGABAT",
+    "BISCHKEK",
+    "DUSCHANBE",
+    "NEW DELHI +30′",
+    "KARACHI",
+    "COLOMBO +30′"
+   ],
+   "cities_post_1997_top": [
+    "JEKATERINBURG",
+    "ASCHGABAT",
+    "BISCHKEK",
+    "DUSCHANBE"
+   ],
+   "cities_post_1997_bottom": [
+    "NEW DELHI +30′",
+    "KARACHI",
+    "COLOMBO +30′"
+   ],
+   "status": "pre-1997 verified",
+   "evidence": "Top: 1980, Apr 1984 and c.1991 agree. Bottom: c.1991 photo.",
+   "notes": "1997: SWERDLOWSK->JEKATERINBURG, ASCHCHABAD->ASCHGABAT, DELHI->NEW DELHI; BISCHKEK, DUSCHANBE added; MAURITIUS moved to +4.",
+   "sources": [
+    "http://www.weltzeituhr-berlin.de/en/places-worldtimeclock",
+    "https://commons.wikimedia.org/wiki/File:Berlin_Alexanderplatz_Kaufhof.jpg",
+    "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-1984-1419-014,_Berlin,_Weltzeituhr_am_Alexanderplatz.jpg",
+    "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-W0715-0026,_Berlin,_Alexanderplatz,_Weltzeituhr.jpg",
+    "https://github.com/zeyeteam-debug/kryptos-k4-eliminations",
+    "https://hu.wikipedia.org/wiki/Ur%C3%A1nia_vil%C3%A1g%C3%B3ra"
+   ]
+  },
+  {
+   "utc_offset": "+6",
+   "order_on_drum": 5,
+   "cities_1989": [
+    "OMSK",
+    "ALMA-ATA",
+    "TASCHKENT",
+    "RANGUN +",
+    "DACCA",
+    "(+30')"
+   ],
+   "cities_1989_top": [
+    "OMSK",
+    "ALMA-ATA",
+    "TASCHKENT"
+   ],
+   "cities_1989_bottom": [
+    "RANGUN +",
+    "DACCA",
+    "(+30')"
+   ],
+   "cities_1989_top_status": "pre-1997 verified",
+   "cities_1989_bottom_status": "pre-1997 verified",
+   "cities_post_1997": [
+    "OMSK",
+    "ALMATY",
+    "TASCHKENT",
+    "NOWOSIBIRSK",
+    "RANGUN +30′",
+    "DHAKA"
+   ],
+   "cities_post_1997_top": [
+    "OMSK",
+    "ALMATY",
+    "TASCHKENT",
+    "NOWOSIBIRSK"
+   ],
+   "cities_post_1997_bottom": [
+    "RANGUN +30′",
+    "DHAKA"
+   ],
+   "status": "pre-1997 verified",
+   "evidence": "Top: 1980, Apr 1984 and c.1991 agree (spelling ALMA-ATA with hyphen). Bottom: c.1991 photo.",
+   "notes": "1997: ALMA-ATA->ALMATY (documented), DACCA->DHAKA; NOWOSIBIRSK moved here from +7.",
+   "sources": [
+    "http://www.weltzeituhr-berlin.de/en/places-worldtimeclock",
+    "https://commons.wikimedia.org/wiki/File:Berlin_Alexanderplatz_Kaufhof.jpg",
+    "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-1984-1419-014,_Berlin,_Weltzeituhr_am_Alexanderplatz.jpg",
+    "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-W0715-0026,_Berlin,_Alexanderplatz,_Weltzeituhr.jpg",
+    "https://de.wikipedia.org/wiki/Weltzeituhr_(Alexanderplatz)",
+    "https://github.com/zeyeteam-debug/kryptos-k4-eliminations",
+    "https://hu.wikipedia.org/wiki/Ur%C3%A1nia_vil%C3%A1g%C3%B3ra"
+   ]
+  },
+  {
+   "utc_offset": "+7",
+   "order_on_drum": 6,
+   "cities_1989": [
+    "KRASNOJARSK",
+    "NOWOSIBIRSK"
+   ],
+   "cities_1989_top": [
+    "KRASNOJARSK",
+    "NOWOSIBIRSK"
+   ],
+   "cities_1989_bottom": null,
+   "cities_1989_top_status": "pre-1997 verified",
+   "cities_1989_bottom_status": "unknown (illegible); post-1997 only",
+   "cities_post_1997": [
+    "KRASNOJARSK",
+    "HANOI",
+    "BANGKOK",
+    "PHNOM PENH",
+    "JAKARTA"
+   ],
+   "cities_post_1997_top": [
+    "KRASNOJARSK"
+   ],
+   "cities_post_1997_bottom": [
+    "HANOI",
+    "BANGKOK",
+    "PHNOM PENH",
+    "JAKARTA"
+   ],
+   "status": "pre-1997 reconstructed from changes",
+   "evidence": "Top: Apr 1984 (clear) and c.1991 (blurred, consistent). Bottom: 5 lines visible in c.1991 photo but not legible; candidate reading ['HANOI?','BANGKOK','PHNOM PENH','SINGAPUR +?','DJAKARTA?'] is a guess, not data. Apr 1984 photo shows 'BANGKOK' at the top edge of the bottom plate.",
+   "notes": "Bottom 1989 list unknown; post-1997 list given for reconstruction. NOWOSIBIRSK moved to +6 in 1997.",
+   "sources": [
+    "http://www.weltzeituhr-berlin.de/en/places-worldtimeclock",
+    "https://commons.wikimedia.org/wiki/File:Berlin_Alexanderplatz_Kaufhof.jpg",
+    "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-1984-1419-014,_Berlin,_Weltzeituhr_am_Alexanderplatz.jpg",
+    "https://github.com/zeyeteam-debug/kryptos-k4-eliminations",
+    "https://hu.wikipedia.org/wiki/Ur%C3%A1nia_vil%C3%A1g%C3%B3ra"
+   ]
+  },
+  {
+   "utc_offset": "+8",
+   "order_on_drum": 7,
+   "cities_1989": [
+    "IRKUTSK",
+    "ULAN BATOR"
+   ],
+   "cities_1989_top": [
+    "IRKUTSK",
+    "ULAN BATOR"
+   ],
+   "cities_1989_bottom": null,
+   "cities_1989_top_status": "pre-1997 verified",
+   "cities_1989_bottom_status": "partial: first 2 lines verified (PEKING, SHANGHAI), rest unknown",
+   "cities_post_1997": [
+    "IRKUTSK",
+    "ULAN-BATOR",
+    "PEKING",
+    "SHANGHAI",
+    "MANILA",
+    "PERTH",
+    "HONGKONG",
+    "KUALA LUMPUR",
+    "SINGAPUR"
+   ],
+   "cities_post_1997_top": [
+    "IRKUTSK",
+    "ULAN-BATOR"
+   ],
+   "cities_post_1997_bottom": [
+    "PEKING",
+    "SHANGHAI",
+    "MANILA",
+    "PERTH",
+    "HONGKONG",
+    "KUALA LUMPUR",
+    "SINGAPUR"
+   ],
+   "status": "pre-1997 reconstructed from changes",
+   "evidence": "Top: Apr 1984 photo (ULAN BATOR without hyphen). Bottom: Apr 1984 shows first two lines PEKING, SHANGHAI; rest cut off.",
+   "notes": "Bottom starts PEKING, SHANGHAI pre-1997 (verified); remainder unknown.",
+   "sources": [
+    "http://www.weltzeituhr-berlin.de/en/places-worldtimeclock",
+    "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-1984-1419-014,_Berlin,_Weltzeituhr_am_Alexanderplatz.jpg",
+    "https://github.com/zeyeteam-debug/kryptos-k4-eliminations",
+    "https://hu.wikipedia.org/wiki/Ur%C3%A1nia_vil%C3%A1g%C3%B3ra"
+   ]
+  },
+  {
+   "utc_offset": "+9",
+   "order_on_drum": 8,
+   "cities_1989": [
+    "JAKUTSK"
+   ],
+   "cities_1989_top": [
+    "JAKUTSK"
+   ],
+   "cities_1989_bottom": null,
+   "cities_1989_top_status": "pre-1997 verified",
+   "cities_1989_bottom_status": "partial: first line verified (PHOENGJANG), rest reconstructed",
+   "cities_post_1997": [
+    "JAKUTSK",
+    "PJÖNGJANG",
+    "TOKYO",
+    "SEOUL"
+   ],
+   "cities_post_1997_top": [
+    "JAKUTSK"
+   ],
+   "cities_post_1997_bottom": [
+    "PJÖNGJANG",
+    "TOKYO",
+    "SEOUL"
+   ],
+   "status": "pre-1997 reconstructed from changes",
+   "evidence": "Top: Apr 1984. Bottom: Apr 1984 shows first line 'PHOENGJANG' (sic, OE spelling); rest cut off.",
+   "notes": "SEOUL documented as a 1997 addition (en-wiki, citing BZ 12.12.1997); PHOENGJANG->PJÖNGJANG respelled. Most likely 1989 bottom = PHOENGJANG, TOKIO/TOKYO (spelling unverified) — reconstruction.",
+   "sources": [
+    "http://www.weltzeituhr-berlin.de/en/places-worldtimeclock",
+    "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-1984-1419-014,_Berlin,_Weltzeituhr_am_Alexanderplatz.jpg",
+    "https://en.wikipedia.org/wiki/World_Clock_(Alexanderplatz)",
+    "https://github.com/zeyeteam-debug/kryptos-k4-eliminations",
+    "https://hu.wikipedia.org/wiki/Ur%C3%A1nia_vil%C3%A1g%C3%B3ra",
+    "https://www.berliner-zeitung.de/20-staedtenamen-wurden-bei-der-restaurierung-ergaenzt-frisch-poliert-die-weltzeituhr-dreht-sich-bald-li.7079"
+   ]
+  },
+  {
+   "utc_offset": "+10",
+   "order_on_drum": 9,
+   "cities_1989": [
+    "CHABAROWSK",
+    "WLADIWOSTOK"
+   ],
+   "cities_1989_top": [
+    "CHABAROWSK",
+    "WLADIWOSTOK"
+   ],
+   "cities_1989_bottom": null,
+   "cities_1989_top_status": "verified 1984; 1989 photo shows only CHABAROWSK (conflict)",
+   "cities_1989_bottom_status": "unknown; post-1997 only",
+   "cities_post_1997": [
+    "CHABAROWSK",
+    "WLADIWOSTOK",
+    "SYDNEY",
+    "CANBERRA",
+    "MELBOURNE"
+   ],
+   "cities_post_1997_top": [
+    "CHABAROWSK",
+    "WLADIWOSTOK"
+   ],
+   "cities_post_1997_bottom": [
+    "SYDNEY",
+    "CANBERRA",
+    "MELBOURNE"
+   ],
+   "status": "pre-1997 reconstructed from changes",
+   "evidence": "Top: Apr 1984 shows CHABAR.../WLADIW... (edge of frame). The 30 Aug 1989 Bundesarchiv photo shows CHABAROWSK with no second line visible below it — conflict, unresolved.",
+   "notes": "Bottom 1989 unknown.",
+   "sources": [
+    "http://www.weltzeituhr-berlin.de/en/places-worldtimeclock",
+    "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-1984-1419-014,_Berlin,_Weltzeituhr_am_Alexanderplatz.jpg",
+    "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-1989-0830-028,_Berlin,_Fernsehturm,_Weltzeituhr.jpg",
+    "https://github.com/zeyeteam-debug/kryptos-k4-eliminations",
+    "https://hu.wikipedia.org/wiki/Ur%C3%A1nia_vil%C3%A1g%C3%B3ra"
+   ]
+  },
+  {
+   "utc_offset": "+11",
+   "order_on_drum": 10,
+   "cities_1989": [
+    "MAGADAN",
+    "SACHALIN"
+   ],
+   "cities_1989_top": [
+    "MAGADAN",
+    "SACHALIN"
+   ],
+   "cities_1989_bottom": null,
+   "cities_1989_top_status": "pre-1997 verified",
+   "cities_1989_bottom_status": "unknown; post-1997 blank",
+   "cities_post_1997": [
+    "MAGADAN",
+    "SACHALIN"
+   ],
+   "cities_post_1997_top": [
+    "MAGADAN",
+    "SACHALIN"
+   ],
+   "cities_post_1997_bottom": [],
+   "status": "pre-1997 reconstructed from changes",
+   "evidence": "Top: 30 Aug 1989 Bundesarchiv photo (clear). Bottom not in frame.",
+   "notes": "Post-1997 bottom is blank (2017 transcription).",
+   "sources": [
+    "http://www.weltzeituhr-berlin.de/en/places-worldtimeclock",
+    "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-1989-0830-028,_Berlin,_Fernsehturm,_Weltzeituhr.jpg",
+    "https://github.com/zeyeteam-debug/kryptos-k4-eliminations",
+    "https://hu.wikipedia.org/wiki/Ur%C3%A1nia_vil%C3%A1g%C3%B3ra"
+   ]
+  },
+  {
+   "utc_offset": "+12",
+   "order_on_drum": 11,
+   "cities_1989": [
+    "KAMTSCHATKA"
+   ],
+   "cities_1989_top": [
+    "KAMTSCHATKA"
+   ],
+   "cities_1989_bottom": null,
+   "cities_1989_top_status": "pre-1997 verified",
+   "cities_1989_bottom_status": "unknown; post-1997 only",
+   "cities_post_1997": [
+    "KAMTSCHATKA",
+    "DATUMSGRENZE",
+    "WELLINGTON"
+   ],
+   "cities_post_1997_top": [
+    "KAMTSCHATKA"
+   ],
+   "cities_post_1997_bottom": [
+    "DATUMSGRENZE",
+    "WELLINGTON"
+   ],
+   "status": "pre-1997 reconstructed from changes",
+   "evidence": "Top: 30 Aug 1989 photo, oblique but readable. Bottom not in frame.",
+   "notes": "Post-1997 bottom DATUMSGRENZE (date-line entry) + WELLINGTON.",
+   "sources": [
+    "http://www.weltzeituhr-berlin.de/en/places-worldtimeclock",
+    "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-1989-0830-028,_Berlin,_Fernsehturm,_Weltzeituhr.jpg",
+    "https://github.com/zeyeteam-debug/kryptos-k4-eliminations",
+    "https://hu.wikipedia.org/wiki/Ur%C3%A1nia_vil%C3%A1g%C3%B3ra"
+   ]
+  },
+  {
+   "utc_offset": "-11",
+   "order_on_drum": 12,
+   "cities_1989": null,
+   "cities_1989_top": null,
+   "cities_1989_bottom": null,
+   "cities_1989_top_status": "post-1997 only",
+   "cities_1989_bottom_status": "post-1997 only",
+   "cities_post_1997": [
+    "KAP DESCHNEW",
+    "APIA"
+   ],
+   "cities_post_1997_top": [
+    "KAP DESCHNEW",
+    "APIA"
+   ],
+   "cities_post_1997_bottom": [],
+   "status": "post-1997 only",
+   "evidence": "No 1980s photo found. 1971 Fortepan 61101 shows two short names on this facet, too blurred to read (possibly KAP DESCHNEW / NOME).",
+   "notes": "Grouping per hu-wiki list; official site lists Kap Deschnjow and Apia (it assigns present-day UTC offsets +12/+13, not drum facets).",
+   "sources": [
+    "http://www.weltzeituhr-berlin.de/en/places-worldtimeclock",
+    "https://commons.wikimedia.org/wiki/File:Kelet-Berlin,_Alexanderplatz,_el%C5%91t%C3%A9rben_a_vil%C3%A1g%C3%B3ra,_balra_a_Haus_des_Lehrers._Fortepan_61101.jpg",
+    "https://github.com/zeyeteam-debug/kryptos-k4-eliminations",
+    "https://hu.wikipedia.org/wiki/Ur%C3%A1nia_vil%C3%A1g%C3%B3ra"
+   ]
+  },
+  {
+   "utc_offset": "-10",
+   "order_on_drum": 13,
+   "cities_1989": null,
+   "cities_1989_top": null,
+   "cities_1989_bottom": null,
+   "cities_1989_top_status": "post-1997 only",
+   "cities_1989_bottom_status": "post-1997 only",
+   "cities_post_1997": [
+    "HONOLULU",
+    "MARQUESAS IN."
+   ],
+   "cities_post_1997_top": [
+    "HONOLULU"
+   ],
+   "cities_post_1997_bottom": [
+    "MARQUESAS IN."
+   ],
+   "status": "post-1997 only",
+   "evidence": "1971 state (Fortepan 61101): top FAIRBANKS, ANCHORAGE, HONOLULU; bottom one short name (probably MARQUESAS). 1989 state unconfirmed: Alaska changed from UTC-10 to -9 in 1983, and the post-1997 drum has Fairbanks/Anchorage on -9; when the plate was changed (1985 maintenance or 1997) is undocumented.",
+   "notes": "",
+   "sources": [
+    "http://www.weltzeituhr-berlin.de/en/places-worldtimeclock",
+    "https://commons.wikimedia.org/wiki/File:Kelet-Berlin,_Alexanderplatz,_el%C5%91t%C3%A9rben_a_vil%C3%A1g%C3%B3ra,_balra_a_Haus_des_Lehrers._Fortepan_61101.jpg",
+    "https://github.com/zeyeteam-debug/kryptos-k4-eliminations",
+    "https://hu.wikipedia.org/wiki/Ur%C3%A1nia_vil%C3%A1g%C3%B3ra"
+   ],
+   "earlier_states": {
+    "1971_fortepan61101": {
+     "top": [
+      "FAIRBANKS",
+      "ANCHORAGE",
+      "HONOLULU"
+     ],
+     "bottom": [
+      "MARQUESAS? (blurred)"
+     ]
+    }
+   }
+  },
+  {
+   "utc_offset": "-9",
+   "order_on_drum": 14,
+   "cities_1989": null,
+   "cities_1989_top": null,
+   "cities_1989_bottom": null,
+   "cities_1989_top_status": "post-1997 only",
+   "cities_1989_bottom_status": "post-1997 only",
+   "cities_post_1997": [
+    "NOME",
+    "FAIRBANKS",
+    "ANCHORAGE"
+   ],
+   "cities_post_1997_top": [
+    "NOME",
+    "FAIRBANKS",
+    "ANCHORAGE"
+   ],
+   "cities_post_1997_bottom": [],
+   "status": "post-1997 only",
+   "evidence": "1971 state: top DAWSON only (Yukon was UTC-9 until 1973). 1989 state unconfirmed.",
+   "notes": "",
+   "sources": [
+    "http://www.weltzeituhr-berlin.de/en/places-worldtimeclock",
+    "https://commons.wikimedia.org/wiki/File:Kelet-Berlin,_Alexanderplatz,_el%C5%91t%C3%A9rben_a_vil%C3%A1g%C3%B3ra,_balra_a_Haus_des_Lehrers._Fortepan_61101.jpg",
+    "https://github.com/zeyeteam-debug/kryptos-k4-eliminations",
+    "https://hu.wikipedia.org/wiki/Ur%C3%A1nia_vil%C3%A1g%C3%B3ra"
+   ],
+   "earlier_states": {
+    "1971_fortepan61101": {
+     "top": [
+      "DAWSON"
+     ]
+    }
+   }
+  },
+  {
+   "utc_offset": "-8",
+   "order_on_drum": 15,
+   "cities_1989": null,
+   "cities_1989_top": null,
+   "cities_1989_bottom": null,
+   "cities_1989_top_status": "post-1997 only",
+   "cities_1989_bottom_status": "post-1997 only",
+   "cities_post_1997": [
+    "VANCOUVER",
+    "DAWSON",
+    "SAN FRANCISCO",
+    "LOS ANGELES"
+   ],
+   "cities_post_1997_top": [
+    "VANCOUVER",
+    "DAWSON",
+    "SAN FRANCISCO",
+    "LOS ANGELES"
+   ],
+   "cities_post_1997_bottom": [],
+   "status": "post-1997 only",
+   "evidence": "1971 state: top VANCOUVER, SAN FRANCISCO (no Los Angeles, no Dawson). 1989 state unconfirmed.",
+   "notes": "",
+   "sources": [
+    "http://www.weltzeituhr-berlin.de/en/places-worldtimeclock",
+    "https://commons.wikimedia.org/wiki/File:19700131040NR_Berlin_Weltzeituhr_am_Alexanderplatz.jpg",
+    "https://commons.wikimedia.org/wiki/File:Kelet-Berlin,_Alexanderplatz,_el%C5%91t%C3%A9rben_a_vil%C3%A1g%C3%B3ra,_balra_a_Haus_des_Lehrers._Fortepan_61101.jpg",
+    "https://github.com/zeyeteam-debug/kryptos-k4-eliminations",
+    "https://hu.wikipedia.org/wiki/Ur%C3%A1nia_vil%C3%A1g%C3%B3ra"
+   ],
+   "earlier_states": {
+    "1971_fortepan61101": {
+     "top": [
+      "VANCOUVER",
+      "SAN FRANCISCO"
+     ]
+    }
+   }
+  },
+  {
+   "utc_offset": "-7",
+   "order_on_drum": 16,
+   "cities_1989": [
+    "EDMONTON",
+    "DENVER"
+   ],
+   "cities_1989_top": [
+    "EDMONTON",
+    "DENVER"
+   ],
+   "cities_1989_bottom": null,
+   "cities_1989_top_status": "reconstructed (1971 = post-1997)",
+   "cities_1989_bottom_status": "unknown",
+   "cities_post_1997": [
+    "EDMONTON",
+    "DENVER"
+   ],
+   "cities_post_1997_top": [
+    "EDMONTON",
+    "DENVER"
+   ],
+   "cities_post_1997_bottom": [],
+   "status": "pre-1997 reconstructed from changes",
+   "evidence": "1971 state: top EDMONTON, DENVER (same as post-1997). Assumed unchanged; no 1980s photo.",
+   "notes": "",
+   "sources": [
+    "http://www.weltzeituhr-berlin.de/en/places-worldtimeclock",
+    "https://commons.wikimedia.org/wiki/File:Kelet-Berlin,_Alexanderplatz,_el%C5%91t%C3%A9rben_a_vil%C3%A1g%C3%B3ra,_balra_a_Haus_des_Lehrers._Fortepan_61101.jpg",
+    "https://github.com/zeyeteam-debug/kryptos-k4-eliminations",
+    "https://hu.wikipedia.org/wiki/Ur%C3%A1nia_vil%C3%A1g%C3%B3ra"
+   ],
+   "earlier_states": {
+    "1971_fortepan61101": {
+     "top": [
+      "EDMONTON",
+      "DENVER"
+     ]
+    }
+   }
+  },
+  {
+   "utc_offset": "-6",
+   "order_on_drum": 17,
+   "cities_1989": [
+    "NEW ORLEANS",
+    "MEXICO CITY",
+    "GUATEMALA",
+    "GALAPAGOS"
+   ],
+   "cities_1989_top": [
+    "NEW ORLEANS",
+    "MEXICO CITY"
+   ],
+   "cities_1989_bottom": [
+    "GUATEMALA",
+    "GALAPAGOS"
+   ],
+   "cities_1989_top_status": "pre-1997 reconstructed from changes",
+   "cities_1989_bottom_status": "pre-1997 reconstructed from changes",
+   "cities_post_1997": [
+    "NEW ORLEANS",
+    "MEXIKO-STADT",
+    "GUATEMALA-STADT",
+    "MANAGUA",
+    "GALÁPAGOS I."
+   ],
+   "cities_post_1997_top": [
+    "NEW ORLEANS",
+    "MEXIKO-STADT"
+   ],
+   "cities_post_1997_bottom": [
+    "GUATEMALA-STADT",
+    "MANAGUA",
+    "GALÁPAGOS I."
+   ],
+   "status": "pre-1997 reconstructed from changes",
+   "evidence": "c.1978 Fortepan 73787: top NEW ORLEANS, MEXICO CITY (English spelling); bottom GUATEMALA, GALAPAGOS. Also 1970/1971 photos show NEW ORLEANS, MEXICO CITY on top. No 1980s photo.",
+   "notes": "Post-1997 respellings (MEXIKO-STADT, GUATEMALA-STADT, GALÁPAGOS I.) and MANAGUA (likely 1997 addition, undocumented).",
+   "sources": [
+    "http://www.weltzeituhr-berlin.de/en/places-worldtimeclock",
+    "https://commons.wikimedia.org/wiki/File:19700131040NR_Berlin_Weltzeituhr_am_Alexanderplatz.jpg",
+    "https://commons.wikimedia.org/wiki/File:Kelet-Berlin,_Alexanderplatz,_a_vil%C3%A1g%C3%B3ra._Fortepan_73787.jpg",
+    "https://commons.wikimedia.org/wiki/File:Kelet-Berlin,_Alexanderplatz,_el%C5%91t%C3%A9rben_a_vil%C3%A1g%C3%B3ra,_balra_a_Haus_des_Lehrers._Fortepan_61101.jpg",
+    "https://github.com/zeyeteam-debug/kryptos-k4-eliminations",
+    "https://hu.wikipedia.org/wiki/Ur%C3%A1nia_vil%C3%A1g%C3%B3ra"
+   ],
+   "earlier_states": {
+    "c1978_fortepan73787": {
+     "top": [
+      "NEW ORLEANS",
+      "MEXICO CITY"
+     ],
+     "bottom": [
+      "GUATEMALA",
+      "GALAPAGOS"
+     ]
+    }
+   }
+  },
+  {
+   "utc_offset": "-5",
+   "order_on_drum": 18,
+   "cities_1989": [
+    "MONTREAL",
+    "WASHINGTON",
+    "NEW YORK",
+    "HAVANNA",
+    "BOGOTÁ",
+    "LIMA",
+    "QUITO",
+    "PANAMA"
+   ],
+   "cities_1989_top": [
+    "MONTREAL",
+    "WASHINGTON",
+    "NEW YORK",
+    "HAVANNA"
+   ],
+   "cities_1989_bottom": [
+    "BOGOTÁ",
+    "LIMA",
+    "QUITO",
+    "PANAMA"
+   ],
+   "cities_1989_top_status": "pre-1997 reconstructed from changes",
+   "cities_1989_bottom_status": "pre-1997 reconstructed from changes",
+   "cities_post_1997": [
+    "MONTREAL",
+    "WASHINGTON",
+    "NEW YORK",
+    "HAVANNA",
+    "PANAMA",
+    "SANTAFÉ DE BOGOTÁ",
+    "QUITO",
+    "LIMA"
+   ],
+   "cities_post_1997_top": [
+    "MONTREAL",
+    "WASHINGTON",
+    "NEW YORK",
+    "HAVANNA"
+   ],
+   "cities_post_1997_bottom": [
+    "PANAMA",
+    "SANTAFÉ DE BOGOTÁ",
+    "QUITO",
+    "LIMA"
+   ],
+   "status": "pre-1997 reconstructed from changes",
+   "evidence": "c.1978: top MONTREAL / WASHINGTON / NEW YORK / HAVANNA; bottom [blanked slot] BOGOTÁ, LIMA, QUITO, [blanked slot], PANAMA (two plugged/blacked-out name slots). Same top in 1971. No 1980s photo.",
+   "notes": "1978 values carried forward as best estimate for 1989.",
+   "sources": [
+    "http://www.weltzeituhr-berlin.de/en/places-worldtimeclock",
+    "https://commons.wikimedia.org/wiki/File:19700131040NR_Berlin_Weltzeituhr_am_Alexanderplatz.jpg",
+    "https://commons.wikimedia.org/wiki/File:Kelet-Berlin,_Alexanderplatz,_a_vil%C3%A1g%C3%B3ra._Fortepan_73787.jpg",
+    "https://commons.wikimedia.org/wiki/File:Kelet-Berlin,_Alexanderplatz,_el%C5%91t%C3%A9rben_a_vil%C3%A1g%C3%B3ra,_balra_a_Haus_des_Lehrers._Fortepan_61101.jpg",
+    "https://github.com/zeyeteam-debug/kryptos-k4-eliminations",
+    "https://hu.wikipedia.org/wiki/Ur%C3%A1nia_vil%C3%A1g%C3%B3ra"
+   ],
+   "earlier_states": {
+    "c1978_fortepan73787": {
+     "top": [
+      "MONTREAL",
+      "WASHINGTON",
+      "NEW YORK",
+      "HAVANNA"
+     ],
+     "bottom": [
+      "[blanked]",
+      "BOGOTÁ",
+      "LIMA",
+      "QUITO",
+      "[blanked]",
+      "PANAMA"
+     ]
+    },
+    "1970_jan_blobelt": {
+     "note": "Jan 1970 photo appears to show NEW YORK on a separate facet and the South-American bottom plates shifted by one facet - low-res, possibly an early arrangement; treat as unverified"
+    }
+   }
+  },
+  {
+   "utc_offset": "-4",
+   "order_on_drum": 19,
+   "cities_1989": [
+    "THULE",
+    "HALIFAX",
+    "ASUNCIÓN",
+    "CARACAS",
+    "LA PAZ",
+    "SANTIAGO DE CHILE"
+   ],
+   "cities_1989_top": [
+    "THULE",
+    "HALIFAX"
+   ],
+   "cities_1989_bottom": [
+    "ASUNCIÓN",
+    "CARACAS",
+    "LA PAZ",
+    "SANTIAGO DE CHILE"
+   ],
+   "cities_1989_top_status": "pre-1997 reconstructed from changes",
+   "cities_1989_bottom_status": "pre-1997 reconstructed from changes",
+   "cities_post_1997": [
+    "HALIFAX",
+    "CARACAS",
+    "LA PAZ",
+    "ASUNCIÓN",
+    "SANTIAGO DE CHILE"
+   ],
+   "cities_post_1997_top": [
+    "HALIFAX"
+   ],
+   "cities_post_1997_bottom": [
+    "CARACAS",
+    "LA PAZ",
+    "ASUNCIÓN",
+    "SANTIAGO DE CHILE"
+   ],
+   "status": "pre-1997 reconstructed from changes",
+   "evidence": "1970 (Fortepan 60040) and c.1978: top THULE, HALIFAX; bottom ASUNCIÓN, CARACAS, LA PAZ, SANTIAGO DE CHILE. No 1980s photo.",
+   "notes": "THULE absent post-1997; bottom order changed.",
+   "sources": [
+    "http://www.weltzeituhr-berlin.de/en/places-worldtimeclock",
+    "https://commons.wikimedia.org/wiki/File:Kelet-Berlin,_Alexanderplatz,_a_vil%C3%A1g%C3%B3ra._Fortepan_73787.jpg",
+    "https://commons.wikimedia.org/wiki/File:Kelet-Berlin,_Alexanderplatz._Fortepan_60040.jpg",
+    "https://github.com/zeyeteam-debug/kryptos-k4-eliminations",
+    "https://hu.wikipedia.org/wiki/Ur%C3%A1nia_vil%C3%A1g%C3%B3ra"
+   ]
+  },
+  {
+   "utc_offset": "-3",
+   "order_on_drum": 20,
+   "cities_1989": [
+    "WESTGRÖNLAND",
+    "RIO DE JANEIRO",
+    "SÃO PAULO",
+    "MONTEVIDEO",
+    "BUENOS AIRES"
+   ],
+   "cities_1989_top": [
+    "WESTGRÖNLAND"
+   ],
+   "cities_1989_bottom": [
+    "RIO DE JANEIRO",
+    "SÃO PAULO",
+    "MONTEVIDEO",
+    "BUENOS AIRES"
+   ],
+   "cities_1989_top_status": "pre-1997 reconstructed from changes",
+   "cities_1989_bottom_status": "pre-1997 reconstructed from changes",
+   "cities_post_1997": [
+    "WESTGRÖNLAND",
+    "BRASILIA",
+    "RIO DE JANEIRO",
+    "SÃO PAULO",
+    "MONTEVIDEO",
+    "BUENOS AIRES"
+   ],
+   "cities_post_1997_top": [
+    "WESTGRÖNLAND"
+   ],
+   "cities_post_1997_bottom": [
+    "BRASILIA",
+    "RIO DE JANEIRO",
+    "SÃO PAULO",
+    "MONTEVIDEO",
+    "BUENOS AIRES"
+   ],
+   "status": "pre-1997 reconstructed from changes",
+   "evidence": "c.1978: top WESTGRÖNLAND; bottom RIO DE JANEIRO, SÃO PAULO, MONTEVIDEO, BUENOS AIRES. 15 Jul 1980 photo shows a single-name top plate consistent with WESTGRÖNLAND. In summer 1970 the top was blank.",
+   "notes": "BRASILIA added later (undocumented when; post-1997 present).",
+   "sources": [
+    "http://www.weltzeituhr-berlin.de/en/places-worldtimeclock",
+    "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-W0715-0026,_Berlin,_Alexanderplatz,_Weltzeituhr.jpg",
+    "https://commons.wikimedia.org/wiki/File:Kelet-Berlin,_Alexanderplatz,_a_vil%C3%A1g%C3%B3ra._Fortepan_73787.jpg",
+    "https://commons.wikimedia.org/wiki/File:Kelet-Berlin,_Alexanderplatz._Fortepan_60040.jpg",
+    "https://github.com/zeyeteam-debug/kryptos-k4-eliminations",
+    "https://hu.wikipedia.org/wiki/Ur%C3%A1nia_vil%C3%A1g%C3%B3ra"
+   ]
+  },
+  {
+   "utc_offset": "-2",
+   "order_on_drum": 21,
+   "cities_1989": [
+    "OSTGRÖNLAND",
+    "AZOREN"
+   ],
+   "cities_1989_top": [
+    "OSTGRÖNLAND",
+    "AZOREN"
+   ],
+   "cities_1989_bottom": [],
+   "cities_1989_top_status": "pre-1997 reconstructed from changes",
+   "cities_1989_bottom_status": "pre-1997 reconstructed from changes",
+   "cities_post_1997": [
+    "OSTGRÖNLAND"
+   ],
+   "cities_post_1997_top": [
+    "OSTGRÖNLAND"
+   ],
+   "cities_post_1997_bottom": null,
+   "status": "pre-1997 reconstructed from changes",
+   "evidence": "c.1978 and 15 Jul 1980: top OSTGRÖNLAND, AZOREN; bottom blank (1978). Not visible after 1980.",
+   "notes": "AZOREN on -1 post-1997. Bottom post-1997 unknown ('?' in 2017 transcription).",
+   "sources": [
+    "http://www.weltzeituhr-berlin.de/en/places-worldtimeclock",
+    "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-W0715-0026,_Berlin,_Alexanderplatz,_Weltzeituhr.jpg",
+    "https://commons.wikimedia.org/wiki/File:Kelet-Berlin,_Alexanderplatz,_a_vil%C3%A1g%C3%B3ra._Fortepan_73787.jpg",
+    "https://github.com/zeyeteam-debug/kryptos-k4-eliminations",
+    "https://hu.wikipedia.org/wiki/Ur%C3%A1nia_vil%C3%A1g%C3%B3ra"
+   ]
+  },
+  {
+   "utc_offset": "-1",
+   "order_on_drum": 22,
+   "cities_1989": null,
+   "cities_1989_top": null,
+   "cities_1989_bottom": null,
+   "cities_1989_top_status": "pre-1997 reconstructed from changes",
+   "cities_1989_bottom_status": "pre-1997 reconstructed from changes",
+   "cities_post_1997": [
+    "AZOREN",
+    "KAP VERDE"
+   ],
+   "cities_post_1997_top": [
+    "AZOREN"
+   ],
+   "cities_post_1997_bottom": [
+    "KAP VERDE"
+   ],
+   "status": "pre-1997 reconstructed from changes",
+   "evidence": "c.1978 and 15 Jul 1980: top REYKJAVIK, MADEIRA; bottom blank. By c.1991 REYKJAVIK and MADEIRA are on facet 0, so -1 content in 1989 is unknown (a faint name on the adjoining plate in the c.1991 photo may be AZOREN - illegible).",
+   "notes": "Change between 1980 and c.1991 matches the reported 1985 maintenance (Tagesspiegel 2019, via nitsuah audit).",
+   "sources": [
+    "http://www.weltzeituhr-berlin.de/en/places-worldtimeclock",
+    "https://commons.wikimedia.org/wiki/File:Berlin_Alexanderplatz_Kaufhof.jpg",
+    "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-W0715-0026,_Berlin,_Alexanderplatz,_Weltzeituhr.jpg",
+    "https://commons.wikimedia.org/wiki/File:Kelet-Berlin,_Alexanderplatz,_a_vil%C3%A1g%C3%B3ra._Fortepan_73787.jpg",
+    "https://github.com/nitsuah/kryptos/blob/main/docs/analysis/K4_WORLD_CLOCK_HISTORICAL_SOURCES.md",
+    "https://github.com/zeyeteam-debug/kryptos-k4-eliminations",
+    "https://hu.wikipedia.org/wiki/Ur%C3%A1nia_vil%C3%A1g%C3%B3ra",
+    "https://www.tagesspiegel.de/berlin/die-weltzeituhr-kennt-jeder-niemand-ihren-erfinder-6541270.html"
+   ],
+   "earlier_states": {
+    "c1978_and_1980": {
+     "top": [
+      "REYKJAVIK",
+      "MADEIRA"
+     ],
+     "bottom": []
+    }
+   }
+  },
+  {
+   "utc_offset": "0",
+   "order_on_drum": 23,
+   "cities_1989": [
+    "REYKJAVIK",
+    "DUBLIN",
+    "LONDON",
+    "LISSABON",
+    "ALGIER",
+    "MADEIRA",
+    "BISSAU",
+    "CASABLANCA",
+    "CONAKRY",
+    "DAKAR",
+    "BAMAKO",
+    "ACCRA"
+   ],
+   "cities_1989_top": [
+    "REYKJAVIK",
+    "DUBLIN",
+    "LONDON",
+    "LISSABON",
+    "ALGIER",
+    "MADEIRA",
+    "BISSAU"
+   ],
+   "cities_1989_bottom": [
+    "CASABLANCA",
+    "CONAKRY",
+    "DAKAR",
+    "BAMAKO",
+    "ACCRA"
+   ],
+   "cities_1989_top_status": "pre-1997 verified",
+   "cities_1989_bottom_status": "pre-1997 verified",
+   "cities_post_1997": [
+    "REYKJAVIK",
+    "DUBLIN",
+    "LONDON",
+    "LISSABON",
+    "MADEIRA",
+    "BISSAU",
+    "CASABLANCA",
+    "CONAKRY",
+    "DAKAR",
+    "BAMAKO",
+    "ACCRA"
+   ],
+   "cities_post_1997_top": [
+    "REYKJAVIK",
+    "DUBLIN",
+    "LONDON",
+    "LISSABON",
+    "MADEIRA",
+    "BISSAU"
+   ],
+   "cities_post_1997_bottom": [
+    "CASABLANCA",
+    "CONAKRY",
+    "DAKAR",
+    "BAMAKO",
+    "ACCRA"
+   ],
+   "status": "pre-1997 verified",
+   "evidence": "c.1991 Kaufhof photo: top 7 lines (REYKJAVIK first line blurred but fits), bottom 5 lines. 1980: top DUBLIN, LISSABON, ALGIER only.",
+   "notes": "1997: ALGIER removed. Between 1980 and c.1991 REYKJAVIK, MADEIRA (from -1) and LONDON (from +1 bottom; London was on +1 in 1970-78, i.e. British Standard Time era) and BISSAU were moved/added here.",
+   "sources": [
+    "http://www.weltzeituhr-berlin.de/en/places-worldtimeclock",
+    "https://commons.wikimedia.org/wiki/File:Berlin_Alexanderplatz_Kaufhof.jpg",
+    "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-W0715-0026,_Berlin,_Alexanderplatz,_Weltzeituhr.jpg",
+    "https://commons.wikimedia.org/wiki/File:Kelet-Berlin,_Alexanderplatz,_a_vil%C3%A1g%C3%B3ra._Fortepan_73787.jpg",
+    "https://commons.wikimedia.org/wiki/File:Kelet-Berlin,_Alexanderplatz._Fortepan_60040.jpg",
+    "https://github.com/zeyeteam-debug/kryptos-k4-eliminations",
+    "https://hu.wikipedia.org/wiki/Ur%C3%A1nia_vil%C3%A1g%C3%B3ra"
+   ],
+   "earlier_states": {
+    "1970_summer_fortepan60040": {
+     "top": [
+      "DUBLIN",
+      "LISSABON",
+      "ALGIER"
+     ],
+     "bottom": [
+      "CASABLANCA",
+      "CONAKRY",
+      "DAKAR"
+     ]
+    },
+    "c1978_fortepan73787": {
+     "top": [
+      "DUBLIN",
+      "LISSABON",
+      "ALGIER"
+     ],
+     "bottom": [
+      "CASABLANCA",
+      "CONAKRY",
+      "DAKAR",
+      "BAMAKO",
+      "ACCRA"
+     ]
+    }
+   }
+  }
+ ]
+}
