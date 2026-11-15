@@ -80,3 +80,32 @@ def quadgram_score(text):
 def english_score(text):
     """Back-compat alias: chi-squared, lower is better."""
     return chi_squared(text)
+
+
+_WORDS = None
+
+
+def word_coverage(text, min_len=4, max_len=15):
+    """Fraction of letters covered by dictionary words (/usr/share/dict/words +
+    data/keys.txt) of at least min_len letters, best non-overlapping cover.
+    A second English check that doesn't share the quadgram model's quirks."""
+    global _WORDS
+    if _WORDS is None:
+        _WORDS = set()
+        for path in ("/usr/share/dict/words", str(DATA_DIR / "keys.txt")):
+            try:
+                with open(path) as f:
+                    _WORDS |= {w.strip().upper() for w in f
+                               if w.strip().isalpha() and min_len <= len(w.strip()) <= max_len}
+            except OSError:
+                pass
+    p = letters(text)
+    n = len(p)
+    best = [0] * (n + 1)
+    for i in range(n - 1, -1, -1):
+        b = best[i + 1]
+        for L in range(min_len, min(max_len, n - i) + 1):
+            if p[i:i + L] in _WORDS:
+                b = max(b, L + best[i + L])
+        best[i] = b
+    return best[0] / n if n else 0.0

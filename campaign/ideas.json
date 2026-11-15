@@ -107,5 +107,19 @@
   ],
   "est_min": 20,
   "why": "Do Gromark-with-hidden-alphabets and Quagmire I/II/IV look K4-like?"
+ },
+ {
+  "id": "23",
+  "title": "LAYER TWO: two stacked repeating keys, every length pair <=26, completed by annealing",
+  "script": "attacks/23_two_stacked_keys.py",
+  "est_min": 90,
+  "why": "Stacked keys (PK3/PK8 style, K2's 'LAYER TWO') give a key that never repeats inside 97 letters on a plain alphabet. The undecidable pairs were never completed."
+ },
+ {
+  "id": "26",
+  "title": "Three layers: a theme word plus two unknown keys (fully clue-determined configs)",
+  "script": "attacks/26_three_layers_theme_word.py",
+  "est_min": 15,
+  "why": "PK8 stacked four keys; with one layer a known theme word the rest is exactly solvable."
  }
 ]
