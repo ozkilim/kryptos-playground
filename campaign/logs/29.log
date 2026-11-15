@@ -1,0 +1,30 @@
+[29] best detector of real two-key English in this blind region: q (planted vs chance AUC 0.75); K4 vs chance on it: AUC 0.55 (K4 looks like chance). LLM generated 55 plaintexts, 0 with both clues in K4's exact positions
+{
+ "q": {
+  "auc_planted_vs_control": 0.7486282578875172,
+  "auc_k4_vs_control": 0.553326474622771,
+  "mean": {
+   "k4": -5.509,
+   "control": -5.539,
+   "planted": -5.253
+  }
+ },
+ "words": {
+  "auc_planted_vs_control": 0.6539780521262003,
+  "auc_k4_vs_control": 0.5166323731138546,
+  "mean": {
+   "k4": 0.465,
+   "control": 0.46,
+   "planted": 0.516
+  }
+ },
+ "llm": {
+  "auc_planted_vs_control": 0.5522976680384087,
+  "auc_k4_vs_control": 0.516803840877915,
+  "mean": {
+   "k4": 2.037,
+   "control": 2.019,
+   "planted": 2.204
+  }
+ }
+}

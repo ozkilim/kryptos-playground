@@ -78,3 +78,9 @@ See `campaign/SUMMARY_2.md`. Each result reports what a planted real answer woul
 - **Three layers with a theme word**: dead where fully clue-determined (349 decrypts at noise level).
 - **K1-K3 misspellings as alphabet swaps**: dead (single-layer key models exact; two-key determined configs at noise).
 - **1989 World Clock keys** (names, initials, UTC offsets, every facet/direction): dead at chance. Data still incomplete for the west side and the lower plates of +7..+12.
+
+## Campaign 4 (2026-11-15, this repo; see campaign/SUMMARY_4.md)
+- **Visual letter transforms** (semaphore rotations/mirrors, Morse reverse/invert), alone or stacked with key layers: dead.
+- **Compass-bearing keys across the carved panels** (48 directions, d 1-12, cipher/tableau/mirrored): dead at chance.
+- **Stacked keys at long length pairs**: re-tested with three detectors (quadgram, word coverage, LLM judge); K4 looks like shuffled controls on all (best detector AUC planted 0.75 vs K4 0.55). Still not fully closed (power is modest).
+- **Learned fingerprint (CNN)**: weakly favours a progressive/structured key on a plain alphabet (p=0.11 vs 0.046 shuffled); held-out accuracy too low to rely on.

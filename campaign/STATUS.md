@@ -1,6 +1,6 @@
 # Campaign status
 
-Updated 2026-11-15 23:02 UTC. Rebuilt automatically by `campaign/run.py` after every idea.
+Updated 2026-11-15 23:24 UTC. Rebuilt automatically by `campaign/run.py` after every idea.
 
 | # | Idea | Status | Hypotheses | Survivors | Verdict | Minutes |
 |---|---|---|---|---|---|---|
@@ -23,6 +23,10 @@ Updated 2026-11-15 23:02 UTC. Rebuilt automatically by `campaign/run.py` after e
 | 26 | Three layers: a theme word plus two unknown keys (fully clue-determined configs) | done | 88,400 | - | dead: 349 fully determined decrypts, best -6.56 vs shuffled -6.298 | 0.0 |
 | 27 | K1-K3 misspellings (L/Q, O/U, E/A, S/C) as alphabet swaps x key models and two stacked keys | done | 55,530 | - | (a) dead: 0 survivors; (b) dead: 98 determined decrypts, best -6.53 vs shuffled -6.48 | 0.0 |
 | 24 | World Clock (Weltzeituhr) as of 1989: city names, initials and UTC offsets as keys | done | - | - | dead: best city-name key 7/24 (shuffled 6), best UTC-offset key 7/24 (shuffled 6); 24/24 needed | 0.3 |
+| 30 | Visual letter transforms: semaphore rotations/mirrors and Morse reverse/invert, alone or stacked with key layers | done | 10,866 | 0 | dead: no visual-transform schedule or stack fits all clue letters | 0.0 |
+| 31 | Compass-bearing keys read across the exact carved layout (cipher panel, tableau, mirrored tableau) | done | 20,736 | 0 | dead: best bearing matches 6/24 clue letters (shuffled best 6/24); all needed | 0.0 |
+| 28 | SLM cipher detective: small neural net trained on ~100k synthetic K4-like ciphertexts names K4's family | done | - | - | K4 classified as 'progressive key' (p=0.1133, that family's held-out accuracy 0.203); overall held-out accuracy 0.437. Shuffled K4s are mostly called 'ciphertext autokey' | 1.3 |
+| 29 | Local LLM (Qwen2.5-7B) as English judge for the blind stacked-key region, plus what it generates as K4 | done | - | - | best detector of real two-key English in this blind region: q (planted vs chance AUC 0.75); K4 vs chance on it: AUC 0.55 (K4 looks like chance). LLM generated 55 plaintexts, 0 with both clues in K4's exact positions | 9.2 |
 
 Verdict key: **dead** = ruled out within the stated scope (each engine has a planted-answer test); **WORTH A LOOK** = beats shuffled-K4 controls, needs a human look.
 
@@ -193,4 +197,34 @@ Verdict key: **dead** = ruled out within the stated scope (each engine has a pla
 - **Status:** done
 - **Verdict:** dead: best city-name key 7/24 (shuffled 6), best UTC-offset key 7/24 (shuffled 6); 24/24 needed
 - control: `[{"names": 6, "utc": 5}, {"names": 6, "utc": 6}]`
+
+### 30. Visual letter transforms: semaphore rotations/mirrors and Morse reverse/invert, alone or stacked with key layers
+
+- **Why:** Sanborn's 'visual systems'; semaphore is two hands on a dial (Berlin Clock-shaped). Never tested.
+- **Script:** `attacks/30_visual_transforms.py`  ·  log: `campaign/logs/30.log`
+- **Status:** done
+- **Verdict:** dead: no visual-transform schedule or stack fits all clue letters
+- control: `[{"alone": 0, "stacked": 0}, {"alone": 0, "stacked": 0}]`
+
+### 31. Compass-bearing keys read across the exact carved layout (cipher panel, tableau, mirrored tableau)
+
+- **Why:** EAST NORTHEAST is in the clue; physical/visual steps; uses the verified carved line layout.
+- **Script:** `attacks/31_compass_bearings.py`  ·  log: `campaign/logs/31.log`
+- **Status:** done
+- **Verdict:** dead: best bearing matches 6/24 clue letters (shuffled best 6/24); all needed
+- control: `[[6, 24], [6, 24]]`
+
+### 28. SLM cipher detective: small neural net trained on ~100k synthetic K4-like ciphertexts names K4's family
+
+- **Why:** A learned, richer version of the fingerprint ranking; training on K4 itself can't work (97 letters).
+- **Script:** `attacks/28_slm_cipher_detective.py`  ·  log: `campaign/logs/28.log`
+- **Status:** done
+- **Verdict:** K4 classified as 'progressive key' (p=0.1133, that family's held-out accuracy 0.203); overall held-out accuracy 0.437. Shuffled K4s are mostly called 'ciphertext autokey'
+
+### 29. Local LLM (Qwen2.5-7B) as English judge for the blind stacked-key region, plus what it generates as K4
+
+- **Why:** Quadgrams can't tell real from fake English where ~20 key letters are free; an LLM judge might, calibrated on planted vs shuffled.
+- **Script:** `attacks/29_llm_judge_and_generator.py`  ·  log: `campaign/logs/29.log`
+- **Status:** done
+- **Verdict:** best detector of real two-key English in this blind region: q (planted vs chance AUC 0.75); K4 vs chance on it: AUC 0.55 (K4 looks like chance). LLM generated 55 plaintexts, 0 with both clues in K4's exact positions
 

@@ -1,0 +1,63 @@
+{
+ "name": "visual transforms",
+ "transforms": [
+  "semaphore rot0",
+  "semaphore mirror rot0",
+  "semaphore rot1",
+  "semaphore mirror rot1",
+  "semaphore rot2",
+  "semaphore mirror rot2",
+  "semaphore rot3",
+  "semaphore mirror rot3",
+  "semaphore rot4",
+  "semaphore mirror rot4",
+  "semaphore rot5",
+  "semaphore mirror rot5",
+  "semaphore rot6",
+  "semaphore mirror rot6",
+  "semaphore rot7",
+  "semaphore mirror rot7",
+  "morse reverse",
+  "morse invert",
+  "morse reverse+invert"
+ ],
+ "hypotheses": 10866,
+ "alone_fits": [],
+ "stacked_fits": [],
+ "survivors": 0,
+ "control": [
+  {
+   "alone": 0,
+   "stacked": 0
+  },
+  {
+   "alone": 0,
+   "stacked": 0
+  }
+ ],
+ "clue_positions_unexplainable_alone": [
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  34,
+  66,
+  67,
+  68,
+  69,
+  71,
+  72,
+  73
+ ],
+ "verdict": "dead: no visual-transform schedule or stack fits all clue letters",
+ "minutes": 0.0,
+ "idea": "30",
+ "finished": "2026-11-15T23:13:49+00:00"
+}
