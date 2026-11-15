@@ -1,0 +1,32 @@
+{
+  "id": "pk2",
+  "name": "Paradigm Kryptos 2 (PK2)",
+  "status": "cracked-unverified",
+  "length": 350,
+  "ciphertext": "HNETIOCOIOISNNENEELOWYTTLQUBDBTHTEOTRRASAHCDSEETONVRCESHRRETUPCITEWIGNIUNIGANLHJRAHMSRUINHERAEEAEAJEEEEKEEDATIIAONIXRNRHCNTLGLOIIUNSEESEGNBANTVTCSFREDIUROTNENHMRIIEROLTLSDAOOAEQIEOAPUHITHAIKHTIEUHGSLAFFSNVRSRHNNSMASTIPIAHAOEEUDESSOEONCDHAOTOOEOTSEECLADNHNTOUVSGAGTATSNEWHSATEUEETEURTRNEOGITREHMPPROBEOETOERICETGSMTEITENNSGSDRNOVTTFBTTATMLOSOPLSTARATE",
+  "method": "columnar",
+  "key": [
+    3,
+    0,
+    5,
+    1,
+    2,
+    4,
+    6
+  ],
+  "plaintext": "IHAVEFOUNDREFERENCESTOTHEKNOTINSEVENOTHERRECORDSINOURARCHIVETHEMOSTINTRIGUINGISAPASSINGCOMMENTINATREATISEONTEXTILESWRITTENINPELLEGRINSOWNHANDWHICHSAYSUNAGOTANTOSOTTILEDALEGGEREQUALUNQUENODOIBELIEVEDTHISTOBEJUSTATURNOFPHRASEBUTTHEOTHERMENTIONSSCATTEREDTHROUGHMARGINALIAINBOOKSTHATSHARENOOTHERTOPICHAVELEDMETOSUSPECTTHEPASSAGEREFERSTOAREALOBJECTANEEDLE",
+  "check": {
+    "url": "https://paradigm.xyz/kryptos-ctf/pk2",
+    "cost_usd": 0,
+    "how": "Sign in with X, type the plaintext into the boxes, click 'Decrypt'. Unlimited free attempts."
+  },
+  "prize": {
+    "usd": 1000,
+    "first_solver": "@98_akr",
+    "first_solved_utc": "2026-06-12",
+    "note": "Prize already won; puzzle still checkable for free."
+  },
+  "notes": "Cracked here 2026-11-15; reads as clean English but not yet confirmed on the CTF page (free check). Set status to 'solved' once the site accepts it.",
+  "source": "https://paradigm.xyz/kryptos-ctf/pk2",
+  "how_found": "python -m kryptos crack pk2 (columnar solver, blind)"
+}

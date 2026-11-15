@@ -1,0 +1,23 @@
+{
+  "id": "pk7",
+  "name": "Paradigm Kryptos 7 (PK7)",
+  "status": "unsolved-here",
+  "length": 279,
+  "ciphertext": "FNRHTKRHSEDEJMBOWBDSCSDDXLICXULMBYQXWTGUIVNDYZBEQLVHFFFIDAKDCCJKWGOOUESCYELYMRAKIUJCUSEAXUQTYKOBVYDYMRBYWOTQEESCQSMDYDQJNPSWRSUOFMFJDYXSHCXNHVJVBYMZOZOATHTEOVLOQWZITHTEAFMKGLASTBZRDMFRJPKWJOXZXPJCBOVAZEPKAEJPPSIUJODXTXERWTLTTYMRENBJGTNMLBDJMYJDDLRCXCQCHYMJMHBEOLXEUFNJKBPRSHTEYXB",
+  "method": null,
+  "key": null,
+  "plaintext": null,
+  "check": {
+    "url": "https://paradigm.xyz/kryptos-ctf/pk7",
+    "cost_usd": 0,
+    "how": "Sign in with X, type the plaintext into the boxes, click 'Decrypt'. Unlimited free attempts."
+  },
+  "prize": {
+    "usd": 1000,
+    "first_solver": "@crook3dfingers",
+    "first_solved_utc": "2026-06-13",
+    "note": "Prize already won; puzzle still checkable for free."
+  },
+  "notes": "Captured from the CTF page on 2026-11-15. Fill in method/key/plaintext here once we crack it.",
+  "source": "https://paradigm.xyz/kryptos-ctf/pk7"
+}

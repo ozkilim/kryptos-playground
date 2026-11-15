@@ -1,0 +1,23 @@
+{
+  "id": "pk10",
+  "name": "Paradigm Kryptos 10 (PK10)",
+  "status": "unsolved-here",
+  "length": 504,
+  "ciphertext": "UBINFYJSFQXQVRLJJAJDGBXIWKDMAREZTGSHQWRXCHEPCLYSDNGYRRBTCVOZJYVLYWREJTCDOYVEYCJJVZKRMKTRPGVHRWMJSRCSHXZMJEVQKJYJJAYZKDFQBGRSWXATJMEXKFXAXKSIZXOERFESNVCGCNRHEOBCNCBUPXTJJRCIMDMRUVZWRDRRFXAPGPIGSPLILFIZSTDZYOVQGGDFUFZPUOJPJVWREUVRQIYPCEHGYUZUKWTFXELUNOKBANZFTFRMXZSXXQSBGPCWGXPFSCANSVUYLMTZIRCCCJJPBQAEPWVCDIMLOPOXQEGJKVQIVHEFAPQMVCYSQAFKCTYTPAOOJZCWIPGDPAFTINBFFHVXYEQXCEIDJJOUABBAHSWKHGMLJBXDSQEFBBDLTLJPLZPIPPTRGDRZIZPUPYJODOCSOYCZZWTKYWMBQTFMFEQZWVPQYLJTMEYKYBNOPEPUMHCFJSLFWOISWLKFFABTYFQDTEQBDELIEOZQ",
+  "method": null,
+  "key": null,
+  "plaintext": null,
+  "check": {
+    "url": "https://paradigm.xyz/kryptos-ctf/pk10",
+    "cost_usd": 0,
+    "how": "Sign in with X, type the plaintext into the boxes, click 'Decrypt'. Unlimited free attempts."
+  },
+  "prize": {
+    "usd": 1000,
+    "first_solver": "@forwardsecrecy",
+    "first_solved_utc": "2026-10-02",
+    "note": "Prize already won; puzzle still checkable for free."
+  },
+  "notes": "Captured from the CTF page on 2026-11-15. Fill in method/key/plaintext here once we crack it.",
+  "source": "https://paradigm.xyz/kryptos-ctf/pk10"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "k1",
+  "name": "Kryptos K1",
+  "status": "solved",
+  "length": 63,
+  "method": "vigenere",
+  "alphabet_keyword": "KRYPTOS",
+  "key": "PALIMPSEST",
+  "ciphertext": "EMUFPHZLRFAXYUSDJKZLDKRNSHGNFIVJYQTQUXQBQVYUVLLTREVJYQTMKYRDMFD",
+  "plaintext": "BETWEENSUBTLESHADINGANDTHEABSENCEOFLIGHTLIESTHENUANCEOFIQLUSION",
+  "notes": "IQLUSION is Sanborn's deliberate misspelling. Keep it. The tableau spells the key PALIMPCEST.",
+  "source": "https://elonka.com/kryptos/transcript.html (ciphertext); https://en.wikipedia.org/wiki/Kryptos (plaintext, keys)"
+}

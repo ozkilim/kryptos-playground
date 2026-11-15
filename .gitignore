@@ -1,5 +1,14 @@
 __pycache__/
 *.pyc
 .pytest_cache/
-# your paid-submission log stays private by default; remove this line to commit it
+*.egg-info/
+build/
+
+# Full candidate dumps from experiments: big and regenerable.
+# The one-line summaries in experiments/ledger.csv ARE committed.
+results/*
+!results/.gitkeep
+
+# Your official-check log (K4 costs $1 each). Private by default;
+# remove this line to share it with collaborators.
 submissions.csv
