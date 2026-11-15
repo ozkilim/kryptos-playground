@@ -55,6 +55,8 @@ def scan(ct, cribs, max_width=8, max_period=12, alphabets=None, ex=None, report_
                             j = perm[i]
                             kval = (C[j] - P[i]) % 26 if cname == "vig" else (C[j] + P[i]) % 26
                             pairs.append((j if how == "trans_then_vig" else i, kval))
+                        if ex is not None:
+                            ex.count(max_period)  # hypotheses tested, even with no plaintext
                         for period in range(1, max_period + 1):
                             agree, key = consistency(pairs, period)
                             b = best_by_period.get(period)
@@ -79,6 +81,8 @@ def main():
                     notes=f"widths 2-{max_width} all orders, periods 1-{max_period}, both orders, "
                           f"vig+beau, AZ+KRYPTOS") as ex:
         best = scan(K4, CRIBS, max_width, max_period, ex=ex)
+        top = max(best.values())
+        ex.notes += f"; best agreement {top[0]}/24 (period {max(best, key=lambda p: best[p])})"
     print("\nBest crib agreement by period (24 = hypothesis survives):")
     for p in sorted(best):
         a, w, o, c, h, al = best[p]

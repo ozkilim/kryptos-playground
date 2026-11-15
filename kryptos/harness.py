@@ -70,6 +70,11 @@ class Experiment:
             heapq.heapreplace(self._heap, (rank, self.tried, rec))
         return hits, score
 
+    def count(self, n=1):
+        """For attacks that test hypotheses without producing a plaintext for
+        each one (e.g. crib-consistency checks): count them as tried."""
+        self.tried += n
+
     @property
     def best(self):
         return [r for _, _, r in sorted(self._heap, key=lambda x: x[0], reverse=True)]
