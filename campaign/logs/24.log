@@ -1,0 +1,13 @@
+
+[weltzeituhr-1989-keys] tried 1,524,862 candidates on K4
+   7/24  q= -7.38  QIVUXQWUVCXEBZZBRPQRIOAHLNQHTHVGRNTWGVGSUJXLQENNBL  {'source': 'names dir-1 start-5 top', 'offset': 175, 'direction': 'forward', 'variant': 'vigenere', 'alphabet': 'KRYPTOS'}
+   7/24  q= -7.38  QIVUXQWUVCXEBZZBRPQRIOAHLNQHTHVGRNTWGVGSUJXLQENNBL  {'source': 'names dir-1 start-7 top', 'offset': 123, 'direction': 'forward', 'variant': 'vigenere', 'alphabet': 'KRYPTOS'}
+   7/24  q= -7.38  QIVUXQWUVCXEBZZBRPQRIOAHLNQHTHVGRNTWGVGSUJXLQENNBL  {'source': 'names dir-1 start-9 top umlaut', 'offset': 109, 'direction': 'forward', 'variant': 'vigenere', 'alphabet': 'KRYPTOS'}
+   7/24  q= -7.38  QIVUXQWUVCXEBZZBRPQRIOAHLNQHTHVGRNTWGVGSUJXLQENNBL  {'source': 'names dir-1 start-10 top umlaut', 'offset': 109, 'direction': 'forward', 'variant': 'vigenere', 'alphabet': 'KRYPTOS'}
+   7/24  q= -7.38  QIVUXQWUVCXEBZZBRPQRIOAHLNQHTHVGRNTWGVGSUJXLQENNBL  {'source': 'names dir-1 start-10 top', 'offset': 109, 'direction': 'forward', 'variant': 'vigenere', 'alphabet': 'KRYPTOS'}
+   7/24  q= -7.38  QIVUXQWUVCXEBZZBRPQRIOAHLNQHTHVGRNTWGVGSUJXLQENNBL  {'source': 'names dir-1 start-11 top', 'offset': 109, 'direction': 'forward', 'variant': 'vigenere', 'alphabet': 'KRYPTOS'}
+   7/24  q= -7.38  QIVUXQWUVCXEBZZBRPQRIOAHLNQHTHVGRNTWGVGSUJXLQENNBL  {'source': 'names dir-1 start-2 top umlaut', 'offset': 218, 'direction': 'forward', 'variant': 'vigenere', 'alphabet': 'KRYPTOS'}
+   7/24  q= -7.38  QIVUXQWUVCXEBZZBRPQRIOAHLNQHTHVGRNTWGVGSUJXLQENNBL  {'source': 'names dir-1 start-4 top', 'offset': 187, 'direction': 'forward', 'variant': 'vigenere', 'alphabet': 'KRYPTOS'}
+  full crib passes: 0
+  saved -> results/2026-11-15T230151Z_k4_weltzeituhr-1989-keys.json  (+1 line in ledger.csv)
+[24] dead: best city-name key 7/24 (shuffled 6), best UTC-offset key 7/24 (shuffled 6); 24/24 needed (7, 'names dir-1 start-11 bottom', 152, 'reversed', 'vigenere', 'AZ') (7, 'utc dir+1 start-11 top', 38, 'beaufort', 'AZ')

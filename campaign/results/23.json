@@ -1,0 +1,906 @@
+{
+ "name": "two stacked keys (LAYER TWO)",
+ "pairs": 260,
+ "consistent_configs": 710,
+ "control_consistent": [
+  712,
+  710
+ ],
+ "best_quadgram": -4.998296407620908,
+ "control_best": -5.040932064870449,
+ "planted": {
+  "3x26": {
+   "q": -4.848,
+   "letters_right": 97
+  },
+  "5x26": {
+   "q": -4.874,
+   "letters_right": 97
+  },
+  "6x25": {
+   "q": -5.359,
+   "letters_right": 93
+  },
+  "6x26": {
+   "q": -5.369,
+   "letters_right": 89
+  },
+  "7x24": {
+   "q": -4.712,
+   "letters_right": 97
+  },
+  "7x25": {
+   "q": -4.89,
+   "letters_right": 97
+  },
+  "7x26": {
+   "q": -4.779,
+   "letters_right": 89
+  },
+  "8x25": {
+   "q": -5.068,
+   "letters_right": 93
+  },
+  "8x26": {
+   "q": -4.742,
+   "letters_right": 97
+  },
+  "9x16": {
+   "q": -4.869,
+   "letters_right": 97
+  },
+  "9x19": {
+   "q": -4.646,
+   "letters_right": 97
+  },
+  "9x23": {
+   "q": -4.809,
+   "letters_right": 97
+  },
+  "9x24": {
+   "q": -4.876,
+   "letters_right": 97
+  },
+  "9x25": {
+   "q": -4.483,
+   "letters_right": 97
+  },
+  "9x26": {
+   "q": -5.605,
+   "letters_right": 59
+  },
+  "10x17": {
+   "q": -4.706,
+   "letters_right": 97
+  },
+  "10x18": {
+   "q": -5.509,
+   "letters_right": 97
+  },
+  "10x23": {
+   "q": -5.338,
+   "letters_right": 93
+  },
+  "10x24": {
+   "q": -4.807,
+   "letters_right": 89
+  },
+  "10x26": {
+   "q": -4.851,
+   "letters_right": 97
+  },
+  "11x15": {
+   "q": -5.245,
+   "letters_right": 97
+  },
+  "11x16": {
+   "q": -4.7,
+   "letters_right": 97
+  },
+  "11x18": {
+   "q": -4.987,
+   "letters_right": 97
+  },
+  "11x19": {
+   "q": -4.604,
+   "letters_right": 97
+  },
+  "11x23": {
+   "q": -4.842,
+   "letters_right": 97
+  },
+  "11x24": {
+   "q": -5.247,
+   "letters_right": 81
+  },
+  "11x25": {
+   "q": -5.485,
+   "letters_right": 64
+  },
+  "11x26": {
+   "q": -5.796,
+   "letters_right": 59
+  },
+  "12x15": {
+   "q": -4.646,
+   "letters_right": 97
+  },
+  "12x17": {
+   "q": -5.346,
+   "letters_right": 97
+  },
+  "12x19": {
+   "q": -4.742,
+   "letters_right": 80
+  },
+  "12x23": {
+   "q": -4.931,
+   "letters_right": 97
+  },
+  "12x25": {
+   "q": -4.738,
+   "letters_right": 97
+  },
+  "12x26": {
+   "q": -4.891,
+   "letters_right": 97
+  },
+  "13x14": {
+   "q": -5.012,
+   "letters_right": 97
+  },
+  "13x15": {
+   "q": -4.951,
+   "letters_right": 97
+  },
+  "13x16": {
+   "q": -5.288,
+   "letters_right": 97
+  },
+  "13x17": {
+   "q": -4.415,
+   "letters_right": 97
+  },
+  "13x18": {
+   "q": -4.484,
+   "letters_right": 97
+  },
+  "13x19": {
+   "q": -4.999,
+   "letters_right": 97
+  },
+  "13x20": {
+   "q": -4.656,
+   "letters_right": 97
+  },
+  "13x21": {
+   "q": -4.461,
+   "letters_right": 89
+  },
+  "13x22": {
+   "q": -4.843,
+   "letters_right": 85
+  },
+  "13x23": {
+   "q": -5.343,
+   "letters_right": 61
+  },
+  "13x24": {
+   "q": -5.783,
+   "letters_right": 30
+  },
+  "13x25": {
+   "q": -5.625,
+   "letters_right": 42
+  },
+  "14x15": {
+   "q": -4.712,
+   "letters_right": 97
+  },
+  "14x16": {
+   "q": -4.731,
+   "letters_right": 97
+  },
+  "14x17": {
+   "q": -5.012,
+   "letters_right": 97
+  },
+  "14x18": {
+   "q": -4.851,
+   "letters_right": 97
+  },
+  "14x19": {
+   "q": -5.267,
+   "letters_right": 97
+  },
+  "14x20": {
+   "q": -4.582,
+   "letters_right": 97
+  },
+  "14x22": {
+   "q": -5.06,
+   "letters_right": 97
+  },
+  "14x23": {
+   "q": -4.661,
+   "letters_right": 97
+  },
+  "14x24": {
+   "q": -5.438,
+   "letters_right": 58
+  },
+  "14x25": {
+   "q": -5.444,
+   "letters_right": 31
+  },
+  "14x26": {
+   "q": -5.352,
+   "letters_right": 27
+  },
+  "15x16": {
+   "q": -4.514,
+   "letters_right": 97
+  },
+  "15x17": {
+   "q": -5.735,
+   "letters_right": 75
+  },
+  "15x18": {
+   "q": -4.784,
+   "letters_right": 97
+  },
+  "15x19": {
+   "q": -4.661,
+   "letters_right": 97
+  },
+  "15x21": {
+   "q": -4.67,
+   "letters_right": 97
+  },
+  "15x22": {
+   "q": -4.756,
+   "letters_right": 97
+  },
+  "15x23": {
+   "q": -5.092,
+   "letters_right": 97
+  },
+  "15x24": {
+   "q": -5.529,
+   "letters_right": 54
+  },
+  "15x25": {
+   "q": -5.274,
+   "letters_right": 93
+  },
+  "15x26": {
+   "q": -5.604,
+   "letters_right": 27
+  },
+  "16x17": {
+   "q": -4.775,
+   "letters_right": 97
+  },
+  "16x18": {
+   "q": -4.934,
+   "letters_right": 97
+  },
+  "16x19": {
+   "q": -5.75,
+   "letters_right": 57
+  },
+  "16x21": {
+   "q": -4.819,
+   "letters_right": 97
+  },
+  "16x22": {
+   "q": -5.073,
+   "letters_right": 89
+  },
+  "16x23": {
+   "q": -5.137,
+   "letters_right": 83
+  },
+  "16x25": {
+   "q": -5.67,
+   "letters_right": 28
+  },
+  "16x26": {
+   "q": -5.593,
+   "letters_right": 57
+  },
+  "17x18": {
+   "q": -4.575,
+   "letters_right": 97
+  },
+  "17x19": {
+   "q": -5.231,
+   "letters_right": 60
+  },
+  "17x20": {
+   "q": -5.53,
+   "letters_right": 62
+  },
+  "17x21": {
+   "q": -5.03,
+   "letters_right": 67
+  },
+  "17x22": {
+   "q": -5.828,
+   "letters_right": 34
+  },
+  "17x23": {
+   "q": -5.406,
+   "letters_right": 51
+  },
+  "17x24": {
+   "q": -5.436,
+   "letters_right": 44
+  },
+  "17x25": {
+   "q": -5.612,
+   "letters_right": 30
+  },
+  "17x26": {
+   "q": -5.521,
+   "letters_right": 30
+  },
+  "18x19": {
+   "q": -5.112,
+   "letters_right": 62
+  },
+  "18x20": {
+   "q": -5.118,
+   "letters_right": 97
+  },
+  "18x21": {
+   "q": -4.659,
+   "letters_right": 81
+  },
+  "18x22": {
+   "q": -5.257,
+   "letters_right": 61
+  },
+  "18x23": {
+   "q": -5.04,
+   "letters_right": 70
+  },
+  "18x24": {
+   "q": -4.577,
+   "letters_right": 97
+  },
+  "18x25": {
+   "q": -5.397,
+   "letters_right": 38
+  },
+  "18x26": {
+   "q": -5.666,
+   "letters_right": 28
+  },
+  "19x20": {
+   "q": -4.474,
+   "letters_right": 71
+  },
+  "19x21": {
+   "q": -5.2,
+   "letters_right": 62
+  },
+  "19x22": {
+   "q": -5.186,
+   "letters_right": 63
+  },
+  "19x23": {
+   "q": -5.597,
+   "letters_right": 37
+  },
+  "19x24": {
+   "q": -5.228,
+   "letters_right": 61
+  },
+  "19x25": {
+   "q": -5.199,
+   "letters_right": 43
+  },
+  "19x26": {
+   "q": -5.277,
+   "letters_right": 30
+  },
+  "20x21": {
+   "q": -4.853,
+   "letters_right": 66
+  },
+  "20x22": {
+   "q": -5.176,
+   "letters_right": 64
+  },
+  "20x23": {
+   "q": -4.77,
+   "letters_right": 66
+  },
+  "20x24": {
+   "q": -4.756,
+   "letters_right": 97
+  },
+  "20x25": {
+   "q": -4.541,
+   "letters_right": 84
+  },
+  "20x26": {
+   "q": -5.263,
+   "letters_right": 30
+  },
+  "21x22": {
+   "q": -4.895,
+   "letters_right": 64
+  },
+  "21x23": {
+   "q": -4.977,
+   "letters_right": 64
+  },
+  "21x24": {
+   "q": -4.956,
+   "letters_right": 56
+  },
+  "21x25": {
+   "q": -4.662,
+   "letters_right": 63
+  },
+  "21x26": {
+   "q": -5.336,
+   "letters_right": 35
+  },
+  "22x23": {
+   "q": -4.823,
+   "letters_right": 63
+  },
+  "22x24": {
+   "q": -5.035,
+   "letters_right": 63
+  },
+  "22x25": {
+   "q": -5.331,
+   "letters_right": 35
+  },
+  "22x26": {
+   "q": -5.346,
+   "letters_right": 42
+  },
+  "23x24": {
+   "q": -5.05,
+   "letters_right": 60
+  },
+  "23x25": {
+   "q": -4.799,
+   "letters_right": 50
+  },
+  "23x26": {
+   "q": -5.324,
+   "letters_right": 36
+  },
+  "24x25": {
+   "q": -5.071,
+   "letters_right": 42
+  },
+  "24x26": {
+   "q": -4.922,
+   "letters_right": 31
+  },
+  "25x26": {
+   "q": -5.382,
+   "letters_right": 28
+  }
+ },
+ "pairs_with_power": [
+  [
+   3,
+   26
+  ],
+  [
+   5,
+   26
+  ],
+  [
+   6,
+   25
+  ],
+  [
+   6,
+   26
+  ],
+  [
+   7,
+   24
+  ],
+  [
+   7,
+   25
+  ],
+  [
+   7,
+   26
+  ],
+  [
+   8,
+   25
+  ],
+  [
+   8,
+   26
+  ],
+  [
+   9,
+   16
+  ],
+  [
+   9,
+   19
+  ],
+  [
+   9,
+   23
+  ],
+  [
+   9,
+   24
+  ],
+  [
+   9,
+   25
+  ],
+  [
+   10,
+   17
+  ],
+  [
+   10,
+   18
+  ],
+  [
+   10,
+   23
+  ],
+  [
+   10,
+   24
+  ],
+  [
+   10,
+   26
+  ],
+  [
+   11,
+   15
+  ],
+  [
+   11,
+   16
+  ],
+  [
+   11,
+   18
+  ],
+  [
+   11,
+   19
+  ],
+  [
+   11,
+   23
+  ],
+  [
+   11,
+   24
+  ],
+  [
+   12,
+   15
+  ],
+  [
+   12,
+   17
+  ],
+  [
+   12,
+   19
+  ],
+  [
+   12,
+   23
+  ],
+  [
+   12,
+   25
+  ],
+  [
+   12,
+   26
+  ],
+  [
+   13,
+   14
+  ],
+  [
+   13,
+   15
+  ],
+  [
+   13,
+   16
+  ],
+  [
+   13,
+   17
+  ],
+  [
+   13,
+   18
+  ],
+  [
+   13,
+   19
+  ],
+  [
+   13,
+   20
+  ],
+  [
+   13,
+   21
+  ],
+  [
+   13,
+   22
+  ],
+  [
+   14,
+   15
+  ],
+  [
+   14,
+   16
+  ],
+  [
+   14,
+   17
+  ],
+  [
+   14,
+   18
+  ],
+  [
+   14,
+   19
+  ],
+  [
+   14,
+   20
+  ],
+  [
+   14,
+   22
+  ],
+  [
+   14,
+   23
+  ],
+  [
+   15,
+   16
+  ],
+  [
+   15,
+   18
+  ],
+  [
+   15,
+   19
+  ],
+  [
+   15,
+   21
+  ],
+  [
+   15,
+   22
+  ],
+  [
+   15,
+   23
+  ],
+  [
+   15,
+   25
+  ],
+  [
+   16,
+   17
+  ],
+  [
+   16,
+   18
+  ],
+  [
+   16,
+   21
+  ],
+  [
+   16,
+   22
+  ],
+  [
+   16,
+   23
+  ],
+  [
+   17,
+   18
+  ],
+  [
+   18,
+   20
+  ],
+  [
+   18,
+   21
+  ],
+  [
+   18,
+   24
+  ],
+  [
+   20,
+   24
+  ],
+  [
+   20,
+   25
+  ]
+ ],
+ "top": [
+  {
+   "alphabet": "KRYPTOS",
+   "variant": "vigenere",
+   "L1": 25,
+   "L2": 26,
+   "q": -4.998,
+   "free": 26,
+   "words": 0.48,
+   "plaintext": "ZEACOUSEITNEGDEFFHQTHEASTNORTHEASTERNFSANARYMAYRESASSEENTSILSAMBERLINCLOCKOATEROBJJREVETOAGETONCO",
+   "planted_at_this_pair": [
+    -5.382048925255836,
+    28
+   ]
+  },
+  {
+   "alphabet": "KRYPTOS",
+   "variant": "variant_beaufort",
+   "L1": 22,
+   "L2": 26,
+   "q": -5.069,
+   "free": 23,
+   "words": 0.58,
+   "plaintext": "USTONCETHANDATASIDTAREASTNORTHEASTATALLUDEMGBNSBBFESEMETHUCANPDBERLINCLOCKBUTIESSTSINAFULTNPREWIN",
+   "planted_at_this_pair": [
+    -5.346073646026705,
+    42
+   ]
+  },
+  {
+   "alphabet": "AZ",
+   "variant": "variant_beaufort",
+   "L1": 24,
+   "L2": 25,
+   "q": -5.074,
+   "free": 24,
+   "words": 0.52,
+   "plaintext": "EHACTIVENSTHESDESCLXEEASTNORTHEASTRACESTHERSUSCUPFITDISTIUPTETOBERLINCLOCKTHEYANTDOEDFATAEEANEWSS",
+   "planted_at_this_pair": [
+    -5.070942403115453,
+    42
+   ]
+  },
+  {
+   "alphabet": "KRYPTOS",
+   "variant": "vigenere",
+   "L1": 24,
+   "L2": 25,
+   "q": -5.086,
+   "free": 24,
+   "words": 0.66,
+   "plaintext": "MUTFORAMEPHARANASMUSSEASTNORTHEASTONERMEDIFXSOEVERRUJOMSCASESTYBERLINCLOCKITARINGDQICTISABOUNEGSP",
+   "planted_at_this_pair": [
+    -5.070942403115453,
+    42
+   ]
+  },
+  {
+   "alphabet": "AZ",
+   "variant": "variant_beaufort",
+   "L1": 25,
+   "L2": 26,
+   "q": -5.092,
+   "free": 26,
+   "words": 0.39,
+   "plaintext": "KYXZGPUHEALASTRRHTHEDEASTNORTHEASTORDOAPRESASLOWORSINCIJVTELSTOBERLINCLOCKEYEORATESESOFONELEVTEOL",
+   "planted_at_this_pair": [
+    -5.382048925255836,
+    28
+   ]
+  },
+  {
+   "alphabet": "KRYPTOS",
+   "variant": "beaufort",
+   "L1": 25,
+   "L2": 26,
+   "q": -5.096,
+   "free": 26,
+   "words": 0.56,
+   "plaintext": "JDEFINERATTHEDISTHEATEASTNORTHEASTOJRTMELCPBUZQLETAREATEMPNENANBERLINCLOCKICOPSQCHRTLIERSANIMARTA",
+   "planted_at_this_pair": [
+    -5.382048925255836,
+    28
+   ]
+  },
+  {
+   "alphabet": "AZ",
+   "variant": "beaufort",
+   "L1": 25,
+   "L2": 26,
+   "q": -5.103,
+   "free": 26,
+   "words": 0.47,
+   "plaintext": "GIVINGTHDEDRFFOREESCREASTNORTHEASTHONSTYJAFALOJTRTHERALUSEEPEORBERLINCLOCKBZHAHJPESRENTIONSANAAJO",
+   "planted_at_this_pair": [
+    -5.382048925255836,
+    28
+   ]
+  },
+  {
+   "alphabet": "KRYPTOS",
+   "variant": "vigenere",
+   "L1": 24,
+   "L2": 26,
+   "q": -5.104,
+   "free": 25,
+   "words": 0.69,
+   "plaintext": "WBDOESTJUCONALLFORTAMEASTNORTHEASTRRESTTRISEVERSLOOGTSSEAREINCABERLINCLOCKDCTHENCTISAGEOFDKCUWOSW",
+   "planted_at_this_pair": [
+    -4.922066365766225,
+    31
+   ]
+  },
+  {
+   "alphabet": "AZ",
+   "variant": "beaufort",
+   "L1": 23,
+   "L2": 25,
+   "q": -5.11,
+   "free": 23,
+   "words": 0.59,
+   "plaintext": "NTNDCAHKAREALINEBYZEREASTNORTHEASTADINESALINCESIPYTLUVGTHANZDTOBERLINCLOCKSENATITERATTINENHNFSOUL",
+   "planted_at_this_pair": [
+    -4.798961321008476,
+    50
+   ]
+  },
+  {
+   "alphabet": "KRYPTOS",
+   "variant": "variant_beaufort",
+   "L1": 25,
+   "L2": 26,
+   "q": -5.123,
+   "free": 26,
+   "words": 0.55,
+   "plaintext": "REPRITSIDENTDECIOLDOFEASTNORTHEASTURNSCONDLIUOYREBETSINCUSESCANBERLINCLOCKAGSCOLSWAWVTHOFTIERISSA",
+   "planted_at_this_pair": [
+    -5.382048925255836,
+    28
+   ]
+  }
+ ],
+ "verdict": "disfavoured where we have power: at the 66/120 length pairs where planted two-key messages come back >=80/97 letters, 47/66 of them score above K4's best completion (-5.00); K4 never beats shuffled controls (-5.04). Open at the 54 long pairs where the annealer can't recover planted text",
+ "control_words": 0.62,
+ "minutes": 52.0,
+ "idea": "23",
+ "finished": "2026-11-15T23:01:21+00:00"
+}

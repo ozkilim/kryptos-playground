@@ -1,0 +1,114 @@
+{
+ "name": "K1-K3 misspellings as alphabet swaps",
+ "alphabets": [
+  "AZ+IQLUSION",
+  "AZ+UNDERGRUUND",
+  "AZ+DESPARATLY",
+  "AZ+PALIMPCEST",
+  "AZ+IQLUSION+UNDERGRUUND",
+  "AZ+IQLUSION+DESPARATLY",
+  "AZ+IQLUSION+PALIMPCEST",
+  "AZ+UNDERGRUUND+DESPARATLY",
+  "AZ+UNDERGRUUND+PALIMPCEST",
+  "AZ+DESPARATLY+PALIMPCEST",
+  "AZ+IQLUSION+UNDERGRUUND+DESPARATLY",
+  "AZ+IQLUSION+UNDERGRUUND+PALIMPCEST",
+  "AZ+IQLUSION+DESPARATLY+PALIMPCEST",
+  "AZ+UNDERGRUUND+DESPARATLY+PALIMPCEST",
+  "AZ+IQLUSION+UNDERGRUUND+DESPARATLY+PALIMPCEST",
+  "KRYPTOS+IQLUSION",
+  "KRYPTOS+UNDERGRUUND",
+  "KRYPTOS+DESPARATLY",
+  "KRYPTOS+PALIMPCEST",
+  "KRYPTOS+IQLUSION+UNDERGRUUND",
+  "KRYPTOS+IQLUSION+DESPARATLY",
+  "KRYPTOS+IQLUSION+PALIMPCEST",
+  "KRYPTOS+UNDERGRUUND+DESPARATLY",
+  "KRYPTOS+UNDERGRUUND+PALIMPCEST",
+  "KRYPTOS+DESPARATLY+PALIMPCEST",
+  "KRYPTOS+IQLUSION+UNDERGRUUND+DESPARATLY",
+  "KRYPTOS+IQLUSION+UNDERGRUUND+PALIMPCEST",
+  "KRYPTOS+IQLUSION+DESPARATLY+PALIMPCEST",
+  "KRYPTOS+UNDERGRUUND+DESPARATLY+PALIMPCEST",
+  "KRYPTOS+IQLUSION+UNDERGRUUND+DESPARATLY+PALIMPCEST"
+ ],
+ "single_layer": {
+  "name": "misspelling alphabets x periodic/progressive/autokey/shift",
+  "hypotheses": 32130,
+  "survivors": 0,
+  "control": [
+   {
+    "hypotheses": 32130,
+    "survivors": 0
+   },
+   {
+    "hypotheses": 32130,
+    "survivors": 0
+   }
+  ],
+  "k4_rate": 0.0,
+  "control_rate": 0.0,
+  "best_quadgram": null,
+  "top": [],
+  "verdict": "dead: 0 survivors",
+  "minutes": 0.0,
+  "notes": "30 alphabets = A-Z/KRYPTOS with the K1-K3 misspelling swaps (L/Q, O/U, E/A, S/C); no transposition; periodic<=26, progressive, ct/pt autokey<=60, shifts",
+  "idea": "27a",
+  "finished": "2026-11-15T23:01:31+00:00"
+ },
+ "twokey_determined": 98,
+ "twokey_best": -6.528087546654974,
+ "twokey_control_best": -6.482671143870531,
+ "top": [
+  {
+   "q": -6.528,
+   "words": 0.29,
+   "alphabet": "KRYPTOS+UNDERGRUUND+DESPARATLY+PALIMPCEST",
+   "variant": "beaufort",
+   "L1": 9,
+   "L2": 16,
+   "plaintext": "PZSQBCANGRTOXKERERNFHEASTNORTHEASTTVCHCNPICNTZQDGOLDREGLYJASMALBERLINCLOCKSPQNKRACCEKTFYNRGDOAFDH"
+  },
+  {
+   "q": -6.56,
+   "words": 0.26,
+   "alphabet": "KRYPTOS+IQLUSION+UNDERGRUUND+DESPARATLY+PALIMPCEST",
+   "variant": "vigenere",
+   "L1": 9,
+   "L2": 16,
+   "plaintext": "YVLYWWXDDJGKZMVHVVLOREASTNORTHEASTEGNALDIFXECGUVJWSDVWKWKZPCPZDBERLINCLOCKIWACFGUCJEWMHZQRORLZDNG"
+  },
+  {
+   "q": -6.56,
+   "words": 0.26,
+   "alphabet": "KRYPTOS+IQLUSION+UNDERGRUUND+DESPARATLY+PALIMPCEST",
+   "variant": "variant_beaufort",
+   "L1": 9,
+   "L2": 16,
+   "plaintext": "YVLYWWXDDJGKZMVHVVLOREASTNORTHEASTEGNALDIFXECGUVJWSDVWKWKZPCPZDBERLINCLOCKIWACFGUCJEWMHZQRORLZDNG"
+  },
+  {
+   "q": -6.592,
+   "words": 0.35,
+   "alphabet": "AZ+IQLUSION",
+   "variant": "vigenere",
+   "L1": 9,
+   "L2": 16,
+   "plaintext": "NYXYPULXCAVELCTPLECVBEASTNORTHEASTYPPFFMYFXDISKZPSVHMECKHNSQTWOBERLINCLOCKCCATOUBZKCVNTFDWUDQMIPB"
+  },
+  {
+   "q": -6.592,
+   "words": 0.35,
+   "alphabet": "AZ+IQLUSION",
+   "variant": "variant_beaufort",
+   "L1": 9,
+   "L2": 16,
+   "plaintext": "NYXYPULXCAVELCTPLECVBEASTNORTHEASTYPPFFMYFXDISKZPSVHMECKHNSQTWOBERLINCLOCKCCATOUBZKCVNTFDWUDQMIPB"
+  }
+ ],
+ "hypotheses": 55530,
+ "verdict": "(a) dead: 0 survivors; (b) dead: 98 determined decrypts, best -6.53 vs shuffled -6.48",
+ "minutes": 0.0,
+ "idea": "27",
+ "finished": "2026-11-15T23:01:33+00:00"
+}

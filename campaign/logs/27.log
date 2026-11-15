@@ -1,0 +1,18 @@
+
+[misspelling alphabets x periodic/progressive/autokey/shift] tried 32,130 candidates on K4
+  full crib passes: 0
+  saved -> results/2026-11-15T230131Z_k4_misspelling-alphabets-x-periodic-progressive-autokey-shift.json  (+1 line in ledger.csv)
+[27a] misspelling alphabets x periodic/progressive/autokey/shift: 32,130 hypotheses, 0 survivors (controls [0, 0]), best q=None -> dead: 0 survivors
+
+[misspelling-alphabets x two-stacked-keys] tried 23,430 candidates on K4
+  24/24  q= -6.53  PZSQBCANGRTOXKERERNFHEASTNORTHEASTTVCHCNPICNTZQDGO  {'alphabet': 'KRYPTOS+UNDERGRUUND+DESPARATLY+PALIMPCEST', 'variant': 'beaufort', 'L1': 9, 'L2': 16}
+  24/24  q= -6.56  YVLYWWXDDJGKZMVHVVLOREASTNORTHEASTEGNALDIFXECGUVJW  {'alphabet': 'KRYPTOS+IQLUSION+UNDERGRUUND+DESPARATLY+PALIMPCEST', 'variant': 'vigenere', 'L1': 9, 'L2': 16}
+  24/24  q= -6.56  YVLYWWXDDJGKZMVHVVLOREASTNORTHEASTEGNALDIFXECGUVJW  {'alphabet': 'KRYPTOS+IQLUSION+UNDERGRUUND+DESPARATLY+PALIMPCEST', 'variant': 'variant_beaufort', 'L1': 9, 'L2': 16}
+  24/24  q= -6.59  NYXYPULXCAVELCTPLECVBEASTNORTHEASTYPPFFMYFXDISKZPS  {'alphabet': 'AZ+IQLUSION', 'variant': 'variant_beaufort', 'L1': 9, 'L2': 16}
+  24/24  q= -6.59  NYXYPULXCAVELCTPLECVBEASTNORTHEASTYPPFFMYFXDISKZPS  {'alphabet': 'AZ+IQLUSION', 'variant': 'vigenere', 'L1': 9, 'L2': 16}
+  24/24  q= -6.61  JABKPAEDMEBYGWDZMAMRREASTNORTHEASTIFQQZCCJXNYYLTBG  {'alphabet': 'AZ+IQLUSION+DESPARATLY+PALIMPCEST', 'variant': 'vigenere', 'L1': 9, 'L2': 16}
+  24/24  q= -6.61  JABKPAEDMEBYGWDZMAMRREASTNORTHEASTIFQQZCCJXNYYLTBG  {'alphabet': 'AZ+IQLUSION+DESPARATLY+PALIMPCEST', 'variant': 'variant_beaufort', 'L1': 9, 'L2': 16}
+  24/24  q= -6.63  FVLYGEXLLJPKZMCHVCLUREASTNORTHEASTQWNALDIFXEJGOVJW  {'alphabet': 'KRYPTOS+IQLUSION+DESPARATLY+PALIMPCEST', 'variant': 'vigenere', 'L1': 9, 'L2': 16}
+  full crib passes: 0
+  saved -> results/2026-11-15T230133Z_k4_misspelling-alphabets-x-two-stacked-keys.json  (+1 line in ledger.csv)
+[27] (a) dead: 0 survivors; (b) dead: 98 determined decrypts, best -6.53 vs shuffled -6.48

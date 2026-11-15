@@ -1,0 +1,72 @@
+{
+ "name": "three layers: theme word + two keys",
+ "hypotheses": 88400,
+ "determined": 349,
+ "best_quadgram": -6.556644186532046,
+ "control": [
+  {
+   "determined": 355,
+   "best_q": -6.298
+  },
+  {
+   "determined": 352,
+   "best_q": -6.512
+  }
+ ],
+ "verdict": "dead: 349 fully determined decrypts, best -6.56 vs shuffled -6.298",
+ "minutes": 0.0,
+ "top": [
+  {
+   "q": -6.557,
+   "words": 0.31,
+   "word": "CHECKPOINTCHARLIE",
+   "sign": -1,
+   "alphabet": "AZ",
+   "L1": 9,
+   "L2": 16,
+   "plaintext": "FSKGKCHFTLEZPNQUAOXZUEASTNORTHEASTERPRQKRMAKYENLPJPSFIFXHSDYOTTBERLINCLOCKZHCTCRFKCMUVDVLMXIODATA"
+  },
+  {
+   "q": -6.557,
+   "words": 0.33,
+   "word": "LUCID",
+   "sign": 1,
+   "alphabet": "AZ",
+   "L1": 9,
+   "L2": 16,
+   "plaintext": "SYWYUXSCUSOLBFVIXHRVQEASTNORTHEASTDSRSBXBXNIYGWJPITERRUITYNWEMDBERLINCLOCKULNCAKEMSOGQGAIMAYIVKYY"
+  },
+  {
+   "q": -6.573,
+   "words": 0.26,
+   "word": "COMPASS",
+   "sign": 1,
+   "alphabet": "AZ",
+   "L1": 9,
+   "L2": 16,
+   "plaintext": "OKFJXOHBZSFOCONBYDZBBEASTNORTHEASTUZWTYOFTMYMUUGNSBLJNQSOQHLNMUBERLINCLOCKNPMFCBOOAUBBKIGHQELEFOP"
+  },
+  {
+   "q": -6.579,
+   "words": 0.33,
+   "word": "CAIRO",
+   "sign": -1,
+   "alphabet": "KRYPTOS",
+   "L1": 9,
+   "L2": 16,
+   "plaintext": "IPITJXSBWINEHOLKLTOKHEASTNORTHEASTKIBVHWYANDAUSSLCNNGDIJLDVGGZFBERLINCLOCKMWYECESBWZJBSJKHYHPOWHU"
+  },
+  {
+   "q": -6.587,
+   "words": 0.25,
+   "word": "INTERPRETATIT",
+   "sign": 1,
+   "alphabet": "AZ",
+   "L1": 9,
+   "L2": 16,
+   "plaintext": "HCOMUHBJACJMFXGDAAPHUEASTNORTHEASTTOLBXOWINLIXIWXGEEFMHBCGYJGETBERLINCLOCKACBLVBXVMHZDNNADRZIVWVS"
+  }
+ ],
+ "idea": "26",
+ "finished": "2026-11-15T23:01:24+00:00"
+}

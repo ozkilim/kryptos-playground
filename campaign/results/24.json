@@ -1,0 +1,35 @@
+{
+ "name": "Weltzeituhr 1989 keys",
+ "running_keys": 384,
+ "numeric_keys": 144,
+ "best_name_key": [
+  7,
+  "names dir-1 start-11 bottom",
+  152,
+  "reversed",
+  "vigenere",
+  "AZ"
+ ],
+ "best_utc_key": [
+  7,
+  "utc dir+1 start-11 top",
+  38,
+  "beaufort",
+  "AZ"
+ ],
+ "control": [
+  {
+   "names": 6,
+   "utc": 5
+  },
+  {
+   "names": 6,
+   "utc": 6
+  }
+ ],
+ "verdict": "dead: best city-name key 7/24 (shuffled 6), best UTC-offset key 7/24 (shuffled 6); 24/24 needed",
+ "data_caveat": "7/24 facets verified pre-1997; west side from 1970s readings; orientation undocumented",
+ "minutes": 0.3,
+ "idea": "24",
+ "finished": "2026-11-15T23:01:51+00:00"
+}

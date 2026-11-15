@@ -1,0 +1,13 @@
+
+[three-layers-theme-word+two-keys] tried 88,430 candidates on K4
+  24/24  q= -6.56  FSKGKCHFTLEZPNQUAOXZUEASTNORTHEASTERPRQKRMAKYENLPJ  {'word': 'CHECKPOINTCHARLIE', 'sign': -1, 'alphabet': 'AZ', 'L1': 9, 'L2': 16}
+  24/24  q= -6.56  SYWYUXSCUSOLBFVIXHRVQEASTNORTHEASTDSRSBXBXNIYGWJPI  {'word': 'LUCID', 'sign': 1, 'alphabet': 'AZ', 'L1': 9, 'L2': 16}
+  24/24  q= -6.57  OKFJXOHBZSFOCONBYDZBBEASTNORTHEASTUZWTYOFTMYMUUGNS  {'word': 'COMPASS', 'sign': 1, 'alphabet': 'AZ', 'L1': 9, 'L2': 16}
+  24/24  q= -6.58  IPITJXSBWINEHOLKLTOKHEASTNORTHEASTKIBVHWYANDAUSSLC  {'word': 'CAIRO', 'sign': -1, 'alphabet': 'KRYPTOS', 'L1': 9, 'L2': 16}
+  24/24  q= -6.59  HCOMUHBJACJMFXGDAAPHUEASTNORTHEASTTOLBXOWINLIXIWXG  {'word': 'INTERPRETATIT', 'sign': 1, 'alphabet': 'AZ', 'L1': 9, 'L2': 16}
+  24/24  q= -6.60  SKUTJFVXSMIOGMNBWHNVVEASTNORTHEASTFLGIKIRJOXNNDTBV  {'word': 'HOWARDCARTER', 'sign': -1, 'alphabet': 'KRYPTOS', 'L1': 9, 'L2': 16}
+  24/24  q= -6.61  YMKVMVONARSALJGAOCENDEASTNORTHEASTZNGOPQYBVJKSMFEG  {'word': 'ROSETTA', 'sign': -1, 'alphabet': 'KRYPTOS', 'L1': 9, 'L2': 16}
+  24/24  q= -6.61  UEAOJSGWGBJRLWBBTSTOHEASTNORTHEASTFBECLCGWGNRVDLBM  {'word': 'MENGENLEHREUHR', 'sign': 1, 'alphabet': 'AZ', 'L1': 9, 'L2': 16}
+  full crib passes: 0
+  saved -> results/2026-11-15T230124Z_k4_three-layers-theme-word+two-keys.json  (+1 line in ledger.csv)
+[26] dead: 349 fully determined decrypts, best -6.56 vs shuffled -6.298

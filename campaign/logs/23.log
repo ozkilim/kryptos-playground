@@ -1,0 +1,23 @@
+
+[two-stacked-keys+english-completion] tried 4,720 candidates on K4
+  24/24  q= -5.00  ZEACOUSEITNEGDEFFHQTHEASTNORTHEASTERNFSANARYMAYRES  {'alphabet': 'KRYPTOS', 'variant': 'vigenere', 'L1': 25, 'L2': 26, 'q': -4.998}
+  24/24  q= -5.07  USTONCETHANDATASIDTAREASTNORTHEASTATALLUDEMGBNSBBF  {'alphabet': 'KRYPTOS', 'variant': 'variant_beaufort', 'L1': 22, 'L2': 26, 'q': -5.069}
+  24/24  q= -5.07  EHACTIVENSTHESDESCLXEEASTNORTHEASTRACESTHERSUSCUPF  {'alphabet': 'AZ', 'variant': 'variant_beaufort', 'L1': 24, 'L2': 25, 'q': -5.074}
+  24/24  q= -5.09  MUTFORAMEPHARANASMUSSEASTNORTHEASTONERMEDIFXSOEVER  {'alphabet': 'KRYPTOS', 'variant': 'vigenere', 'L1': 24, 'L2': 25, 'q': -5.086}
+  24/24  q= -5.09  KYXZGPUHEALASTRRHTHEDEASTNORTHEASTORDOAPRESASLOWOR  {'alphabet': 'AZ', 'variant': 'variant_beaufort', 'L1': 25, 'L2': 26, 'q': -5.092}
+  24/24  q= -5.10  JDEFINERATTHEDISTHEATEASTNORTHEASTOJRTMELCPBUZQLET  {'alphabet': 'KRYPTOS', 'variant': 'beaufort', 'L1': 25, 'L2': 26, 'q': -5.096}
+  24/24  q= -5.10  GIVINGTHDEDRFFOREESCREASTNORTHEASTHONSTYJAFALOJTRT  {'alphabet': 'AZ', 'variant': 'beaufort', 'L1': 25, 'L2': 26, 'q': -5.103}
+  24/24  q= -5.10  WBDOESTJUCONALLFORTAMEASTNORTHEASTRRESTTRISEVERSLO  {'alphabet': 'KRYPTOS', 'variant': 'vigenere', 'L1': 24, 'L2': 26, 'q': -5.104}
+  full crib passes: 0
+  saved -> results/2026-11-15T230121Z_k4_two-stacked-keys+english-completion.json  (+1 line in ledger.csv)
+[23] dead where we have power: K4's best completion -5.00 vs shuffled -5.04; planted messages recovered (>=80/97 letters) at 66/120 pairs
+   {'alphabet': 'KRYPTOS', 'variant': 'vigenere', 'L1': 25, 'L2': 26, 'q': -4.998, 'free': 26, 'words': 0.48, 'planted_at_this_pair': (-5.382048925255836, 28)}
+     ZEACOUSEITNEGDEFFHQTHEASTNORTHEASTERNFSANARYMAYRESASSEENTSILSAMBERLINCLOCKOATEROBJJREVETOAGETONCO
+   {'alphabet': 'KRYPTOS', 'variant': 'variant_beaufort', 'L1': 22, 'L2': 26, 'q': -5.069, 'free': 23, 'words': 0.58, 'planted_at_this_pair': (-5.346073646026705, 42)}
+     USTONCETHANDATASIDTAREASTNORTHEASTATALLUDEMGBNSBBFESEMETHUCANPDBERLINCLOCKBUTIESSTSINAFULTNPREWIN
+   {'alphabet': 'AZ', 'variant': 'variant_beaufort', 'L1': 24, 'L2': 25, 'q': -5.074, 'free': 24, 'words': 0.52, 'planted_at_this_pair': (-5.070942403115453, 42)}
+     EHACTIVENSTHESDESCLXEEASTNORTHEASTRACESTHERSUSCUPFITDISTIUPTETOBERLINCLOCKTHEYANTDOEDFATAEEANEWSS
+   {'alphabet': 'KRYPTOS', 'variant': 'vigenere', 'L1': 24, 'L2': 25, 'q': -5.086, 'free': 24, 'words': 0.66, 'planted_at_this_pair': (-5.070942403115453, 42)}
+     MUTFORAMEPHARANASMUSSEASTNORTHEASTONERMEDIFXSOEVERRUJOMSCASESTYBERLINCLOCKITARINGDQICTISABOUNEGSP
+   {'alphabet': 'AZ', 'variant': 'variant_beaufort', 'L1': 25, 'L2': 26, 'q': -5.092, 'free': 26, 'words': 0.39, 'planted_at_this_pair': (-5.382048925255836, 28)}
+     KYXZGPUHEALASTRRHTHEDEASTNORTHEASTORDOAPRESASLOWORSINCIJVTELSTOBERLINCLOCKEYEORATESESOFONELEVTEOL

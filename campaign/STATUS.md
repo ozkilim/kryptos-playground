@@ -1,6 +1,6 @@
 # Campaign status
 
-Updated 2026-11-15 21:51 UTC. Rebuilt automatically by `campaign/run.py` after every idea.
+Updated 2026-11-15 23:02 UTC. Rebuilt automatically by `campaign/run.py` after every idea.
 
 | # | Idea | Status | Hypotheses | Survivors | Verdict | Minutes |
 |---|---|---|---|---|---|---|
@@ -19,6 +19,10 @@ Updated 2026-11-15 21:51 UTC. Rebuilt automatically by `campaign/run.py` after e
 | 20 | Quagmire I/II (one hidden alphabet) at every key length; undecidable lengths completed by annealing | done | - | - | dead: at every undecidable length K4's best completion scores like shuffled K4s | 5.4 |
 | 19 | Gromark / chain-addition keys with both alphabets hidden; survivors completed by annealing | done | 1,586,328 | 454 | dead: 454 primers survive the clues but their best English completion (-5.36) is no better than shuffled K4s (-5.506); planted Gromark texts reach -5.78..-4.30 through the same pipeline | 69.5 |
 | 22 | Fingerprint ranking again, with the new hidden-alphabet families | done | - | - | most K4-like: periodic Vigenere, period 6 exactly, A-Z (-5.62); periodic Vigenere, period 4 exactly, A-Z (-5.75); periodic Vigenere, period 10 exactly, A-Z (-5.78). Least: two periodic keys summed (7 + 11) (-8.01); running key (English text), A-Z (-8.73); running key (English text), KRYPTOS (-9.47). See campaign/FINGERPRINTS_22.md | 0.6 |
+| 23 | LAYER TWO: two stacked repeating keys, every length pair <=26, completed by annealing | done | - | - | disfavoured where we have power: at the 66/120 length pairs where planted two-key messages come back >=80/97 letters, 47/66 of them score above K4's best completion (-5.00); K4 never beats shuffled controls (-5.04). Open at the 54 long pairs where the annealer can't recover planted text | 52.0 |
+| 26 | Three layers: a theme word plus two unknown keys (fully clue-determined configs) | done | 88,400 | - | dead: 349 fully determined decrypts, best -6.56 vs shuffled -6.298 | 0.0 |
+| 27 | K1-K3 misspellings (L/Q, O/U, E/A, S/C) as alphabet swaps x key models and two stacked keys | done | 55,530 | - | (a) dead: 0 survivors; (b) dead: 98 determined decrypts, best -6.53 vs shuffled -6.48 | 0.0 |
+| 24 | World Clock (Weltzeituhr) as of 1989: city names, initials and UTC offsets as keys | done | - | - | dead: best city-name key 7/24 (shuffled 6), best UTC-offset key 7/24 (shuffled 6); 24/24 needed | 0.3 |
 
 Verdict key: **dead** = ruled out within the stated scope (each engine has a planted-answer test); **WORTH A LOOK** = beats shuffled-K4 controls, needs a human look.
 
@@ -148,4 +152,45 @@ Verdict key: **dead** = ruled out within the stated scope (each engine has a pla
 - **Script:** `attacks/18_fingerprint_ranking.py`  ·  log: `campaign/logs/22.log`
 - **Status:** done
 - **Verdict:** most K4-like: periodic Vigenere, period 6 exactly, A-Z (-5.62); periodic Vigenere, period 4 exactly, A-Z (-5.75); periodic Vigenere, period 10 exactly, A-Z (-5.78). Least: two periodic keys summed (7 + 11) (-8.01); running key (English text), A-Z (-8.73); running key (English text), KRYPTOS (-9.47). See campaign/FINGERPRINTS_22.md
+
+### 23. LAYER TWO: two stacked repeating keys, every length pair <=26, completed by annealing
+
+- **Why:** Stacked keys (PK3/PK8 style, K2's 'LAYER TWO') give a key that never repeats inside 97 letters on a plain alphabet. The undecidable pairs were never completed.
+- **Script:** `attacks/23_two_stacked_keys.py`  ·  log: `campaign/logs/23.log`
+- **Status:** done
+- **Verdict:** disfavoured where we have power: at the 66/120 length pairs where planted two-key messages come back >=80/97 letters, 47/66 of them score above K4's best completion (-5.00); K4 never beats shuffled controls (-5.04). Open at the 54 long pairs where the annealer can't recover planted text
+- best_quadgram: `-4.998296407620908`
+  - top: `{"alphabet": "KRYPTOS", "variant": "vigenere", "L1": 25, "L2": 26, "q": -4.998, "free": 26, "words": 0.48, "plaintext": "ZEACOUSEITNEGDEFFHQTHEASTNORTHEASTERNFSANARYMAYRESASSEENTSILSAMBERLINCLOCKOATER`
+  - top: `{"alphabet": "KRYPTOS", "variant": "variant_beaufort", "L1": 22, "L2": 26, "q": -5.069, "free": 23, "words": 0.58, "plaintext": "USTONCETHANDATASIDTAREASTNORTHEASTATALLUDEMGBNSBBFESEMETHUCANPDBERLINCL`
+  - top: `{"alphabet": "AZ", "variant": "variant_beaufort", "L1": 24, "L2": 25, "q": -5.074, "free": 24, "words": 0.52, "plaintext": "EHACTIVENSTHESDESCLXEEASTNORTHEASTRACESTHERSUSCUPFITDISTIUPTETOBERLINCLOCKTH`
+
+### 26. Three layers: a theme word plus two unknown keys (fully clue-determined configs)
+
+- **Why:** PK8 stacked four keys; with one layer a known theme word the rest is exactly solvable.
+- **Script:** `attacks/26_three_layers_theme_word.py`  ·  log: `campaign/logs/26.log`
+- **Status:** done
+- **Verdict:** dead: 349 fully determined decrypts, best -6.56 vs shuffled -6.298
+- control: `[{"determined": 355, "best_q": -6.298}, {"determined": 352, "best_q": -6.512}]`
+- best_quadgram: `-6.556644186532046`
+  - top: `{"q": -6.557, "words": 0.31, "word": "CHECKPOINTCHARLIE", "sign": -1, "alphabet": "AZ", "L1": 9, "L2": 16, "plaintext": "FSKGKCHFTLEZPNQUAOXZUEASTNORTHEASTERPRQKRMAKYENLPJPSFIFXHSDYOTTBERLINCLOCKZHCTC`
+  - top: `{"q": -6.557, "words": 0.33, "word": "LUCID", "sign": 1, "alphabet": "AZ", "L1": 9, "L2": 16, "plaintext": "SYWYUXSCUSOLBFVIXHRVQEASTNORTHEASTDSRSBXBXNIYGWJPITERRUITYNWEMDBERLINCLOCKULNCAKEMSOGQGAIMAY`
+  - top: `{"q": -6.573, "words": 0.26, "word": "COMPASS", "sign": 1, "alphabet": "AZ", "L1": 9, "L2": 16, "plaintext": "OKFJXOHBZSFOCONBYDZBBEASTNORTHEASTUZWTYOFTMYMUUGNSBLJNQSOQHLNMUBERLINCLOCKNPMFCBOOAUBBKIGH`
+
+### 27. K1-K3 misspellings (L/Q, O/U, E/A, S/C) as alphabet swaps x key models and two stacked keys
+
+- **Why:** Sanborn: K1-K3 answers hold clues and the misspellings are deliberate; as alphabet swaps they give the near-plain alphabets our fingerprint favours. Untested in this form.
+- **Script:** `attacks/27_misspelling_alphabets.py`  ·  log: `campaign/logs/27.log`
+- **Status:** done
+- **Verdict:** (a) dead: 0 survivors; (b) dead: 98 determined decrypts, best -6.53 vs shuffled -6.48
+  - top: `{"q": -6.528, "words": 0.29, "alphabet": "KRYPTOS+UNDERGRUUND+DESPARATLY+PALIMPCEST", "variant": "beaufort", "L1": 9, "L2": 16, "plaintext": "PZSQBCANGRTOXKERERNFHEASTNORTHEASTTVCHCNPICNTZQDGOLDREGLYJ`
+  - top: `{"q": -6.56, "words": 0.26, "alphabet": "KRYPTOS+IQLUSION+UNDERGRUUND+DESPARATLY+PALIMPCEST", "variant": "vigenere", "L1": 9, "L2": 16, "plaintext": "YVLYWWXDDJGKZMVHVVLOREASTNORTHEASTEGNALDIFXECGUVJW`
+  - top: `{"q": -6.56, "words": 0.26, "alphabet": "KRYPTOS+IQLUSION+UNDERGRUUND+DESPARATLY+PALIMPCEST", "variant": "variant_beaufort", "L1": 9, "L2": 16, "plaintext": "YVLYWWXDDJGKZMVHVVLOREASTNORTHEASTEGNALDIF`
+
+### 24. World Clock (Weltzeituhr) as of 1989: city names, initials and UTC offsets as keys
+
+- **Why:** Sanborn (2025): BERLINCLOCK = the World Clock at Alexanderplatz and the 1989 Wall fall matters. Everyone used the post-1997 plates; we reconstructed the 1989 ones from dated photos.
+- **Script:** `attacks/24_weltzeituhr_1989.py`  ·  log: `campaign/logs/24.log`
+- **Status:** done
+- **Verdict:** dead: best city-name key 7/24 (shuffled 6), best UTC-offset key 7/24 (shuffled 6); 24/24 needed
+- control: `[{"names": 6, "utc": 5}, {"names": 6, "utc": 6}]`
 

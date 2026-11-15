@@ -1,0 +1,24 @@
+{
+ "name": "misspelling alphabets x periodic/progressive/autokey/shift",
+ "hypotheses": 32130,
+ "survivors": 0,
+ "control": [
+  {
+   "hypotheses": 32130,
+   "survivors": 0
+  },
+  {
+   "hypotheses": 32130,
+   "survivors": 0
+  }
+ ],
+ "k4_rate": 0.0,
+ "control_rate": 0.0,
+ "best_quadgram": null,
+ "top": [],
+ "verdict": "dead: 0 survivors",
+ "minutes": 0.0,
+ "notes": "30 alphabets = A-Z/KRYPTOS with the K1-K3 misspelling swaps (L/Q, O/U, E/A, S/C); no transposition; periodic<=26, progressive, ct/pt autokey<=60, shifts",
+ "idea": "27a",
+ "finished": "2026-11-15T23:01:31+00:00"
+}

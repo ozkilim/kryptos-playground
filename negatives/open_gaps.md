@@ -72,3 +72,9 @@ See `campaign/SUMMARY_2.md`. Each result reports what a planted real answer woul
 - **Gromark with both alphabets hidden**: 1.6M primers, 454 survive the clues (39 five-digit, matching Bean). Best English completion -5.36 vs shuffled -5.51/-5.63; planted Gromark texts land -5.78..-4.30. Weakly disfavoured (about 50% detection power), not ruled out.
 - **Fingerprint**: hidden-alphabet families rank in the bottom half; K4's statistics favour a plain or near-plain alphabet with a structured key.
 - **Known blind spots of our tools**: hidden-alphabet keys of length 23+, stacked keys (PK3: right length found, not exact), Hill 3x3 (PK7 not recovered).
+
+## Campaign 3 (2026-11-15, this repo; see campaign/SUMMARY_3.md)
+- **Two stacked repeating keys (LAYER TWO), lengths <=26, A-Z/KRYPTOS**: disfavoured where the annealer has power (66/120 pairs; 47/66 planted beat K4's best). **Still open at the 54 long pairs** (e.g. 22+26, 24+25, 25+26), where the clues leave ~20+ free key letters. Best next step: more ciphertext (K5) or a stronger English model.
+- **Three layers with a theme word**: dead where fully clue-determined (349 decrypts at noise level).
+- **K1-K3 misspellings as alphabet swaps**: dead (single-layer key models exact; two-key determined configs at noise).
+- **1989 World Clock keys** (names, initials, UTC offsets, every facet/direction): dead at chance. Data still incomplete for the west side and the lower plates of +7..+12.
