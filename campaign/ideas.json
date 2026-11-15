@@ -1,22 +1,79 @@
 [
- {"id": "16", "title": "Statistics: are Stehle's DIAWINFBN run and the mod-7 doublets real?", "script": "attacks/16_statistics.py", "est_min": 5,
-  "why": "Two famous K4 oddities nobody has put a corrected p-value on. Cheap; tells us whether to chase 4- or 7-spaced structure."},
- {"id": "15", "title": "Sanborn's 2025 hints as keywords everywhere (Quagmire I-IV + theme-keyword columnar x all key models)", "script": "attacks/15_sanborn_2025_hints.py", "est_min": 10,
-  "why": "Newest clues (Egypt 1986, Berlin Wall, delivering a message, World Clock) are barely mined."},
- {"id": "11", "title": "Decimation (97 is prime), grid routes, K3 rotations x every key model", "script": "attacks/11_routes_decimation_rotation.py", "est_min": 10,
-  "why": "Others tried these scrambles with repeating keys only; progressive, autokey and digit keys behind them are untested."},
- {"id": "12", "title": "Myszkowski from ~190k dictionary words x every key model", "script": "attacks/12_myszkowski.py", "est_min": 30,
-  "why": "Myszkowski was only covered at widths 3-9 with a periodic key."},
- {"id": "08", "title": "Columnar (every order, widths 2-11) + digit / small-shift key", "script": "attacks/08_columnar_digit_keys.py", "est_min": 60,
-  "why": "Digit keys are dead alone but untested behind a transposition; fits Bean's 'letters sit close' finding."},
- {"id": "17", "title": "Double columnar (widths 2-6 x 2-6) x progressive / autokey / digit keys", "script": "attacks/17_double_columnar_new_keys.py", "est_min": 40,
-  "why": "Attack 07 did double columnar with periodic keys only."},
- {"id": "10", "title": "Columnar (every order, widths 2-10) + autokey (ciphertext or plaintext feeds the key)", "script": "attacks/10_columnar_autokey.py", "est_min": 60,
-  "why": "Autokey alone is dead; stacked behind a transposition it is untested."},
- {"id": "09", "title": "Columnar (every order, widths 2-10) + progressive key", "script": "attacks/09_columnar_progressive.py", "est_min": 75,
-  "why": "Progressive alone is dead; stacked it is untested."},
- {"id": "14", "title": "Keyword alphabets at key lengths 14-26, forced plaintext scored for English", "script": "attacks/14_keyword_alphabets_long_periods.py", "est_min": 40,
-  "why": "Clue letters can't decide these lengths (open gap); English scoring against shuffled K4 can."},
- {"id": "13", "title": "Double columnar width 8 x widths 2-6 + periodic key", "script": "attacks/13_double_columnar_width8.py", "est_min": 120,
-  "why": "Pushes attack 07 one width further."}
+ {
+  "id": "16",
+  "title": "Statistics: are Stehle's DIAWINFBN run and the mod-7 doublets real?",
+  "script": "attacks/16_statistics.py",
+  "est_min": 5,
+  "why": "Two famous K4 oddities nobody has put a corrected p-value on. Cheap; tells us whether to chase 4- or 7-spaced structure."
+ },
+ {
+  "id": "15",
+  "title": "Sanborn's 2025 hints as keywords everywhere (Quagmire I-IV + theme-keyword columnar x all key models)",
+  "script": "attacks/15_sanborn_2025_hints.py",
+  "est_min": 10,
+  "why": "Newest clues (Egypt 1986, Berlin Wall, delivering a message, World Clock) are barely mined."
+ },
+ {
+  "id": "11",
+  "title": "Decimation (97 is prime), grid routes, K3 rotations x every key model",
+  "script": "attacks/11_routes_decimation_rotation.py",
+  "est_min": 10,
+  "why": "Others tried these scrambles with repeating keys only; progressive, autokey and digit keys behind them are untested."
+ },
+ {
+  "id": "12",
+  "title": "Myszkowski from ~190k dictionary words x every key model",
+  "script": "attacks/12_myszkowski.py",
+  "est_min": 30,
+  "why": "Myszkowski was only covered at widths 3-9 with a periodic key."
+ },
+ {
+  "id": "08",
+  "title": "Columnar (every order, widths 2-11) + digit / small-shift key",
+  "script": "attacks/08_columnar_digit_keys.py",
+  "est_min": 60,
+  "why": "Digit keys are dead alone but untested behind a transposition; fits Bean's 'letters sit close' finding."
+ },
+ {
+  "id": "17",
+  "title": "Double columnar (widths 2-6 x 2-6) x progressive / autokey / digit keys",
+  "script": "attacks/17_double_columnar_new_keys.py",
+  "est_min": 40,
+  "why": "Attack 07 did double columnar with periodic keys only."
+ },
+ {
+  "id": "10",
+  "title": "Columnar (every order, widths 2-10) + autokey (ciphertext or plaintext feeds the key)",
+  "script": "attacks/10_columnar_autokey.py",
+  "est_min": 60,
+  "why": "Autokey alone is dead; stacked behind a transposition it is untested."
+ },
+ {
+  "id": "09",
+  "title": "Columnar (every order, widths 2-10) + progressive key",
+  "script": "attacks/09_columnar_progressive.py",
+  "est_min": 75,
+  "why": "Progressive alone is dead; stacked it is untested."
+ },
+ {
+  "id": "14",
+  "title": "Keyword alphabets at key lengths 14-26, forced plaintext scored for English",
+  "script": "attacks/14_keyword_alphabets_long_periods.py",
+  "est_min": 40,
+  "why": "Clue letters can't decide these lengths (open gap); English scoring against shuffled K4 can."
+ },
+ {
+  "id": "13",
+  "title": "Double columnar width 8 x widths 2-6 + periodic key",
+  "script": "attacks/13_double_columnar_width8.py",
+  "est_min": 120,
+  "why": "Pushes attack 07 one width further."
+ },
+ {
+  "id": "18",
+  "title": "Fingerprint ranking: which cipher families produce K4-like statistics?",
+  "script": "attacks/18_fingerprint_ranking.py",
+  "est_min": 15,
+  "why": "No key search. Ranks ~30 families by how often their output shows K4's oddities (flat IoC, lag-4 run, mod-7 doublets, width-21 repeats, close letters), as a soft prior for where to search next."
+ }
 ]
