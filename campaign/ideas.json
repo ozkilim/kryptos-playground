@@ -121,5 +121,12 @@
   "script": "attacks/26_three_layers_theme_word.py",
   "est_min": 15,
   "why": "PK8 stacked four keys; with one layer a known theme word the rest is exactly solvable."
+ },
+ {
+  "id": "27",
+  "title": "K1-K3 misspellings (L/Q, O/U, E/A, S/C) as alphabet swaps x key models and two stacked keys",
+  "script": "attacks/27_misspelling_alphabets.py",
+  "est_min": 20,
+  "why": "Sanborn: K1-K3 answers hold clues and the misspellings are deliberate; as alphabet swaps they give the near-plain alphabets our fingerprint favours. Untested in this form."
  }
 ]
