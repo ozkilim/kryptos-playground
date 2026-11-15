@@ -104,6 +104,12 @@ class Experiment:
             if new:
                 w.writeheader()
             w.writerow(row)
+        if self.puzzle == "k4" and self.ledger == LEDGER:
+            try:  # keep negatives/NEGATIVES.md in step with the ledger
+                from . import negatives
+                negatives.build()
+            except Exception as e:  # never lose an experiment over the summary file
+                print(f"(couldn't rebuild negatives/NEGATIVES.md: {e})")
         if not self.quiet:
             self.print_summary(out)
 

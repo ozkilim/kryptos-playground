@@ -7,6 +7,7 @@
   python -m kryptos cribkeys                     key letters K4's cribs imply
   python -m kryptos check <PLAINTEXT>            free K4 internal check
   python -m kryptos ledger                       what's been tried (experiments/ledger.csv)
+  python -m kryptos negatives [search TERM]      everything known NOT to work (rebuilds negatives/NEGATIVES.md)
 
   python -m kryptos submit <id> <PLAINTEXT> [--method "..."]   log + open the official page
   python -m kryptos result <id> <PLAINTEXT> wrong|CORRECT      record what the site said
@@ -91,6 +92,22 @@ def cmd_ledger(a):
               f"cribs={r['best_cribs'] or '-':>2} q={r['best_score']:>7}  {r['best_plaintext'][:24]}")
 
 
+def cmd_negatives(a):
+    from . import negatives as neg
+    if a.action == "search":
+        hits = neg.search(" ".join(a.terms))
+        print(f"{len(hits)} matching negatives for {' '.join(a.terms)!r}\n")
+        for r in hits:
+            print(f"  [{r['confidence']}] {r['hypothesis']}\n      {r['outcome']}\n      {r['source']}")
+        return
+    if a.action == "add":
+        eid = neg.add({k: getattr(a, k) or "" for k in
+                       ("family", "hypothesis", "scope", "who", "when", "outcome", "confidence", "source")})
+        print(f"added {eid}")
+    out, n_comm, n_ours = neg.build()
+    print(f"{out.relative_to(neg.ROOT)}: {n_comm} community entries + {n_ours} of our runs")
+
+
 def main():
     ap = argparse.ArgumentParser(prog="kryptos", description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -104,6 +121,11 @@ def main():
     sub.add_parser("cribkeys")
     k = sub.add_parser("check"); k.add_argument("plaintext")
     l = sub.add_parser("ledger"); l.add_argument("-n", type=int, default=20)
+    ng = sub.add_parser("negatives")
+    ng.add_argument("action", nargs="?", default="build", choices=["build", "search", "add"])
+    ng.add_argument("terms", nargs="*")
+    for f in ("family", "hypothesis", "scope", "who", "when", "outcome", "confidence", "source"):
+        ng.add_argument(f"--{f}")
     m = sub.add_parser("submit"); m.add_argument("id"); m.add_argument("plaintext")
     m.add_argument("--method", default=""); m.add_argument("--no-browser", action="store_true")
     m.add_argument("--force", action="store_true")
@@ -116,6 +138,7 @@ def main():
         "cribkeys": lambda _: print(crib_key_table()),
         "check": lambda a: print(crib_report(a.plaintext)),
         "ledger": cmd_ledger,
+        "negatives": cmd_negatives,
         "submit": lambda a: external.prepare(a.plaintext, a.id, a.method,
                                              open_browser=not a.no_browser, force=a.force),
         "result": lambda a: external.record_result(a.plaintext, a.result, a.id),

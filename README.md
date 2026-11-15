@@ -48,6 +48,7 @@ python -m kryptos crack pk1            # run the automatic solvers on any puzzle
 python -m kryptos cribkeys             # key letters K4's clues imply under Vigenère/Beaufort
 python -m kryptos check "YOUR97LETTERS..."   # free internal check for a K4 guess
 python -m kryptos ledger               # what's been tried so far
+python -m kryptos negatives search hill   # is this idea already dead? (169 sourced negatives + ours)
 make test                              # everything still works
 ```
 
@@ -71,9 +72,22 @@ solved/k1.py k2.py k3.py  reproduce each solved section, with the key and blind
 attacks/                  K4 attacks, one file per hypothesis (copy 00_template.py)
 experiments/ledger.csv    one line per attack run (committed)
 results/                  full candidate dumps (gitignored)
-docs/                     k4-facts, k1-k3 walkthrough, ctf status, dead-ends
+negatives/                the growing what-K4-is-NOT database (community.jsonl -> NEGATIVES.md)
+docs/                     k4-facts, k1-k3 walkthrough, ctf status
 tests/                    pytest or plain `python tests/test_x.py`
 ```
+
+## The negatives file (read before trying an idea)
+
+[`negatives/NEGATIVES.md`](negatives/NEGATIVES.md) is one big, growing context file of what K4 is **not**:
+
+* **169 community negatives** gathered from public GitHub elimination ledgers (keithadler, gereon, Barneyjm and others), Richard Bean's 2021 paper, blogs, Elonka's FAQ and news. Each one has its scope, who and when, the outcome, a source, and a confidence level.
+* **Sanborn and Scheidt's own constraints**, for example "Who says it is even a math solution?" and that K5 shares coded words with K4 at the same positions.
+* **Rejected claimed solutions**, including the AI wave and the back-solved keys.
+* **Every one of our null K4 runs**, added automatically whenever an experiment finishes.
+* **Open gaps**: what's still untested or can't be decided from the 24 clue letters. Aim new ideas here.
+
+To add a negative: `python -m kryptos negatives add --family ... --hypothesis ... --outcome ... --confidence ... --source ...` (see [`negatives/README.md`](negatives/README.md)). The research behind the seed list is in [`reports/`](reports/) and [`research_notes/`](research_notes/).
 
 ## Writing an attack
 
@@ -97,7 +111,7 @@ Examples in the repo:
 * `04_running_key.py`: the key is a long text (K1–K3, the sculpture itself, or anything in `data/texts/`) from every starting point.
 * `05_keyword_alphabets.py`: Quagmire I/II/III, a repeating key on an alphabet scrambled by any dictionary word. 8 million hypotheses in about 20 seconds.
 
-All five come back empty on K4 so far; see `docs/dead-ends.md`. `kryptos/cribtools.py` holds the shared "test it with only the 24 clue letters" helpers.
+All five come back empty on K4 so far; see `negatives/NEGATIVES.md`. `kryptos/cribtools.py` holds the shared "test it with only the 24 clue letters" helpers.
 
 ## Checking on the website
 
@@ -120,6 +134,6 @@ Your guesses are logged to `submissions.csv`, which is gitignored and stays priv
 * Add those cipher families to `kryptos/ciphers/` and their blind solvers to `kryptos/solvers/`, then test on the PKs before pointing them at K4.
 * Extend attack 02 to wider transpositions (hill-climb the column order) and to K3-style rotations. 97 is prime, so K4 doesn't fit a clean rectangle; try padding or irregular grids.
 * Build a sharper English model: run `python tools/build_ngrams.py books/*.txt` on a few public-domain novels.
-* Bring in the community's known dead ends (`docs/dead-ends.md`).
+* Pick targets from the open gaps at the bottom of `negatives/NEGATIVES.md`.
 
 Background: [docs/k4-facts.md](docs/k4-facts.md), [docs/k1-k3.md](docs/k1-k3.md), [docs/ctf.md](docs/ctf.md).
