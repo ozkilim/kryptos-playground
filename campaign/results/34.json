@@ -1,0 +1,25 @@
+{
+ "name": "Baudot/Vernam teleprinter cipher",
+ "survivors": 0,
+ "hits": [],
+ "best_running": [
+  5,
+  "K1+K2+K3 ciphertext",
+  "rev",
+  309
+ ],
+ "control": [
+  {
+   "hits": 0,
+   "best_running": 4
+  },
+  {
+   "hits": 0,
+   "best_running": 5
+  }
+ ],
+ "verdict": "dead: no teleprinter key model fits all clue letters; best running key 5/24 (shuffled 5)",
+ "minutes": 0.0,
+ "idea": "34",
+ "finished": "2026-11-15T23:37:51+00:00"
+}

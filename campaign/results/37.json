@@ -1,0 +1,53 @@
+{
+ "name": "Egypt-era alphabets",
+ "alphabets": {
+  "hieroglyph uniliterals": "AIYWBPFMNRHSQKGTDCEJLOUVXZ",
+  "hieroglyph uniliterals reversed": "ZXVUOLJECDTGKQSHRNMFPBWYIA",
+  "greek": "ABGDEZHIKLMNXOPRSTYFCJQUVW",
+  "greek reversed": "WVUQJCFYTSRPOXNMLKIHZEDGBA",
+  "coptic": "ABGDEZHIKLMNXOPRSTUFCJQVWY",
+  "coptic reversed": "YWVQJCFUTSRPOXNMLKIHZEDGBA",
+  "phoenician/hebrew": "ABGDHWZYKLMNSOPQRTCEFIJUVX",
+  "phoenician/hebrew reversed": "XVUJIFECTRQPOSNMLKYZWHDGBA",
+  "arabic abjad": "ABJDHWZYKLMNSOFQRTCEGIPUVX",
+  "arabic abjad reversed": "XVUPIGECTRQFOSNMLKYZWHDJBA",
+  "arabic hijai": "ABTJDRZSFQKLMNHWYCEGIOPUVX",
+  "arabic hijai reversed": "XVUPOIGECYWHNMLKQFSZRDJTBA"
+ },
+ "single_layer": {
+  "name": "Egypt-era alphabets x periodic/progressive/autokey/shift",
+  "hypotheses": 12852,
+  "survivors": 0,
+  "control": [
+   {
+    "hypotheses": 12852,
+    "survivors": 0
+   },
+   {
+    "hypotheses": 12852,
+    "survivors": 0
+   }
+  ],
+  "k4_rate": 0.0,
+  "control_rate": 0.0,
+  "best_quadgram": null,
+  "top": [],
+  "verdict": "dead: 0 survivors",
+  "minutes": 0.0,
+  "notes": "12 alphabets (hieroglyph, Coptic, Greek, Phoenician/Hebrew, Arabic abjad/hijai orders, +reversed); no transposition",
+  "idea": "37a",
+  "finished": "2026-11-15T23:43:39+00:00"
+ },
+ "quagmire_hits": [],
+ "quagmire_controls": [
+  0,
+  0
+ ],
+ "twokey_best": -6.690318302600076,
+ "twokey_control_best": -6.509929222425526,
+ "verdict": "(a) dead: 0 survivors; (b) dead: Quagmire: 0 consistent (shuffled [0, 0]); two-key: 40 pinned decrypts, best -6.69 vs shuffled -6.51",
+ "hypotheses": 23044,
+ "minutes": 0.0,
+ "idea": "37",
+ "finished": "2026-11-15T23:43:40+00:00"
+}

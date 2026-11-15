@@ -1,0 +1,18 @@
+
+[Egypt-era alphabets x periodic/progressive/autokey/shift] tried 12,852 candidates on K4
+  full crib passes: 0
+  saved -> results/2026-11-15T234339Z_k4_Egypt-era-alphabets-x-periodic-progressive-autokey-shift.json  (+1 line in ledger.csv)
+[37a] Egypt-era alphabets x periodic/progressive/autokey/shift: 12,852 hypotheses, 0 survivors (controls [0, 0]), best q=None -> dead: 0 survivors
+
+[Egypt-era alphabets: Quagmire I-IV + two stacked keys] tried 19,572 candidates on K4
+  24/24  q= -6.69  OQYZWKYWNANZBYSIEHGLSEASTNORTHEASTCAOQKSWXZPLPKZYJ  {'alphabet': 'arabic hijai reversed', 'variant': 'vigenere', 'L1': 11, 'L2': 13}
+  24/24  q= -6.69  OQYZWKYWNANZBYSIEHGLSEASTNORTHEASTCAOQKSWXZPLPKZYJ  {'alphabet': 'arabic hijai reversed', 'variant': 'variant_beaufort', 'L1': 11, 'L2': 13}
+  24/24  q= -6.69  OQYZWKYWNANZBYSIEHGLSEASTNORTHEASTCAOQKSWXZPLPKZYJ  {'alphabet': 'arabic hijai', 'variant': 'vigenere', 'L1': 11, 'L2': 13}
+  24/24  q= -6.69  OQYZWKYWNANZBYSIEHGLSEASTNORTHEASTCAOQKSWXZPLPKZYJ  {'alphabet': 'arabic hijai', 'variant': 'variant_beaufort', 'L1': 11, 'L2': 13}
+  24/24  q= -6.69  IQNQQJJRMANBNXSUKSJRNEASTNORTHEASTDCYWMIUUJOORPICT  {'alphabet': 'hieroglyph uniliterals', 'variant': 'vigenere', 'L1': 9, 'L2': 16}
+  24/24  q= -6.69  IQNQQJJRMANBNXSUKSJRNEASTNORTHEASTDCYWMIUUJOORPICT  {'alphabet': 'hieroglyph uniliterals', 'variant': 'variant_beaufort', 'L1': 9, 'L2': 16}
+  24/24  q= -6.69  IQNQQJJRMANBNXSUKSJRNEASTNORTHEASTDCYWMIUUJOORPICT  {'alphabet': 'hieroglyph uniliterals reversed', 'variant': 'vigenere', 'L1': 9, 'L2': 16}
+  24/24  q= -6.69  IQNQQJJRMANBNXSUKSJRNEASTNORTHEASTDCYWMIUUJOORPICT  {'alphabet': 'hieroglyph uniliterals reversed', 'variant': 'variant_beaufort', 'L1': 9, 'L2': 16}
+  full crib passes: 0
+  saved -> results/2026-11-15T234340Z_k4_Egypt-era-alphabets--Quagmire-I-IV-+-two-stacked-keys.json  (+1 line in ledger.csv)
+[37] (a) dead: 0 survivors; (b) dead: Quagmire: 0 consistent (shuffled [0, 0]); two-key: 40 pinned decrypts, best -6.69 vs shuffled -6.51

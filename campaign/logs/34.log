@@ -1,0 +1,5 @@
+
+[baudot-vernam (ITA2 XOR) key models] tried 569,716 candidates on K4
+  full crib passes: 0
+  saved -> results/2026-11-15T233751Z_k4_baudot-vernam--ITA2-XOR--key-models.json  (+1 line in ledger.csv)
+[34] dead: no teleprinter key model fits all clue letters; best running key 5/24 (shuffled 5)

@@ -1,0 +1,14 @@
+{
+ "name": "self-masking",
+ "hypotheses": 670416,
+ "survivors": 0,
+ "control": [
+  0,
+  0
+ ],
+ "verdict": "dead: no scrambled self-key fits all clue letters (shuffled controls also 0)",
+ "top": [],
+ "minutes": 0.0,
+ "idea": "33",
+ "finished": "2026-11-15T23:37:49+00:00"
+}

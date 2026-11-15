@@ -122,7 +122,9 @@ All seven come back empty on K4 so far; see `negatives/NEGATIVES.md`.
 
 **Campaign 3** (attacks 23–27) used the clues directly: K2's "LAYER TWO" as stacked keys, K1–K3's misspellings as alphabet swaps, and the World Clock as it stood in 1989, reconstructed from dated photos in [`data/weltzeituhr_1989.json`](data/weltzeituhr_1989.json). See [`campaign/SUMMARY_3.md`](campaign/SUMMARY_3.md).
 
-**Campaign 4** (attacks 28–31) tried a neural cipher-family detective, a local LLM as English judge and plaintext generator, visual letter transforms (semaphore and Morse), and compass-bearing keys across the exact carved layout ([`data/sculpture_layout.json`](data/sculpture_layout.json)). See [`campaign/SUMMARY_4.md`](campaign/SUMMARY_4.md). `kryptos/cribtools.py` holds the shared "test it with only the 24 clue letters" helpers.
+**Campaign 4** (attacks 28–31) tried a neural cipher-family detective, a local LLM as English judge and plaintext generator, visual letter transforms (semaphore and Morse), and compass-bearing keys across the exact carved layout ([`data/sculpture_layout.json`](data/sculpture_layout.json)). See [`campaign/SUMMARY_4.md`](campaign/SUMMARY_4.md).
+
+**Campaign 5** (attacks 32–37) followed specific evidence: key-shape forensics, self-masking, Baudot/Vernam and Lorenz teleprinter ciphers (K2's "transmitted underground"), paper strips, and Egypt-era alphabets. All dead. See [`campaign/SUMMARY_5.md`](campaign/SUMMARY_5.md). `kryptos/cribtools.py` holds the shared "test it with only the 24 clue letters" helpers.
 
 ## Checking on the website
 

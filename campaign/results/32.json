@@ -1,0 +1,26 @@
+{
+ "name": "key-shape forensics",
+ "diff_best": [
+  0.10119047619047619,
+  [
+   "AZ",
+   4,
+   28
+  ]
+ ],
+ "p_diff": 0.15559222038898055,
+ "p_period7": 0.20815836832633472,
+ "dial_max_step": {
+  "AZ vigenere": 13,
+  "AZ beaufort": 12,
+  "AZ variant_beaufort": 13,
+  "KRYPTOS vigenere": 13,
+  "KRYPTOS beaufort": 13,
+  "KRYPTOS variant_beaufort": 13
+ },
+ "dial_control_median": 12,
+ "verdict": "difference-stream periodicity: best ('AZ', 4, 28) IoC 0.1012, p=0.156 vs shuffled (look-elsewhere corrected); at period 7 specifically p=0.208. Dial keys: the clues need a max step of 12 even in the smoothest cipher type (shuffled K4s: median 12), so a slowly turning dial key is ruled out",
+ "minutes": 2.4,
+ "idea": "32",
+ "finished": "2026-11-15T23:37:48+00:00"
+}

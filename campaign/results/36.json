@@ -1,0 +1,30 @@
+{
+ "name": "Lorenz-style wheels",
+ "allowed_lengths_per_bit": [
+  [],
+  [],
+  [],
+  [],
+  []
+ ],
+ "combos": 1,
+ "decrypts": 0,
+ "best_quadgram": null,
+ "control": [
+  {
+   "combos": 1,
+   "decrypts": 0,
+   "best_q": null
+  },
+  {
+   "combos": 1,
+   "decrypts": 0,
+   "best_q": null
+  }
+ ],
+ "verdict": "dead: no fully pinned 5-wheel combination decrypts to letters (allowed lengths per bit: [0, 0, 0, 0, 0])",
+ "minutes": 0.0,
+ "top": [],
+ "idea": "36",
+ "finished": "2026-11-15T23:37:51+00:00"
+}

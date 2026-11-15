@@ -1,0 +1,5 @@
+
+[self-masking (keyed by own scrambled text)] tried 670,416 candidates on K4
+  full crib passes: 0
+  saved -> results/2026-11-15T233749Z_k4_self-masking--keyed-by-own-scrambled-text-.json  (+1 line in ledger.csv)
+[33] dead: no scrambled self-key fits all clue letters (shuffled controls also 0)

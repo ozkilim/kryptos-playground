@@ -1,0 +1,24 @@
+{
+ "name": "Egypt-era alphabets x periodic/progressive/autokey/shift",
+ "hypotheses": 12852,
+ "survivors": 0,
+ "control": [
+  {
+   "hypotheses": 12852,
+   "survivors": 0
+  },
+  {
+   "hypotheses": 12852,
+   "survivors": 0
+  }
+ ],
+ "k4_rate": 0.0,
+ "control_rate": 0.0,
+ "best_quadgram": null,
+ "top": [],
+ "verdict": "dead: 0 survivors",
+ "minutes": 0.0,
+ "notes": "12 alphabets (hieroglyph, Coptic, Greek, Phoenician/Hebrew, Arabic abjad/hijai orders, +reversed); no transposition",
+ "idea": "37a",
+ "finished": "2026-11-15T23:43:39+00:00"
+}

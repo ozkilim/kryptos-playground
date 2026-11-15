@@ -1,0 +1,20 @@
+{
+ "name": "paper strips (carved rows, equal widths) x all key models",
+ "hypotheses": 691748964,
+ "survivors": 0,
+ "control": [
+  {
+   "hypotheses": 691748964,
+   "survivors": 0
+  }
+ ],
+ "k4_rate": 0.0,
+ "control_rate": 0.0,
+ "best_quadgram": null,
+ "top": [],
+ "verdict": "dead: 0 survivors",
+ "minutes": 5.8,
+ "notes": "strips = K4's carved rows (4/31/31/31) or equal widths 5-48; every order (<=6 strips) or reversed/odd-even, every flip pattern; periodic<=26, progressive, ct/pt autokey<=60, shifts; before/after; A-Z/KRYPTOS",
+ "idea": "35",
+ "finished": "2026-11-15T23:43:38+00:00"
+}

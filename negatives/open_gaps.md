@@ -84,3 +84,11 @@ See `campaign/SUMMARY_2.md`. Each result reports what a planted real answer woul
 - **Compass-bearing keys across the carved panels** (48 directions, d 1-12, cipher/tableau/mirrored): dead at chance.
 - **Stacked keys at long length pairs**: re-tested with three detectors (quadgram, word coverage, LLM judge); K4 looks like shuffled controls on all (best detector AUC planted 0.75 vs K4 0.55). Still not fully closed (power is modest).
 - **Learned fingerprint (CNN)**: weakly favours a progressive/structured key on a plain alphabet (p=0.11 vs 0.046 shuffled); held-out accuracy too low to rely on.
+
+## Campaign 5 (2026-11-15, this repo; see campaign/SUMMARY_5.md)
+- **Self-masking** (key = own plaintext/ciphertext in scrambled order: reversal, decimation, columnar to w8, routes): dead.
+- **Baudot/ITA2 Vernam** (periodic <=60, stacked XOR <=30, autokey <=60, dictionary words, K1-K3/World Clock running keys): dead.
+- **Lorenz-style per-bit wheels**: every wheel length 2-61 with >=4 checks contradicted, every bit. Lengths too long to check (few repeats in 97 letters) remain open.
+- **Paper strips** (carved rows, equal widths 5-48, any order/flip) x every key model: dead.
+- **Egypt-era alphabet orders** (hieroglyph, Coptic, Greek, Phoenician/Hebrew, Arabic) x key models, Quagmire I-IV, two stacked keys: dead.
+- **Key shape**: no period signature in letter differences (p=0.16, period 7 p=0.21 vs 20k shuffles); slowly turning dial keys ruled out (clues need a 12-13 step jump).

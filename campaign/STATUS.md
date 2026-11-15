@@ -1,6 +1,6 @@
 # Campaign status
 
-Updated 2026-11-15 23:24 UTC. Rebuilt automatically by `campaign/run.py` after every idea.
+Updated 2026-11-15 23:44 UTC. Rebuilt automatically by `campaign/run.py` after every idea.
 
 | # | Idea | Status | Hypotheses | Survivors | Verdict | Minutes |
 |---|---|---|---|---|---|---|
@@ -27,6 +27,12 @@ Updated 2026-11-15 23:24 UTC. Rebuilt automatically by `campaign/run.py` after e
 | 31 | Compass-bearing keys read across the exact carved layout (cipher panel, tableau, mirrored tableau) | done | 20,736 | 0 | dead: best bearing matches 6/24 clue letters (shuffled best 6/24); all needed | 0.0 |
 | 28 | SLM cipher detective: small neural net trained on ~100k synthetic K4-like ciphertexts names K4's family | done | - | - | K4 classified as 'progressive key' (p=0.1133, that family's held-out accuracy 0.203); overall held-out accuracy 0.437. Shuffled K4s are mostly called 'ciphertext autokey' | 1.3 |
 | 29 | Local LLM (Qwen2.5-7B) as English judge for the blind stacked-key region, plus what it generates as K4 | done | - | - | best detector of real two-key English in this blind region: q (planted vs chance AUC 0.75); K4 vs chance on it: AUC 0.55 (K4 looks like chance). LLM generated 55 plaintexts, 0 with both clues in K4's exact positions | 9.2 |
+| 32 | Key-shape forensics: period signatures in letter differences; could the key be a slowly turning dial? | done | - | - | difference-stream periodicity: best ('AZ', 4, 28) IoC 0.1012, p=0.156 vs shuffled (look-elsewhere corrected); at period 7 specifically p=0.208. Dial keys: the clues need a max step of 12 even in the smoothest cipher type (shuffled K4s: median 12), so a slowly turning dial key is ruled out | 2.4 |
+| 33 | Self-masking: K4 keyed by its own plaintext or ciphertext read in a scrambled order | done | 670,416 | 0 | dead: no scrambled self-key fits all clue letters (shuffled controls also 0) | 0.0 |
+| 34 | Baudot/Vernam teleprinter cipher (ITA2 XOR): periodic, stacked, autokey, word and text keys | done | - | 0 | dead: no teleprinter key model fits all clue letters; best running key 5/24 (shuffled 5) | 0.0 |
+| 36 | Lorenz-style teleprinter wheels: each of the 5 bits with its own short repeating wheel | done | - | - | dead: no fully pinned 5-wheel combination decrypts to letters (allowed lengths per bit: [0, 0, 0, 0, 0]) | 0.0 |
+| 35 | Paper strips: K4's carved rows or equal-width strips, reordered and flipped, x every key model | done | 691,748,964 | 0 | dead: 0 survivors | 5.8 |
+| 37 | Egypt-era alphabets (hieroglyph, Coptic, Greek, Phoenician, Arabic orders) x key models, Quagmire, stacked keys | done | 23,044 | - | (a) dead: 0 survivors; (b) dead: Quagmire: 0 consistent (shuffled [0, 0]); two-key: 40 pinned decrypts, best -6.69 vs shuffled -6.51 | 0.0 |
 
 Verdict key: **dead** = ruled out within the stated scope (each engine has a planted-answer test); **WORTH A LOOK** = beats shuffled-K4 controls, needs a human look.
 
@@ -227,4 +233,50 @@ Verdict key: **dead** = ruled out within the stated scope (each engine has a pla
 - **Script:** `attacks/29_llm_judge_and_generator.py`  ·  log: `campaign/logs/29.log`
 - **Status:** done
 - **Verdict:** best detector of real two-key English in this blind region: q (planted vs chance AUC 0.75); K4 vs chance on it: AUC 0.55 (K4 looks like chance). LLM generated 55 plaintexts, 0 with both clues in K4's exact positions
+
+### 32. Key-shape forensics: period signatures in letter differences; could the key be a slowly turning dial?
+
+- **Why:** NSA's 'pattern every 7', the mod-7 doublets, Bean's width 21 and the neural detective's 'progressive' all hint at key shape.
+- **Script:** `attacks/32_key_shape.py`  ·  log: `campaign/logs/32.log`
+- **Status:** done
+- **Verdict:** difference-stream periodicity: best ('AZ', 4, 28) IoC 0.1012, p=0.156 vs shuffled (look-elsewhere corrected); at period 7 specifically p=0.208. Dial keys: the clues need a max step of 12 even in the smoothest cipher type (shuffled K4s: median 12), so a slowly turning dial key is ruled out
+
+### 33. Self-masking: K4 keyed by its own plaintext or ciphertext read in a scrambled order
+
+- **Why:** Scheidt's 'masking' on a plain alphabet; natural-order self-keying (autokey) is dead, scrambled never tried.
+- **Script:** `attacks/33_self_masking.py`  ·  log: `campaign/logs/33.log`
+- **Status:** done
+- **Verdict:** dead: no scrambled self-key fits all clue letters (shuffled controls also 0)
+- control: `[0, 0]`
+
+### 34. Baudot/Vernam teleprinter cipher (ITA2 XOR): periodic, stacked, autokey, word and text keys
+
+- **Why:** K2's 'transmitted underground' = the CIA Berlin Tunnel tapping teleprinter lines; never tested on K4.
+- **Script:** `attacks/34_baudot_vernam.py`  ·  log: `campaign/logs/34.log`
+- **Status:** done
+- **Verdict:** dead: no teleprinter key model fits all clue letters; best running key 5/24 (shuffled 5)
+- control: `[{"hits": 0, "best_running": 4}, {"hits": 0, "best_running": 5}]`
+
+### 36. Lorenz-style teleprinter wheels: each of the 5 bits with its own short repeating wheel
+
+- **Why:** The Cold War teleprinter machine family; each bit plane is exactly testable on its own.
+- **Script:** `attacks/36_lorenz_wheels.py`  ·  log: `campaign/logs/36.log`
+- **Status:** done
+- **Verdict:** dead: no fully pinned 5-wheel combination decrypts to letters (allowed lengths per bit: [0, 0, 0, 0, 0])
+- control: `[{"combos": 1, "decrypts": 0, "best_q": null}, {"combos": 1, "decrypts": 0, "best_q": null}]`
+
+### 35. Paper strips: K4's carved rows or equal-width strips, reordered and flipped, x every key model
+
+- **Why:** Kobek found the plaintext as strips taped out of order; the verified carved layout gives the strips.
+- **Script:** `attacks/35_paper_strips.py`  ·  log: `campaign/logs/35.log`
+- **Status:** done
+- **Verdict:** dead: 0 survivors
+- control: `[{"hypotheses": 691748964, "survivors": 0}]`
+
+### 37. Egypt-era alphabets (hieroglyph, Coptic, Greek, Phoenician, Arabic orders) x key models, Quagmire, stacked keys
+
+- **Why:** Sanborn: the 1986 Egypt trip figures in the solution; near-plain alphabets are what the fingerprint favours.
+- **Script:** `attacks/37_egypt_alphabets.py`  ·  log: `campaign/logs/37.log`
+- **Status:** done
+- **Verdict:** (a) dead: 0 survivors; (b) dead: Quagmire: 0 consistent (shuffled [0, 0]); two-key: 40 pinned decrypts, best -6.69 vs shuffled -6.51
 
