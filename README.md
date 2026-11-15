@@ -93,6 +93,11 @@ You get the top 50 ranked by (crib hits, English score), a JSON dump in `results
 Examples in the repo:
 * `01_vigenere_wordlist.py`: every dictionary word as a key, 6 cipher variants (baseline; known dead).
 * `02_transposition_plus_vigenere.py`: columnar transposition plus periodic Vigenère in either order. It tests about 46k transpositions × 12 periods in minutes **without decrypting**: it only checks whether the 24 clue letters imply a consistent key. A test plants a solution to confirm it gets found.
+* `03_autokey.py`: the key is the message itself, a few letters back (ciphertext or plaintext autokey).
+* `04_running_key.py`: the key is a long text (K1–K3, the sculpture itself, or anything in `data/texts/`) from every starting point.
+* `05_keyword_alphabets.py`: Quagmire I/II/III, a repeating key on an alphabet scrambled by any dictionary word. 8 million hypotheses in about 20 seconds.
+
+All five come back empty on K4 so far; see `docs/dead-ends.md`. `kryptos/cribtools.py` holds the shared "test it with only the 24 clue letters" helpers.
 
 ## Checking on the website
 
