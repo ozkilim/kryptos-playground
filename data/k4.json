@@ -1,0 +1,13 @@
+{
+  "name": "Kryptos K4",
+  "source": "https://www.paradigm.xyz/kryptos/k4",
+  "length": 97,
+  "ciphertext": "OBKRUOXOGHULBSOLIFBBWFLRVQQPRNGKSSOTWTQSJQSSEKZZWATJKLUDIAWINFBNYPVTTMZFPKWGDKZXTJCDIGKUHUAUEKCAR",
+  "cribs": [
+    {"plaintext": "EAST",      "start": 22, "end": 25, "released": "2020-08"},
+    {"plaintext": "NORTHEAST", "start": 26, "end": 34, "released": "2020-01"},
+    {"plaintext": "BERLIN",    "start": 64, "end": 69, "released": "2010-11"},
+    {"plaintext": "CLOCK",     "start": 70, "end": 74, "released": "2014-11"}
+  ],
+  "notes": "Positions are 1-indexed and inclusive, the way Sanborn and the community count them. 24 known plaintext letters in total."
+}

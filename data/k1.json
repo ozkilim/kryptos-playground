@@ -1,0 +1,8 @@
+{
+  "name": "Kryptos K1 (solved, used to test the Vigenere code)",
+  "alphabet_keyword": "KRYPTOS",
+  "key": "PALIMPSEST",
+  "ciphertext": "EMUFPHZLRFAXYUSDJKZLDKRNSHGNFIVJYQTQUXQBQVYUVLLTREVJYQTMKYRDMFD",
+  "plaintext": "BETWEENSUBTLESHADINGANDTHEABSENCEOFLIGHTLIESTHENUANCEOFIQLUSION",
+  "notes": "IQLUSION is Sanborn's deliberate misspelling. Keep it."
+}

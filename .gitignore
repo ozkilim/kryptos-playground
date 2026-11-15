@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+# your paid-submission log stays private by default; remove this line to commit it
+submissions.csv
