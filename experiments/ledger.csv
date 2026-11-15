@@ -6,3 +6,5 @@ timestamp,puzzle,experiment,tried,seconds,best_cribs,full_passes,best_score,best
 2026-11-15T131315Z,pk9,auto-solvers,10,1.6,,0,-6.386,JCUXOPJIRABOUNDEBYDIFDTUUUAHPLMVQFIGCWEF,"{""method"": ""vigenere"", ""key"": ""BQEDIQVQHOHEFT"", ""alphabet"": ""AZ"", ""period"": 14}",python -m kryptos crack
 2026-11-15T131441Z,k4,columnar+vigenere-crib-consistency,0,2.3,0,0,,,{},"widths 2-6 all orders, periods 1-12, both orders, vig+beau, AZ+KRYPTOS"
 2026-11-15T131458Z,k4,columnar+vigenere-crib-consistency,0,0.3,0,0,,,{},"widths 2-5 all orders, periods 1-8, both orders, vig+beau, AZ+KRYPTOS"
+2026-11-15T131912Z,k4,columnar+vigenere-crib-consistency,0,124.0,0,0,,,{},"widths 2-8 all orders, periods 1-12, both orders, vig+beau, AZ+KRYPTOS"
+2026-11-15T132103Z,k4,vigenere-family-wordlist,1406862,110.5,7,0,-7.188,AHRPJOLAPTASZHOZUONHDDARJCZBXUEZSGACIZXQ,"{""key"": ""OUTCLAMOR"", ""cipher"": ""vigenere"", ""alphabet"": ""AZ""}",234477 words x vig/beau/varbeau x AZ/KRYPTOS

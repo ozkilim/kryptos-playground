@@ -14,8 +14,8 @@ Things that **can't** be K4, so nobody burns time (or dollars) on them again. Ad
 
 | Date | Hypothesis | Range | Best | Ledger |
 |---|---|---|---|---|
-| 2026-11-15 | Dictionary word as Vigenère/Beaufort/variant key, AZ + KRYPTOS | data/keys.txt + /usr/share/dict/words (~236k words) | see ledger | `vigenere-family-wordlist` |
-| 2026-11-15 | Columnar transposition + periodic Vigenère/Beaufort, either order | widths 2–8 (all column orders), periods 1–12, AZ + KRYPTOS | see ledger | `columnar+vigenere-crib-consistency` |
+| 2026-11-15 | Dictionary word as Vigenère/Beaufort/variant key, AZ + KRYPTOS | data/keys.txt + /usr/share/dict/words: 1.4M candidates | 7/24 cribs, 0 full passes | `vigenere-family-wordlist` |
+| 2026-11-15 | Columnar transposition + periodic Vigenère/Beaufort, either order | widths 2–8 (all ~46k column orders), periods 1–12, AZ + KRYPTOS | 17/24 at best (chance level); nothing near 24. Test proves it finds a planted solution | `columnar+vigenere-crib-consistency` |
 
 ## Community knowledge to import
 
