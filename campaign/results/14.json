@@ -1,0 +1,51 @@
+{
+ "name": "keyword-alphabets-periods14-26-english",
+ "hypotheses": 10849696,
+ "crib_consistent": 31512,
+ "best": [
+  {
+   "q": -6.13,
+   "keyword": "PREAFFLICTION",
+   "kind": "III-beau",
+   "period": 26,
+   "forced": "QKSXVNJQ...KJTMODUSEBEASTNORTHEAST...GTTBWZLEXTCDMVGBWJDOKKV...BERLINCLOCKDCMDEFROTCIH...RXCYYBVA"
+  },
+  {
+   "q": -6.188,
+   "keyword": "MORBIDLY",
+   "kind": "I",
+   "period": 26,
+   "forced": "ZJHPXGXN...OHDZVDRAWNEASTNORTHEAST...CRDTOKKFLSISRQCUXWBGXWE...BERLINCLOCKSAREEEVCLOCA...EGYKUZWX"
+  },
+  {
+   "q": -6.192,
+   "keyword": "SUPERFETATION",
+   "kind": "III-beau",
+   "period": 26,
+   "forced": "QVMVJHEX...EJTRWISTELEASTNORTHEAST...HATXQJFGXHOEXVGCGOCOKRY...BERLINCLOCKEJGDROROFBLL...QQFNXRYD"
+  },
+  {
+   "q": -6.202,
+   "keyword": "GLABROUS",
+   "kind": "I",
+   "period": 26,
+   "forced": "BMIMYUHM...LISTOULBLKEASTNORTHEAST...DASKEMJUEPRIMPEZGXAHPFE...BERLINCLOCKIWAFJHWCUVXC...EHDERGWQ"
+  },
+  {
+   "q": -6.218,
+   "keyword": "LAMPROPHONY",
+   "kind": "I",
+   "period": 26,
+   "forced": "PJFCLOXJ...NINSNVPMAKEASTNORTHEAST...IRNGEHJOCTHEMQLZLWVGKWC...BERLINCLOCKEYMAGEVMYTBY...JGBBHJXQ"
+  }
+ ],
+ "null_best": [
+  -6.050163760846241,
+  -6.092249720849747,
+  -6.107339411482148
+ ],
+ "verdict": "dead: K4's best forced plaintext scores like shuffled K4s",
+ "minutes": 0.4,
+ "idea": "14",
+ "finished": "2026-11-15T19:05:12+00:00"
+}

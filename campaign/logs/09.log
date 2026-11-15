@@ -1,0 +1,5 @@
+
+[columnar+progressive-key] tried 10,498,571,200 candidates on K4
+  full crib passes: 0
+  saved -> results/2026-11-15T190448Z_k4_columnar+progressive-key.json  (+1 line in ledger.csv)
+[09] columnar+progressive-key: 10,498,571,200 hypotheses, 0 survivors (controls [0]), best q=None -> dead: 0 survivors

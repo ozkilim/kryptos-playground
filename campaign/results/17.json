@@ -1,0 +1,20 @@
+{
+ "name": "double-columnar x progressive/autokey/shift",
+ "hypotheses": 3085638272,
+ "survivors": 0,
+ "control": [
+  {
+   "hypotheses": 3538576,
+   "survivors": 0
+  }
+ ],
+ "k4_rate": 0.0,
+ "control_rate": 0.0,
+ "best_quadgram": null,
+ "top": [],
+ "verdict": "dead: 0 survivors",
+ "minutes": 13.1,
+ "notes": "double columnar all orders w2-6 x w2-6 + progressive p1-13, ct/pt autokey<=60, shifts; key before/after both layers; AZ+KRYPTOS",
+ "idea": "17",
+ "finished": "2026-11-15T17:51:32+00:00"
+}

@@ -1,0 +1,2 @@
+[18] most K4-like: periodic Vigenere, period 6 exactly, A-Z (-5.66); periodic Vigenere, period 4 exactly, A-Z (-5.73); small shifts +-3 (aperiodic) (-5.82). Least: two periodic keys summed (7 + 11) (-8.01); running key (English text), A-Z (-8.73); running key (English text), KRYPTOS (-9.47). See campaign/FINGERPRINTS.md
+calibration: {'columnar then periodic key': 14.0, 'ciphertext autokey': 8.5, 'periodic Vigenere 4-14, KRYPTOS (K1/K2 style)': 7.0, 'running key (English text), A-Z': 23.0, 'double columnar + periodic key': 11.0, 'random letters (one-time pad)': 21.5}

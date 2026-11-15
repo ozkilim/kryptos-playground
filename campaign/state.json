@@ -30,7 +30,39 @@
   "minutes": 12.6
  },
  "17": {
-  "status": "running",
-  "started": "2026-11-15 17:38 UTC"
+  "status": "done",
+  "started": "2026-11-15 17:38 UTC",
+  "finished": "2026-11-15 17:51 UTC",
+  "minutes": 13.1
+ },
+ "10": {
+  "status": "done",
+  "started": "2026-11-15 17:51 UTC",
+  "finished": "2026-11-15 18:18 UTC",
+  "minutes": 26.9
+ },
+ "09": {
+  "status": "done",
+  "started": "2026-11-15 18:18 UTC",
+  "finished": "2026-11-15 19:04 UTC",
+  "minutes": 46.4
+ },
+ "14": {
+  "status": "done",
+  "started": "2026-11-15 19:04 UTC",
+  "finished": "2026-11-15 19:05 UTC",
+  "minutes": 0.4
+ },
+ "13": {
+  "status": "done",
+  "started": "2026-11-15 19:05 UTC",
+  "finished": "2026-11-15 19:55 UTC",
+  "minutes": 50.1
+ },
+ "18": {
+  "status": "done",
+  "started": "2026-11-15 19:55 UTC",
+  "finished": "2026-11-15 19:56 UTC",
+  "minutes": 0.6
  }
 }

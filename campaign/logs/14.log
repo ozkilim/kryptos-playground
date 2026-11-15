@@ -1,0 +1,13 @@
+
+[keyword-alphabets-periods14-26-english] tried 10,849,716 candidates on K4
+  24/24  q= -6.43  QKSXVNJQAAAKJTMODUSEBEASTNORTHEASTAAAGTTBWZLEXTCDM  {'keyword': 'PREAFFLICTION', 'kind': 'III-beau', 'period': 26, 'forced_score': -6.13}
+  24/24  q= -6.44  BMIMYUHMAAALISTOULBLKEASTNORTHEASTAAADASKEMJUEPRIM  {'keyword': 'GLABROUS', 'kind': 'I', 'period': 26, 'forced_score': -6.202}
+  24/24  q= -6.44  QVMVJHEXAAAEJTRWISTELEASTNORTHEASTAAAHATXQJFGXHOEX  {'keyword': 'SUPERFETATION', 'kind': 'III-beau', 'period': 26, 'forced_score': -6.192}
+  24/24  q= -6.45  PJFCLOXJAAANINSNVPMAKEASTNORTHEASTAAAIRNGEHJOCTHEM  {'keyword': 'LAMPROPHONY', 'kind': 'I', 'period': 26, 'forced_score': -6.218}
+  24/24  q= -6.47  CIXLYSGFAAASITDOUWNREEASTNORTHEASTAAAJATTEMDVEITIK  {'keyword': 'FRACTOSTRATUS', 'kind': 'I', 'period': 26, 'forced_score': -6.226}
+  24/24  q= -6.47  ZJHPXGXNAAAOHDZVDRAWNEASTNORTHEASTAAACRDTOKKFLSISR  {'keyword': 'MORBIDLY', 'kind': 'I', 'period': 26, 'forced_score': -6.188}
+  24/24  q= -6.49  ZAKDVEXPAAAAIUXHATDXEEASTNORTHEASTAAAJZUSEMDGDIONO  {'keyword': 'COCHAL', 'kind': 'I', 'period': 26, 'forced_score': -6.28}
+  24/24  q= -6.49  SIGCYOCKAAAOISCHOAQALEASTNORTHEASTAAAJASSELKVFTSII  {'keyword': 'DRAMSHOP', 'kind': 'I', 'period': 26, 'forced_score': -6.258}
+  full crib passes: 0
+  saved -> results/2026-11-15T190512Z_k4_keyword-alphabets-periods14-26-english.json  (+1 line in ledger.csv)
+[14] K4 best -6.13 vs shuffled [-6.050163760846241, -6.092249720849747, -6.107339411482148] -> dead: K4's best forced plaintext scores like shuffled K4s

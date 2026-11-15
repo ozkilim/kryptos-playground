@@ -1,0 +1,19 @@
+{
+ "name": "double-columnar-width8+periodic",
+ "hypotheses": 21939240960,
+ "survivors": 4,
+ "control": {
+  "hypotheses": 548481024,
+  "survivors": 0
+ },
+ "verdict": "dead: 4 survivors, all at the minimum 6 clue equalities (key length 25, one family of near-identical orders); decrypts are noise (q -6.53 to -6.57, English ~ -4.7)",
+ "minutes": 50.1,
+ "top": [
+  "((4, 3, 0, 5, 2, 1), (1, 2, 7, 5, 0, 6, 3, 4), 'KRYPTOS', 'vigenere', 'after', 25, 6)",
+  "((4, 3, 0, 5, 2, 1), (1, 4, 7, 5, 0, 6, 3, 2), 'KRYPTOS', 'vigenere', 'after', 25, 6)",
+  "((4, 3, 0, 5, 2, 1), (2, 1, 7, 5, 0, 6, 3, 4), 'KRYPTOS', 'vigenere', 'after', 25, 6)",
+  "((4, 3, 0, 5, 2, 1), (2, 4, 7, 5, 0, 6, 3, 1), 'KRYPTOS', 'vigenere', 'after', 25, 6)"
+ ],
+ "idea": "13",
+ "finished": "2026-11-15T19:55:20+00:00"
+}

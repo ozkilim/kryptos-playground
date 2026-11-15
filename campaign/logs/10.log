@@ -1,0 +1,5 @@
+
+[columnar+autokey] tried 5,814,593,280 candidates on K4
+  full crib passes: 0
+  saved -> results/2026-11-15T181824Z_k4_columnar+autokey.json  (+1 line in ledger.csv)
+[10] columnar+autokey: 5,814,593,280 hypotheses, 0 survivors (controls [0]), best q=None -> dead: 0 survivors

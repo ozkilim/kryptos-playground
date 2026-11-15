@@ -54,3 +54,14 @@ These came out of the community research notes (2026-11-15). None of them has be
 - **Word-level decoders and beam search on K4 itself.** They sometimes recover test messages but have never been run on K4 to a result. Source: https://github.com/markmnl/kryptos
 - **SIGABA.** Engineering work only, with no test result. Source: https://github.com/reggiechan74/kryptos-k4
 - **Which Weltzeituhr face points east-northeast.** The ray falls near a boundary between two panels, so this is unresolved. Source: https://github.com/markmnl/kryptos
+
+## Closed or narrowed by campaign 1 (2026-11-15, this repo)
+See `campaign/SUMMARY.md`. Each item has a planted-answer test.
+- **Transposition + non-periodic key models**: progressive, autokey and digit/small-shift keys behind every columnar order to width 10–11, behind double columnar 2–6 × 2–6, behind decimation/routes/rotations, and behind Myszkowski (189,743 words). All dead. Still open: widths 11+ for progressive/autokey, wider double columnar.
+- **Double columnar + periodic key**: now covered at width 8 × widths 2–6 (both ways round), 21.9B hypotheses, only 4 minimum-threshold survivors (noise).
+- **Keyword alphabets at key lengths 14–26**: forced plaintext scored for English; K4 looks like shuffled controls. Still open: arbitrary (non-keyword) alphabets at these lengths.
+- **Sanborn 2025 theme words**: dead as Quagmire I–IV alphabets/keys and as columnar orders with every key model.
+
+## Pointers from campaign 1 statistics (where to look next)
+- **Stehle lag-4 run (p=0.003) and mod-7 doublets (p=0.001)** survive a look-elsewhere-corrected shuffle test (post hoc caveat). Any proposed method should explain them.
+- **Fingerprint ranking:** direct substitution with a short or structured key and no transposition looks most K4-like; transposition stacks and running keys look least like it. Top open targets: Gromark with arbitrary alphabets, small-shift keys under an unknown mixed alphabet, Quagmire IV with structured keys scored for English. Source: campaign/FINGERPRINTS.md

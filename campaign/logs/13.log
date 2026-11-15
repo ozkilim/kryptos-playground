@@ -1,0 +1,25 @@
+
+*** FULL CRIB PASS *** {'hit': "((4, 3, 0, 5, 2, 1), (1, 2, 7, 5, 0, 6, 3, 4), 'KRYPTOS', 'vigenere', 'after', 25, 6)"}
+INNQDBWUQZYLEJPFXSMTTEASTNORTHEASTHGMLIDICYDAALJFBNIFUKRQRGRCEMBERLINCLOCKBDORTTWPZDZEACSQHDTVTHV
+
+
+*** FULL CRIB PASS *** {'hit': "((4, 3, 0, 5, 2, 1), (1, 4, 7, 5, 0, 6, 3, 2), 'KRYPTOS', 'vigenere', 'after', 25, 6)"}
+INNDDBYDAZLJEJPFXSMTTEASTNORTHEASTHGMLIQICWUQAYLFBNCFUHDTRTHCEMBERLINCLOCKBDORTTWPZDZEAISQKRQVGRV
+
+
+*** FULL CRIB PASS *** {'hit': "((4, 3, 0, 5, 2, 1), (2, 1, 7, 5, 0, 6, 3, 4), 'KRYPTOS', 'vigenere', 'after', 25, 6)"}
+RGVVRQINNZDBEJPFXSMTTEASTNORTHEASTHGMLIDICYDAQLJWUQAYLFBNRFUCEMBERLINCLOCKBDORTTWPZDZEACSQHDTITHK
+
+
+*** FULL CRIB PASS *** {'hit': "((4, 3, 0, 5, 2, 1), (2, 4, 7, 5, 0, 6, 3, 1), 'KRYPTOS', 'vigenere', 'after', 25, 6)"}
+RGVDRQYDAZLJEJPFXSMTTEASTNORTHEASTHGMLIVICINNQDBWUQCYLHDTRTHCEMBERLINCLOCKBDORTTWPZDZEAASQFBNIFUK
+
+
+[double-columnar-width8+periodic] tried 21,939,240,964 candidates on K4
+  24/24  q= -6.53  INNDDBYDAZLJEJPFXSMTTEASTNORTHEASTHGMLIQICWUQAYLFB  {'hit': "((4, 3, 0, 5, 2, 1), (1, 4, 7, 5, 0, 6, 3, 2), 'KRYPTOS', 'vigenere', 'after', 25, 6)"}
+  24/24  q= -6.55  RGVDRQYDAZLJEJPFXSMTTEASTNORTHEASTHGMLIVICINNQDBWU  {'hit': "((4, 3, 0, 5, 2, 1), (2, 4, 7, 5, 0, 6, 3, 1), 'KRYPTOS', 'vigenere', 'after', 25, 6)"}
+  24/24  q= -6.57  RGVVRQINNZDBEJPFXSMTTEASTNORTHEASTHGMLIDICYDAQLJWU  {'hit': "((4, 3, 0, 5, 2, 1), (2, 1, 7, 5, 0, 6, 3, 4), 'KRYPTOS', 'vigenere', 'after', 25, 6)"}
+  24/24  q= -6.57  INNQDBWUQZYLEJPFXSMTTEASTNORTHEASTHGMLIDICYDAALJFB  {'hit': "((4, 3, 0, 5, 2, 1), (1, 2, 7, 5, 0, 6, 3, 4), 'KRYPTOS', 'vigenere', 'after', 25, 6)"}
+  full crib passes: 4
+  saved -> results/2026-11-15T195520Z_k4_double-columnar-width8+periodic.json  (+1 line in ledger.csv)
+[13] 21,939,240,960 hypotheses, 4 survivors -> survivors found: check against control

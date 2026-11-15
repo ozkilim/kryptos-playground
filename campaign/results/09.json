@@ -1,0 +1,20 @@
+{
+ "name": "columnar+progressive-key",
+ "hypotheses": 10498571200,
+ "survivors": 0,
+ "control": [
+  {
+   "hypotheses": 15371200,
+   "survivors": 0
+  }
+ ],
+ "k4_rate": 0.0,
+ "control_rate": 0.0,
+ "best_quadgram": null,
+ "top": [],
+ "verdict": "dead: 0 survivors",
+ "minutes": 46.4,
+ "notes": "columnar all orders w2-10 + progressive key p1-13 step 1-25, before/after, vig/beau, AZ+KRYPTOS",
+ "idea": "09",
+ "finished": "2026-11-15T19:04:48+00:00"
+}
