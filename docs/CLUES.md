@@ -1,5 +1,8 @@
 # Every K4 clue we have (as of 2026-11-15)
 
+Every clue below is levelled (fact / firm / hint) and checked against every cipher family in
+[`CLUE_MATRIX.md`](CLUE_MATRIX.md), built by `python -m kryptos.clues`.
+
 One page of everything known *for* K4, as opposed to `negatives/NEGATIVES.md` (what it is *not*).
 Confidence: **fact** (checked against the ciphertext), **stated** (Sanborn/Scheidt on record), **reported**
 (credible secondary source), **ours** (our own measurement, with its caveat). Sources are in

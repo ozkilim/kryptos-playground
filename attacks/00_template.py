@@ -8,7 +8,14 @@ The harness scores everything (24 K4 cribs + English score), keeps the best
 50, saves them to results/, and adds one line to experiments/ledger.csv so
 nobody repeats this experiment by accident.
 
-Before writing a new attack, skim:
+Before writing a new attack, run it through the clue pre-filter (docs/CLUE_MATRIX.md):
+  from kryptos.clues import prefilter
+  prefilter("my idea", encrypt=my_encrypt, marks={"hand": ("pass", "paper chart"), ...})
+my_encrypt(pt, rng) -> ct must draw its key from rng only (same seed = same key).
+REJECT = breaks a fact (don't build it); FLAG = breaks a firm statement (build only
+with a written reason); PASS = go, and the score says how many hints it explains.
+
+Then skim:
   python -m kryptos ledger        what we've already tried
   docs/dead-ends.md               what the community already ruled out
 """

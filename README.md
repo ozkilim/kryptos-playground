@@ -90,6 +90,16 @@ tests/                    pytest or plain `python tests/test_x.py`
 
 To add a negative: `python -m kryptos negatives add --family ... --hypothesis ... --outcome ... --confidence ... --source ...` (see [`negatives/README.md`](negatives/README.md)). The research behind the seed list is in [`reports/`](reports/) and [`research_notes/`](research_notes/).
 
+## The clue pre-filter
+
+Every clue (`docs/CLUES.md`) has a level: **fact** (break one and the idea is rejected), **firm** statement by Sanborn or Scheidt (break one and the idea is flagged, needs a written reason) or **hint** (only scores points). [`docs/CLUE_MATRIX.md`](docs/CLUE_MATRIX.md) marks every cipher family we've tried against every clue. Some marks are measured: the family's encryptor runs on English text with random keys, and we check whether letters stay in place ("BERLINCLOCK matches directly"), whether the same word in the same place encrypts identically in two messages (the K5 statement), and how often it reproduces K4's statistical oddities compared with chance. The rest are marked by hand with a reason. It also re-ranks the open gaps and suggests hybrids.
+
+```bash
+python -m kryptos.clues                       # rebuild docs/CLUE_MATRIX.md
+```
+
+New ideas go through `kryptos.clues.prefilter(name, encrypt_fn, marks)` before they're built (see the template).
+
 ## Writing an attack
 
 Copy `attacks/00_template.py`, then yield candidates:
