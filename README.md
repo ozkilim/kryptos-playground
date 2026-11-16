@@ -51,7 +51,7 @@ python -m kryptos crack pk1            # run the automatic solvers on any puzzle
 python -m kryptos cribkeys             # key letters K4's clues imply under Vigenère/Beaufort
 python -m kryptos check "YOUR97LETTERS..."   # free internal check for a K4 guess
 python -m kryptos ledger               # what's been tried so far
-python -m kryptos negatives search hill   # is this idea already dead? (318 sourced and own negatives)
+python -m kryptos negatives search hill   # is this idea already dead? (343 sourced and own negatives)
 make test                              # everything still works
 ```
 
@@ -143,6 +143,12 @@ All seven come back empty on K4 so far; see `negatives/NEGATIVES.md`.
 **Campaign 7** (attacks 42–46) came from re-reading every clue: KRYPTOS-letter masking, key restarts at sentence breaks, a different system per part, one deliberate wrong clue letter, and a masking hybrid designed through the new clue pre-filter. All dead as models. One measured constraint survived: the KRYPTOS-letter closeness holds up under a within-block test, but only fits K4's flat letter counts if it is local and the other letters carry a strong key. See [`campaign/SUMMARY_7.md`](campaign/SUMMARY_7.md).
 
 **Campaign 8** (attacks 47–52) added the constraint the long-key gap needed: stacked keys that are real words. No pair (or theme-word triple) from a 265k-word vocabulary plus 14.8M two-word phrases fits the clues, even allowing one wrong clue letter. K1–K3 texts as keys with hidden alphabets, clock arithmetic and letter-class tableaux are dead too, and a second look at all 407 saved candidates found nothing missed. See [`campaign/SUMMARY_8.md`](campaign/SUMMARY_8.md).
+
+**Campaign 9** (attacks 54–62) used one new tool, exact linear algebra mod 26 on the clue letters (`kryptos/round9.py`), to close nine key rules that had slipped between earlier tests: every short formula for the key (9.2M combinations of 186 ingredients), autokey with a hidden alphabet, interrupted keys, a sentence key on any keyword tableau, the sculpture read by columns/diagonals/skips, autokey stacked with a key word, two systems used in turn, K3's transposition applied to the key rather than the text, and a drifting key word. All dead, each with planted answers recovered and shuffled controls. See [`campaign/SUMMARY_9.md`](campaign/SUMMARY_9.md).
+
+**Campaign 10** (attacks 63–67) used clues no earlier round had tested: Scheidt's "simple, can be remembered… with the correct key word/s", his "special characters must be accounted for" (with the carved "?" K4 is 98 = 7 × 14 symbols), the 42-wide K3 worksheet, and K3's closing question. Three remembered key words (Quagmire IV over 445 billion dictionary alphabet pairs per key length, by an exact hash join), every dictionary keyword tableau against a battery of hand key rules (6.67M key streams), chain-addition and row+column keys, the 98-cell grids, the reversed DIANA table, and Carter's reply as a guessed third clue: all dead. See [`campaign/SUMMARY_10.md`](campaign/SUMMARY_10.md).
+
+**Campaign 11** (attacks 68–77) attacked the assumptions inside rounds 9–10 instead of adding more key rules: that the 42-letter gap between the clues is exact (each clue alone, gap off by 1–3), that the arithmetic is mod 26 (wheels of 27–31 cells), that keys only add (multiplier word + adder word), that alphabets are fixed (paper rotor with hidden wiring; alphabets that change after every letter), and that autokey looks a fixed distance back. It also tested rows of 21, letters as bits, the tableau seen through the pierced copper, and Wheatstone's clock-face cipher, which falls to a short proof for every possible ring. All ten are dead; see `campaign/SUMMARY_11.md`.
 
 ## Checking on the website
 

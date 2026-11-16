@@ -13,26 +13,50 @@ Columns marked (p) are measured by probes: the family's encryptor is run on Engl
 | Two stacked repeating keys (LAYER TWO), long lengths | 23, 38, 45 | open | PASS | 4.2 | ~ | ✓ | ? | ✓ | ✓ | ✓ | ✓ | ? | · | · | · | · | · | · | ★ | ★ | ~ | ★ | ~ | ~ | ? | ? | ? | ? | ? | ? | ? |
 | One hidden alphabet with a long key (length 23+) | 20 | open | PASS | 0.8 | ~ | ✓ | ? | ✓ | ✓ | ✓ | ✓ | ? | · | · | · | · | · | · | ~ | ? | ? | ~ | ? | ? | ? | ? | ? | ? | ? | ? | ? |
 | A genuinely non-arithmetic visual/physical step (untested) | - | untested | PASS | 1.4 | ? | ? | ? | ✓ | ? | ? | ✓ | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ★ | ? | ? | ~ |
+| Sentence key (unknown English text) on a keyword tableau | 57 | disfavoured | PASS | 2.4 | ~ | ✓ | ? | ✓ | ✓ | ✓ | ~ | ? | ? | ? | ~ | ? | ? | ? | ★ | ? | ? | ★ | ? | ? | ? | ? | ? | ? | ? | ? | ? |
 | Gromark / chain-addition digits, both alphabets hidden (base 10) | 19, 45 | disfavoured | PASS | 1.0 | ~ | ✓ | ? | ✓ | ✓ | ✓ | ✓ | ? | · | · | · | · | · | · | ★ | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? |
 | Hybrid: KRYPTOS letters light only in the clue sentences + key restarting per sentence | 46 | dead-in-scope | PASS | 5.5 | ~ | ✓ | ? | ✓ | ✓ | ~ | ✓ | ? | ★ | ★ | ▼ | · | · | · | ★ | ? | ★ | ★ | ? | ? | ? | ? | ? | ? | ? | ★ | ? |
 | Three layers: a theme word plus two keys | 26 | dead-in-scope | PASS | 2.8 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ✓ | ? | · | · | · | · | · | · | ★ | ~ | ? | ? | ★ | ~ | ? | ? | ? | ? | ? | ? | ? |
 | Running key from a text | 04 | dead-in-scope | PASS | 1.4 | ✗ | ✓ | ? | ✓ | ✓ | ~ | ~ | ? | · | · | · | · | · | · | ★ | ? | ? | ? | ? | ? | ~ | ? | ? | ? | ? | ? | ? |
+| Three remembered key words (Quagmire IV, dictionary alphabets both sides) | 63 | dead-in-scope | PASS | 1.4 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ~ | ? | ? | ? | ? | ? | ? | ? | ~ | ? | ? | ★ | ? | ? | ? | ? | ? | ? | ? | ? | ? |
 | Any family above, with one deliberate wrong clue letter | 45 | dead-in-scope | PASS | 1.0 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ~ | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ★ | ? | ? |
+| Carter's reply as a guessed third clue (undecided models re-run) | 67 | dead-in-scope | PASS | 1.0 | ✗ | ✓ | ? | ✓ | ✓ | ~ | ~ | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ★ | ? | ? | ? | ? | ? | ? | ? | ? | ? |
+| Paper rotor: hidden wiring between two alphabets, turned by a key word | 72 | dead-in-scope | PASS | 1.0 | ✗ | ✓ | ? | ~ | ✓ | ? | ~ | ? | ? | ? | ? | ? | ? | ? | ★ | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? |
+| Alphabet that changes after every letter (move to front, swaps, turns, Chaocipher) | 73 | dead-in-scope | PASS | 1.0 | ✗ | ✓ | ? | ✓ | ✓ | ? | ~ | ? | ? | ? | ? | ? | ? | ? | ★ | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? |
+| Autokey / Condi / Ragbaby with a hidden alphabet | 55 | dead-in-scope | FLAG | 2.0 | ✗ | ✓ | ? | ✓ | ✓ | ✗ | ✓ | ? | ? | ? | ? | ★ | ? | ? | ★ | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? |
 | Selective masking: KRYPTOS letters lightly shifted, others keyed | 42 | dead | PASS | 4.5 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ✓ | ? | ★ | ★ | ▼ | · | · | · | ★ | ? | ★ | ★ | ? | ? | ? | ? | ? | ? | ? | ? | ? |
 | Key restarts at each sentence (+X between sentences) | 43 | dead | PASS | 4.4 | ✗ | ✓ | ? | ✓ | ✓ | ~ | ~ | ? | · | ★ | · | ★ | · | · | ★ | ? | ? | ~ | ? | ? | ? | ? | ? | ? | ? | ★ | ? |
+| K3's transposition applied to the key, text left in place | 61 | dead | PASS | 4.4 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ✓ | ? | ? | ? | ? | ? | ? | ? | ★ | ★ | ★ | ★ | ? | ? | ? | ? | ~ | ? | ? | ? | ? |
 | Two (or three) stacked keys that are real words/phrases/dates | 47, 48 | dead | PASS | 4.2 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ✓ | ? | · | · | · | · | · | · | ★ | ★ | ? | ★ | ~ | ~ | ? | ? | ? | ? | ~ | ? | ? |
+| The sculpture read by columns/diagonals/skips as the key | 58 | dead | PASS | 4.0 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ~ | ? | ? | ? | ? | ? | ? | ? | ★ | ? | ? | ★ | ? | ? | ? | ? | ? | ★ | ? | ? | ★ |
 | Clock arithmetic keys (dials, two hands) and carved-row restarts | 50 | dead | PASS | 3.4 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ~ | ? | · | · | · | ★ | · | · | ? | ? | ? | ? | ★ | ? | ? | ★ | ? | ? | ? | ? | ~ |
 | Letter class picks the table: KRYPTOS letters on the KRYPTOS tableau | 51 | dead | PASS | 3.4 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ✓ | ? | · | · | · | ★ | · | · | ~ | ? | ★ | ★ | ? | ? | ? | ? | ? | ? | ? | ? | ? |
 | A different simple system for each part | 44 | dead | PASS | 3.0 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ✓ | ? | · | · | · | ★ | · | · | ★ | ? | ★ | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? |
+| Two systems in turn (switching rows, interleaved streams, Slidefair) | 60 | dead | PASS | 3.0 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ✓ | ? | ? | ★ | ? | ? | ? | ? | ★ | ? | ★ | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? |
+| Any dictionary keyword tableau x hand key rules (sliding, stacked, autokey, restarts) | 66 | dead | PASS | 3.0 | ✗ | ✓ | ? | ✓ | ✓ | ~ | ~ | ? | ? | ? | ? | ? | ? | ? | ★ | ★ | ? | ★ | ? | ? | ? | ? | ? | ? | ? | ? | ? |
+| The ? counts: 98 = 7 x 14 cell grids (scrambled key, grid formulas, drifting key) | 64 | dead | PASS | 3.0 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ✓ | ? | ? | ? | ? | ? | ? | ? | ★ | ? | ★ | ? | ? | ? | ? | ? | ? | ? | ? | ? | ★ |
 | Shifting matrices / coordinate wheels on a grid | 39 | dead | PASS | 2.4 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ✓ | ? | ? | ? | ? | ? | ? | ? | ~ | ? | ? | ? | ? | ? | ? | ★ | ★ | ? | ? | ? | ? |
+| Chain addition in letters; row word + column word grids | 65 | dead | PASS | 2.4 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ~ | ? | ? | ? | ? | ? | ? | ? | ★ | ? | ? | ? | ? | ? | ? | ? | ★ | ? | ? | ? | ~ |
 | Keyword alphabets / Quagmire I-IV with short keys | 05, 14, 15, 20, 27, 37 | dead | PASS | 2.3 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ~ | ? | · | · | · | ★ | · | · | ▼ | ? | ? | ★ | ? | ~ | ? | ? | ? | ? | ~ | ? | ? |
 | Chain addition in other bases (3-16) | 41 | dead | PASS | 2.0 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ✓ | ? | · | · | · | · | · | · | ★ | ? | ? | ? | ? | ? | ? | ★ | ? | ? | ? | ? | ? |
 | World Clock 1989 keys (cities, initials, UTC offsets) | 24 | dead | PASS | 2.0 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ~ | ? | ? | ? | ? | ? | ? | ? | ★ | ? | ? | ? | ★ | ? | ? | ? | ? | ? | ? | ? | ? |
 | Compass-bearing keys across the carved layout | 31 | dead | PASS | 2.0 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ~ | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ★ | ? | ? | ★ |
 | K1-K3 plaintexts as keys with hidden alphabets | 49 | dead | PASS | 2.0 | ✗ | ✓ | ? | ✓ | ✓ | ~ | ✓ | ? | · | · | · | · | · | · | ★ | ? | ? | ★ | ? | ? | ? | ? | ? | ? | ? | ? | ? |
+| Rows of 21: column key shared by the two clue rows, row decides offset or tableau | 69 | dead | PASS | 2.0 | ✗ | ✓ | ? | ✓ | ✓ | ? | ~ | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ★ | ? | ? | ? | ★ |
+| Tableau seen through the pierced copper: mirrored, flipped, slanted overlays as the key | 77 | dead | PASS | 2.0 | ✗ | ✓ | ? | ✓ | ✓ | ? | ~ | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ★ | ? | ? | ★ |
+| Any short formula for the key (position, grids, neighbours, number sequences) | 54 | dead | PASS | 1.8 | ✗ | ✓ | ? | ✓ | ✓ | ~ | ~ | ? | ? | ? | ? | ? | ? | ? | ★ | ? | ? | ? | ? | ? | ? | ? | ~ | ? | ? | ? | ~ |
 | Teleprinter: Baudot/Vernam XOR, Lorenz wheels | 34, 36 | dead | PASS | 1.4 | ✗ | ✓ | ? | ? | ✓ | ✓ | ✓ | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ~ | ? | ★ | ? | ? | ? | ? | ? | ? |
+| Each clue alone / the gap between the clues off by 1-3 letters | 68 | dead | PASS | 1.4 | ✗ | ✓ | ? | ✓ | ✓ | ? | ~ | ? | ? | ? | ? | ? | ? | ? | ~ | ? | ? | ★ | ? | ? | ? | ? | ? | ? | ? | ? | ? |
 | Visual letter transforms (semaphore, Morse reversal) alone or stacked | 30 | dead | PASS | 1.0 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ✓ | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ★ | ? | ? | ? |
 | Egypt-era alphabets (hieroglyph, Coptic, Greek order) x key models | 37 | dead | PASS | 1.0 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ✓ | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ★ | ? | ? | ? | ? | ? | ? | ? |
+| Drifting key word (each key letter steps at its own rate) | 62 | dead | PASS | 1.0 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ~ | ? | ? | ? | ? | ? | ? | ? | ★ | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? |
+| Autokey with a keyed distance (a repeating pattern says how far back to look) | 74 | dead | PASS | 1.0 | ✗ | ✓ | ? | ✓ | ✓ | ? | ~ | ? | ? | ? | ? | ? | ? | ? | ★ | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? |
+| Wheatstone clock-face cipher, any outer ring of 27-38 cells, any inner ring | 75 | dead | PASS | 1.0 | ✗ | ✓ | ? | ✓ | ✓ | ? | ~ | ? | ? | ? | ? | ? | ? | ? | ★ | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? |
+| Key arithmetic on a wheel of 27-31 cells (the ? and the 30-31 wide tableau rows) | 70 | dead | PASS | 0.8 | ✗ | ✓ | ? | ✓ | ✓ | ? | ~ | ? | ? | ? | ? | ? | ? | ? | ~ | ? | ? | ~ | ? | ? | ? | ? | ? | ? | ? | ? | ? |
+| Multiplier word + adder word (C = A*P + B, both repeating) | 71 | dead | PASS | 0.8 | ✗ | ✓ | ? | ✓ | ✓ | ? | ★ | ? | ? | ? | ? | ? | ? | ? | ~ | ~ | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? |
+| Letters as 5 bits (binary, Gray, Bacon) with bit keys; Morse dots/dashes as a switch | 76 | dead | PASS | 0.4 | ✗ | ✓ | ? | ~ | ✓ | ? | ~ | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ~ | ? | ? | ? |
+| Autokey stacked with a repeating key word | 59 | dead | FLAG | 3.0 | ✗ | ✓ | ? | ✓ | ✓ | ✗ | ✓ | ? | ? | ? | ? | ? | ? | ? | ★ | ★ | ★ | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? |
+| Interrupted key (restart at a trigger letter or each word) | 56 | dead | FLAG | 2.4 | ✗ | ✓ | ? | ✓ | ✓ | ✗ | ~ | ? | ? | ? | ? | ★ | ? | ? | ★ | ? | ? | ~ | ? | ? | ? | ? | ? | ? | ? | ? | ? |
 | Repeating key (Vigenere/Beaufort), A-Z or KRYPTOS alphabet | 01, 06, 15 | dead | FLAG | 1.5 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ✗ | ? | · | · | · | ★ | · | · | ▼ | ? | ? | ★ | ? | ? | ? | ? | ? | ? | ? | ? | ? |
 | Autokey (plaintext or ciphertext feeds the key) | 03, 10 | dead | FLAG | 1.0 | ✗ | ✓ | ? | ✓ | ✓ | ✗ | ~ | ? | · | · | · | · | · | · | ★ | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? |
 | Transposition + substitution (columnar, double, routes, Myszkowski, strips) | 02, 07, 08, 09, 10, 11, 12, 13, 17, 35 | dead | FLAG | 0.8 | ✗ | ✓ | ? | ✓ | ✗ | ✗ | ✓ | ? | · | · | · | · | · | · | ? | ~ | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ~ |
@@ -46,18 +70,19 @@ Column groups, left to right: facts (24 clue letters, S->S, K->K, not pure trans
 Live families only (open / untested / pending / disfavoured), passing every fact; ordered by firm-statement conflicts, then hint score (★ = 1, ~ = 0.4, ▼ = -0.5).
 
 1. **Two stacked repeating keys (LAYER TWO), long lengths** (open, PASS, score 4.2): explains key not simply periodic; LAYER TWO; K1-K3 hold clues
-2. **A genuinely non-arithmetic visual/physical step (untested)** (untested, PASS, score 1.4): explains visual systems / not math
-3. **Gromark / chain-addition digits, both alphabets hidden (base 10)** (disfavoured, PASS, score 1.0): explains key not simply periodic
-4. **One hidden alphabet with a long key (length 23+)** (open, PASS, score 0.8): explains nothing yet
+2. **Sentence key (unknown English text) on a keyword tableau** (disfavoured, PASS, score 2.4): explains key not simply periodic; K1-K3 hold clues
+3. **A genuinely non-arithmetic visual/physical step (untested)** (untested, PASS, score 1.4): explains visual systems / not math
+4. **Gromark / chain-addition digits, both alphabets hidden (base 10)** (disfavoured, PASS, score 1.0): explains key not simply periodic
+5. **One hidden alphabet with a long key (length 23+)** (open, PASS, score 0.8): explains nothing yet
 
 ## Hybrids worth building (two live families, most hints explained together)
 
 * **Two stacked repeating keys (LAYER TWO), long lengths** + **A genuinely non-arithmetic visual/physical step (untested)**: 4 hints (K1-K3 hold clues; LAYER TWO; key not simply periodic; visual systems / not math)
 * **One hidden alphabet with a long key (length 23+)** + **Two stacked repeating keys (LAYER TWO), long lengths**: 3 hints (K1-K3 hold clues; LAYER TWO; key not simply periodic)
 * **Gromark / chain-addition digits, both alphabets hidden (base 10)** + **Two stacked repeating keys (LAYER TWO), long lengths**: 3 hints (K1-K3 hold clues; LAYER TWO; key not simply periodic)
-* **Gromark / chain-addition digits, both alphabets hidden (base 10)** + **A genuinely non-arithmetic visual/physical step (untested)**: 2 hints (key not simply periodic; visual systems / not math)
-* **One hidden alphabet with a long key (length 23+)** + **Gromark / chain-addition digits, both alphabets hidden (base 10)**: 1 hints (key not simply periodic)
-* **One hidden alphabet with a long key (length 23+)** + **A genuinely non-arithmetic visual/physical step (untested)**: 1 hints (visual systems / not math)
+* **Two stacked repeating keys (LAYER TWO), long lengths** + **Sentence key (unknown English text) on a keyword tableau**: 3 hints (K1-K3 hold clues; LAYER TWO; key not simply periodic)
+* **Sentence key (unknown English text) on a keyword tableau** + **A genuinely non-arithmetic visual/physical step (untested)**: 3 hints (K1-K3 hold clues; key not simply periodic; visual systems / not math)
+* **One hidden alphabet with a long key (length 23+)** + **Sentence key (unknown English text) on a keyword tableau**: 2 hints (K1-K3 hold clues; key not simply periodic)
 
 ## Details per family
 
@@ -104,6 +129,16 @@ Ideas - · clue test: **untested** · verdict **PASS** · score 1.4
 
 * fact · 24 clue letters: ? nobody has defined one precisely enough to test
 * hint · visual systems / not math: ★ 
+
+### Sentence key (unknown English text) on a keyword tableau
+Ideas 57 · clue test: **disfavoured** · verdict **PASS** · score 2.4
+
+* fact · 24 clue letters: ~ forced key letters never read as English: K4 -4.90 vs shuffled -4.88; a weakly English key could hide
+* fact · hand, paper charts, pre-1990: ✓ tableau + a sentence
+* firm · K5 same words, same places: ✓ same key text, same places
+* hint · flat letter counts: ~ flat in 13% of probes (chance 27%)
+* hint · key not simply periodic: ★ a sentence never repeats
+* hint · K1-K3 hold clues: ★ K1/K2's own system, new keyword
 
 ### Gromark / chain-addition digits, both alphabets hidden (base 10)
 Ideas 19, 45 · clue test: **disfavoured** · verdict **PASS** · score 1.0
@@ -174,12 +209,49 @@ Ideas 04 · clue test: **dead-in-scope** · verdict **PASS** · score 1.4
 * hint · key not simply periodic: ★ 
 * hint · delivering a message: ~ if the key text is 'the message'
 
+### Three remembered key words (Quagmire IV, dictionary alphabets both sides)
+Ideas 63 · clue test: **dead-in-scope** · verdict **PASS** · score 1.4
+
+* fact · 24 clue letters: ✗ no setting for key lengths 1-22 beyond chance; 23-24 chance-level, 25-26 undecidable
+* fact · hand, paper charts, pre-1990: ✓ K1/K2's machine with three words
+* firm · masked, >1 stage, new method: ~ two mixed alphabets
+* hint · key not simply periodic: ~ only if the key word is long
+* hint · K1-K3 hold clues: ★ keyword tableau + key word, as K1/K2
+
 ### Any family above, with one deliberate wrong clue letter
 Ideas 45 · clue test: **dead-in-scope** · verdict **PASS** · score 1.0
 
 * fact · 24 clue letters: ✗ periodic/two-key/Gromark drop-one survivors at chance
 * firm · masked, >1 stage, new method: ~ inherits
 * hint · mistakes on purpose: ★ 
+
+### Carter's reply as a guessed third clue (undecided models re-run)
+Ideas 67 · clue test: **dead-in-scope** · verdict **PASS** · score 1.0
+
+* fact · 24 clue letters: ✗ no guess makes long repeating / stacked / sliding / hidden autokey fit
+* hint · K1-K3 hold clues: ★ K3's question answered
+
+### Paper rotor: hidden wiring between two alphabets, turned by a key word
+Ideas 72 · clue test: **dead-in-scope** · verdict **PASS** · score 1.0
+
+* fact · 24 clue letters: ✗ 0 of 110.8M rotor settings give a real wiring; about 1 true setting in 20 cannot be judged
+* hint · key not simply periodic: ★ 
+
+### Alphabet that changes after every letter (move to front, swaps, turns, Chaocipher)
+Ideas 73 · clue test: **dead-in-scope** · verdict **PASS** · score 1.0
+
+* fact · 24 clue letters: ✗ best 9/24 clue letters over 20.4M settings; shuffled 8-9
+* fact · hand, paper charts, pre-1990: ✓ one-sentence rule
+* hint · key not simply periodic: ★ no period at all
+
+### Autokey / Condi / Ragbaby with a hidden alphabet
+Ideas 55 · clue test: **dead-in-scope** · verdict **FLAG** · score 2.0
+
+* fact · 24 clue letters: ✗ 0 consistent models with >=3 checks; lag >=3 with both sides hidden undecidable
+* firm · K5 same words, same places: ✗ the key follows the message: shared words match in 7% of probes
+* firm · masked, >1 stage, new method: ✓ the message masks itself
+* hint · lag-4 run DIAWINFBN: ★ as odd as K4 in 10% of probes (x31)
+* hint · key not simply periodic: ★ 
 
 ### Selective masking: KRYPTOS letters lightly shifted, others keyed
 Ideas 42 · clue test: **dead** · verdict **PASS** · score 4.5
@@ -217,6 +289,20 @@ Ideas 43 · clue test: **dead** · verdict **PASS** · score 4.4
 * hint · key not simply periodic: ★ restarts break the period
 * hint · sentence strips, X breaks: ★ 
 
+### K3's transposition applied to the key, text left in place
+Ideas 61 · clue test: **dead** · verdict **PASS** · score 4.4
+
+* fact · 24 clue letters: ✗ 0 of 73M settings with >=6 checks
+* fact · hand, paper charts, pre-1990: ✓ one extra worksheet for the key
+* firm · matches directly: ✓ the text never moves
+* firm · K5 same words, same places: ✓ key depends on position only
+* firm · masked, >1 stage, new method: ✓ two stages
+* hint · key not simply periodic: ★ the scramble hides the period
+* hint · LAYER TWO: ★ 
+* hint · two separate systems: ★ K2's system keyed by K3's
+* hint · K1-K3 hold clues: ★ both earlier methods reused
+* hint · shifting matrices: ~ a key grid
+
 ### Two (or three) stacked keys that are real words/phrases/dates
 Ideas 47, 48 · clue test: **dead** · verdict **PASS** · score 4.2
 
@@ -238,6 +324,15 @@ Ideas 47, 48 · clue test: **dead** · verdict **PASS** · score 4.2
 * hint · World Clock / 1989: ~ if a key is a 1989 word/date
 * hint · Egypt 1986: ~ if a key is an Egypt word
 * hint · mistakes on purpose: ~ one-wrong-clue pass
+
+### The sculpture read by columns/diagonals/skips as the key
+Ideas 58 · clue test: **dead** · verdict **PASS** · score 4.0
+
+* fact · 24 clue letters: ✗ best 10/24 key letters; shuffled 10-11
+* hint · key not simply periodic: ★ 
+* hint · K1-K3 hold clues: ★ the earlier text is the key
+* hint · visual systems / not math: ★ read the copper another way
+* hint · carved layout 4+31+31+31: ★ 
 
 ### Clock arithmetic keys (dials, two hands) and carved-row restarts
 Ideas 50 · clue test: **dead** · verdict **PASS** · score 3.4
@@ -291,12 +386,46 @@ Ideas 44 · clue test: **dead** · verdict **PASS** · score 3.0
 * hint · key not simply periodic: ★ 
 * hint · two separate systems: ★ literally
 
+### Two systems in turn (switching rows, interleaved streams, Slidefair)
+Ideas 60 · clue test: **dead** · verdict **PASS** · score 3.0
+
+* fact · 24 clue letters: ✗ 2-4 rows cover 9-14 of 24 (chance); no interleaved setting fits
+* hint · clues near their cipher letters: ★ x6 in probes
+* hint · key not simply periodic: ★ 
+* hint · two separate systems: ★ literally
+
+### Any dictionary keyword tableau x hand key rules (sliding, stacked, autokey, restarts)
+Ideas 66 · clue test: **dead** · verdict **PASS** · score 3.0
+
+* fact · 24 clue letters: ✗ 0 of 6.67M key streams pass any rule with >=7 checks
+* firm · K5 same words, same places: ~ position-only rules pass; autokey fails
+* hint · key not simply periodic: ★ sliding and stacked keys hide the period
+* hint · LAYER TWO: ★ two stacked keys on any tableau
+* hint · K1-K3 hold clues: ★ 
+
+### The ? counts: 98 = 7 x 14 cell grids (scrambled key, grid formulas, drifting key)
+Ideas 64 · clue test: **dead** · verdict **PASS** · score 3.0
+
+* fact · 24 clue letters: ✗ 0 survivors in 71M + 9M settings
+* hint · key not simply periodic: ★ 
+* hint · two separate systems: ★ 
+* hint · carved layout 4+31+31+31: ★ the carved ? and an exact grid
+
 ### Shifting matrices / coordinate wheels on a grid
 Ideas 39 · clue test: **dead** · verdict **PASS** · score 2.4
 
 * fact · 24 clue letters: ✗ no wheel set fits in any grid
 * hint · different math base: ★ grid coordinates
 * hint · shifting matrices: ★ literally
+
+### Chain addition in letters; row word + column word grids
+Ideas 65 · clue test: **dead** · verdict **PASS** · score 2.4
+
+* fact · 24 clue letters: ✗ 0 of 1,112 settings fit
+* fact · hand, paper charts, pre-1990: ✓ agent-style key stretching
+* hint · key not simply periodic: ★ 
+* hint · shifting matrices: ★ row + column keys on a grid
+* hint · carved layout 4+31+31+31: ~ widths 7/14/21/42
 
 ### Keyword alphabets / Quagmire I-IV with short keys
 Ideas 05, 14, 15, 20, 27, 37 · clue test: **dead** · verdict **PASS** · score 2.3
@@ -364,6 +493,30 @@ Ideas 49 · clue test: **dead** · verdict **PASS** · score 2.0
 * hint · key not simply periodic: ★ running or long key
 * hint · K1-K3 hold clues: ★ answers to K1-K3 contain clues to K4
 
+### Rows of 21: column key shared by the two clue rows, row decides offset or tableau
+Ideas 69 · clue test: **dead** · verdict **PASS** · score 2.0
+
+* fact · 24 clue letters: ✗ 0 hits in 24M one-tableau tests and 3.0e12 tableau pairs
+* hint · shifting matrices: ★ 
+* hint · carved layout 4+31+31+31: ★ both clues start a row at width 21; K3 worksheet is 42 wide
+
+### Tableau seen through the pierced copper: mirrored, flipped, slanted overlays as the key
+Ideas 77 · clue test: **dead** · verdict **PASS** · score 2.0
+
+* fact · 24 clue letters: ✗ best 9/24 key letters over 8.2M settings; shuffled 8
+* hint · visual systems / not math: ★ SHADOW FORCES; letters cut through the plate
+* hint · carved layout 4+31+31+31: ★ 
+
+### Any short formula for the key (position, grids, neighbours, number sequences)
+Ideas 54 · clue test: **dead** · verdict **PASS** · score 1.8
+
+* fact · 24 clue letters: ✗ 0 of 9.15M formulas fit; shuffled 0
+* fact · hand, paper charts, pre-1990: ✓ a rule on a chart
+* firm · K5 same words, same places: ~ position-only formulas pass; neighbour-letter terms fail (11% in probes)
+* hint · key not simply periodic: ★ 
+* hint · shifting matrices: ~ grid row/column terms
+* hint · carved layout 4+31+31+31: ~ carved-layout terms included
+
 ### Teleprinter: Baudot/Vernam XOR, Lorenz wheels
 Ideas 34, 36 · clue test: **dead** · verdict **PASS** · score 1.4
 
@@ -373,6 +526,12 @@ Ideas 34, 36 · clue test: **dead** · verdict **PASS** · score 1.4
 * firm · K5 same words, same places: ✓ periodic wheels
 * hint · World Clock / 1989: ~ Berlin Tunnel
 * hint · delivering a message: ★ 'transmitted underground'
+
+### Each clue alone / the gap between the clues off by 1-3 letters
+Ideas 68 · clue test: **dead** · verdict **PASS** · score 1.4
+
+* fact · 24 clue letters: ✗ 0 of 17.6M key-stream settings pass any rule with >=7 checks
+* hint · K1-K3 hold clues: ★ K2 was carved with a letter dropped
 
 ### Visual letter transforms (semaphore, Morse reversal) alone or stacked
 Ideas 30 · clue test: **dead** · verdict **PASS** · score 1.0
@@ -385,6 +544,63 @@ Ideas 37 · clue test: **dead** · verdict **PASS** · score 1.0
 
 * fact · 24 clue letters: ✗ 0 survivors
 * hint · Egypt 1986: ★ 
+
+### Drifting key word (each key letter steps at its own rate)
+Ideas 62 · clue test: **dead** · verdict **PASS** · score 1.0
+
+* fact · 24 clue letters: ✗ 0 fits at widths 2-9; wider undecidable
+* hint · key not simply periodic: ★ 
+
+### Autokey with a keyed distance (a repeating pattern says how far back to look)
+Ideas 74 · clue test: **dead** · verdict **PASS** · score 1.0
+
+* fact · 24 clue letters: ✗ 0 fits in 596M settings
+* hint · key not simply periodic: ★ 
+
+### Wheatstone clock-face cipher, any outer ring of 27-38 cells, any inner ring
+Ideas 75 · clue test: **dead** · verdict **PASS** · score 1.0
+
+* fact · 24 clue letters: ✗ ruled out by proof from the repeated cipher letters S,S and R,R; 0 of 114.6M dictionary ring settings
+* fact · hand, paper charts, pre-1990: ✓ a clock-face device
+* hint · key not simply periodic: ★ 
+
+### Key arithmetic on a wheel of 27-31 cells (the ? and the 30-31 wide tableau rows)
+Ideas 70 · clue test: **dead** · verdict **PASS** · score 0.8
+
+* fact · 24 clue letters: ✗ 0 of 11.5M key streams pass with >=7 checks
+
+### Multiplier word + adder word (C = A*P + B, both repeating)
+Ideas 71 · clue test: **dead** · verdict **PASS** · score 0.8
+
+* fact · 24 clue letters: ✗ 0 of 1,156 exact systems; 0 of 11.0M fixed-multiplier key streams
+* fact · hand, paper charts, pre-1990: ✓ decimated alphabets
+* firm · masked, >1 stage, new method: ★ multiply then add
+
+### Letters as 5 bits (binary, Gray, Bacon) with bit keys; Morse dots/dashes as a switch
+Ideas 76 · clue test: **dead** · verdict **PASS** · score 0.4
+
+* fact · 24 clue letters: ✗ bit-key score 21 vs shuffled 0-35 (real system 60+); 0 of 417k switch settings
+* hint · visual systems / not math: ~ DIGETAL INTERPRETATU
+
+### Autokey stacked with a repeating key word
+Ideas 59 · clue test: **dead** · verdict **FLAG** · score 3.0
+
+* fact · 24 clue letters: ✗ 0 of 406k settings with >=6 checks
+* firm · K5 same words, same places: ✗ 1% in probes
+* firm · masked, >1 stage, new method: ✓ two layers
+* hint · key not simply periodic: ★ 
+* hint · LAYER TWO: ★ 
+* hint · two separate systems: ★ 
+
+### Interrupted key (restart at a trigger letter or each word)
+Ideas 56 · clue test: **dead** · verdict **FLAG** · score 2.4
+
+* fact · 24 clue letters: ✗ 0 of 247k rules with >=5 checks
+* fact · hand, paper charts, pre-1990: ✓ classical hand cipher
+* firm · K5 same words, same places: ✗ restarts follow the message: 15% in probes
+* hint · lag-4 run DIAWINFBN: ★ x21 in probes
+* hint · key not simply periodic: ★ restarts hide the period
+* hint · K1-K3 hold clues: ~ K1/K2's system with one extra rule
 
 ### Repeating key (Vigenere/Beaufort), A-Z or KRYPTOS alphabet
 Ideas 01, 06, 15 · clue test: **dead** · verdict **FLAG** · score 1.5

@@ -47,6 +47,12 @@ Sanborn on BERLIN: N decodes to B; BERLINCLOCK "matches directly", meaning plain
   * **"Who says it is even a math solution?"**
 * **The plaintext is a riddle;** solving K4 is not the end.
 
+Scheidt statements first used in round 10 (sources in `research_notes/sanborn_scheidt_methods.md`):
+
+* **2011 (via Bean):** K4's cipher is like those "provided agents or pilots in case of capture": "not mathematical", "simple, can be remembered", run years later "with the correct key word/s".
+* **2015 workshop:** "special characters don't work" and must be accounted for. K4 follows a carved "?"; with it K4 is 98 = 7 × 14 symbols.
+* **Layout facts:** Sanborn's K3 worksheet is 42 wide; the two clue blocks start 42 apart, both one past a multiple of 21 (about 1 in 49 by chance, post hoc).
+
 ## 4. What Scheidt has said (stated)
 
 * The four sections use four processes: "two of them are similar and the other two are different things".
@@ -97,6 +103,10 @@ Sanborn on BERLIN: N decodes to B; BERLINCLOCK "matches directly", meaning plain
   * Stehle's lag-4 run (DIAWINFBN) **p = 0.003** and the mod-7 doublets **p = 0.001**, against 200,000 shuffles (post hoc caveat).
   * **No** periodic signature in the letter differences (p = 0.16).
   * The clues force a key jump of 12–13 alphabet steps somewhere, so the key is not a slowly turning dial.
+* **Ours (round 9):**
+  * Under Beaufort on A–Z (`C + P`), the key is **K at five clue positions** and within one of K at nine of 24. Same fact as Bean's closeness seen from the other side, plus A→L and A→K. No row-switching model fits it (idea 60).
+  * **EAST encrypts to FLRV and, nine letters on, to GKSS** (shifts of +1, −1, +1, −3). Not significant after correcting for the choice of lag and cipher view: p = 0.061.
+  * The pre-filter's **K5 clue counts against every "message keys itself" rule** (autokey, interrupted key): a shared word would not encrypt the same way in K5.
 * **Ours: fingerprints.** The hand-made fingerprint ranking, the neural detective and Bean all point to **direct substitution, plain or near-plain alphabet, a structured key that isn't simply periodic, no transposition**.
 
 ## 8. What all of that rules out at the family level (summary; details in NEGATIVES.md)
@@ -116,8 +126,12 @@ Sanborn on BERLIN: N decodes to B; BERLINCLOCK "matches directly", meaning plain
   * shifting matrices and Gromark in bases 3–16 (round 6);
   * light masking of the KRYPTOS letters, key restarts at sentence breaks, a different system per sentence, one deliberate mistake (round 7);
   * stacked keys made of real words or phrases, K1–K3 text keys with hidden alphabets, clock arithmetic, letter-class tableaux (round 8).
+  * three remembered key words (Quagmire IV over all dictionary alphabet pairs, key lengths 1–22), any dictionary keyword tableau with sliding/stacked/autokey/restart keys, chain addition in letters, row+column word grids, 98-cell grids with the "?" counted, the reversed DIANA table for text keys (round 10).
+  * round 11: each clue alone and gap slack, rows of 21, arithmetic mod 27–31, multiplier + adder words, paper rotor with hidden wiring, evolving alphabets, keyed-distance autokey, Wheatstone (by proof), letters as bits and Morse as a switch, mirrored/slanted copper overlay
+  * every short formula for the key, interrupted keys, autokey with a hidden alphabet (short lags), autokey stacked with a key word, two systems in turn, a scrambled or drifting key word, the sculpture read by columns/diagonals/skips, English sentence keys on keyword tableaux (round 9).
 * **Open:**
   * two stacked keys at long lengths whose keys are not words (word and phrase keys were closed in round 8; the rest needs more ciphertext such as K5);
   * hidden-alphabet keys of length 23 or more;
+  * autokey with the alphabet hidden on both sides at lag 3 or more; sentence keys in German or on non-keyword alphabets;
   * the World Clock's physical facts (face bearings, 1989 plates), being gathered on site;
   * genuinely non-arithmetic "visual" steps.

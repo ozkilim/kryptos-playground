@@ -112,3 +112,39 @@ See `campaign/SUMMARY_8.md`.
 - **K1-K3 plaintexts as keys with hidden alphabets: closed** (four alphabet models, periods 2-60 and running).
 - **Clock arithmetic (dials 12/24/60, two hands), carved-row restarts (including inside BERLINCLOCK): closed.**
 - **Still open and needing new information:** non-word long keys (a K4/K5 depth attack once K5 is released), long hidden-alphabet keys, the World Clock's physical facts (face bearings, 1989 plates; on-site check in progress), and any precise "visual" step.
+
+## Status changes from campaign 9 (2026-11-16, this repo)
+See `campaign/SUMMARY_9.md`. All exact (linear algebra mod 26 on the clue letters), all with planted answers and shuffled controls.
+- **Short formulas for the key: closed.** No combination of up to 3 of 186 ingredients (position powers, number sequences, grids of width 2-40, the carved layout, neighbouring letters, products) fits; 9.15M formulas, 0 fits.
+- **Interrupted keys** (restart at a trigger letter or each word), **autokey stacked with a repeating key**, **two systems in turn** (row switching, interleaved streams, Slidefair) and **a drifting key word**: closed.
+- **Transposition applied to the key instead of the text** (columnar to width 8, keyword orders 9-14, single/double rotations, routes, skips): closed for key lengths 2-26.
+- **The sculpture read by columns, diagonals or skips as the key: closed** (best 10/24 key letters; chance).
+- **Autokey / Condi / Ragbaby with a hidden alphabet: closed where decidable** (lag 1 with both sides hidden; lags 1-6 with one side known). **Still open:** both sides hidden at lag 3 or more (too few clue equations).
+- **A sentence key on a keyword tableau: no signal**, with a caveat (planted keys rank top-4 of 92.5M, but in two of four runs the margin over the noise ceiling is thin). **Still open:** German or other-language key text; non-keyword alphabets.
+- **Checked and found not significant:** EAST encrypting to FLRV then GKSS nine letters apart (p = 0.061 after paying for the choice of lag and view).
+
+## Status changes from campaign 10 (2026-11-16, this repo)
+See `campaign/SUMMARY_10.md`. Clues used: Scheidt's "simple, can be remembered... key word/s", "special characters must be accounted for", the 42-wide K3 worksheet, K3's closing question.
+- **Three key words (Quagmire IV, dictionary alphabets on both sides): closed for key lengths 1-22** (445 billion alphabet pairs per length, exact hash join). **Still open:** lengths 23-26 (too few checks).
+- **Any dictionary keyword tableau with a sliding, stacked (to 13), progressive, autokey, word-restart, growing or chain-addition key: closed** (6.67M key streams, 0 pass).
+- **Chain addition in letters (taps to 10) and row word + column word grids (widths 2-48): closed.**
+- **The "?" as a cell (98 = 7 x 14): closed** for the scrambled-key, grid-formula and drifting-key families.
+- **Reversed (DIANA) table for text keys: closed** for sculpture readings; no signal for English sentence keys.
+- **Carter's reply as a third clue: no tested model appears** (long repeating keys, every stacked pair to 26, sliding, hidden-alphabet autokey to lag 8).
+- **Not run:** one-wrong-clue-letter versions of rounds 9-10; German sentence keys.
+- **Best remaining lead needs new data:** a written-out 97-letter key shared with K5 (Sanborn: same coded words in the same positions). A two-message attack is the tool; it needs K5's ciphertext.
+
+
+## Status changes from campaign 11 (2026-11-16, this repo)
+See `campaign/SUMMARY_11.md`. This round attacked the assumptions inside rounds 9-10 (exact gap, mod 26, adding keys, fixed alphabets).
+- **Each clue alone, and the gap between the clues off by 1-3 letters: closed** for the battery of key rules on 220k keyword tableaux (17.6M settings, 0 pass).
+- **Rows of 21 (both clues start a row): closed** for a shared column key with a row offset, a column shift, or a different dictionary tableau per row (3.0e12 pairs, 0 hits).
+- **Arithmetic mod 27-31: closed** for the same battery (11.5M key streams).
+- **Multiplier word + adder word: closed** (exact for lengths up to 17 on A-Z/KRYPTOS; fixed multipliers on every keyword tableau).
+- **Paper rotor with hidden wiring: closed in scope** (constant speeds, letter-fed turning, dictionary-word turning keys, every key to length 6). **Still open:** long non-word turning keys; two rotors.
+- **Evolving alphabets (move to front, swaps, turns, Chaocipher): closed in scope** for keyword start alphabets. **Still open:** an arbitrary start alphabet.
+- **Autokey with a keyed distance: closed** (596M settings).
+- **Wheatstone clock-face cipher: closed by proof for every ring** (outer ring 27-38 cells, 26-letter inner ring).
+- **Letters as 5 bits with bit keys; Morse as a switch: closed.**
+- **Mirrored / flipped / slanted overlay of the tableau behind the cipher panel: closed** (best 9/24, chance).
+- **Not run:** the transposition-mixed alphabets for ideas 68, 70, 71, 74; formula mining and the three-keyword join with gap slack.

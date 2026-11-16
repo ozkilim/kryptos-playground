@@ -314,5 +314,173 @@
   "script": "attacks/52_second_look.py",
   "est_min": 30,
   "why": "Every candidate was judged by one score at the time; re-judge all together, calibrated on real English with forced clues."
+ },
+ {
+  "id": "54",
+  "title": "Formula mining: every 0-4 ingredient linear formula for the key",
+  "script": "attacks/54_formula_mining.py",
+  "est_min": 8,
+  "why": "Earlier rounds tested named key rules one at a time; this tests every short combination of 186 ingredients at once."
+ },
+ {
+  "id": "55",
+  "title": "Autokey / Condi / Ragbaby with a hidden alphabet (exact linear solve)",
+  "script": "attacks/55_hidden_alphabet_autokey.py",
+  "est_min": 2,
+  "why": "Autokey was only ruled out on known alphabets; the hidden alphabet drops out of a linear system mod 26."
+ },
+ {
+  "id": "56",
+  "title": "Interrupted key: restart at a trigger letter or at each word",
+  "script": "attacks/56_interrupted_key.py",
+  "est_min": 6,
+  "why": "A classical hand cipher that hides the period; restarts were only tested at sentences and carved rows."
+ },
+ {
+  "id": "57",
+  "title": "Sentence key (unknown English text) on keyword tableaux",
+  "script": "attacks/57_running_key_keyword_alphabets.py",
+  "est_min": 12,
+  "why": "K1/K2's own system with a different keyword and a whole-sentence key; the forced key letters must read as English."
+ },
+ {
+  "id": "58",
+  "title": "The sculpture read other ways as the key (columns, diagonals, skips)",
+  "script": "attacks/58_sculpture_readings.py",
+  "est_min": 1,
+  "why": "Sanborn's step is 'visual'; sculpture running keys were only read along the rows."
+ },
+ {
+  "id": "59",
+  "title": "Autokey stacked with a repeating key word (two systems)",
+  "script": "attacks/59_autokey_plus_repeating_key.py",
+  "est_min": 1,
+  "why": "The two simplest in-place hand systems stacked directly; only tested behind transpositions before."
+ },
+ {
+  "id": "60",
+  "title": "Two systems in turn: switching rows, interleaved streams, Slidefair pairs",
+  "script": "attacks/60_two_systems_interleaved.py",
+  "est_min": 1,
+  "why": "Three literal readings of 'two separate systems' that round 7 did not cover."
+ },
+ {
+  "id": "61",
+  "title": "Scrambled key: K3's transposition applied to the repeating key, text left in place",
+  "script": "attacks/61_transposed_key.py",
+  "est_min": 6,
+  "why": "Uses both of the lower half's systems while keeping BERLINCLOCK in place, which text transpositions cannot."
+ },
+ {
+  "id": "62",
+  "title": "Drifting key word (each key letter steps at its own rate) + the EAST/EAST near-repeat measured",
+  "script": "attacks/62_drifting_key.py",
+  "est_min": 1,
+  "why": "EAST encrypts to FLRV and, 9 letters on, to GKSS: nearly the same. Tests the model that suggests."
+ },
+ {
+  "id": "63",
+  "title": "Three remembered key words: Quagmire IV over all dictionary alphabet pairs (hash join)",
+  "script": "attacks/63_three_keywords.py",
+  "est_min": 8,
+  "why": "Scheidt: simple, remembered, 'with the correct key word/s'. K1/K2's machine with three words instead of two."
+ },
+ {
+  "id": "64",
+  "title": "The '?' counts: 98 = 7 x 14 cells (reruns of 54, 61, 62 with KRYPTOS_QMARK=1)",
+  "script": "attacks/61_transposed_key.py",
+  "est_min": 15,
+  "why": "Scheidt: special characters must be accounted for. With the ? K4 is an exact grid; 97 alone is prime."
+ },
+ {
+  "id": "65",
+  "title": "Chain-addition key in letters; row word + column word grids",
+  "script": "attacks/65_chain_addition_and_grid_keys.py",
+  "est_min": 1,
+  "why": "Ways an agent stretches a remembered word into a long key; clue blocks start 42 apart = K3 worksheet width."
+ },
+ {
+  "id": "66",
+  "title": "Every dictionary keyword tableau x battery of key rules (sliding, stacked, autokey...)",
+  "script": "attacks/66_keyword_tableau_battery.py",
+  "est_min": 25,
+  "why": "Round 9's key rules were only run on the A-Z and KRYPTOS tableaux; the tableau keyword may be another word."
+ },
+ {
+  "id": "67",
+  "title": "Carter's reply as a guessed third clue; undecided models re-run",
+  "script": "attacks/67_carter_reply_crib.py",
+  "est_min": 1,
+  "why": "K3 ends with a question and K4 starts where the answer would; 18 more letters make undecidable models decidable."
+ },
+ {
+  "id": "68",
+  "title": "Each clue alone, and both clues with the gap off by 1-3 letters",
+  "script": "attacks/68_blocks_alone_and_gap_slack.py",
+  "est_min": 15,
+  "why": "Sanborn dropped a letter carving K2; every joint test assumes the 42-letter gap between the clues is exact."
+ },
+ {
+  "id": "69",
+  "title": "Rows of 21: column key shared by the two clue rows, row decides offset or tableau",
+  "script": "attacks/69_rows_of_21.py",
+  "est_min": 2,
+  "why": "Both clues start a row in a 21-wide grid (K3's worksheet was 42 wide); 'ID BY ROWS'."
+ },
+ {
+  "id": "70",
+  "title": "Wrong modulus: key arithmetic on a wheel of 27-31 cells",
+  "script": "attacks/70_wrong_modulus.py",
+  "est_min": 12,
+  "why": "Scheidt: special characters must be accounted for (27 symbols with '?'); the carved tableau rows are 30-31 wide."
+ },
+ {
+  "id": "71",
+  "title": "Multiplier word + adder word (C = A*P + B, both repeating)",
+  "script": "attacks/71_multiplier_and_adder_words.py",
+  "est_min": 12,
+  "why": "Decimated alphabets are as easy by hand as shifted ones; only one fixed multiplier had been allowed."
+ },
+ {
+  "id": "72",
+  "title": "Paper rotor: hidden wiring between two alphabets, turned by a key word",
+  "script": "attacks/72_paper_rotor.py",
+  "est_min": 3,
+  "why": "Not linear in a hidden alphabet, so unseen by every earlier exact test; others tried only constant-speed rotors."
+ },
+ {
+  "id": "73",
+  "title": "Evolving alphabet: the alphabet changes after every letter",
+  "script": "attacks/73_evolving_alphabet.py",
+  "est_min": 20,
+  "why": "A one-sentence hand rule with flat statistics and no period; decrypts from letter 0 with no unknown plaintext."
+ },
+ {
+  "id": "74",
+  "title": "Autokey with a keyed distance (a pattern says how far back to look)",
+  "script": "attacks/74_keyed_lag_autokey.py",
+  "est_min": 25,
+  "why": "All earlier autokey tests used one fixed lag."
+ },
+ {
+  "id": "75",
+  "title": "Wheatstone clock-face cipher with any rings (proof + dictionary cross-check)",
+  "script": "attacks/75_wheatstone_hidden_ring.py",
+  "est_min": 20,
+  "why": "BERLIN CLOCK, a 27th symbol; the repeated cipher letters S,S and R,R decide it for every ring."
+ },
+ {
+  "id": "76",
+  "title": "Digital interpretation: letters as 5 bits (binary, Gray, Bacon), Morse as a switch",
+  "script": "attacks/76_digital_interpretation.py",
+  "est_min": 1,
+  "why": "DIGETAL INTERPRETATU; only Baudot numbering had been tested."
+ },
+ {
+  "id": "77",
+  "title": "Tableau seen through the pierced copper: mirrored, flipped, slanted overlays",
+  "script": "attacks/77_overlay_through_the_copper.py",
+  "est_min": 2,
+  "why": "SHADOW FORCES, 'it's visual'; round 9 read the panels as text but not as a mirrored overlay."
  }
 ]
