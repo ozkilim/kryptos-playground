@@ -39,7 +39,7 @@ def solve_exact(eqs):
 
 
 class KeyCompleter:
-    def __init__(self, ct, alpha, variant, L1, L2, comps, qg=None):
+    def __init__(self, ct, alpha, variant, L1, L2, comps, qg=None, key_weight=0.0):
         self.ct, self.alpha, self.variant, self.L1, self.L2 = ct, alpha, variant, L1, L2
         self.idx = {c: i for i, c in enumerate(alpha)}
         self.dec = PLAIN_FROM[variant]
@@ -48,6 +48,7 @@ class KeyCompleter:
         self.freeA = [r for r in range(L1) if ("A", r) not in used]
         self.freeB = [s for s in range(L2) if ("NB", s) not in used]
         self.qg = qg or Quadgrams()
+        self.key_weight = key_weight  # >0: reward keys that read as English (hand keys are words/phrases)
 
     def keys(self, st):
         A, B = [0] * self.L1, [0] * self.L2
@@ -69,6 +70,15 @@ class KeyCompleter:
         return "".join(self.alpha[self.dec(self.idx[c], (A[i % self.L1] + B[i % self.L2]) % 26)]
                        for i, c in enumerate(self.ct))
 
+    def total(self, st, pt):
+        s = self.qg.score(pt) * (N - 3)
+        if self.key_weight:
+            A, B = self.keys(st)
+            ka = "".join(self.alpha[k] for k in A)
+            kb = "".join(self.alpha[k] for k in B)
+            s += self.key_weight * (self.qg.score(ka) * max(1, len(ka) - 3) + self.qg.score(kb) * max(1, len(kb) - 3))
+        return s
+
     def anneal(self, rng, iters=30000, t0=3.0, t1=0.05, restarts=4):
         best = (-math.inf, None, None)
         nmov = len(self.comps) + len(self.freeA) + len(self.freeB)
@@ -77,7 +87,7 @@ class KeyCompleter:
                   "A": {r: rng.randrange(26) for r in self.freeA},
                   "B": {s: rng.randrange(26) for s in self.freeB}}
             pt = self.decrypt(st)
-            cur = self.qg.score(pt) * (N - 3)
+            cur = self.total(st, pt)
             if nmov == 0:
                 return cur / (N - 3), pt, st
             for it in range(iters):
@@ -91,12 +101,14 @@ class KeyCompleter:
                 else:
                     new["B"][self.freeB[j - len(self.comps) - len(self.freeA)]] = rng.randrange(26)
                 npt = self.decrypt(new)
-                sc = self.qg.score(npt) * (N - 3)
+                sc = self.total(new, npt)
                 if sc >= cur or rng.random() < math.exp((sc - cur) / t):
                     st, cur, pt = new, sc, npt
                     if cur > best[0]:
                         best = (cur, pt, st)
-        return best[0] / (N - 3), best[1], best[2]
+        if best[1] is None:
+            return -math.inf, None, None
+        return self.qg.score(best[1]), best[1], best[2]
 
 
 def plant(pt, rng, alpha, variant, L1, L2):
@@ -107,3 +119,44 @@ def plant(pt, rng, alpha, variant, L1, L2):
            "variant_beaufort": lambda p, k: (p - k) % 26}[variant]
     idx = {c: i for i, c in enumerate(alpha)}
     return "".join(alpha[enc(idx[p], (A[i % L1] + B[i % L2]) % 26)] for i, p in enumerate(pt)), (A, B)
+
+
+def parallel_tempering(comp, rng, sweeps=60000, temps=(0.15, 0.3, 0.6, 1.2, 2.4, 4.8), swap_every=10):
+    """Replica-exchange annealing for a KeyCompleter: several copies at fixed
+    temperatures, swapping neighbours now and then, so hot copies explore and
+    cold copies refine. Returns (mean quadgram score, plaintext, state)."""
+    nmov = len(comp.comps) + len(comp.freeA) + len(comp.freeB)
+    reps = []
+    for _ in temps:
+        st = {"off": [rng.randrange(26) for _ in comp.comps],
+              "A": {r: rng.randrange(26) for r in comp.freeA},
+              "B": {s: rng.randrange(26) for s in comp.freeB}}
+        pt = comp.decrypt(st)
+        reps.append([st, comp.total(st, pt), pt])
+    best = max(reps, key=lambda r: r[1])[:]
+    if nmov == 0:
+        return comp.qg.score(best[2]), best[2], best[0]
+    for it in range(sweeps):
+        for k, t in enumerate(temps):
+            st, cur, pt = reps[k]
+            new = {"off": list(st["off"]), "A": dict(st["A"]), "B": dict(st["B"])}
+            j = rng.randrange(nmov)
+            if j < len(comp.comps):
+                new["off"][j] = rng.randrange(26)
+            elif j < len(comp.comps) + len(comp.freeA):
+                new["A"][comp.freeA[j - len(comp.comps)]] = rng.randrange(26)
+            else:
+                new["B"][comp.freeB[j - len(comp.comps) - len(comp.freeA)]] = rng.randrange(26)
+            npt = comp.decrypt(new)
+            sc = comp.total(new, npt)
+            if sc >= cur or rng.random() < math.exp((sc - cur) / t):
+                reps[k] = [new, sc, npt]
+                if sc > best[1]:
+                    best = [new, sc, npt]
+        if it % swap_every == 0:
+            for k in range(len(temps) - 1):
+                a, b = reps[k], reps[k + 1]
+                d = (b[1] - a[1]) * (1 / temps[k] - 1 / temps[k + 1])
+                if d >= 0 or rng.random() < math.exp(d):
+                    reps[k], reps[k + 1] = b, a
+    return comp.qg.score(best[2]), best[2], best[0]

@@ -29,8 +29,12 @@ from kryptos.harness import Experiment  # noqa: E402
 from kryptos.solvers import freealpha as F  # noqa: E402
 
 PRIMER_SPACES = [(10, n) for n in range(2, 7)] + [(26, n) for n in range(2, 5)]
+IDEA = "19"
+if "--other-bases" in sys.argv:  # idea 41: Scheidt's "different math base"; Bean/Barney list base-8 survivors
+    PRIMER_SPACES = [(b, n) for b in list(range(3, 10)) + list(range(11, 17)) for n in range(2, 6) if b ** n <= 2_000_000]
+    IDEA = "41"
 if SMOKE:
-    PRIMER_SPACES = [(10, 2), (10, 3)]
+    PRIMER_SPACES = [(10, 2), (10, 3)] if IDEA == "19" else [(5, 3), (8, 3)]
 _W = {}
 
 
@@ -101,7 +105,8 @@ def complete(ct, surv, pool, cap):
 if __name__ == "__main__":
     t0 = time.time()
     cap = 20 if SMOKE else 1500
-    with Experiment("gromark-free-alphabets+english-completion", puzzle="k4", cribs_forced=True,
+    with Experiment("gromark-free-alphabets+english-completion" + ("-other-bases" if IDEA == "41" else ""),
+                    puzzle="k4", cribs_forced=True,
                     notes="chain-addition keys, base 10 primers len 2-6 and base 26 len 2-4; both alphabets free; "
                           "exact clue equations (union-find + injectivity), survivors completed by annealing") as ex:
         with Pool(cpu_count(), initializer=_init, initargs=(K4,)) as pool:
@@ -133,10 +138,11 @@ if __name__ == "__main__":
                        f"({best:.2f}) is no better than shuffled K4s ({cbest}); planted Gromark texts reach "
                        f"{pq[0]:.2f}..{pq[-1]:.2f} through the same pipeline")
         ex.notes += f"; {n_cons} clue-consistent, {len(surv)} survive injectivity ({five} five-digit base 10); {verdict}"
-    report("19", name="gromark-free-alphabets", hypotheses=sum(b ** n for b, n in PRIMER_SPACES),
+    report(IDEA, name="gromark-free-alphabets" + (" (other bases)" if IDEA == "41" else ""),
+           bases=sorted({b for b, _ in PRIMER_SPACES}), hypotheses=sum(b ** n for b, n in PRIMER_SPACES),
            crib_consistent=n_cons, survivors=len(surv), five_digit_base10_survivors=five,
            completed=len(res), best_quadgram=best, control=ctrl,
            planted_power=[{"q": q, "letters_right": a} for q, a in planted],
            top=[{"q": round(q, 3), "base": b, "primer": "".join(map(str, p)), "plaintext": pt} for q, pt, b, p in res[:5]],
            verdict=verdict, minutes=round((time.time() - t0) / 60, 1))
-    print(f"[19] consistent {n_cons}, survivors {len(surv)} (5-digit base10: {five}), best {best} vs controls {ctrl} -> {verdict}")
+    print(f"[{IDEA}] consistent {n_cons}, survivors {len(surv)} (5-digit base10: {five}), best {best} vs controls {ctrl} -> {verdict}")

@@ -210,5 +210,29 @@
   "script": "attacks/37_egypt_alphabets.py",
   "est_min": 20,
   "why": "Sanborn: the 1986 Egypt trip figures in the solution; near-plain alphabets are what the fingerprint favours."
+ },
+ {
+  "id": "39",
+  "title": "Shifting matrices / number-base change: grid coordinates each shifted by its own wheel",
+  "script": "attacks/39_shifting_matrices.py",
+  "est_min": 5,
+  "why": "Sanborn: 'matrix codes Ed gave me'; Scheidt: 'a different math base', 'shifting matrices'. Only the base-3 cube with simple keys was tried."
+ },
+ {
+  "id": "41",
+  "title": "Gromark in other number bases (3-16), both alphabets hidden, completed",
+  "script": "attacks/19_gromark_free_alphabets.py",
+  "args": [
+   "--other-bases"
+  ],
+  "est_min": 60,
+  "why": "Scheidt's 'different math base'; Bean/Barney list survivors in base 8 etc.; completions never done."
+ },
+ {
+  "id": "38",
+  "title": "Long stacked keys revisited: heat-bath solver + English-key prior",
+  "script": "attacks/38_long_stacked_keys_v2.py",
+  "est_min": 60,
+  "why": "Diagnosis showed the open region is search-limited (true answers score higher than what was found), not information-limited."
  }
 ]
