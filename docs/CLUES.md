@@ -1,4 +1,4 @@
-# Every K4 clue we have (as of 2026-11-15)
+# Every K4 clue we have (as of 2026-11-16)
 
 Every clue below is levelled (fact / firm / hint) and checked against every cipher family in
 [`CLUE_MATRIX.md`](CLUE_MATRIX.md), built by `python -m kryptos.clues`.
@@ -112,9 +112,12 @@ Sanborn on BERLIN: N decodes to B; BERLINCLOCK "matches directly", meaning plain
   * Egypt-era alphabets;
   * teleprinter ciphers;
   * self-masking;
-  * strips cut at carved rows or fixed widths.
+  * strips cut at carved rows or fixed widths;
+  * shifting matrices and Gromark in bases 3–16 (round 6);
+  * light masking of the KRYPTOS letters, key restarts at sentence breaks, a different system per sentence, one deliberate mistake (round 7);
+  * stacked keys made of real words or phrases, K1–K3 text keys with hidden alphabets, clock arithmetic, letter-class tableaux (round 8).
 * **Open:**
-  * two stacked keys at long lengths (a search problem; round 6 is attacking it);
+  * two stacked keys at long lengths whose keys are not words (word and phrase keys were closed in round 8; the rest needs more ciphertext such as K5);
   * hidden-alphabet keys of length 23 or more;
-  * key schedules tied to **unknown boundaries such as sentences**;
+  * the World Clock's physical facts (face bearings, 1989 plates), being gathered on site;
   * genuinely non-arithmetic "visual" steps.

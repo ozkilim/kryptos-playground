@@ -1,5 +1,7 @@
 # Kryptos Playground
 
+> **AI agents:** read [`AGENTS.md`](AGENTS.md) first (git identity, the paid-check rule, the standard every experiment follows).
+
 A workbench for cracking **K4**, the last unsolved section of the Kryptos sculpture at CIA headquarters. It also includes the three solved sections and Paradigm's ten CTF practice puzzles to practise on.
 
 ```
@@ -49,7 +51,7 @@ python -m kryptos crack pk1            # run the automatic solvers on any puzzle
 python -m kryptos cribkeys             # key letters K4's clues imply under Vigenère/Beaufort
 python -m kryptos check "YOUR97LETTERS..."   # free internal check for a K4 guess
 python -m kryptos ledger               # what's been tried so far
-python -m kryptos negatives search hill   # is this idea already dead? (169 sourced negatives + ours)
+python -m kryptos negatives search hill   # is this idea already dead? (318 sourced and own negatives)
 make test                              # everything still works
 ```
 
