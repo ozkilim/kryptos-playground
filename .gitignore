@@ -16,3 +16,6 @@ submissions.csv
 # campaign scratch
 campaign/STATUS.smoke.md
 campaign/FINGERPRINTS.smoke.md
+
+# swarm coordinator state (queue, worktrees, logs); results reach git through merges
+.swarm/

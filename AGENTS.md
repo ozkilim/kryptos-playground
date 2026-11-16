@@ -39,7 +39,7 @@ working standard that every experiment here has followed.
 * System `python3` (3.9, x86) with the **standard library only**. No numpy, no new dependencies.
 * Long runs use `multiprocessing`; spawned workers need their functions in a module run as a script (not
   piped through stdin).
-* Tests: `make test` (94 tests, two to three minutes). Keep them green.
+* Tests: `make test` (97 tests, two to three minutes). Keep them green.
 * English scoring: `kryptos.score.Quadgrams` (small, `data/english/quadgrams.txt`) and the big 22.6M-letter
   model (`quadgrams_big.txt`), plus `word_coverage`. The local LLM judge (ollama qwen2.5:7b, used by attack
   52) is weak: it rates real English about 3/10, so never let it decide on its own.
@@ -84,3 +84,9 @@ Every idea in rounds 1–10 followed this, which is what makes the results compa
 
 Plain English, short sentences, numbers with their comparison (K4 vs shuffled, planted recovered or not).
 Say what was ruled out *and* its exact scope (keys, lengths, alphabets), so the negative can't be overread.
+
+## Running many sessions at once
+
+`swarm/swarm.py` runs this loop with several headless sessions in parallel: a shared idea queue with claims, one git
+worktree per worker, a separate idea-generator, and a merger that brings finished ideas into `main`. If you are a
+swarm worker, follow the prompt you were given: touch only your idea's files and never commit. See `swarm/README.md`.

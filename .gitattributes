@@ -1,0 +1,2 @@
+# append-only log: keep both sides when branches merge
+experiments/ledger.csv merge=union
