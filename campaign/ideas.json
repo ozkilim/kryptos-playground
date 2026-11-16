@@ -234,5 +234,33 @@
   "script": "attacks/38_long_stacked_keys_v2.py",
   "est_min": 60,
   "why": "Diagnosis showed the open region is search-limited (true answers score higher than what was found), not information-limited."
+ },
+ {
+  "id": "42",
+  "title": "Selective masking: KRYPTOS letters lightly shifted, the rest keyed",
+  "script": "attacks/42_selective_masking.py",
+  "est_min": 5,
+  "why": "9/10 KRYPTOS-letter clues shift <=2 (shuffled p~0.003); maybe the keyword decides which letters get the real key."
+ },
+ {
+  "id": "43",
+  "title": "Key restarts at each sentence (+X separators), 18 alphabets",
+  "script": "attacks/43_sentence_breaks.py",
+  "est_min": 10,
+  "why": "Plaintext = sentence strips; K1-K3 use X between sentences; Cyrillic Projector restarts its key per block."
+ },
+ {
+  "id": "44",
+  "title": "A different simple system for each part (split 34-63)",
+  "script": "attacks/44_system_per_sentence.py",
+  "est_min": 10,
+  "why": "'Two separate systems' read literally: one for the EASTNORTHEAST part, another for the BERLINCLOCK part."
+ },
+ {
+  "id": "45",
+  "title": "One deliberate mistake: drop-one-clue for periodic, two keys, hidden-alphabet Gromark",
+  "script": "attacks/45_one_mistake.py",
+  "est_min": 60,
+  "why": "Sanborn's work is 'rife with mistakes on purpose'; one wrong clue letter makes exact tests reject the true method."
  }
 ]
