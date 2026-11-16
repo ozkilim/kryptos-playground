@@ -22,10 +22,10 @@ Confidence: **fact** (checked against the ciphertext), **stated** (Sanborn/Schei
 
 | Plaintext | Positions | Ciphertext | Released |
 |---|---|---|---|
-| EAST | 22–25 | FLRV | Aug 2020 |
-| NORTHEAST | 26–34 | QQPRNGKSS | Jan 2020 |
+| EAST | 22–25 | FLRV | Aug 2020 (he said he had "released this layout to several people as early as April" 2020) |
+| NORTHEAST | 26–34 | QQPRNGKSS | 29 Jan 2020 (New York Times) |
 | BERLIN | 64–69 | NYPVTT | Nov 2010 |
-| CLOCK | 70–74 | MZFPK | Nov 2014 |
+| CLOCK | 70–74 | MZFPK | Nov 2014 (New York Times); K is K in both plaintext and ciphertext, so a letter can encrypt to itself |
 
 Sanborn on BERLIN: N decodes to B; BERLINCLOCK "matches directly", meaning plain letter in, cipher letter out at the same place, which suggests **no transposition**.
 
@@ -33,8 +33,8 @@ Sanborn on BERLIN: N decodes to B; BERLINCLOCK "matches directly", meaning plain
 
 * **1990:** The lower half uses **two separate systems** of encipherment, "and that is a major clue in itself".
 * **2005:** He used **"matrix codes Ed gave me"** plus his own **"visual systems"**, modified so that Scheidt couldn't decipher it. He left **instructions in the earlier text that refer to later text**. His work is **"rife with mistakes on purpose"**.
-* **2006:** The answers to K1–K3 contain clues to K4. K2's ending is "WEST X **LAYER TWO**", not "ID BY ROWS".
-* **2010–2020:** Released the four clues above. 2014: "**delve into that particular clock**"; there are several interesting clocks in Berlin.
+* **2006** (while correcting his K2 error): the **answers to the first three passages contain clues to the fourth**. K2's ending is "WEST X **LAYER TWO**", not "ID BY ROWS".
+* **2010–2020:** Released the four clues above (Nov 2010, Nov 2014, 29 Jan 2020, Aug 2020). With CLOCK (2014): "You'd better **delve into that particular clock**", but "there are several really interesting clocks in Berlin". 2025: confirmed the plaintext's clock is the **World Clock**.
 * **2019:** He doesn't care what method a solver uses. You don't need a particular book, "just to be able to read".
 * **Nov 2025 (final clues):**
   * His **1986 trip to Egypt** and the **1989 fall of the Berlin Wall** figure in the solution.
