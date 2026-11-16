@@ -1,0 +1,29 @@
+{
+ "name": "shifting matrices",
+ "grid_survivors": [],
+ "decrypts": 0,
+ "best_quadgram": null,
+ "control": [
+  {
+   "grid_survivors": 0,
+   "decrypts": 0,
+   "best_q": null
+  },
+  {
+   "grid_survivors": 0,
+   "decrypts": 0,
+   "best_q": null
+  },
+  {
+   "grid_survivors": 0,
+   "decrypts": 0,
+   "best_q": null
+  }
+ ],
+ "verdict": "dead: in every grid at least one coordinate has no wheel the clue letters allow",
+ "hypotheses": 1560,
+ "top": [],
+ "minutes": 0.0,
+ "idea": "39",
+ "finished": "2026-11-16T00:23:33+00:00"
+}

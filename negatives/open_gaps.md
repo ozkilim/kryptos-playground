@@ -92,3 +92,9 @@ See `campaign/SUMMARY_2.md`. Each result reports what a planted real answer woul
 - **Paper strips** (carved rows, equal widths 5-48, any order/flip) x every key model: dead.
 - **Egypt-era alphabet orders** (hieroglyph, Coptic, Greek, Phoenician/Hebrew, Arabic) x key models, Quagmire I-IV, two stacked keys: dead.
 - **Key shape**: no period signature in letter differences (p=0.16, period 7 p=0.21 vs 20k shuffles); slowly turning dial keys ruled out (clues need a 12-13 step jump).
+
+## Status changes from campaign 6 (2026-11-16, this repo)
+See `campaign/SUMMARY_6.md`.
+- **Two stacked keys at long lengths is now information-limited, not search-limited.** With a far stronger solver, completions of a shuffled K4 already score like real English, so the 24 clue letters plus an English score cannot decide this region. Closing it needs an extra constraint: the keys guessed (words, phrases, dates), more known plaintext, or a K4/K5 depth attack once K5 is released.
+- **Gromark in bases 3-16 (both alphabets hidden): closed within power.** Best completion no better than shuffled K4s.
+- **Shifting matrices / per-coordinate wheels on letter grids: closed.** No wheel set fits in any grid tried.

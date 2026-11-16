@@ -17,13 +17,13 @@ Columns marked (p) are measured by probes: the family's encryptor is run on Engl
 | Selective masking: KRYPTOS letters lightly shifted, others keyed | 42 | pending | PASS | 4.5 | ? | ✓ | ? | ✓ | ✓ | ✓ | ✓ | ? | ★ | ★ | ▼ | · | · | · | ★ | ? | ★ | ★ | ? | ? | ? | ? | ? | ? | ? | ? | ? |
 | Key restarts at each sentence (+X between sentences) | 43 | pending | PASS | 4.4 | ? | ✓ | ? | ✓ | ✓ | ~ | ~ | ? | · | ★ | · | ★ | · | · | ★ | ? | ? | ~ | ? | ? | ? | ? | ? | ? | ? | ★ | ? |
 | A different simple system for each part | 44 | pending | PASS | 3.0 | ? | ✓ | ? | ✓ | ✓ | ✓ | ✓ | ? | · | · | · | ★ | · | · | ★ | ? | ★ | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? |
-| Chain addition in other bases (3-16) | 41 | pending | PASS | 2.0 | ? | ✓ | ? | ✓ | ✓ | ✓ | ✓ | ? | · | · | · | · | · | · | ★ | ? | ? | ? | ? | ? | ? | ★ | ? | ? | ? | ? | ? |
 | Any family above, with one deliberate wrong clue letter | 45 | pending | PASS | 1.0 | ~ | ✓ | ? | ✓ | ✓ | ✓ | ~ | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ★ | ? | ? |
 | Gromark / chain-addition digits, both alphabets hidden (base 10) | 19, 45 | disfavoured | PASS | 1.0 | ~ | ✓ | ? | ✓ | ✓ | ✓ | ✓ | ? | · | · | · | · | · | · | ★ | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? |
 | Three layers: a theme word plus two keys | 26 | dead-in-scope | PASS | 2.8 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ✓ | ? | · | · | · | · | · | · | ★ | ~ | ? | ? | ★ | ~ | ? | ? | ? | ? | ? | ? | ? |
 | Running key from a text | 04 | dead-in-scope | PASS | 1.4 | ✗ | ✓ | ? | ✓ | ✓ | ~ | ~ | ? | · | · | · | · | · | · | ★ | ? | ? | ? | ? | ? | ~ | ? | ? | ? | ? | ? | ? |
 | Shifting matrices / coordinate wheels on a grid | 39 | dead | PASS | 2.4 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ✓ | ? | ? | ? | ? | ? | ? | ? | ~ | ? | ? | ? | ? | ? | ? | ★ | ★ | ? | ? | ? | ? |
 | Keyword alphabets / Quagmire I-IV with short keys | 05, 14, 15, 20, 27, 37 | dead | PASS | 2.3 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ~ | ? | · | · | · | ★ | · | · | ▼ | ? | ? | ★ | ? | ~ | ? | ? | ? | ? | ~ | ? | ? |
+| Chain addition in other bases (3-16) | 41 | dead | PASS | 2.0 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ✓ | ? | · | · | · | · | · | · | ★ | ? | ? | ? | ? | ? | ? | ★ | ? | ? | ? | ? | ? |
 | World Clock 1989 keys (cities, initials, UTC offsets) | 24 | dead | PASS | 2.0 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ~ | ? | ? | ? | ? | ? | ? | ? | ★ | ? | ? | ? | ★ | ? | ? | ? | ? | ? | ? | ? | ? |
 | Compass-bearing keys across the carved layout | 31 | dead | PASS | 2.0 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ~ | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ★ | ? | ? | ★ |
 | Teleprinter: Baudot/Vernam XOR, Lorenz wheels | 34, 36 | dead | PASS | 1.4 | ✗ | ✓ | ? | ? | ✓ | ✓ | ✓ | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ~ | ? | ★ | ? | ? | ? | ? | ? | ? |
@@ -46,27 +46,26 @@ Live families only (open / untested / pending / disfavoured), passing every fact
 3. **Key restarts at each sentence (+X between sentences)** (pending, PASS, score 4.4): explains clues near their cipher letters; lag-4 run DIAWINFBN; key not simply periodic; sentence strips, X breaks
 4. **Two stacked repeating keys (LAYER TWO), long lengths** (open, PASS, score 4.2): explains key not simply periodic; LAYER TWO; K1-K3 hold clues
 5. **A different simple system for each part** (pending, PASS, score 3.0): explains lag-4 run DIAWINFBN; key not simply periodic; two separate systems
-6. **Chain addition in other bases (3-16)** (pending, PASS, score 2.0): explains key not simply periodic; different math base
-7. **A genuinely non-arithmetic visual/physical step (untested)** (untested, PASS, score 1.4): explains visual systems / not math
-8. **Any family above, with one deliberate wrong clue letter** (pending, PASS, score 1.0): explains mistakes on purpose
-9. **Gromark / chain-addition digits, both alphabets hidden (base 10)** (disfavoured, PASS, score 1.0): explains key not simply periodic
-10. **One hidden alphabet with a long key (length 23+)** (open, PASS, score 0.8): explains nothing yet
+6. **A genuinely non-arithmetic visual/physical step (untested)** (untested, PASS, score 1.4): explains visual systems / not math
+7. **Any family above, with one deliberate wrong clue letter** (pending, PASS, score 1.0): explains mistakes on purpose
+8. **Gromark / chain-addition digits, both alphabets hidden (base 10)** (disfavoured, PASS, score 1.0): explains key not simply periodic
+9. **One hidden alphabet with a long key (length 23+)** (open, PASS, score 0.8): explains nothing yet
 
 ## Hybrids worth building (two live families, most hints explained together)
 
-* **Chain addition in other bases (3-16)** + **Hybrid: KRYPTOS letters light only in the clue sentences + key restarting per sentence**: 7 hints (clues near their cipher letters; K1-K3 hold clues; KRYPTOS letters barely move; different math base; key not simply periodic; sentence strips, X breaks; two separate systems)
 * **Two stacked repeating keys (LAYER TWO), long lengths** + **Hybrid: KRYPTOS letters light only in the clue sentences + key restarting per sentence**: 7 hints (clues near their cipher letters; K1-K3 hold clues; KRYPTOS letters barely move; LAYER TWO; key not simply periodic; sentence strips, X breaks; two separate systems)
 * **Selective masking: KRYPTOS letters lightly shifted, others keyed** + **Key restarts at each sentence (+X between sentences)**: 7 hints (clues near their cipher letters; K1-K3 hold clues; KRYPTOS letters barely move; key not simply periodic; sentence strips, X breaks; lag-4 run DIAWINFBN; two separate systems)
 * **Hybrid: KRYPTOS letters light only in the clue sentences + key restarting per sentence** + **Key restarts at each sentence (+X between sentences)**: 7 hints (clues near their cipher letters; K1-K3 hold clues; KRYPTOS letters barely move; key not simply periodic; sentence strips, X breaks; lag-4 run DIAWINFBN; two separate systems)
 * **Hybrid: KRYPTOS letters light only in the clue sentences + key restarting per sentence** + **A different simple system for each part**: 7 hints (clues near their cipher letters; K1-K3 hold clues; KRYPTOS letters barely move; key not simply periodic; sentence strips, X breaks; lag-4 run DIAWINFBN; two separate systems)
 * **Hybrid: KRYPTOS letters light only in the clue sentences + key restarting per sentence** + **A genuinely non-arithmetic visual/physical step (untested)**: 7 hints (clues near their cipher letters; K1-K3 hold clues; KRYPTOS letters barely move; key not simply periodic; sentence strips, X breaks; two separate systems; visual systems / not math)
+* **One hidden alphabet with a long key (length 23+)** + **Hybrid: KRYPTOS letters light only in the clue sentences + key restarting per sentence**: 6 hints (clues near their cipher letters; K1-K3 hold clues; KRYPTOS letters barely move; key not simply periodic; sentence strips, X breaks; two separate systems)
 
 ## Details per family
 
 ### Two stacked repeating keys (LAYER TWO), long lengths
 Ideas 23, 38, 45 · clue test: **open** · verdict **PASS** · score 4.2
 
-* fact · 24 clue letters: ~ short pairs disfavoured; 54+ long pairs undecidable, search-limited
+* fact · 24 clue letters: ~ short pairs disfavoured; long pairs information-limited (shuffled K4 completes to English-level scores)
 * fact · S->S, K->K: ✓ >=2 fixed points among clue letters in 26%
 * fact · hand, paper charts, pre-1990: ✓ two passes on the same tableau
 * firm · matches directly: ✓ letter i -> letter i in 100% of probes
@@ -179,22 +178,6 @@ Ideas 44 · clue test: **pending** · verdict **PASS** · score 3.0
 * hint · key not simply periodic: ★ 
 * hint · two separate systems: ★ literally
 
-### Chain addition in other bases (3-16)
-Ideas 41 · clue test: **pending** · verdict **PASS** · score 2.0
-
-* fact · 24 clue letters: ? round 6 running
-* fact · S->S, K->K: ✓ >=2 fixed points among clue letters in 27%
-* firm · matches directly: ✓ letter i -> letter i in 100% of probes
-* firm · K5 same words, same places: ✓ shared word encrypts identically in 100% of message pairs
-* hint · KRYPTOS letters barely move: · 0.0% vs chance 0.0003%
-* hint · clues near their cipher letters: · 1.7% vs chance 1.32%
-* hint · flat letter counts: · 12.3% vs chance 27.43%
-* hint · lag-4 run DIAWINFBN: · 0.3% vs chance 0.33%
-* hint · doublets on mod 7: · 0.0% vs chance 0.18%
-* hint · width-21 pairs: · 40.3% vs chance 24.45%
-* hint · key not simply periodic: ★ 
-* hint · different math base: ★ Scheidt's 'different math base'
-
 ### Any family above, with one deliberate wrong clue letter
 Ideas 45 · clue test: **pending** · verdict **PASS** · score 1.0
 
@@ -276,6 +259,22 @@ Ideas 05, 14, 15, 20, 27, 37 · clue test: **dead** · verdict **PASS** · score
 * hint · K1-K3 hold clues: ★ KRYPTOS-style tableau
 * hint · Egypt 1986: ~ idea 37 tried Egypt-era orders
 * hint · mistakes on purpose: ~ idea 27 tried misspelling swaps
+
+### Chain addition in other bases (3-16)
+Ideas 41 · clue test: **dead** · verdict **PASS** · score 2.0
+
+* fact · 24 clue letters: ✗ 1,470 survivors, completions no better than shuffles
+* fact · S->S, K->K: ✓ >=2 fixed points among clue letters in 27%
+* firm · matches directly: ✓ letter i -> letter i in 100% of probes
+* firm · K5 same words, same places: ✓ shared word encrypts identically in 100% of message pairs
+* hint · KRYPTOS letters barely move: · 0.0% vs chance 0.0003%
+* hint · clues near their cipher letters: · 1.7% vs chance 1.32%
+* hint · flat letter counts: · 12.3% vs chance 27.43%
+* hint · lag-4 run DIAWINFBN: · 0.3% vs chance 0.33%
+* hint · doublets on mod 7: · 0.0% vs chance 0.18%
+* hint · width-21 pairs: · 40.3% vs chance 24.45%
+* hint · key not simply periodic: ★ 
+* hint · different math base: ★ Scheidt's 'different math base'
 
 ### World Clock 1989 keys (cities, initials, UTC offsets)
 Ideas 24 · clue test: **dead** · verdict **PASS** · score 2.0

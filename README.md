@@ -136,6 +136,8 @@ All seven come back empty on K4 so far; see `negatives/NEGATIVES.md`.
 
 **Campaign 5** (attacks 32–37) followed specific evidence: key-shape forensics, self-masking, Baudot/Vernam and Lorenz teleprinter ciphers (K2's "transmitted underground"), paper strips, and Egypt-era alphabets. All dead. See [`campaign/SUMMARY_5.md`](campaign/SUMMARY_5.md). `kryptos/cribtools.py` holds the shared "test it with only the 24 clue letters" helpers.
 
+**Campaign 6** (attacks 38, 39, 41) pushed both remaining angles: Scheidt's "different math base" (Gromark in bases 3–16, shifting matrices on letter grids) is dead, and a much stronger heat-bath solver showed that the long stacked-key gap is *information-limited*: a shuffled ciphertext gets English-quality completions too, so that region needs an extra constraint (a key guess, more plaintext, or K5). See [`campaign/SUMMARY_6.md`](campaign/SUMMARY_6.md).
+
 ## Checking on the website
 
 | | URL | Cost | How |

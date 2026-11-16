@@ -1,0 +1,114 @@
+{
+ "name": "gromark-free-alphabets (other bases)",
+ "bases": [
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16
+ ],
+ "hypotheses": 3500452,
+ "crib_consistent": 12833,
+ "survivors": 1470,
+ "five_digit_base10_survivors": 0,
+ "completed": 1470,
+ "best_quadgram": -5.3643488221872815,
+ "control": [
+  {
+   "consistent": 3500452,
+   "survivors": 28112,
+   "best_q": -5.462
+  },
+  {
+   "consistent": 252892,
+   "survivors": 61328,
+   "best_q": -5.581
+  }
+ ],
+ "planted_power": [
+  {
+   "q": -5.275,
+   "letters_right": 73
+  },
+  {
+   "q": -4.305,
+   "letters_right": 84
+  },
+  {
+   "q": -4.771,
+   "letters_right": 80
+  },
+  {
+   "q": -5.402,
+   "letters_right": 38
+  },
+  {
+   "q": -5.253,
+   "letters_right": 57
+  },
+  {
+   "q": -5.391,
+   "letters_right": 64
+  },
+  {
+   "q": -5.005,
+   "letters_right": 66
+  },
+  {
+   "q": -4.948,
+   "letters_right": 88
+  },
+  {
+   "q": -5.784,
+   "letters_right": 44
+  },
+  {
+   "q": -5.414,
+   "letters_right": 50
+  }
+ ],
+ "top": [
+  {
+   "q": -5.364,
+   "base": 15,
+   "primer": "1341135",
+   "plaintext": "IDEVENTESNOTOAGAODIESEASTNORTHEASTOAODFORFUTTHELCHILEXPREPSXQXMBERLINCLOCKSCRELYARDMMODUCCYXGXWLC"
+  },
+  {
+   "q": -5.369,
+   "base": 15,
+   "primer": "97424",
+   "plaintext": "GYWYEHINTEDFUNDREFINHEASTNORTHEASTRSETLKLYGDFXOLCDFAXSPSMYACLEOBERLINCLOCKISERVIAGENGEXAMPLIEDLYF"
+  },
+  {
+   "q": -5.399,
+   "base": 15,
+   "primer": "90375",
+   "plaintext": "LYZBWLGETEMUTFTAGATEVEASTNORTHEASTENTEREONGUPQVEACKISDECSVLQJVDBERLINCLOCKOWWREFERFONLYPRORECASAP"
+  },
+  {
+   "q": -5.4,
+   "base": 14,
+   "primer": "3101399",
+   "plaintext": "LOZICMEIFTAGNEDCONVEREASTNORTHEASTITYSEEITHGKJVPFYJCKFKDGDEFRXOBERLINCLOCKEYSARETTESDEFWHGAPERKAZ"
+  },
+  {
+   "q": -5.423,
+   "base": 16,
+   "primer": "69102",
+   "plaintext": "FSORYOBJENRERERNEXORDEASTNORTHEASTOTHEADWOLEANGUSSESFPEISFBDRJMBERLINCLOCKSYUKUNEXTOFORHEDKUBLECC"
+  }
+ ],
+ "verdict": "dead: 1470 primers survive the clues but their best English completion (-5.36) is no better than shuffled K4s (-5.462); planted Gromark texts reach -5.78..-4.30 through the same pipeline",
+ "minutes": 125.3,
+ "idea": "41",
+ "finished": "2026-11-16T02:28:51+00:00"
+}

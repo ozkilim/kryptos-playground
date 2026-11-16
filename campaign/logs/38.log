@@ -1,0 +1,13 @@
+
+[long-stacked-keys v2 (heat-bath + English-key prior)] tried 732 candidates on K4
+  24/24  q= -4.89  DLIDNTEXTEDORRETHEEXAEASTNORTHEASTOPEANATESLESEGET  {'alphabet': 'AZ', 'variant': 'variant_beaufort', 'L1': 25, 'L2': 26, 'q': -4.893}
+  24/24  q= -5.02  UZPYVFXOSSTDERESDIFTHEASTNORTHEASTADDEDISTYNSTSAPE  {'alphabet': 'AZ', 'variant': 'beaufort', 'L1': 24, 'L2': 26, 'q': -5.021}
+  24/24  q= -5.04  FBHONSSPRINNHFIDESETHEASTNORTHEASTEDLITENOYNMAYREF  {'alphabet': 'KRYPTOS', 'variant': 'variant_beaufort', 'L1': 25, 'L2': 26, 'q': -5.035}
+  24/24  q= -5.09  OAZPRIABLEDDATEDONFOREASTNORTHEASTOGRSELIZEIIFICIT  {'alphabet': 'AZ', 'variant': 'vigenere', 'L1': 25, 'L2': 26, 'q': -5.088}
+  24/24  q= -5.12  BSETHOOZWATERALLYONONEASTNORTHEASTESESDEWWXEMSREFF  {'alphabet': 'KRYPTOS', 'variant': 'beaufort', 'L1': 23, 'L2': 26, 'q': -5.115}
+  24/24  q= -5.12  PROASESORALOTSSECTSEDEASTNORTHEASTJRVFEIBLESTHOOIN  {'alphabet': 'AZ', 'variant': 'vigenere', 'L1': 22, 'L2': 26, 'q': -5.12}
+  24/24  q= -5.12  WJZALENGOTTRWITEREXTBEASTNORTHEASTRYNEANDDELTEGAFH  {'alphabet': 'AZ', 'variant': 'beaufort', 'L1': 24, 'L2': 25, 'q': -5.123}
+  24/24  q= -5.13  EEDSOFDESTMOYEESETRIDEASTNORTHEASTOIFRYPWDJNCESSFO  {'alphabet': 'KRYPTOS', 'variant': 'variant_beaufort', 'L1': 24, 'L2': 26, 'q': -5.126}
+  full crib passes: 0
+  saved -> results/2026-11-16T032636Z_k4_long-stacked-keys-v2--heat-bath-+-English-key-prior-.json  (+1 line in ledger.csv)
+[38] no signal: K4 best -4.89 vs shuffled -4.97; planted recovered >=80/97 at 17% of pairs (median 58 letters, was ~35); 6/54 planted score above K4's best
