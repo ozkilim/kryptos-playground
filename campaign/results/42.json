@@ -1,0 +1,56 @@
+{
+ "name": "selective masking",
+ "closeness": [
+  9,
+  10
+ ],
+ "p_shuffle": 4.999750012499375e-05,
+ "subsets_at_least_as_close": 3,
+ "subsets_total": 6190,
+ "configs": 0,
+ "best_quadgram": null,
+ "control": [
+  null,
+  null,
+  null
+ ],
+ "planted": [
+  [
+   -4.586,
+   68
+  ],
+  [
+   -4.507,
+   66
+  ],
+  [
+   -4.585,
+   70
+  ],
+  [
+   -4.576,
+   70
+  ],
+  [
+   -4.223,
+   83
+  ],
+  [
+   -4.273,
+   77
+  ],
+  [
+   -4.234,
+   61
+  ],
+  [
+   -3.94,
+   83
+  ]
+ ],
+ "verdict": "closeness: 9/10 KRYPTOS-letter clues within +-2 (shuffled p=0.0000; KRYPTOS beats 6187/6190 letter subsets of at least that size). Model: no repeating key on the other letters fits the clues",
+ "top": [],
+ "minutes": 0.0,
+ "idea": "42",
+ "finished": "2026-11-16T03:26:53+00:00"
+}

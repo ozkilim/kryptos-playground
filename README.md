@@ -138,6 +138,8 @@ All seven come back empty on K4 so far; see `negatives/NEGATIVES.md`.
 
 **Campaign 6** (attacks 38, 39, 41) pushed both remaining angles: Scheidt's "different math base" (Gromark in bases 3–16, shifting matrices on letter grids) is dead, and a much stronger heat-bath solver showed that the long stacked-key gap is *information-limited*: a shuffled ciphertext gets English-quality completions too, so that region needs an extra constraint (a key guess, more plaintext, or K5). See [`campaign/SUMMARY_6.md`](campaign/SUMMARY_6.md).
 
+**Campaign 7** (attacks 42–46) came from re-reading every clue: KRYPTOS-letter masking, key restarts at sentence breaks, a different system per part, one deliberate wrong clue letter, and a masking hybrid designed through the new clue pre-filter. All dead as models. One measured constraint survived: the KRYPTOS-letter closeness holds up under a within-block test, but only fits K4's flat letter counts if it is local and the other letters carry a strong key. See [`campaign/SUMMARY_7.md`](campaign/SUMMARY_7.md).
+
 ## Checking on the website
 
 | | URL | Cost | How |

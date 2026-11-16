@@ -1,0 +1,13 @@
+
+[sentence-break key restarts (+X separators)] tried 1,915,066 candidates on K4
+  24/24  q= -6.46  FQKVUSBQEINAMOTNISPOSEASTNORTHEASTXNMIETDXOFXYEOSI  {'alphabet': 'LAYERTWO', 'variant': 'beaufort', 'period': 26, 's1': 15, 's2': 45, 'x': True, 'tests': 2, 'extra': 4}
+  24/24  q= -6.51  WCEFRSZFFDCGFRPNXKCQCEASTNORTHEASTCWMJQRABVXMIINZL  {'alphabet': 'ILLUSION', 'variant': 'beaufort', 'period': 26, 's1': 17, 's2': 44, 'x': True, 'tests': 2, 'extra': 74}
+  24/24  q= -6.57  NDGYTGKQHJKAJIXZRMXPHEASTNORTHEASTNHUAOXZOROCCPELL  {'alphabet': 'LAYERTWO', 'variant': 'beaufort', 'period': 25, 's1': 15, 's2': 45, 'x': True, 'tests': 2, 'extra': 34}
+  24/24  q= -6.62  HFBOIWMFXOXLFQRVDNUABEASTNORTHEASTISLXGJCQQBVHDSVL  {'alphabet': 'PALIMPSEST', 'variant': 'beaufort', 'period': 26, 's1': 11, 's2': 38, 'x': True, 'tests': 2, 'extra': 74}
+  24/24  q= -6.70  CDZFRRNMPXXZXEQMYCKEWEASTNORTHEASTHQLMWXZJPLNRUNIC  {'alphabet': 'WELTZEITUHR', 'variant': 'vigenere', 'period': 25, 's1': 10, 's2': 63, 'x': True, 'tests': 2, 'extra': 45}
+  24/24  q= -6.70  CDZFRRNMPXXZXEQMYCKEWEASTNORTHEASTHQLMWXZJPLNRUNIC  {'alphabet': 'WELTZEITUHR', 'variant': 'variant_beaufort', 'period': 25, 's1': 10, 's2': 63, 'x': True, 'tests': 2, 'extra': 45}
+  24/24  q= -6.71  ZBLPMSXZFGKFNGPVHPRQGEASTNORTHEASTSOINMGFDYEVLNJSR  {'alphabet': 'LANGLEY', 'variant': 'beaufort', 'period': 24, 's1': 7, 's2': 60, 'x': True, 'tests': 2, 'extra': 81}
+  24/24  q= -6.71  PMYXRNQSQINAMOTLFOQXSEASTNORTHEASTXNMIETDXOFXDLPUT  {'alphabet': 'LAYERTWO', 'variant': 'beaufort', 'period': 24, 's1': 15, 's2': 45, 'x': True, 'tests': 2, 'extra': 4}
+  full crib passes: 0
+  saved -> results/2026-11-16T032811Z_k4_sentence-break-key-restarts--+X-separators-.json  (+1 line in ledger.csv)
+[43] dead: survivors by clue repeats {2: 10, 3: 0, 4: 0, 5: 0} (>=4 repeats: 0 vs ~0.0 per shuffled K4); best decode -6.46 vs control best -6.317 (chance level) | planted: [{'truth': (12, 58, 11), 'true_config_survives': True, 'survivors': 1402, 'top_q': -4.649, 'top_letters_right': 94}, {'truth': (19, 49, 9), 'true_config_survives': True, 'survivors': 1732, 'top_q': -4.957, 'top_letters_right': 95}, {'truth': (6, 48, 6), 'true_config_survives': True, 'survivors': 3062, 'top_q': -5.252, 'top_letters_right': 96}, {'truth': (19, 44, 9), 'true_config_survives': True, 'survivors': 1740, 'top_q': -4.949, 'top_letters_right': 96}, {'truth': (11, 38, 9), 'true_config_survives': True, 'survivors': 1638, 'top_q': -5.456, 'top_letters_right': 95}, {'truth': (13, 46, 9), 'true_config_survives': True, 'survivors': 2205, 'top_q': -4.682, 'top_letters_right': 96}]

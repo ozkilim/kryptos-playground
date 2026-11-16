@@ -1,0 +1,233 @@
+{
+ "name": "sentence-break key restarts",
+ "survivors": 10,
+ "survivors_by_tests": {
+  "2": 10,
+  "3": 0,
+  "4": 0,
+  "5": 0
+ },
+ "controls": [
+  [
+   0,
+   -6.416,
+   {
+    "2": 24,
+    "3": 0,
+    "4": 0,
+    "5": 0
+   }
+  ],
+  [
+   0,
+   -6.373,
+   {
+    "2": 2,
+    "3": 0,
+    "4": 0,
+    "5": 0
+   }
+  ],
+  [
+   0,
+   -6.317,
+   {
+    "2": 19,
+    "3": 0,
+    "4": 0,
+    "5": 0
+   }
+  ],
+  [
+   0,
+   -6.363,
+   {
+    "2": 148,
+    "3": 0,
+    "4": 0,
+    "5": 0
+   }
+  ],
+  [
+   0,
+   -6.369,
+   {
+    "2": 11,
+    "3": 0,
+    "4": 0,
+    "5": 0
+   }
+  ]
+ ],
+ "best_quadgram": -6.459079849336252,
+ "planted": [
+  {
+   "truth": [
+    12,
+    58,
+    11
+   ],
+   "true_config_survives": true,
+   "survivors": 1402,
+   "top_q": -4.649,
+   "top_letters_right": 94
+  },
+  {
+   "truth": [
+    19,
+    49,
+    9
+   ],
+   "true_config_survives": true,
+   "survivors": 1732,
+   "top_q": -4.957,
+   "top_letters_right": 95
+  },
+  {
+   "truth": [
+    6,
+    48,
+    6
+   ],
+   "true_config_survives": true,
+   "survivors": 3062,
+   "top_q": -5.252,
+   "top_letters_right": 96
+  },
+  {
+   "truth": [
+    19,
+    44,
+    9
+   ],
+   "true_config_survives": true,
+   "survivors": 1740,
+   "top_q": -4.949,
+   "top_letters_right": 96
+  },
+  {
+   "truth": [
+    11,
+    38,
+    9
+   ],
+   "true_config_survives": true,
+   "survivors": 1638,
+   "top_q": -5.456,
+   "top_letters_right": 95
+  },
+  {
+   "truth": [
+    13,
+    46,
+    9
+   ],
+   "true_config_survives": true,
+   "survivors": 2205,
+   "top_q": -4.682,
+   "top_letters_right": 96
+  }
+ ],
+ "verdict": "dead: survivors by clue repeats {2: 10, 3: 0, 4: 0, 5: 0} (>=4 repeats: 0 vs ~0.0 per shuffled K4); best decode -6.46 vs control best -6.317 (chance level)",
+ "top": [
+  {
+   "q": -6.459,
+   "alphabet": "LAYERTWO",
+   "variant": "beaufort",
+   "L": 26,
+   "s1": 15,
+   "s2": 45,
+   "x": true,
+   "tests": 2,
+   "extra_break": 4,
+   "plaintext": "FQKVUSBQEINAMOTNISPOSEASTNORTHEASTXNMIETDXOFXYEOSIUZFZWYHUEMVWBBERLINCLOCKSEMXYAVVNHSPZSERRAQEIZS"
+  },
+  {
+   "q": -6.514,
+   "alphabet": "ILLUSION",
+   "variant": "beaufort",
+   "L": 26,
+   "s1": 17,
+   "s2": 44,
+   "x": true,
+   "tests": 2,
+   "extra_break": 74,
+   "plaintext": "WCEFRSZFFDCGFRPNXKCQCEASTNORTHEASTCWMJQRABVXMIINZLULCVCOQMZAQLDBERLINCLOCKOSMKWEULKHELSTCOPEAXIOS"
+  },
+  {
+   "q": -6.569,
+   "alphabet": "LAYERTWO",
+   "variant": "beaufort",
+   "L": 25,
+   "s1": 15,
+   "s2": 45,
+   "x": true,
+   "tests": 2,
+   "extra_break": 34,
+   "plaintext": "NDGYTGKQHJKAJIXZRMXPHEASTNORTHEASTNHUAOXZOROCCPELLIZFZWYHUEMVWBBERLINCLOCKSORFLROGIZMEAQHCUAKOMXI"
+  },
+  {
+   "q": -6.621,
+   "alphabet": "PALIMPSEST",
+   "variant": "beaufort",
+   "L": 26,
+   "s1": 11,
+   "s2": 38,
+   "x": true,
+   "tests": 2,
+   "extra_break": 74,
+   "plaintext": "HFBOIWMFXOXLFQRVDNUABEASTNORTHEASTISLXGJCQQBVHDSVLOJRTZNPOUTWCMBERLINCLOCKBTHVYNUJPUJOCBVKQEXITCR"
+  },
+  {
+   "q": -6.701,
+   "alphabet": "WELTZEITUHR",
+   "variant": "vigenere",
+   "L": 25,
+   "s1": 10,
+   "s2": 63,
+   "x": true,
+   "tests": 2,
+   "extra_break": 45,
+   "plaintext": "CDZFRRNMPXXZXEQMYCKEWEASTNORTHEASTHQLMWXZJPLNRUNICNAGRVDOKGCJCXBERLINCLOCKGQWSESMBWYXGVPYRVCTIIHG"
+  },
+  {
+   "q": -6.701,
+   "alphabet": "WELTZEITUHR",
+   "variant": "variant_beaufort",
+   "L": 25,
+   "s1": 10,
+   "s2": 63,
+   "x": true,
+   "tests": 2,
+   "extra_break": 45,
+   "plaintext": "CDZFRRNMPXXZXEQMYCKEWEASTNORTHEASTHQLMWXZJPLNRUNICNAGRVDOKGCJCXBERLINCLOCKGQWSESMBWYXGVPYRVCTIIHG"
+  },
+  {
+   "q": -6.709,
+   "alphabet": "LANGLEY",
+   "variant": "beaufort",
+   "L": 24,
+   "s1": 7,
+   "s2": 60,
+   "x": true,
+   "tests": 2,
+   "extra_break": 81,
+   "plaintext": "ZBLPMSXZFGKFNGPVHPRQGEASTNORTHEASTSOINMGFDYEVLNJSRJVZJJBAJIXJGCBERLINCLOCKPXGGTDMNYYWBUAUATETHSJF"
+  },
+  {
+   "q": -6.712,
+   "alphabet": "LAYERTWO",
+   "variant": "beaufort",
+   "L": 24,
+   "s1": 15,
+   "s2": 45,
+   "x": true,
+   "tests": 2,
+   "extra_break": 4,
+   "plaintext": "PMYXRNQSQINAMOTLFOQXSEASTNORTHEASTXNMIETDXOFXDLPUTUZFZWYHUEMVWBBERLINCLOCKSYMCEIUBLSATLRNAUVQDKMX"
+  }
+ ],
+ "minutes": 1.3,
+ "idea": "43",
+ "finished": "2026-11-16T03:28:11+00:00"
+}

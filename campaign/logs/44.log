@@ -1,0 +1,5 @@
+
+[different system per part (split 34-63)] tried 90,000 candidates on K4
+  full crib passes: 0
+  saved -> results/2026-11-16T032826Z_k4_different-system-per-part--split-34-63-.json  (+1 line in ledger.csv)
+[44] dead: part-1 fits 0, part-2 fits 0 (over splits); best two-system decode None vs shuffled None; families above chance: none | planted: [{'truth': (50, 7, 2), 'top_q': -4.495, 'top_split': 50, 'letters_right': 97}, {'truth': (39, 7, 4), 'top_q': -5.092, 'top_split': 39, 'letters_right': 97}, {'truth': (60, 5, 3), 'top_q': -5.067, 'top_split': 60, 'letters_right': 97}, {'truth': (60, 5, 2), 'top_q': -5.453, 'top_split': 47, 'letters_right': 75}, {'truth': (42, 4, 2), 'top_q': -4.981, 'top_split': 42, 'letters_right': 97}]

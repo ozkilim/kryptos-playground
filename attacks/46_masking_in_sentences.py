@@ -155,7 +155,7 @@ def scan(ct, cribs, alphas, min_tests=2):
     return out
 
 
-def beam_decode(ct, an, v, L, restart, starts, light, key, width=300):
+def beam_decode(ct, an, v, L, restart, starts, light, key, width=300, cribs=None):
     """Beam over plaintext AND the key values the clues leave free: a free key slot is branched
     over all 26 values the first time it is needed, then held fixed (state carries it)."""
     al = ALPHAS[an]
@@ -180,6 +180,8 @@ def beam_decode(ct, an, v, L, restart, starts, light, key, width=300):
                 p = al[dec(idx[c], kv)]
                 if not (p in LIGHT and i in light):
                     opts.add(p)
+                if cribs and i in cribs:  # known plaintext is never overridden
+                    opts &= {cribs[i]}
                 for q in opts:
                     t2 = t + q
                     nb.append((s + (lp.get(t2[-4:], fl) if len(t2) >= 4 else 0.0), t2, a2))
@@ -190,7 +192,7 @@ def beam_decode(ct, an, v, L, restart, starts, light, key, width=300):
     return QG.score(beams[0][1]), beams[0][1]
 
 
-def best_decode(ct, hit, step):
+def best_decode(ct, hit, step, cribs=None):
     an, v, L, restart, s1, s2, key, tests = hit
     best = None
     a1 = s1 if restart else 0
@@ -200,7 +202,7 @@ def best_decode(ct, hit, step):
                 continue
             for b2 in range(74, 98, step):
                 light = set(range(a1, b1)) | set(range(a2, b2))
-                d = beam_decode(ct, an, v, L, restart, [0, a1, b1, a2, b2], light, key)
+                d = beam_decode(ct, an, v, L, restart, [0, a1, b1, a2, b2], light, key, cribs=cribs)
                 if d and (best is None or d[0] > best[0]):
                     best = (d[0], d[1], (a1, b1, a2, b2))
     return best
@@ -218,7 +220,7 @@ def run(ct, cribs, alphas, top=30, step=6):
             pick.append(h)
     scored = []
     for h in pick[:top]:
-        d = best_decode(ct, h, step)
+        d = best_decode(ct, h, step, cribs)
         if d:
             scored.append((d[0], d[1], h, d[2]))
     scored.sort(key=lambda x: -x[0])
@@ -278,7 +280,7 @@ if __name__ == "__main__":
             ph, ps = run(ct, pc, {"AZ": AZ}, top=12 if SMOKE else 60, step=6)
             top_ = ps[0] if ps else None
             tr = [h for h in ph if h[1] == "vigenere" and h[2] == truth[4] and h[3] and h[4] == truth[0] and h[5] == truth[2]]
-            dt = best_decode(ct, tr[0], 6) if tr else None
+            dt = best_decode(ct, tr[0], 6, pc) if tr else None
             planted.append({"truth": truth, "survivors": len(ph), "top_q": round(top_[0], 3) if top_ else None,
                             "top_letters_right": sum(a == b for a, b in zip(top_[1], pt)) if top_ else 0,
                             "true_config_q": round(dt[0], 3) if dt else None,

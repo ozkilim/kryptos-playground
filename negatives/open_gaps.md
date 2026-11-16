@@ -98,3 +98,10 @@ See `campaign/SUMMARY_6.md`.
 - **Two stacked keys at long lengths is now information-limited, not search-limited.** With a far stronger solver, completions of a shuffled K4 already score like real English, so the 24 clue letters plus an English score cannot decide this region. Closing it needs an extra constraint: the keys guessed (words, phrases, dates), more known plaintext, or a K4/K5 depth attack once K5 is released.
 - **Gromark in bases 3-16 (both alphabets hidden): closed within power.** Best completion no better than shuffled K4s.
 - **Shifting matrices / per-coordinate wheels on letter grids: closed.** No wheel set fits in any grid tried.
+
+## Status changes from campaign 7 (2026-11-16, this repo)
+See `campaign/SUMMARY_7.md`.
+- **Key restarts at sentence breaks: closed** for repeating keys of length 1-26 on 18 alphabets (sentence starts before and between the clue blocks). Restarts *inside* BERLINCLOCK (e.g. carved row 4 at position 66) go to round 8 (idea 50).
+- **Two systems, one per part: closed** for seven simple key families. Nothing fits either half alone.
+- **One deliberate wrong clue letter: closed** for periodic, two-key and base-10 Gromark tests (drop-one survivors at chance).
+- **New, measured constraint (not a negative):** the KRYPTOS-letter closeness survives a within-block test (p=0.00125, corrected ~0.02), but it is only compatible with K4's flat letter counts if at most ~20 letters are lightly treated *and* the other letters carry a long or stacked key. Any idea that explains the closeness must pass this (see `docs/CLUE_MATRIX.md`).

@@ -1,0 +1,222 @@
+{
+ "name": "one deliberate mistake",
+ "periodic": [
+  0,
+  0
+ ],
+ "twokeys": [
+  710,
+  158
+ ],
+ "gromark": [
+  39,
+  1358
+ ],
+ "per_letter": {
+  "periodic": {},
+  "twokeys": {
+   "21": 103,
+   "73": 126,
+   "22": 55,
+   "23": 66,
+   "71": 71,
+   "72": 66,
+   "24": 54,
+   "25": 75,
+   "69": 92,
+   "70": 48,
+   "27": 71,
+   "28": 42,
+   "29": 81,
+   "30": 63,
+   "31": 60,
+   "32": 23,
+   "33": 43,
+   "63": 78,
+   "64": 57,
+   "65": 81,
+   "66": 48,
+   "67": 60,
+   "68": 54,
+   "26": 42
+  },
+  "gromark": {
+   "23": 545,
+   "28": 686,
+   "32": 549,
+   "33": 520,
+   "27": 300,
+   "65": 297,
+   "24": 14,
+   "72": 13,
+   "25": 28,
+   "26": 37,
+   "31": 10,
+   "73": 7,
+   "21": 47,
+   "71": 34,
+   "64": 14,
+   "30": 23,
+   "67": 9,
+   "68": 19,
+   "66": 10,
+   "70": 7,
+   "22": 3,
+   "69": 6
+  }
+ },
+ "controls": [
+  {
+   "periodic": [
+    0,
+    0
+   ],
+   "twokeys": [
+    712,
+    147
+   ],
+   "gromark": [
+    1099,
+    8741
+   ]
+  },
+  {
+   "periodic": [
+    0,
+    0
+   ],
+   "twokeys": [
+    712,
+    149
+   ],
+   "gromark": [
+    2198,
+    13482
+   ]
+  },
+  {
+   "periodic": [
+    0,
+    0
+   ],
+   "twokeys": [
+    715,
+    146
+   ],
+   "gromark": [
+    69,
+    2058
+   ]
+  }
+ ],
+ "completions": [
+  {
+   "family": "gromark",
+   "primer": "00101",
+   "dropped": 32,
+   "q": -5.782,
+   "plaintext": "FQSYFFWHENFLYEQWDKCXVEASTNORTHEATTRAUUOEAKETOPACKTDNUMENDTORBOTBERLINCLOCKOYHZLLADGGDYKEEEHRONOFW"
+  },
+  {
+   "family": "gromark",
+   "primer": "00181",
+   "dropped": 27,
+   "q": -5.793,
+   "plaintext": "CRACNCCYDONAWDRBANABLEASTNOFTHEASTHESUPDIVLSEQBFZIPOWWIICHCALIMBERLINCLOCKFOPLBQMNSMAXKOXXIVEWVYX"
+  },
+  {
+   "family": "gromark",
+   "primer": "00181",
+   "dropped": 65,
+   "q": -5.806,
+   "plaintext": "TJAPYTSHANYATFGFUNDAMEASTNORTHEASTREQUWFDQLSESBMKTWFPPLIEDFULIPBEWLINCLOCKDOWDBYVAWVUJKBURTHEPRAQ"
+  },
+  {
+   "family": "gromark",
+   "primer": "00156",
+   "dropped": 32,
+   "q": -5.839,
+   "plaintext": "ARWVHAGKODYGLBOATFOFNEASTNORTHEATTRUQGOVERVINPKUPSBDUNCTISREBODBERLINCLOCKFOJKLWHXISTEKCOMBINGSWD"
+  },
+  {
+   "family": "gromark",
+   "primer": "00027",
+   "dropped": 23,
+   "q": -5.847,
+   "plaintext": "HVINTHKWRNCKOKAKSOCAVEANTNORTHEASTNDFOTNEWIDPIMPCVCEIGNMJRWGHBDBERLINCLOCKOQFXLLYUSELFSINCECALLED"
+  },
+  {
+   "family": "gromark",
+   "primer": "00061",
+   "dropped": 33,
+   "q": -5.847,
+   "plaintext": "RKNSARGFMTCYCLLYBOLTBEASTNORTHEASUYHJCKAEPTIONFXXIVENDDERSEDHISBERLINCLOCKOFFILSWGQHLHUSTCCCEVBCP"
+  },
+  {
+   "family": "gromark",
+   "primer": "00101",
+   "dropped": 33,
+   "q": -5.86,
+   "plaintext": "HOPBSHOWERSOXHLYTYPENEASTNORTHEASSIGJDOHIYHSTEIFDELXQXGETESUBOMBERLINCLOCKSUBCLNGGLQTUKGFGYPTUHOJ"
+  },
+  {
+   "family": "gromark",
+   "primer": "00156",
+   "dropped": 33,
+   "q": -5.869,
+   "plaintext": "DERBIDASONTOSFMANATUSEASTNORTHEASSTJFCOHSYHWNERJVOMHLGMFROIFBOMBERLINCLOCKPOIKLOFTYPNEKMFBASNONEX"
+  },
+  {
+   "family": "gromark",
+   "primer": "00131",
+   "dropped": 27,
+   "q": -5.882,
+   "plaintext": "NTADINVJPYIINDUNANINDEASTNOPTHEASTEXTMUDWJKVHUDLGGULNSXRSSHAVIOBERLINCLOCKDPCDFTOPPLICKWHUKXPNQKV"
+  },
+  {
+   "family": "gromark",
+   "primer": "00061",
+   "dropped": 32,
+   "q": -5.885,
+   "plaintext": "KHFSHKCWGITEDATELOOPHEASTNORTHEAKTHQBYUSERHVRFJPTXXEFGEBYYASHIMBERLINCLOCKDWITLFCZPKVQWLITITISGIV"
+  }
+ ],
+ "control_completions": [
+  -6.908,
+  -6.763,
+  -6.821,
+  -6.841,
+  -6.969,
+  -6.757,
+  -6.857,
+  -6.842,
+  -6.76,
+  -6.778
+ ],
+ "planted": [
+  {
+   "bad_pos": 63,
+   "exact_test_accepts": false,
+   "drop_bad_accepts": true
+  },
+  {
+   "bad_pos": 33,
+   "exact_test_accepts": false,
+   "drop_bad_accepts": true
+  },
+  {
+   "bad_pos": 25,
+   "exact_test_accepts": false,
+   "drop_bad_accepts": true
+  },
+  {
+   "bad_pos": 70,
+   "exact_test_accepts": false,
+   "drop_bad_accepts": true
+  }
+ ],
+ "verdict": "dead: one-mistake tolerance adds nothing over chance; periodic: exact 0, drop-only 0 (shuffled: 0/0, 0/0, 0/0); two keys: exact 710, drop-only 158 (shuffled: 712/147, 712/149, 715/146); gromark: exact 39, drop-only 1358 (shuffled: 1099/8741, 2198/13482, 69/2058); best completion -5.782 vs control -6.757",
+ "minutes": 1.8,
+ "idea": "45",
+ "finished": "2026-11-16T03:30:16+00:00"
+}

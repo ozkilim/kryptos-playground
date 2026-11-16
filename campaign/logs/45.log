@@ -1,0 +1,13 @@
+
+[one deliberate mistake (drop-one-clue consistency)] tried 2,552,700 candidates on K4
+  23/24  q= -5.78  FQSYFFWHENFLYEQWDKCXVEASTNORTHEATTRAUUOEAKETOPACKT  {'family': 'gromark', 'primer': '00101', 'dropped': 32}
+  23/24  q= -5.79  CRACNCCYDONAWDRBANABLEASTNOFTHEASTHESUPDIVLSEQBFZI  {'family': 'gromark', 'primer': '00181', 'dropped': 27}
+  23/24  q= -5.81  TJAPYTSHANYATFGFUNDAMEASTNORTHEASTREQUWFDQLSESBMKT  {'family': 'gromark', 'primer': '00181', 'dropped': 65}
+  23/24  q= -5.84  ARWVHAGKODYGLBOATFOFNEASTNORTHEATTRUQGOVERVINPKUPS  {'family': 'gromark', 'primer': '00156', 'dropped': 32}
+  23/24  q= -5.85  RKNSARGFMTCYCLLYBOLTBEASTNORTHEASUYHJCKAEPTIONFXXI  {'family': 'gromark', 'primer': '00061', 'dropped': 33}
+  23/24  q= -5.85  HVINTHKWRNCKOKAKSOCAVEANTNORTHEASTNDFOTNEWIDPIMPCV  {'family': 'gromark', 'primer': '00027', 'dropped': 23}
+  23/24  q= -5.86  HOPBSHOWERSOXHLYTYPENEASTNORTHEASSIGJDOHIYHSTEIFDE  {'family': 'gromark', 'primer': '00101', 'dropped': 33}
+  23/24  q= -5.87  DERBIDASONTOSFMANATUSEASTNORTHEASSTJFCOHSYHWNERJVO  {'family': 'gromark', 'primer': '00156', 'dropped': 33}
+  full crib passes: 0
+  saved -> results/2026-11-16T033016Z_k4_one-deliberate-mistake--drop-one-clue-consistency-.json  (+1 line in ledger.csv)
+[45] dead: one-mistake tolerance adds nothing over chance; periodic: exact 0, drop-only 0 (shuffled: 0/0, 0/0, 0/0); two keys: exact 710, drop-only 158 (shuffled: 712/147, 712/149, 715/146); gromark: exact 39, drop-only 1358 (shuffled: 1099/8741, 2198/13482, 69/2058); best completion -5.782 vs control -6.757 | planted: [{'bad_pos': 63, 'exact_test_accepts': False, 'drop_bad_accepts': True}, {'bad_pos': 33, 'exact_test_accepts': False, 'drop_bad_accepts': True}, {'bad_pos': 25, 'exact_test_accepts': False, 'drop_bad_accepts': True}, {'bad_pos': 70, 'exact_test_accepts': False, 'drop_bad_accepts': True}]

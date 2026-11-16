@@ -1,0 +1,80 @@
+{
+ "name": "different system per part",
+ "part1_fits": 0,
+ "part2_fits": 0,
+ "family_table": {
+  "part2:ct_autokey": {
+   "k4": 0,
+   "shuffled_mean": 0.0,
+   "p": 1.0
+  },
+  "part2:progressive": {
+   "k4": 0,
+   "shuffled_mean": 0.01,
+   "p": 1.0
+  }
+ },
+ "best_quadgram": null,
+ "control": [
+  null,
+  null,
+  null
+ ],
+ "planted": [
+  {
+   "truth": [
+    50,
+    7,
+    2
+   ],
+   "top_q": -4.495,
+   "top_split": 50,
+   "letters_right": 97
+  },
+  {
+   "truth": [
+    39,
+    7,
+    4
+   ],
+   "top_q": -5.092,
+   "top_split": 39,
+   "letters_right": 97
+  },
+  {
+   "truth": [
+    60,
+    5,
+    3
+   ],
+   "top_q": -5.067,
+   "top_split": 60,
+   "letters_right": 97
+  },
+  {
+   "truth": [
+    60,
+    5,
+    2
+   ],
+   "top_q": -5.453,
+   "top_split": 47,
+   "letters_right": 75
+  },
+  {
+   "truth": [
+    42,
+    4,
+    2
+   ],
+   "top_q": -4.981,
+   "top_split": 42,
+   "letters_right": 97
+  }
+ ],
+ "verdict": "dead: part-1 fits 0, part-2 fits 0 (over splits); best two-system decode None vs shuffled None; families above chance: none",
+ "top": [],
+ "minutes": 0.2,
+ "idea": "44",
+ "finished": "2026-11-16T03:28:26+00:00"
+}

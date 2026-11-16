@@ -90,6 +90,9 @@ Sanborn on BERLIN: N decodes to B; BERLINCLOCK "matches directly", meaning plain
   * 11 repeated pairs at width 21 (about 1 in 6,750 raw, about 1 in 90–210 after correcting for picking the best width).
 * **Under plain A–Z Vigenère,** 10 of the 13 EASTNORTHEAST key values are within ±3. The BERLINCLOCK key values are large.
 * **KRYPTOS letters (K, R, Y, P, T, O, S) as plaintext** encrypt to within ±2 of themselves in 9 of 10 cases (Scott; post hoc).
+  Ours (idea 46): it survives shuffling the KRYPTOS labels *within* each clue block (p = 0.00125), KRYPTOS ranks first of 17
+  natural letter sets (corrected p ≈ 0.02). But lightly shifting KRYPTOS letters everywhere would make K4 far less flat than
+  it is; the two fit together only if at most ~20 letters are treated this way and the rest carry a long or stacked key.
 * **Ours:**
   * Stehle's lag-4 run (DIAWINFBN) **p = 0.003** and the mod-7 doublets **p = 0.001**, against 200,000 shuffles (post hoc caveat).
   * **No** periodic signature in the letter differences (p = 0.16).

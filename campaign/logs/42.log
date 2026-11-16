@@ -1,0 +1,5 @@
+
+[selective masking (KRYPTOS letters light, others keyed)] tried 156 candidates on K4
+  full crib passes: 0
+  saved -> results/2026-11-16T032653Z_k4_selective-masking--KRYPTOS-letters-light--others-keyed-.json  (+1 line in ledger.csv)
+[42] closeness: 9/10 KRYPTOS-letter clues within +-2 (shuffled p=0.0000; KRYPTOS beats 6187/6190 letter subsets of at least that size). Model: no repeating key on the other letters fits the clues | planted: [(-4.586, 68), (-4.507, 66), (-4.585, 70), (-4.576, 70), (-4.223, 83), (-4.273, 77), (-4.234, 61), (-3.94, 83)]

@@ -1,0 +1,240 @@
+{
+ "name": "KRYPTOS masking inside clue sentences",
+ "natural_sets": {
+  "KRYPTOS": {
+   "close": "9/10",
+   "within_block_p": 0.00125
+  },
+  "EGYPT": {
+   "close": "5/6",
+   "within_block_p": 0.16867
+  },
+  "WELTZEITUHR": {
+   "close": "7/12",
+   "within_block_p": 0.24335
+  },
+  "LAYERTWO": {
+   "close": "8/14",
+   "within_block_p": 0.35687
+  },
+  "SCHEIDT": {
+   "close": "7/12",
+   "within_block_p": 0.40206
+  },
+  "BERLINCLOCK": {
+   "close": "6/16",
+   "within_block_p": 0.49013
+  },
+  "EASTNORTHEAST": {
+   "close": "10/17",
+   "within_block_p": 0.62158
+  },
+  "CLOCK": {
+   "close": "2/7",
+   "within_block_p": 0.6493
+  },
+  "PALIMPSEST": {
+   "close": "7/13",
+   "within_block_p": 0.66236
+  },
+  "BERLIN": {
+   "close": "4/11",
+   "within_block_p": 0.71196
+  },
+  "ETAOINS (top-7 English)": {
+   "close": "8/15",
+   "within_block_p": 0.82459
+  },
+  "SANBORN": {
+   "close": "5/11",
+   "within_block_p": 0.84537
+  },
+  "vowels": {
+   "close": "3/8",
+   "within_block_p": 0.93693
+  },
+  "ABSCISSA": {
+   "close": "2/8",
+   "within_block_p": 0.97938
+  },
+  "SHADOW": {
+   "close": "3/7",
+   "within_block_p": 0.98235
+  },
+  "first half A-M": {
+   "close": "3/13",
+   "within_block_p": 0.99065
+  },
+  "CIA": {
+   "close": "0/5",
+   "within_block_p": 1.0
+  }
+ },
+ "kryptos_p": 0.00125,
+ "corrected_p": 0.02125,
+ "flatness_curves": {
+  "one-time pad": {
+   "10-14": 0.1437,
+   "15-19": 0.1085,
+   "20-24": 0.0575,
+   "25-29": 0.0229,
+   "30-34": 0.0069,
+   "35-39": 0.0003
+  },
+  "two stacked keys": {
+   "10-14": 0.2,
+   "15-19": 0.1072,
+   "20-24": 0.0582,
+   "25-29": 0.0223,
+   "30-34": 0.0046,
+   "35-39": 0.0017
+  },
+  "short repeating key 5-11": {
+   "10-14": 0.0542,
+   "15-19": 0.0284,
+   "20-24": 0.0177,
+   "25-29": 0.0083,
+   "30-34": 0.0029,
+   "35-39": 0.0006
+  }
+ },
+ "chance_flat": 0.27503333333333335,
+ "likelihood_ratios": {
+  "one-time pad": {
+   "10-14": 24.59,
+   "15-19": 18.56,
+   "20-24": 9.84,
+   "25-29": 3.92,
+   "30-34": 1.18,
+   "35-39": 0.05
+  },
+  "two stacked keys": {
+   "10-14": 34.22,
+   "15-19": 18.34,
+   "20-24": 9.96,
+   "25-29": 3.82,
+   "30-34": 0.79,
+   "35-39": 0.29
+  },
+  "short repeating key 5-11": {
+   "10-14": 9.27,
+   "15-19": 4.86,
+   "20-24": 3.03,
+   "25-29": 1.42,
+   "30-34": 0.5,
+   "35-39": 0.1
+  }
+ },
+ "survivors": 660,
+ "controls": [
+  [
+   0,
+   null
+  ],
+  [
+   0,
+   null
+  ],
+  [
+   140,
+   null
+  ],
+  [
+   0,
+   null
+  ]
+ ],
+ "best_quadgram": -6.074293128545049,
+ "planted": [
+  {
+   "truth": [
+    5,
+    46,
+    47,
+    92,
+    9
+   ],
+   "survivors": 1918,
+   "top_q": -4.7,
+   "top_letters_right": 55,
+   "true_config_q": -4.619,
+   "true_config_letters_right": 66
+  },
+  {
+   "truth": [
+    5,
+    46,
+    60,
+    86,
+    6
+   ],
+   "survivors": 2364,
+   "top_q": -5.132,
+   "top_letters_right": 31,
+   "true_config_q": -4.288,
+   "true_config_letters_right": 79
+  },
+  {
+   "truth": [
+    3,
+    40,
+    52,
+    80,
+    7
+   ],
+   "survivors": 2986,
+   "top_q": -4.89,
+   "top_letters_right": 58,
+   "true_config_q": -4.831,
+   "true_config_letters_right": 76
+  },
+  {
+   "truth": [
+    13,
+    40,
+    58,
+    80,
+    7
+   ],
+   "survivors": 2260,
+   "top_q": -5.451,
+   "top_letters_right": 37,
+   "true_config_q": -4.553,
+   "true_config_letters_right": 86
+  }
+ ],
+ "verdict": "A) closeness: KRYPTOS within-block p=0.00125 (rank 1/17 natural sets; corrected p~0.021); flatness needs <=~20 masked letters and a long/stacked key on the rest (LR vs chance, two stacked keys: {'10-14': 34.22, '15-19': 18.34, '20-24': 9.96, '25-29': 3.82, '30-34': 0.79, '35-39': 0.29}). B) dead: 660 survivors (controls [0, 0, 140, 0]), best decode -6.074293128545049 vs control None",
+ "top": [
+  {
+   "q": -6.074,
+   "alphabet": "LAYERTWO",
+   "variant": "vigenere",
+   "L": 24,
+   "restart": true,
+   "segments": [
+    0,
+    40,
+    40,
+    80
+   ],
+   "plaintext": "OWEREPYOFACLASHKJFFMYEASTOROTHEASTOSYSSTKOTSDFYDYYSJCKSLJACKOECONOTSTOYUNKYGEKYYSHUDSOOOGDIUUKJMT"
+  },
+  {
+   "q": -6.074,
+   "alphabet": "LAYERTWO",
+   "variant": "variant_beaufort",
+   "L": 24,
+   "restart": true,
+   "segments": [
+    0,
+    40,
+    40,
+    80
+   ],
+   "plaintext": "OWEREPYOFACLASHKJFFMYEASTOROTHEASTOSYSSTKOTSDFYDYYSJCKSLJACKOECONOTSTOYUNKYGEKYYSHUDSOOOGDIUUKJMT"
+  }
+ ],
+ "minutes": 6.5,
+ "idea": "46",
+ "finished": "2026-11-16T03:36:49+00:00"
+}
