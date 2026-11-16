@@ -53,5 +53,15 @@ def test_one_mistake_drop_restores_true_config():
     assert TK.solve_exact(TK.equations(ct, fixed, AZ, "vigenere", 7, 11)) is not None
 
 
+def test_sentence_masking_decodes_planted_truth():
+    m = attack("46_masking_in_sentences.py")
+    ct, pt, (a1, b1, a2, b2, L) = m.plant(random.Random(46))
+    hits = m.scan(ct, {i: pt[i] for i in CRIBS}, {"AZ": AZ})
+    tr = [h for h in hits if h[1] == "vigenere" and h[2] == L and h[3] and h[4] == a1 and h[5] == a2]
+    assert tr
+    d = m.best_decode(ct, tr[0], 6)
+    assert sum(a == b for a, b in zip(d[1], pt)) >= 55
+
+
 if __name__ == "__main__":
     _runner.run(globals())

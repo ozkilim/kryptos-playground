@@ -262,5 +262,12 @@
   "script": "attacks/45_one_mistake.py",
   "est_min": 60,
   "why": "Sanborn's work is 'rife with mistakes on purpose'; one wrong clue letter makes exact tests reject the true method."
+ },
+ {
+  "id": "46",
+  "title": "KRYPTOS-letter masking inside the clue sentences + restarting key (pre-filter hybrid)",
+  "script": "attacks/46_masking_in_sentences.py",
+  "est_min": 20,
+  "why": "Clue matrix: selective masking explains the KRYPTOS closeness but breaks flatness unless <=~20 letters are masked; top hybrid = masking x sentence restarts."
  }
 ]

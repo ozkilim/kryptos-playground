@@ -138,6 +138,23 @@ def _per_part(pt, rng):
     return "".join(AZ[(AZ.index(p) + (k1[i % L1] if i < b else -k2[(i - b) % L2])) % 26] for i, p in enumerate(pt))
 
 
+def _sel_restart(pt, rng):
+    """Hybrid (idea 46): KRYPTOS letters lightly shifted only inside the two sentences holding the
+    clues; every other letter keyed by a repeating key that restarts at each sentence."""
+    a1, b1 = rng.randint(0, 21), rng.randint(34, 50)
+    a2, b2 = rng.randint(b1, 63), rng.randint(74, 97)
+    L = rng.randint(5, 11)
+    key = [rng.randrange(26) for _ in range(L)]
+    starts = sorted({0, a1, b1, a2, b2} - {97})
+    light = set(range(a1, b1)) | set(range(a2, b2))
+    out = []
+    for i, p in enumerate(pt):
+        st = max(s for s in starts if s <= i)
+        k = rng.randint(-2, 2) if (p in LIGHT and i in light) else key[(i - st) % L]
+        out.append(AZ[(AZ.index(p) + k) % 26])
+    return "".join(out)
+
+
 def _gromark_base(pt, rng):
     base = rng.choice([5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16])
     k = [rng.randrange(base) for _ in range(5)]
@@ -241,6 +258,13 @@ FAMILIES = [
            {"cribs": (U, "round 7"), "hand": (P, "trivial on a chart"), "multistage": (P, "two treatments"),
             "two_systems": (E, "two rules by letter class"), "k123_keys": (E, "the KRYPTOS keyword decides"),
             "nonperiodic": (E, "")}),
+    Family("sel_restart", "Hybrid: KRYPTOS letters light only in the clue sentences + key restarting per sentence", ["46"],
+           "pending", _sel_restart,
+           {"cribs": (U, "round 7"), "hand": (P, "two simple rules on a chart"), "multistage": (P, "two treatments"),
+            "two_systems": (E, "two rules by letter class"), "k123_keys": (E, "the KRYPTOS keyword decides"),
+            "nonperiodic": (E, "restarts + masked letters"), "sentences_x": (E, "sentence-level structure"),
+            "k5": (C, "only if K5's sentences break at the same places"),
+            "flat_ioc": (A, "flat in only ~0.5% with a short key, ~5% with a long/stacked key (chance 27%)")}),
     Family("restart", "Key restarts at each sentence (+X between sentences)", ["43"], "pending", _restart,
            {"cribs": (U, "round 7"), "hand": (P, "Cyrillic Projector did this"), "multistage": (C, ""),
             "k5": (C, "only if K5's sentences break at the same places"), "nonperiodic": (E, "restarts break the period"),
