@@ -13,10 +13,6 @@ Columns marked (p) are measured by probes: the family's encryptor is run on Engl
 | Two stacked repeating keys (LAYER TWO), long lengths | 23, 38, 45 | open | PASS | 4.2 | ~ | ✓ | ? | ✓ | ✓ | ✓ | ✓ | ? | · | · | · | · | · | · | ★ | ★ | ~ | ★ | ~ | ~ | ? | ? | ? | ? | ? | ? | ? |
 | One hidden alphabet with a long key (length 23+) | 20 | open | PASS | 0.8 | ~ | ✓ | ? | ✓ | ✓ | ✓ | ✓ | ? | · | · | · | · | · | · | ~ | ? | ? | ~ | ? | ? | ? | ? | ? | ? | ? | ? | ? |
 | A genuinely non-arithmetic visual/physical step (untested) | - | untested | PASS | 1.4 | ? | ? | ? | ✓ | ? | ? | ✓ | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ★ | ? | ? | ~ |
-| Two (or three) stacked keys that are real words/phrases/dates | 47, 48 | pending | PASS | 4.2 | ? | ✓ | ? | ✓ | ✓ | ✓ | ✓ | ? | · | · | · | · | · | · | ★ | ★ | ? | ★ | ~ | ~ | ? | ? | ? | ? | ~ | ? | ? |
-| Clock arithmetic keys (dials, two hands) and carved-row restarts | 50 | pending | PASS | 3.4 | ? | ✓ | ? | ✓ | ✓ | ✓ | ~ | ? | · | · | · | ★ | · | · | ? | ? | ? | ? | ★ | ? | ? | ★ | ? | ? | ? | ? | ~ |
-| Letter class picks the table: KRYPTOS letters on the KRYPTOS tableau | 51 | pending | PASS | 3.4 | ? | ✓ | ? | ✓ | ✓ | ✓ | ✓ | ? | · | · | · | ★ | · | · | ~ | ? | ★ | ★ | ? | ? | ? | ? | ? | ? | ? | ? | ? |
-| K1-K3 plaintexts as keys with hidden alphabets | 49 | pending | PASS | 2.0 | ? | ✓ | ? | ✓ | ✓ | ~ | ✓ | ? | · | · | · | · | · | · | ★ | ? | ? | ★ | ? | ? | ? | ? | ? | ? | ? | ? | ? |
 | Gromark / chain-addition digits, both alphabets hidden (base 10) | 19, 45 | disfavoured | PASS | 1.0 | ~ | ✓ | ? | ✓ | ✓ | ✓ | ✓ | ? | · | · | · | · | · | · | ★ | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? |
 | Hybrid: KRYPTOS letters light only in the clue sentences + key restarting per sentence | 46 | dead-in-scope | PASS | 5.5 | ~ | ✓ | ? | ✓ | ✓ | ~ | ✓ | ? | ★ | ★ | ▼ | · | · | · | ★ | ? | ★ | ★ | ? | ? | ? | ? | ? | ? | ? | ★ | ? |
 | Three layers: a theme word plus two keys | 26 | dead-in-scope | PASS | 2.8 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ✓ | ? | · | · | · | · | · | · | ★ | ~ | ? | ? | ★ | ~ | ? | ? | ? | ? | ? | ? | ? |
@@ -24,12 +20,16 @@ Columns marked (p) are measured by probes: the family's encryptor is run on Engl
 | Any family above, with one deliberate wrong clue letter | 45 | dead-in-scope | PASS | 1.0 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ~ | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ★ | ? | ? |
 | Selective masking: KRYPTOS letters lightly shifted, others keyed | 42 | dead | PASS | 4.5 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ✓ | ? | ★ | ★ | ▼ | · | · | · | ★ | ? | ★ | ★ | ? | ? | ? | ? | ? | ? | ? | ? | ? |
 | Key restarts at each sentence (+X between sentences) | 43 | dead | PASS | 4.4 | ✗ | ✓ | ? | ✓ | ✓ | ~ | ~ | ? | · | ★ | · | ★ | · | · | ★ | ? | ? | ~ | ? | ? | ? | ? | ? | ? | ? | ★ | ? |
+| Two (or three) stacked keys that are real words/phrases/dates | 47, 48 | dead | PASS | 4.2 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ✓ | ? | · | · | · | · | · | · | ★ | ★ | ? | ★ | ~ | ~ | ? | ? | ? | ? | ~ | ? | ? |
+| Clock arithmetic keys (dials, two hands) and carved-row restarts | 50 | dead | PASS | 3.4 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ~ | ? | · | · | · | ★ | · | · | ? | ? | ? | ? | ★ | ? | ? | ★ | ? | ? | ? | ? | ~ |
+| Letter class picks the table: KRYPTOS letters on the KRYPTOS tableau | 51 | dead | PASS | 3.4 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ✓ | ? | · | · | · | ★ | · | · | ~ | ? | ★ | ★ | ? | ? | ? | ? | ? | ? | ? | ? | ? |
 | A different simple system for each part | 44 | dead | PASS | 3.0 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ✓ | ? | · | · | · | ★ | · | · | ★ | ? | ★ | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? |
 | Shifting matrices / coordinate wheels on a grid | 39 | dead | PASS | 2.4 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ✓ | ? | ? | ? | ? | ? | ? | ? | ~ | ? | ? | ? | ? | ? | ? | ★ | ★ | ? | ? | ? | ? |
 | Keyword alphabets / Quagmire I-IV with short keys | 05, 14, 15, 20, 27, 37 | dead | PASS | 2.3 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ~ | ? | · | · | · | ★ | · | · | ▼ | ? | ? | ★ | ? | ~ | ? | ? | ? | ? | ~ | ? | ? |
 | Chain addition in other bases (3-16) | 41 | dead | PASS | 2.0 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ✓ | ? | · | · | · | · | · | · | ★ | ? | ? | ? | ? | ? | ? | ★ | ? | ? | ? | ? | ? |
 | World Clock 1989 keys (cities, initials, UTC offsets) | 24 | dead | PASS | 2.0 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ~ | ? | ? | ? | ? | ? | ? | ? | ★ | ? | ? | ? | ★ | ? | ? | ? | ? | ? | ? | ? | ? |
 | Compass-bearing keys across the carved layout | 31 | dead | PASS | 2.0 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ~ | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ★ | ? | ? | ★ |
+| K1-K3 plaintexts as keys with hidden alphabets | 49 | dead | PASS | 2.0 | ✗ | ✓ | ? | ✓ | ✓ | ~ | ✓ | ? | · | · | · | · | · | · | ★ | ? | ? | ★ | ? | ? | ? | ? | ? | ? | ? | ? | ? |
 | Teleprinter: Baudot/Vernam XOR, Lorenz wheels | 34, 36 | dead | PASS | 1.4 | ✗ | ✓ | ? | ? | ✓ | ✓ | ✓ | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ~ | ? | ★ | ? | ? | ? | ? | ? | ? |
 | Visual letter transforms (semaphore, Morse reversal) alone or stacked | 30 | dead | PASS | 1.0 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ✓ | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ★ | ? | ? | ? |
 | Egypt-era alphabets (hieroglyph, Coptic, Greek order) x key models | 37 | dead | PASS | 1.0 | ✗ | ✓ | ? | ✓ | ✓ | ✓ | ✓ | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ? | ★ | ? | ? | ? | ? | ? | ? | ? |
@@ -46,29 +46,25 @@ Column groups, left to right: facts (24 clue letters, S->S, K->K, not pure trans
 Live families only (open / untested / pending / disfavoured), passing every fact; ordered by firm-statement conflicts, then hint score (★ = 1, ~ = 0.4, ▼ = -0.5).
 
 1. **Two stacked repeating keys (LAYER TWO), long lengths** (open, PASS, score 4.2): explains key not simply periodic; LAYER TWO; K1-K3 hold clues
-2. **Two (or three) stacked keys that are real words/phrases/dates** (pending, PASS, score 4.2): explains key not simply periodic; LAYER TWO; K1-K3 hold clues
-3. **Clock arithmetic keys (dials, two hands) and carved-row restarts** (pending, PASS, score 3.4): explains lag-4 run DIAWINFBN; World Clock / 1989; different math base
-4. **Letter class picks the table: KRYPTOS letters on the KRYPTOS tableau** (pending, PASS, score 3.4): explains lag-4 run DIAWINFBN; two separate systems; K1-K3 hold clues
-5. **K1-K3 plaintexts as keys with hidden alphabets** (pending, PASS, score 2.0): explains key not simply periodic; K1-K3 hold clues
-6. **A genuinely non-arithmetic visual/physical step (untested)** (untested, PASS, score 1.4): explains visual systems / not math
-7. **Gromark / chain-addition digits, both alphabets hidden (base 10)** (disfavoured, PASS, score 1.0): explains key not simply periodic
-8. **One hidden alphabet with a long key (length 23+)** (open, PASS, score 0.8): explains nothing yet
+2. **A genuinely non-arithmetic visual/physical step (untested)** (untested, PASS, score 1.4): explains visual systems / not math
+3. **Gromark / chain-addition digits, both alphabets hidden (base 10)** (disfavoured, PASS, score 1.0): explains key not simply periodic
+4. **One hidden alphabet with a long key (length 23+)** (open, PASS, score 0.8): explains nothing yet
 
 ## Hybrids worth building (two live families, most hints explained together)
 
-* **Two stacked repeating keys (LAYER TWO), long lengths** + **Clock arithmetic keys (dials, two hands) and carved-row restarts**: 6 hints (World Clock / 1989; K1-K3 hold clues; LAYER TWO; different math base; key not simply periodic; lag-4 run DIAWINFBN)
-* **Two (or three) stacked keys that are real words/phrases/dates** + **Clock arithmetic keys (dials, two hands) and carved-row restarts**: 6 hints (World Clock / 1989; K1-K3 hold clues; LAYER TWO; different math base; key not simply periodic; lag-4 run DIAWINFBN)
-* **Two stacked repeating keys (LAYER TWO), long lengths** + **Letter class picks the table: KRYPTOS letters on the KRYPTOS tableau**: 5 hints (K1-K3 hold clues; LAYER TWO; key not simply periodic; lag-4 run DIAWINFBN; two separate systems)
-* **Two (or three) stacked keys that are real words/phrases/dates** + **Letter class picks the table: KRYPTOS letters on the KRYPTOS tableau**: 5 hints (K1-K3 hold clues; LAYER TWO; key not simply periodic; lag-4 run DIAWINFBN; two separate systems)
-* **K1-K3 plaintexts as keys with hidden alphabets** + **Clock arithmetic keys (dials, two hands) and carved-row restarts**: 5 hints (World Clock / 1989; K1-K3 hold clues; different math base; key not simply periodic; lag-4 run DIAWINFBN)
-* **Clock arithmetic keys (dials, two hands) and carved-row restarts** + **Letter class picks the table: KRYPTOS letters on the KRYPTOS tableau**: 5 hints (World Clock / 1989; K1-K3 hold clues; different math base; lag-4 run DIAWINFBN; two separate systems)
+* **Two stacked repeating keys (LAYER TWO), long lengths** + **A genuinely non-arithmetic visual/physical step (untested)**: 4 hints (K1-K3 hold clues; LAYER TWO; key not simply periodic; visual systems / not math)
+* **One hidden alphabet with a long key (length 23+)** + **Two stacked repeating keys (LAYER TWO), long lengths**: 3 hints (K1-K3 hold clues; LAYER TWO; key not simply periodic)
+* **Gromark / chain-addition digits, both alphabets hidden (base 10)** + **Two stacked repeating keys (LAYER TWO), long lengths**: 3 hints (K1-K3 hold clues; LAYER TWO; key not simply periodic)
+* **Gromark / chain-addition digits, both alphabets hidden (base 10)** + **A genuinely non-arithmetic visual/physical step (untested)**: 2 hints (key not simply periodic; visual systems / not math)
+* **One hidden alphabet with a long key (length 23+)** + **Gromark / chain-addition digits, both alphabets hidden (base 10)**: 1 hints (key not simply periodic)
+* **One hidden alphabet with a long key (length 23+)** + **A genuinely non-arithmetic visual/physical step (untested)**: 1 hints (visual systems / not math)
 
 ## Details per family
 
 ### Two stacked repeating keys (LAYER TWO), long lengths
 Ideas 23, 38, 45 · clue test: **open** · verdict **PASS** · score 4.2
 
-* fact · 24 clue letters: ~ short pairs disfavoured; long pairs information-limited (shuffled K4 completes to English-level scores)
+* fact · 24 clue letters: ~ short pairs disfavoured; long pairs information-limited; word/phrase keys closed (idea 47)
 * fact · S->S, K->K: ✓ >=2 fixed points among clue letters in 26%
 * fact · hand, paper charts, pre-1990: ✓ two passes on the same tableau
 * firm · matches directly: ✓ letter i -> letter i in 100% of probes
@@ -108,81 +104,6 @@ Ideas - · clue test: **untested** · verdict **PASS** · score 1.4
 
 * fact · 24 clue letters: ? nobody has defined one precisely enough to test
 * hint · visual systems / not math: ★ 
-
-### Two (or three) stacked keys that are real words/phrases/dates
-Ideas 47, 48 · clue test: **pending** · verdict **PASS** · score 4.2
-
-* fact · 24 clue letters: ? round 8; exact, every match fully determined
-* fact · S->S, K->K: ✓ >=2 fixed points among clue letters in 24%
-* fact · hand, paper charts, pre-1990: ✓ hand keys are words
-* firm · matches directly: ✓ letter i -> letter i in 100% of probes
-* firm · K5 same words, same places: ✓ shared word encrypts identically in 100% of message pairs
-* firm · masked, >1 stage, new method: ✓ two layers
-* hint · KRYPTOS letters barely move: · 0.0% vs chance 0.0003%
-* hint · clues near their cipher letters: · 3.7% vs chance 1.32%
-* hint · flat letter counts: · 19.7% vs chance 27.43%
-* hint · lag-4 run DIAWINFBN: · 1.0% vs chance 0.33%
-* hint · doublets on mod 7: · 0.7% vs chance 0.18%
-* hint · width-21 pairs: · 35.0% vs chance 24.45%
-* hint · key not simply periodic: ★ lcm of two word lengths > 97
-* hint · LAYER TWO: ★ literally two layers
-* hint · K1-K3 hold clues: ★ K1/K2 keys were words
-* hint · World Clock / 1989: ~ if a key is a 1989 word/date
-* hint · Egypt 1986: ~ if a key is an Egypt word
-* hint · mistakes on purpose: ~ one-wrong-clue pass
-
-### Clock arithmetic keys (dials, two hands) and carved-row restarts
-Ideas 50 · clue test: **pending** · verdict **PASS** · score 3.4
-
-* fact · 24 clue letters: ? round 8
-* fact · S->S, K->K: ✓ >=2 fixed points among clue letters in 39%
-* fact · hand, paper charts, pre-1990: ✓ a dial
-* firm · matches directly: ✓ letter i -> letter i in 100% of probes
-* firm · K5 same words, same places: ✓ shared word encrypts identically in 100% of message pairs
-* hint · KRYPTOS letters barely move: · 0.0% vs chance 0.0003%
-* hint · clues near their cipher letters: · 4.7% vs chance 1.32%
-* hint · flat letter counts: · 19.0% vs chance 27.43%
-* hint · lag-4 run DIAWINFBN: ★ as odd as K4 in 11.0% vs chance 0.33% (x34)
-* hint · doublets on mod 7: · 0.0% vs chance 0.18%
-* hint · width-21 pairs: · 52.0% vs chance 24.45%
-* hint · World Clock / 1989: ★ a clock's arithmetic
-* hint · different math base: ★ bases 12/24/60
-* hint · carved layout 4+31+31+31: ~ carved-row restarts
-
-### Letter class picks the table: KRYPTOS letters on the KRYPTOS tableau
-Ideas 51 · clue test: **pending** · verdict **PASS** · score 3.4
-
-* fact · 24 clue letters: ? round 8
-* fact · S->S, K->K: ✓ >=2 fixed points among clue letters in 29%
-* fact · hand, paper charts, pre-1990: ✓ two tableaux on the sculpture/paper
-* firm · matches directly: ✓ letter i -> letter i in 98% of probes
-* firm · K5 same words, same places: ✓ shared word encrypts identically in 100% of message pairs
-* firm · masked, >1 stage, new method: ✓ two tables
-* hint · KRYPTOS letters barely move: · 0.0% vs chance 0.0003%
-* hint · clues near their cipher letters: · 4.0% vs chance 1.32%
-* hint · flat letter counts: · 2.0% vs chance 27.43%
-* hint · lag-4 run DIAWINFBN: ★ as odd as K4 in 6.0% vs chance 0.33% (x18)
-* hint · doublets on mod 7: · 0.7% vs chance 0.18%
-* hint · width-21 pairs: · 87.3% vs chance 24.45%
-* hint · two separate systems: ★ two tables by letter class
-* hint · K1-K3 hold clues: ★ the KRYPTOS keyword and tableau
-
-### K1-K3 plaintexts as keys with hidden alphabets
-Ideas 49 · clue test: **pending** · verdict **PASS** · score 2.0
-
-* fact · 24 clue letters: ? round 8
-* fact · S->S, K->K: ✓ >=2 fixed points among clue letters in 24%
-* fact · hand, paper charts, pre-1990: ✓ a text and a mixed alphabet on a chart
-* firm · matches directly: ✓ letter i -> letter i in 100% of probes
-* firm · K5 same words, same places: ~ only if K5 used the same key text at the same offset
-* hint · KRYPTOS letters barely move: · 0.0% vs chance 0.0003%
-* hint · clues near their cipher letters: · 2.0% vs chance 1.32%
-* hint · flat letter counts: · 20.3% vs chance 27.43%
-* hint · lag-4 run DIAWINFBN: · 0.0% vs chance 0.33%
-* hint · doublets on mod 7: · 0.0% vs chance 0.18%
-* hint · width-21 pairs: · 34.0% vs chance 24.45%
-* hint · key not simply periodic: ★ running or long key
-* hint · K1-K3 hold clues: ★ answers to K1-K3 contain clues to K4
 
 ### Gromark / chain-addition digits, both alphabets hidden (base 10)
 Ideas 19, 45 · clue test: **disfavoured** · verdict **PASS** · score 1.0
@@ -296,6 +217,64 @@ Ideas 43 · clue test: **dead** · verdict **PASS** · score 4.4
 * hint · key not simply periodic: ★ restarts break the period
 * hint · sentence strips, X breaks: ★ 
 
+### Two (or three) stacked keys that are real words/phrases/dates
+Ideas 47, 48 · clue test: **dead** · verdict **PASS** · score 4.2
+
+* fact · 24 clue letters: ✗ 0 of 265k words x (265k words + 14.8M phrases) fit, also with one clue dropped
+* fact · S->S, K->K: ✓ >=2 fixed points among clue letters in 24%
+* fact · hand, paper charts, pre-1990: ✓ hand keys are words
+* firm · matches directly: ✓ letter i -> letter i in 100% of probes
+* firm · K5 same words, same places: ✓ shared word encrypts identically in 100% of message pairs
+* firm · masked, >1 stage, new method: ✓ two layers
+* hint · KRYPTOS letters barely move: · 0.0% vs chance 0.0003%
+* hint · clues near their cipher letters: · 3.7% vs chance 1.32%
+* hint · flat letter counts: · 19.7% vs chance 27.43%
+* hint · lag-4 run DIAWINFBN: · 1.0% vs chance 0.33%
+* hint · doublets on mod 7: · 0.7% vs chance 0.18%
+* hint · width-21 pairs: · 35.0% vs chance 24.45%
+* hint · key not simply periodic: ★ lcm of two word lengths > 97
+* hint · LAYER TWO: ★ literally two layers
+* hint · K1-K3 hold clues: ★ K1/K2 keys were words
+* hint · World Clock / 1989: ~ if a key is a 1989 word/date
+* hint · Egypt 1986: ~ if a key is an Egypt word
+* hint · mistakes on purpose: ~ one-wrong-clue pass
+
+### Clock arithmetic keys (dials, two hands) and carved-row restarts
+Ideas 50 · clue test: **dead** · verdict **PASS** · score 3.4
+
+* fact · 24 clue letters: ✗ 0 of 2.96M schedules fit
+* fact · S->S, K->K: ✓ >=2 fixed points among clue letters in 39%
+* fact · hand, paper charts, pre-1990: ✓ a dial
+* firm · matches directly: ✓ letter i -> letter i in 100% of probes
+* firm · K5 same words, same places: ✓ shared word encrypts identically in 100% of message pairs
+* hint · KRYPTOS letters barely move: · 0.0% vs chance 0.0003%
+* hint · clues near their cipher letters: · 4.7% vs chance 1.32%
+* hint · flat letter counts: · 19.0% vs chance 27.43%
+* hint · lag-4 run DIAWINFBN: ★ as odd as K4 in 11.0% vs chance 0.33% (x34)
+* hint · doublets on mod 7: · 0.0% vs chance 0.18%
+* hint · width-21 pairs: · 52.0% vs chance 24.45%
+* hint · World Clock / 1989: ★ a clock's arithmetic
+* hint · different math base: ★ bases 12/24/60
+* hint · carved layout 4+31+31+31: ~ carved-row restarts
+
+### Letter class picks the table: KRYPTOS letters on the KRYPTOS tableau
+Ideas 51 · clue test: **dead** · verdict **PASS** · score 3.4
+
+* fact · 24 clue letters: ✗ no key fits
+* fact · S->S, K->K: ✓ >=2 fixed points among clue letters in 29%
+* fact · hand, paper charts, pre-1990: ✓ two tableaux on the sculpture/paper
+* firm · matches directly: ✓ letter i -> letter i in 98% of probes
+* firm · K5 same words, same places: ✓ shared word encrypts identically in 100% of message pairs
+* firm · masked, >1 stage, new method: ✓ two tables
+* hint · KRYPTOS letters barely move: · 0.0% vs chance 0.0003%
+* hint · clues near their cipher letters: · 4.0% vs chance 1.32%
+* hint · flat letter counts: · 2.0% vs chance 27.43%
+* hint · lag-4 run DIAWINFBN: ★ as odd as K4 in 6.0% vs chance 0.33% (x18)
+* hint · doublets on mod 7: · 0.7% vs chance 0.18%
+* hint · width-21 pairs: · 87.3% vs chance 24.45%
+* hint · two separate systems: ★ two tables by letter class
+* hint · K1-K3 hold clues: ★ the KRYPTOS keyword and tableau
+
 ### A different simple system for each part
 Ideas 44 · clue test: **dead** · verdict **PASS** · score 3.0
 
@@ -367,6 +346,23 @@ Ideas 31 · clue test: **dead** · verdict **PASS** · score 2.0
 * fact · 24 clue letters: ✗ best 6/24
 * hint · visual systems / not math: ★ 
 * hint · carved layout 4+31+31+31: ★ reads the carved rows
+
+### K1-K3 plaintexts as keys with hidden alphabets
+Ideas 49 · clue test: **dead** · verdict **PASS** · score 2.0
+
+* fact · 24 clue letters: ✗ one-alphabet models 0; two hidden alphabets at chance
+* fact · S->S, K->K: ✓ >=2 fixed points among clue letters in 24%
+* fact · hand, paper charts, pre-1990: ✓ a text and a mixed alphabet on a chart
+* firm · matches directly: ✓ letter i -> letter i in 100% of probes
+* firm · K5 same words, same places: ~ only if K5 used the same key text at the same offset
+* hint · KRYPTOS letters barely move: · 0.0% vs chance 0.0003%
+* hint · clues near their cipher letters: · 2.0% vs chance 1.32%
+* hint · flat letter counts: · 20.3% vs chance 27.43%
+* hint · lag-4 run DIAWINFBN: · 0.0% vs chance 0.33%
+* hint · doublets on mod 7: · 0.0% vs chance 0.18%
+* hint · width-21 pairs: · 34.0% vs chance 24.45%
+* hint · key not simply periodic: ★ running or long key
+* hint · K1-K3 hold clues: ★ answers to K1-K3 contain clues to K4
 
 ### Teleprinter: Baudot/Vernam XOR, Lorenz wheels
 Ideas 34, 36 · clue test: **dead** · verdict **PASS** · score 1.4

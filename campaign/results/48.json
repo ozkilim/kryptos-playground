@@ -1,0 +1,69 @@
+{
+ "name": "three layers: theme word + two word keys",
+ "vocabulary": 264847,
+ "first_keys": 21479,
+ "phrases": 0,
+ "theme": 85,
+ "matches": 0,
+ "best_quadgram": null,
+ "controls": [
+  [
+   0,
+   null
+  ],
+  [
+   0,
+   null
+  ]
+ ],
+ "mistake_matches": 0,
+ "mistake_best": null,
+ "mistake_control_best": null,
+ "planted": [
+  {
+   "truth": [
+    "KRYPTOS",
+    "beaufort",
+    "OUTPUTWINDOW",
+    "SEARCHCOMMAND",
+    "REUNIFICATION"
+   ],
+   "found": true,
+   "matches": 1,
+   "top_is_truth": true,
+   "top_q": -4.942
+  },
+  {
+   "truth": [
+    "KRYPTOS",
+    "vigenere",
+    "SECURED",
+    "SQLITE",
+    "DELIVERINGAMESSAGE"
+   ],
+   "found": true,
+   "matches": 1,
+   "top_is_truth": true,
+   "top_q": -4.24
+  },
+  {
+   "truth": [
+    "AZ",
+    "beaufort",
+    "UNSOLICITED",
+    "REENTR",
+    "WILLIAMWEBSTER"
+   ],
+   "found": true,
+   "matches": 1,
+   "top_is_truth": true,
+   "top_q": -4.928
+  }
+ ],
+ "verdict": "dead: 0 fully determined word-key decrypts, best None vs shuffled [(0, None), (0, None)] (English ~ -5)",
+ "top": [],
+ "top_mistake": [],
+ "minutes": 5.3,
+ "idea": "48",
+ "finished": "2026-11-16T04:22:10+00:00"
+}

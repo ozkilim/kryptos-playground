@@ -1,0 +1,5 @@
+
+[three layers: theme word + two word keys] tried 4,351,816,265,445 candidates on K4
+  full crib passes: 0
+  saved -> results/2026-11-16T042210Z_k4_three-layers--theme-word-+-two-word-keys.json  (+1 line in ledger.csv)
+[48] dead: 0 fully determined word-key decrypts, best None vs shuffled [(0, None), (0, None)] (English ~ -5) | planted: [{'truth': ('KRYPTOS', 'beaufort', 'OUTPUTWINDOW', 'SEARCHCOMMAND', 'REUNIFICATION'), 'found': True, 'matches': 1, 'top_is_truth': True, 'top_q': -4.942}, {'truth': ('KRYPTOS', 'vigenere', 'SECURED', 'SQLITE', 'DELIVERINGAMESSAGE'), 'found': True, 'matches': 1, 'top_is_truth': True, 'top_q': -4.24}, {'truth': ('AZ', 'beaufort', 'UNSOLICITED', 'REENTR', 'WILLIAMWEBSTER'), 'found': True, 'matches': 1, 'top_is_truth': True, 'top_q': -4.928}]

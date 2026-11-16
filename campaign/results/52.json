@@ -1,0 +1,140 @@
+{
+ "name": "second look at every saved candidate",
+ "candidates": 407,
+ "auto_pass": 0,
+ "english_q_5pct": -4.824592944478133,
+ "english_cov_5pct": 0.6804123711340206,
+ "noise_q_max": -6.790524653783056,
+ "llm_english": [
+  5.0,
+  5.0,
+  2.0,
+  4.0,
+  4.0,
+  2.0,
+  5.0,
+  3.0,
+  5.0,
+  4.0,
+  4.0,
+  2.0,
+  2.0,
+  2.0,
+  2.0,
+  2.0,
+  4.0,
+  2.0,
+  2.0,
+  6.0,
+  2.0,
+  5.0,
+  3.0,
+  2.0,
+  2.0,
+  2.0
+ ],
+ "llm_noise": [
+  2.0,
+  2.0,
+  2.0,
+  2.0,
+  2.0,
+  1.0,
+  2.0,
+  2.0,
+  2.0,
+  2.0,
+  1.0,
+  1.0,
+  2.0,
+  2.0,
+  2.0,
+  1.0,
+  1.0,
+  2.0,
+  2.0,
+  2.0,
+  2.0,
+  2.0,
+  1.0,
+  1.0,
+  2.0
+ ],
+ "flagged": 0,
+ "verdict": "nothing missed: best of 407 candidates big-q -5.04 / coverage 0.66 vs real English >= -4.82 / 0.68 (5th pct); noise max q -6.79; LLM best 3.0 vs real English median 3.0, noise max 2.0; 0 pass both automatic checks (optimised completions), none rated like English",
+ "top": [
+  {
+   "source": "23.json",
+   "big_q": -5.035,
+   "coverage": 0.66,
+   "llm": 2.0,
+   "plaintext": "MUTFORAMEPHARANASMUSSEASTNORTHEASTONERMEDIFXSOEVERRUJOMSCASESTYBERLINCLOCKITARINGDQICTISABOUNEGSP"
+  },
+  {
+   "source": "23.json",
+   "big_q": -5.134,
+   "coverage": 0.691,
+   "llm": 2.0,
+   "plaintext": "WBDOESTJUCONALLFORTAMEASTNORTHEASTRRESTTRISEVERSLOOGTSSEAREINCABERLINCLOCKDCTHENCTISAGEOFDKCUWOSW"
+  },
+  {
+   "source": "38.json",
+   "big_q": -5.013,
+   "coverage": 0.629,
+   "llm": 2.0,
+   "plaintext": "FBHONSSPRINNHFIDESETHEASTNORTHEASTEDLITENOYNMAYREFUNCTIONSWOTHEBERLINCLOCKERORWYXLOCABASUCCESTYCO"
+  },
+  {
+   "source": "38.json",
+   "big_q": -4.894,
+   "coverage": 0.567,
+   "llm": 2.0,
+   "plaintext": "UZPYVFXOSSTDERESDIFTHEASTNORTHEASTADDEDISTYNSTSAPERAFALISTEANAMBERLINCLOCKLESELFCLONELECPAHESASET"
+  },
+  {
+   "source": "38.json",
+   "big_q": -4.969,
+   "coverage": 0.598,
+   "llm": 3.0,
+   "plaintext": "DLIDNTEXTEDORRETHEEXAEASTNORTHEASTOPEANATESLESEGETAPARECRJOWMANBERLINCLOCKWITITLITEENTITARACVTTCE"
+  },
+  {
+   "source": "2026-11-16T032636Z_k4_long-stacked-keys-v2--heat-bath-+-English-key-prior-.json",
+   "big_q": -4.911,
+   "coverage": 0.546,
+   "llm": 2.0,
+   "plaintext": "LECPYKMGCANCHELOWITCLEASTNORTHEASTHENEVEDIADWISTLEACTSDEPREELITBERLINCLOCKEDTOCPSOUNZCSOPESANLYWH"
+  },
+  {
+   "source": "2026-11-15T230121Z_k4_two-stacked-keys+english-completion.json",
+   "big_q": -5.112,
+   "coverage": 0.619,
+   "llm": 2.0,
+   "plaintext": "LUREISUNLINDEDRSASSWHEASTNORTHEASTEISISTLERTOPVLUSTALREALESEOFNBERLINCLOCKFLVDHUTEFFERNAYUSESSXJJ"
+  },
+  {
+   "source": "23.json",
+   "big_q": -5.034,
+   "coverage": 0.577,
+   "llm": 2.0,
+   "plaintext": "USTONCETHANDATASIDTAREASTNORTHEASTATALLUDEMGBNSBBFESEMETHUCANPDBERLINCLOCKBUTIESSTSINAFULTNPREWIN"
+  },
+  {
+   "source": "2026-11-16T032636Z_k4_long-stacked-keys-v2--heat-bath-+-English-key-prior-.json",
+   "big_q": -5.088,
+   "coverage": 0.598,
+   "llm": 2.0,
+   "plaintext": "SFUNWIDORTERTSARECTOREASTNORTHEASTHESLEONCASINCEVWLEALSTAREISCTBERLINCLOCKPANDLTLACTCSLNROSZGPEWN"
+  },
+  {
+   "source": "23.json",
+   "big_q": -4.924,
+   "coverage": 0.515,
+   "llm": 2.0,
+   "plaintext": "EHACTIVENSTHESDESCLXEEASTNORTHEASTRACESTHERSUSCUPFITDISTIUPTETOBERLINCLOCKTHEYANTDOEDFATAEEANEWSS"
+  }
+ ],
+ "minutes": 3.2,
+ "idea": "52",
+ "finished": "2026-11-16T04:32:33+00:00"
+}

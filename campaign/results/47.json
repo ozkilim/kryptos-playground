@@ -1,0 +1,81 @@
+{
+ "name": "two stacked keys that are both real words",
+ "vocabulary": 264847,
+ "first_keys": 264847,
+ "phrases": 14784534,
+ "theme": 0,
+ "matches": 0,
+ "best_quadgram": null,
+ "controls": [
+  [
+   0,
+   null
+  ],
+  [
+   0,
+   null
+  ]
+ ],
+ "mistake_matches": 0,
+ "mistake_best": null,
+ "mistake_control_best": null,
+ "planted": [
+  {
+   "truth": [
+    "KRYPTOS",
+    "beaufort",
+    "BACTERITIC",
+    "MORTIER",
+    null
+   ],
+   "found": true,
+   "matches": 1,
+   "top_is_truth": true,
+   "top_q": -5.0
+  },
+  {
+   "truth": [
+    "KRYPTOS",
+    "beaufort",
+    "INSECTICIDE",
+    "FLOORCLOTH",
+    null
+   ],
+   "found": true,
+   "matches": 1,
+   "top_is_truth": true,
+   "top_q": -5.202
+  },
+  {
+   "truth": [
+    "KRYPTOS",
+    "variant_beaufort",
+    "ROUSEMENT",
+    "APOSTOLICI",
+    null
+   ],
+   "found": true,
+   "matches": 1,
+   "top_is_truth": true,
+   "top_q": -4.717
+  },
+  {
+   "truth": [
+    "KRYPTOS",
+    "beaufort",
+    "CALORIFIER",
+    "ABETTAL",
+    null
+   ],
+   "mistake_at": 73,
+   "exact_finds": false,
+   "drop_finds": true
+  }
+ ],
+ "verdict": "dead: 0 fully determined word-key decrypts, best None vs shuffled [(0, None), (0, None)]; one-mistake pass 0 decrypts, best None vs shuffled None (English ~ -5)",
+ "top": [],
+ "top_mistake": [],
+ "minutes": 29.5,
+ "idea": "47",
+ "finished": "2026-11-16T04:16:49+00:00"
+}

@@ -1,0 +1,5 @@
+
+[clock arithmetic keys + carved-row restarts] tried 2,955,924 candidates on K4
+  full crib passes: 0
+  saved -> results/2026-11-16T042856Z_k4_clock-arithmetic-keys-+-carved-row-restarts.json  (+1 line in ledger.csv)
+[50] dead: 0 schedules fit the clues out of 2,955,924 (shuffled: [(0, None), (0, None), (0, None)]); best decode None | planted: [{'truth': ('dial', (24, 9, 11)), 'found': True, 'top_is_truth': True}, {'truth': ('dial', (24, 8, 22)), 'found': True, 'top_is_truth': True}]

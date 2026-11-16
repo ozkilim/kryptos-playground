@@ -1,0 +1,13 @@
+
+[second look at every saved candidate] tried 437 candidates on K4
+  24/24  q= -4.89  DLIDNTEXTEDORRETHEEXAEASTNORTHEASTOPEANATESLESEGET  {'source': '38.json', 'big_q': -4.969, 'coverage': 0.598, 'llm': 3.0}
+  24/24  q= -5.00  ZEACOUSEITNEGDEFFHQTHEASTNORTHEASTERNFSANARYMAYRES  {'source': '23.json', 'big_q': -5.013, 'coverage': 0.485, 'llm': 2.0}
+  24/24  q= -5.02  UZPYVFXOSSTDERESDIFTHEASTNORTHEASTADDEDISTYNSTSAPE  {'source': '38.json', 'big_q': -4.894, 'coverage': 0.567, 'llm': 2.0}
+  24/24  q= -5.04  FBHONSSPRINNHFIDESETHEASTNORTHEASTEDLITENOYNMAYREF  {'source': '38.json', 'big_q': -5.013, 'coverage': 0.629, 'llm': 2.0}
+  24/24  q= -5.07  USTONCETHANDATASIDTAREASTNORTHEASTATALLUDEMGBNSBBF  {'source': '23.json', 'big_q': -5.034, 'coverage': 0.577, 'llm': 2.0}
+  24/24  q= -5.07  EHACTIVENSTHESDESCLXEEASTNORTHEASTRACESTHERSUSCUPF  {'source': '23.json', 'big_q': -4.924, 'coverage': 0.515, 'llm': 2.0}
+  24/24  q= -5.09  MUTFORAMEPHARANASMUSSEASTNORTHEASTONERMEDIFXSOEVER  {'source': '23.json', 'big_q': -5.035, 'coverage': 0.66, 'llm': 2.0}
+  24/24  q= -5.09  OAZPRIABLEDDATEDONFOREASTNORTHEASTOGRSELIZEIIFICIT  {'source': '38.json', 'big_q': -4.888, 'coverage': 0.464, 'llm': 2.0}
+  full crib passes: 0
+  saved -> results/2026-11-16T043233Z_k4_second-look-at-every-saved-candidate.json  (+1 line in ledger.csv)
+[52] nothing missed: best of 407 candidates big-q -5.04 / coverage 0.66 vs real English >= -4.82 / 0.68 (5th pct); noise max q -6.79; LLM best 3.0 vs real English median 3.0, noise max 2.0; 0 pass both automatic checks (optimised completions), none rated like English

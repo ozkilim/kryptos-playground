@@ -1,0 +1,13 @@
+
+[K1-K3 plaintexts as keys with hidden alphabets] tried 1,357,604 candidates on K4
+  24/24  q= -5.62  YNYASSIFTGFOZVXVYTKAMEASTNORTHEASTCHISAXSUBTHATDEP  {'text': 'K1K2K3_rev', 'offset': 264, 'period': 52, 'values': 'AZ', 'model': 'M4'}
+  24/24  q= -5.62  XJDUPLMEIBIFFVXYYGJDNEASTNORTHEASTERVERYGRPODWHONE  {'text': 'K1K2K3_rev', 'offset': 277, 'period': 53, 'values': 'AZ', 'model': 'M4'}
+  24/24  q= -5.64  HQFSAKLMHCQMRUEBDUSINEASTNORTHEASTINGBSSINGCKWMAND  {'text': 'K1K2K3', 'offset': 680, 'period': 56, 'values': 'AZ', 'model': 'M4'}
+  24/24  q= -5.65  KRFORILPVMYUXAGMYZIMEEASTNORTHEASTASFBPTUPLETTYPRT  {'text': 'K3_rev', 'offset': 264, 'period': 38, 'values': 'KRYPTOS', 'model': 'M4'}
+  24/24  q= -5.65  XYKRDYMXGARENTFICARSBEASTNORTHEASTYPASYWATNSNOSWPE  {'text': 'K1K2K3_rev', 'offset': 723, 'period': 41, 'values': 'KRYPTOS', 'model': 'M4'}
+  24/24  q= -5.66  NDYTHRESSINDSASUVHLTHEASTNORTHEASTHLSWHOSRDPLEXLHA  {'text': 'K1K2K3', 'offset': 407, 'period': 47, 'values': 'KRYPTOS', 'model': 'M4'}
+  24/24  q= -5.69  JAOUHGSPREFFTRUNTHISBEASTNORTHEASTAKENTSEBARYDIRAW  {'text': 'K3', 'offset': 243, 'period': 58, 'values': 'KRYPTOS', 'model': 'M4'}
+  24/24  q= -5.70  ZDMDITLYTEWHJKGNSTINDEASTNORTHEASTRCUSDVHPGTHATMOR  {'text': 'K3_rev', 'offset': 264, 'period': 52, 'values': 'AZ', 'model': 'M4'}
+  full crib passes: 0
+  saved -> results/2026-11-16T042839Z_k4_K1-K3-plaintexts-as-keys-with-hidden-alphabets.json  (+1 line in ledger.csv)
+[49] dead: survivors by model {'M1': 0, 'M2': 0, 'M3': 0, 'M4': 189} (shuffled: [{'M1': 0, 'M2': 0, 'M3': 0, 'M4': 25930}, {'M1': 0, 'M2': 0, 'M3': 0, 'M4': 2830}]); best completion -5.62 vs shuffled -5.547 | planted: [{'truth': ('K3', 122, 0, 'AZ', 'M4'), 'true_stream_survives': True, 'completion_q': -5.84, 'letters_right': 43}, {'truth': ('K3', 51, 31, 'AZ', 'M4'), 'true_stream_survives': True, 'completion_q': -5.362, 'letters_right': 65}, {'truth': ('K2', 189, 23, 'AZ', 'M4'), 'true_stream_survives': True, 'completion_q': -5.651, 'letters_right': 49}]

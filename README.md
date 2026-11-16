@@ -140,6 +140,8 @@ All seven come back empty on K4 so far; see `negatives/NEGATIVES.md`.
 
 **Campaign 7** (attacks 42–46) came from re-reading every clue: KRYPTOS-letter masking, key restarts at sentence breaks, a different system per part, one deliberate wrong clue letter, and a masking hybrid designed through the new clue pre-filter. All dead as models. One measured constraint survived: the KRYPTOS-letter closeness holds up under a within-block test, but only fits K4's flat letter counts if it is local and the other letters carry a strong key. See [`campaign/SUMMARY_7.md`](campaign/SUMMARY_7.md).
 
+**Campaign 8** (attacks 47–52) added the constraint the long-key gap needed: stacked keys that are real words. No pair (or theme-word triple) from a 265k-word vocabulary plus 14.8M two-word phrases fits the clues, even allowing one wrong clue letter. K1–K3 texts as keys with hidden alphabets, clock arithmetic and letter-class tableaux are dead too, and a second look at all 407 saved candidates found nothing missed. See [`campaign/SUMMARY_8.md`](campaign/SUMMARY_8.md).
+
 ## Checking on the website
 
 | | URL | Cost | How |

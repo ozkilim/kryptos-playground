@@ -105,3 +105,10 @@ See `campaign/SUMMARY_7.md`.
 - **Two systems, one per part: closed** for seven simple key families. Nothing fits either half alone.
 - **One deliberate wrong clue letter: closed** for periodic, two-key and base-10 Gromark tests (drop-one survivors at chance).
 - **New, measured constraint (not a negative):** the KRYPTOS-letter closeness survives a within-block test (p=0.00125, corrected ~0.02), but it is only compatible with K4's flat letter counts if at most ~20 letters are lightly treated *and* the other letters carry a long or stacked key. Any idea that explains the closeness must pass this (see `docs/CLUE_MATRIX.md`).
+
+## Status changes from campaign 8 (2026-11-16, this repo)
+See `campaign/SUMMARY_8.md`.
+- **Two or three stacked keys made of real words: closed.** 265k-word vocabulary + 14.8M two-word phrases + K1-K3 phrases + clue dates, exact; also with one wrong clue letter. The long stacked-key gap remains only for keys that aren't words.
+- **K1-K3 plaintexts as keys with hidden alphabets: closed** (four alphabet models, periods 2-60 and running).
+- **Clock arithmetic (dials 12/24/60, two hands), carved-row restarts (including inside BERLINCLOCK): closed.**
+- **Still open and needing new information:** non-word long keys (a K4/K5 depth attack once K5 is released), long hidden-alphabet keys, the World Clock's physical facts (face bearings, 1989 plates; on-site check in progress), and any precise "visual" step.

@@ -1,6 +1,6 @@
 # Campaign status
 
-Updated 2026-11-15 23:44 UTC. Rebuilt automatically by `campaign/run.py` after every idea.
+Updated 2026-11-16 04:33 UTC. Rebuilt automatically by `campaign/run.py` after every idea.
 
 | # | Idea | Status | Hypotheses | Survivors | Verdict | Minutes |
 |---|---|---|---|---|---|---|
@@ -33,6 +33,20 @@ Updated 2026-11-15 23:44 UTC. Rebuilt automatically by `campaign/run.py` after e
 | 36 | Lorenz-style teleprinter wheels: each of the 5 bits with its own short repeating wheel | done | - | - | dead: no fully pinned 5-wheel combination decrypts to letters (allowed lengths per bit: [0, 0, 0, 0, 0]) | 0.0 |
 | 35 | Paper strips: K4's carved rows or equal-width strips, reordered and flipped, x every key model | done | 691,748,964 | 0 | dead: 0 survivors | 5.8 |
 | 37 | Egypt-era alphabets (hieroglyph, Coptic, Greek, Phoenician, Arabic orders) x key models, Quagmire, stacked keys | done | 23,044 | - | (a) dead: 0 survivors; (b) dead: Quagmire: 0 consistent (shuffled [0, 0]); two-key: 40 pinned decrypts, best -6.69 vs shuffled -6.51 | 0.0 |
+| 39 | Shifting matrices / number-base change: grid coordinates each shifted by its own wheel | done | 1,560 | - | dead: in every grid at least one coordinate has no wheel the clue letters allow | 0.0 |
+| 41 | Gromark in other number bases (3-16), both alphabets hidden, completed | done | 3,500,452 | 1470 | dead: 1470 primers survive the clues but their best English completion (-5.36) is no better than shuffled K4s (-5.462); planted Gromark texts reach -5.78..-4.30 through the same pipeline | 125.3 |
+| 38 | Long stacked keys revisited: heat-bath solver + English-key prior | done | - | - | no signal: K4 best -4.89 vs shuffled -4.97; planted recovered >=80/97 at 17% of pairs (median 58 letters, was ~35); 6/54 planted score above K4's best | 57.7 |
+| 42 | Selective masking: KRYPTOS letters lightly shifted, the rest keyed | done | - | - | closeness: 9/10 KRYPTOS-letter clues within +-2 (shuffled p=0.0000; KRYPTOS beats 6187/6190 letter subsets of at least that size). Model: no repeating key on the other letters fits the clues | 0.0 |
+| 43 | Key restarts at each sentence (+X separators), 18 alphabets | done | - | 10 | dead: survivors by clue repeats {2: 10, 3: 0, 4: 0, 5: 0} (>=4 repeats: 0 vs ~0.0 per shuffled K4); best decode -6.46 vs control best -6.317 (chance level) | 1.3 |
+| 44 | A different simple system for each part (split 34-63) | done | - | - | dead: part-1 fits 0, part-2 fits 0 (over splits); best two-system decode None vs shuffled None; families above chance: none | 0.2 |
+| 45 | One deliberate mistake: drop-one-clue for periodic, two keys, hidden-alphabet Gromark | done | - | - | dead: one-mistake tolerance adds nothing over chance; periodic: exact 0, drop-only 0 (shuffled: 0/0, 0/0, 0/0); two keys: exact 710, drop-only 158 (shuffled: 712/147, 712/149, 715/146); gromark: exact 39, drop-only 1358 (shuffled: 1099/8741, 2198/13482, 69/2058); best completion -5.782 vs control -6.757 | 1.8 |
+| 46 | KRYPTOS-letter masking inside the clue sentences + restarting key (pre-filter hybrid) | done | - | 660 | A) closeness: KRYPTOS within-block p=0.00125 (rank 1/17 natural sets; corrected p~0.021); flatness needs <=~20 masked letters and a long/stacked key on the rest (LR vs chance, two stacked keys: {'10-14': 34.22, '15-19': 18.34, '20-24': 9.96, '25-29': 3.82, '30-34': 0.79, '35-39': 0.29}). B) dead: 660 survivors (controls [0, 0, 140, 0]), best decode -6.074293128545049 vs control None | 6.5 |
+| 47 | Two stacked keys that are both real words/phrases/dates (+ one-wrong-clue pass) | done | - | - | dead: 0 fully determined word-key decrypts, best None vs shuffled [(0, None), (0, None)]; one-mistake pass 0 decrypts, best None vs shuffled None (English ~ -5) | 29.5 |
+| 48 | Three layers: theme word + two word keys | done | - | - | dead: 0 fully determined word-key decrypts, best None vs shuffled [(0, None), (0, None)] (English ~ -5) | 5.3 |
+| 49 | K1-K3 plaintexts as keys with hidden alphabets (4 models) | done | - | {'M1': 0, 'M2': 0, 'M3': 0, 'M4': 189} | dead: survivors by model {'M1': 0, 'M2': 0, 'M3': 0, 'M4': 189} (shuffled: [{'M1': 0, 'M2': 0, 'M3': 0, 'M4': 25930}, {'M1': 0, 'M2': 0, 'M3': 0, 'M4': 2830}]); best completion -5.62 vs shuffled -5.547 | 6.5 |
+| 50 | Clock arithmetic keys (dials 12/24/60, two hands) + carved-row restarts | done | - | 0 | dead: 0 schedules fit the clues out of 2,955,924 (shuffled: [(0, None), (0, None), (0, None)]); best decode None | 0.3 |
+| 51 | Letter class picks the table (KRYPTOS letters on the KRYPTOS tableau) | done | - | 0 | dead: no key fits the clues (shuffled K4s: mean 0.00 survivors) | 0.4 |
+| 52 | Second look at every saved candidate (big model, word coverage, LLM judge) | done | - | - | nothing missed: best of 407 candidates big-q -5.04 / coverage 0.66 vs real English >= -4.82 / 0.68 (5th pct); noise max q -6.79; LLM best 3.0 vs real English median 3.0, noise max 2.0; 0 pass both automatic checks (optimised completions), none rated like English | 3.2 |
 
 Verdict key: **dead** = ruled out within the stated scope (each engine has a planted-answer test); **WORTH A LOOK** = beats shuffled-K4 controls, needs a human look.
 
@@ -279,4 +293,128 @@ Verdict key: **dead** = ruled out within the stated scope (each engine has a pla
 - **Script:** `attacks/37_egypt_alphabets.py`  ·  log: `campaign/logs/37.log`
 - **Status:** done
 - **Verdict:** (a) dead: 0 survivors; (b) dead: Quagmire: 0 consistent (shuffled [0, 0]); two-key: 40 pinned decrypts, best -6.69 vs shuffled -6.51
+
+### 39. Shifting matrices / number-base change: grid coordinates each shifted by its own wheel
+
+- **Why:** Sanborn: 'matrix codes Ed gave me'; Scheidt: 'a different math base', 'shifting matrices'. Only the base-3 cube with simple keys was tried.
+- **Script:** `attacks/39_shifting_matrices.py`  ·  log: `campaign/logs/39.log`
+- **Status:** done
+- **Verdict:** dead: in every grid at least one coordinate has no wheel the clue letters allow
+- control: `[{"grid_survivors": 0, "decrypts": 0, "best_q": null}, {"grid_survivors": 0, "decrypts": 0, "best_q": null}, {"grid_survivors": 0, "decrypts": 0, "best_q": null}]`
+
+### 41. Gromark in other number bases (3-16), both alphabets hidden, completed
+
+- **Why:** Scheidt's 'different math base'; Bean/Barney list survivors in base 8 etc.; completions never done.
+- **Script:** `attacks/19_gromark_free_alphabets.py`  ·  log: `campaign/logs/41.log`
+- **Status:** done
+- **Verdict:** dead: 1470 primers survive the clues but their best English completion (-5.36) is no better than shuffled K4s (-5.462); planted Gromark texts reach -5.78..-4.30 through the same pipeline
+- control: `[{"consistent": 3500452, "survivors": 28112, "best_q": -5.462}, {"consistent": 252892, "survivors": 61328, "best_q": -5.581}]`
+- best_quadgram: `-5.3643488221872815`
+  - top: `{"q": -5.364, "base": 15, "primer": "1341135", "plaintext": "IDEVENTESNOTOAGAODIESEASTNORTHEASTOAODFORFUTTHELCHILEXPREPSXQXMBERLINCLOCKSCRELYARDMMODUCCYXGXWLC"}`
+  - top: `{"q": -5.369, "base": 15, "primer": "97424", "plaintext": "GYWYEHINTEDFUNDREFINHEASTNORTHEASTRSETLKLYGDFXOLCDFAXSPSMYACLEOBERLINCLOCKISERVIAGENGEXAMPLIEDLYF"}`
+  - top: `{"q": -5.399, "base": 15, "primer": "90375", "plaintext": "LYZBWLGETEMUTFTAGATEVEASTNORTHEASTENTEREONGUPQVEACKISDECSVLQJVDBERLINCLOCKOWWREFERFONLYPRORECASAP"}`
+
+### 38. Long stacked keys revisited: heat-bath solver + English-key prior
+
+- **Why:** Diagnosis showed the open region is search-limited (true answers score higher than what was found), not information-limited.
+- **Script:** `attacks/38_long_stacked_keys_v2.py`  ·  log: `campaign/logs/38.log`
+- **Status:** done
+- **Verdict:** no signal: K4 best -4.89 vs shuffled -4.97; planted recovered >=80/97 at 17% of pairs (median 58 letters, was ~35); 6/54 planted score above K4's best
+- best_quadgram: `-4.892918022567974`
+  - top: `{"alphabet": "AZ", "variant": "variant_beaufort", "L1": 25, "L2": 26, "q": -4.893, "plaintext": "DLIDNTEXTEDORRETHEEXAEASTNORTHEASTOPEANATESLESEGETAPARECRJOWMANBERLINCLOCKWITITLITEENTITARACVTTCE"}`
+  - top: `{"alphabet": "AZ", "variant": "beaufort", "L1": 24, "L2": 26, "q": -5.021, "plaintext": "UZPYVFXOSSTDERESDIFTHEASTNORTHEASTADDEDISTYNSTSAPERAFALISTEANAMBERLINCLOCKLESELFCLONELECPAHESASET"}`
+  - top: `{"alphabet": "KRYPTOS", "variant": "variant_beaufort", "L1": 25, "L2": 26, "q": -5.035, "plaintext": "FBHONSSPRINNHFIDESETHEASTNORTHEASTEDLITENOYNMAYREFUNCTIONSWOTHEBERLINCLOCKERORWYXLOCABASUCCESTYCO"`
+
+### 42. Selective masking: KRYPTOS letters lightly shifted, the rest keyed
+
+- **Why:** 9/10 KRYPTOS-letter clues shift <=2 (shuffled p~0.003); maybe the keyword decides which letters get the real key.
+- **Script:** `attacks/42_selective_masking.py`  ·  log: `campaign/logs/42.log`
+- **Status:** done
+- **Verdict:** closeness: 9/10 KRYPTOS-letter clues within +-2 (shuffled p=0.0000; KRYPTOS beats 6187/6190 letter subsets of at least that size). Model: no repeating key on the other letters fits the clues
+- control: `[null, null, null]`
+
+### 43. Key restarts at each sentence (+X separators), 18 alphabets
+
+- **Why:** Plaintext = sentence strips; K1-K3 use X between sentences; Cyrillic Projector restarts its key per block.
+- **Script:** `attacks/43_sentence_breaks.py`  ·  log: `campaign/logs/43.log`
+- **Status:** done
+- **Verdict:** dead: survivors by clue repeats {2: 10, 3: 0, 4: 0, 5: 0} (>=4 repeats: 0 vs ~0.0 per shuffled K4); best decode -6.46 vs control best -6.317 (chance level)
+- best_quadgram: `-6.459079849336252`
+  - top: `{"q": -6.459, "alphabet": "LAYERTWO", "variant": "beaufort", "L": 26, "s1": 15, "s2": 45, "x": true, "tests": 2, "extra_break": 4, "plaintext": "FQKVUSBQEINAMOTNISPOSEASTNORTHEASTXNMIETDXOFXYEOSIUZFZW`
+  - top: `{"q": -6.514, "alphabet": "ILLUSION", "variant": "beaufort", "L": 26, "s1": 17, "s2": 44, "x": true, "tests": 2, "extra_break": 74, "plaintext": "WCEFRSZFFDCGFRPNXKCQCEASTNORTHEASTCWMJQRABVXMIINZLULCV`
+  - top: `{"q": -6.569, "alphabet": "LAYERTWO", "variant": "beaufort", "L": 25, "s1": 15, "s2": 45, "x": true, "tests": 2, "extra_break": 34, "plaintext": "NDGYTGKQHJKAJIXZRMXPHEASTNORTHEASTNHUAOXZOROCCPELLIZFZ`
+
+### 44. A different simple system for each part (split 34-63)
+
+- **Why:** 'Two separate systems' read literally: one for the EASTNORTHEAST part, another for the BERLINCLOCK part.
+- **Script:** `attacks/44_system_per_sentence.py`  ·  log: `campaign/logs/44.log`
+- **Status:** done
+- **Verdict:** dead: part-1 fits 0, part-2 fits 0 (over splits); best two-system decode None vs shuffled None; families above chance: none
+- control: `[null, null, null]`
+
+### 45. One deliberate mistake: drop-one-clue for periodic, two keys, hidden-alphabet Gromark
+
+- **Why:** Sanborn's work is 'rife with mistakes on purpose'; one wrong clue letter makes exact tests reject the true method.
+- **Script:** `attacks/45_one_mistake.py`  ·  log: `campaign/logs/45.log`
+- **Status:** done
+- **Verdict:** dead: one-mistake tolerance adds nothing over chance; periodic: exact 0, drop-only 0 (shuffled: 0/0, 0/0, 0/0); two keys: exact 710, drop-only 158 (shuffled: 712/147, 712/149, 715/146); gromark: exact 39, drop-only 1358 (shuffled: 1099/8741, 2198/13482, 69/2058); best completion -5.782 vs control -6.757
+
+### 46. KRYPTOS-letter masking inside the clue sentences + restarting key (pre-filter hybrid)
+
+- **Why:** Clue matrix: selective masking explains the KRYPTOS closeness but breaks flatness unless <=~20 letters are masked; top hybrid = masking x sentence restarts.
+- **Script:** `attacks/46_masking_in_sentences.py`  ·  log: `campaign/logs/46.log`
+- **Status:** done
+- **Verdict:** A) closeness: KRYPTOS within-block p=0.00125 (rank 1/17 natural sets; corrected p~0.021); flatness needs <=~20 masked letters and a long/stacked key on the rest (LR vs chance, two stacked keys: {'10-14': 34.22, '15-19': 18.34, '20-24': 9.96, '25-29': 3.82, '30-34': 0.79, '35-39': 0.29}). B) dead: 660 survivors (controls [0, 0, 140, 0]), best decode -6.074293128545049 vs control None
+- best_quadgram: `-6.074293128545049`
+  - top: `{"q": -6.074, "alphabet": "LAYERTWO", "variant": "vigenere", "L": 24, "restart": true, "segments": [0, 40, 40, 80], "plaintext": "OWEREPYOFACLASHKJFFMYEASTOROTHEASTOSYSSTKOTSDFYDYYSJCKSLJACKOECONOTSTO`
+  - top: `{"q": -6.074, "alphabet": "LAYERTWO", "variant": "variant_beaufort", "L": 24, "restart": true, "segments": [0, 40, 40, 80], "plaintext": "OWEREPYOFACLASHKJFFMYEASTOROTHEASTOSYSSTKOTSDFYDYYSJCKSLJACKOE`
+
+### 47. Two stacked keys that are both real words/phrases/dates (+ one-wrong-clue pass)
+
+- **Why:** Round 6: long stacked keys are information-limited; hand keys are words (PALIMPSEST, ABSCISSA), which removes every free slot.
+- **Script:** `attacks/47_word_stacked_keys.py`  ·  log: `campaign/logs/47.log`
+- **Status:** done
+- **Verdict:** dead: 0 fully determined word-key decrypts, best None vs shuffled [(0, None), (0, None)]; one-mistake pass 0 decrypts, best None vs shuffled None (English ~ -5)
+
+### 48. Three layers: theme word + two word keys
+
+- **Why:** Same, with a theme word (Berlin/Egypt/clock/K1-K3) as a third layer; three-stage stacks are a listed community gap.
+- **Script:** `attacks/47_word_stacked_keys.py`  ·  log: `campaign/logs/48.log`
+- **Status:** done
+- **Verdict:** dead: 0 fully determined word-key decrypts, best None vs shuffled [(0, None), (0, None)] (English ~ -5)
+
+### 49. K1-K3 plaintexts as keys with hidden alphabets (4 models)
+
+- **Why:** 'Answers to K1-K3 contain clues to K4'; text keys were only tried on A-Z/KRYPTOS alphabets.
+- **Script:** `attacks/49_text_keys_hidden_alphabets.py`  ·  log: `campaign/logs/49.log`
+- **Status:** done
+- **Verdict:** dead: survivors by model {'M1': 0, 'M2': 0, 'M3': 0, 'M4': 189} (shuffled: [{'M1': 0, 'M2': 0, 'M3': 0, 'M4': 25930}, {'M1': 0, 'M2': 0, 'M3': 0, 'M4': 2830}]); best completion -5.62 vs shuffled -5.547
+- best_quadgram: `-5.616165035947359`
+  - top: `{"q": -5.616, "text": "K1K2K3_rev", "offset": 264, "period": 52, "values": "AZ", "model": "M4", "plaintext": "YNYASSIFTGFOZVXVYTKAMEASTNORTHEASTCHISAXSUBTHATDEPRENAVIORSTHDMBERLINCLOCKINGWVFIIJKFMWGDV`
+  - top: `{"q": -5.625, "text": "K1K2K3_rev", "offset": 277, "period": 53, "values": "AZ", "model": "M4", "plaintext": "XJDUPLMEIBIFFVXYYGJDNEASTNORTHEASTERVERYGRPODWHONEBASEDESTTIMAYBERLINCLOCKHSQUESBYRQSUPDAT`
+  - top: `{"q": -5.641, "text": "K1K2K3", "offset": 680, "period": 56, "values": "AZ", "model": "M4", "plaintext": "HQFSAKLMHCQMRUEBDUSINEASTNORTHEASTINGBSSINGCKWMANDKNAXORSEEDCANBERLINCLOCKTXFZQTYPEFOOOOCXBUSI`
+
+### 50. Clock arithmetic keys (dials 12/24/60, two hands) + carved-row restarts
+
+- **Why:** 'Delve into that particular clock': a clock is modular arithmetic; carved row 4 restarts inside BERLINCLOCK, which idea 43 couldn't test.
+- **Script:** `attacks/50_clock_arithmetic.py`  ·  log: `campaign/logs/50.log`
+- **Status:** done
+- **Verdict:** dead: 0 schedules fit the clues out of 2,955,924 (shuffled: [(0, None), (0, None), (0, None)]); best decode None
+
+### 51. Letter class picks the table (KRYPTOS letters on the KRYPTOS tableau)
+
+- **Why:** KRYPTOS-letter clues behave differently; two tables by letter class is a fully keyed version that can stay flat.
+- **Script:** `attacks/51_letter_class_tableaux.py`  ·  log: `campaign/logs/51.log`
+- **Status:** done
+- **Verdict:** dead: no key fits the clues (shuffled K4s: mean 0.00 survivors)
+
+### 52. Second look at every saved candidate (big model, word coverage, LLM judge)
+
+- **Why:** Every candidate was judged by one score at the time; re-judge all together, calibrated on real English with forced clues.
+- **Script:** `attacks/52_second_look.py`  ·  log: `campaign/logs/52.log`
+- **Status:** done
+- **Verdict:** nothing missed: best of 407 candidates big-q -5.04 / coverage 0.66 vs real English >= -4.82 / 0.68 (5th pct); noise max q -6.79; LLM best 3.0 vs real English median 3.0, noise max 2.0; 0 pass both automatic checks (optimised completions), none rated like English
+  - top: `{"source": "23.json", "big_q": -5.035, "coverage": 0.66, "llm": 2.0, "plaintext": "MUTFORAMEPHARANASMUSSEASTNORTHEASTONERMEDIFXSOEVERRUJOMSCASESTYBERLINCLOCKITARINGDQICTISABOUNEGSP"}`
+  - top: `{"source": "23.json", "big_q": -5.134, "coverage": 0.691, "llm": 2.0, "plaintext": "WBDOESTJUCONALLFORTAMEASTNORTHEASTRRESTTRISEVERSLOOGTSSEAREINCABERLINCLOCKDCTHENCTISAGEOFDKCUWOSW"}`
+  - top: `{"source": "38.json", "big_q": -5.013, "coverage": 0.629, "llm": 2.0, "plaintext": "FBHONSSPRINNHFIDESETHEASTNORTHEASTEDLITENOYNMAYREFUNCTIONSWOTHEBERLINCLOCKERORWYXLOCABASUCCESTYCO"}`
 

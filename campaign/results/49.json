@@ -1,0 +1,147 @@
+{
+ "name": "K1-K3 text keys with hidden alphabets",
+ "streams": 169698,
+ "survivors": {
+  "M1": 0,
+  "M2": 0,
+  "M3": 0,
+  "M4": 189
+ },
+ "controls": [
+  {
+   "survivors": {
+    "M1": 0,
+    "M2": 0,
+    "M3": 0,
+    "M4": 25930
+   },
+   "best_q": -5.547
+  },
+  {
+   "survivors": {
+    "M1": 0,
+    "M2": 0,
+    "M3": 0,
+    "M4": 2830
+   },
+   "best_q": -5.699
+  }
+ ],
+ "best_quadgram": -5.616165035947359,
+ "planted": [
+  {
+   "truth": [
+    "K3",
+    122,
+    0,
+    "AZ",
+    "M4"
+   ],
+   "true_stream_survives": true,
+   "completion_q": -5.84,
+   "letters_right": 43
+  },
+  {
+   "truth": [
+    "K3",
+    51,
+    31,
+    "AZ",
+    "M4"
+   ],
+   "true_stream_survives": true,
+   "completion_q": -5.362,
+   "letters_right": 65
+  },
+  {
+   "truth": [
+    "K2",
+    189,
+    23,
+    "AZ",
+    "M4"
+   ],
+   "true_stream_survives": true,
+   "completion_q": -5.651,
+   "letters_right": 49
+  }
+ ],
+ "verdict": "dead: survivors by model {'M1': 0, 'M2': 0, 'M3': 0, 'M4': 189} (shuffled: [{'M1': 0, 'M2': 0, 'M3': 0, 'M4': 25930}, {'M1': 0, 'M2': 0, 'M3': 0, 'M4': 2830}]); best completion -5.62 vs shuffled -5.547",
+ "top": [
+  {
+   "q": -5.616,
+   "text": "K1K2K3_rev",
+   "offset": 264,
+   "period": 52,
+   "values": "AZ",
+   "model": "M4",
+   "plaintext": "YNYASSIFTGFOZVXVYTKAMEASTNORTHEASTCHISAXSUBTHATDEPRENAVIORSTHDMBERLINCLOCKINGWVFIIJKFMWGDVUARECOL"
+  },
+  {
+   "q": -5.625,
+   "text": "K1K2K3_rev",
+   "offset": 277,
+   "period": 53,
+   "values": "AZ",
+   "model": "M4",
+   "plaintext": "XJDUPLMEIBIFFVXYYGJDNEASTNORTHEASTERVERYGRPODWHONEBASEDESTTIMAYBERLINCLOCKHSQUESBYRQSUPDATRCANOND"
+  },
+  {
+   "q": -5.641,
+   "text": "K1K2K3",
+   "offset": 680,
+   "period": 56,
+   "values": "AZ",
+   "model": "M4",
+   "plaintext": "HQFSAKLMHCQMRUEBDUSINEASTNORTHEASTINGBSSINGCKWMANDKNAXORSEEDCANBERLINCLOCKTXFZQTYPEFOOOOCXBUSIVEL"
+  },
+  {
+   "q": -5.648,
+   "text": "K3_rev",
+   "offset": 264,
+   "period": 38,
+   "values": "KRYPTOS",
+   "model": "M4",
+   "plaintext": "KRFORILPVMYUXAGMYZIMEEASTNORTHEASTASFBPTUPLETTYPRTIMAMENORECLTSBERLINCLOCKFREEATIVESMAXHWGJSXLARB"
+  },
+  {
+   "q": -5.648,
+   "text": "K1K2K3_rev",
+   "offset": 723,
+   "period": 41,
+   "values": "KRYPTOS",
+   "model": "M4",
+   "plaintext": "XYKRDYMXGARENTFICARSBEASTNORTHEASTYPASYWATNSNOSWPEXPROKTOPRLPUMBERLINCLOCKBKSYOPNAJSGFORINEDORTPD"
+  },
+  {
+   "q": -5.663,
+   "text": "K1K2K3",
+   "offset": 407,
+   "period": 47,
+   "values": "KRYPTOS",
+   "model": "M4",
+   "plaintext": "NDYTHRESSINDSASUVHLTHEASTNORTHEASTHLSWHOSRDPLEXLHAACMULDSOFTHESBERLINCLOCKIDIBWMNGHODXGKPZUJFBDFE"
+  },
+  {
+   "q": -5.688,
+   "text": "K3",
+   "offset": 243,
+   "period": 58,
+   "values": "KRYPTOS",
+   "model": "M4",
+   "plaintext": "JAOUHGSPREFFTRUNTHISBEASTNORTHEASTAKENTSEBARYDIRAWGKABROFWOGKXMBERLINCLOCKCURWLRSINCAVOIPDUSEDNQE"
+  },
+  {
+   "q": -5.701,
+   "text": "K3_rev",
+   "offset": 264,
+   "period": 52,
+   "values": "AZ",
+   "model": "M4",
+   "plaintext": "ZDMDITLYTEWHJKGNSTINDEASTNORTHEASTRCUSDVHPGTHATMORYPYANEPETHHMCBERLINCLOCKUNQDKVIKMUTRDSINGALLINL"
+  }
+ ],
+ "minutes": 6.5,
+ "idea": "49",
+ "finished": "2026-11-16T04:28:39+00:00"
+}

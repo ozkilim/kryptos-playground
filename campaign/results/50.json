@@ -1,0 +1,51 @@
+{
+ "name": "clock arithmetic + carved rows",
+ "tested": 2955924,
+ "survivors": 0,
+ "controls": [
+  [
+   0,
+   null
+  ],
+  [
+   0,
+   null
+  ],
+  [
+   0,
+   null
+  ]
+ ],
+ "best_quadgram": null,
+ "planted": [
+  {
+   "truth": [
+    "dial",
+    [
+     24,
+     9,
+     11
+    ]
+   ],
+   "found": true,
+   "top_is_truth": true
+  },
+  {
+   "truth": [
+    "dial",
+    [
+     24,
+     8,
+     22
+    ]
+   ],
+   "found": true,
+   "top_is_truth": true
+  }
+ ],
+ "verdict": "dead: 0 schedules fit the clues out of 2,955,924 (shuffled: [(0, None), (0, None), (0, None)]); best decode None",
+ "top": [],
+ "minutes": 0.3,
+ "idea": "50",
+ "finished": "2026-11-16T04:28:56+00:00"
+}

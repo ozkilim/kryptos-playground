@@ -1,0 +1,5 @@
+
+[two stacked keys that are both real words] tried 35,872,050,687,363 candidates on K4
+  full crib passes: 0
+  saved -> results/2026-11-16T041649Z_k4_two-stacked-keys-that-are-both-real-words.json  (+1 line in ledger.csv)
+[47] dead: 0 fully determined word-key decrypts, best None vs shuffled [(0, None), (0, None)]; one-mistake pass 0 decrypts, best None vs shuffled None (English ~ -5) | planted: [{'truth': ('KRYPTOS', 'beaufort', 'BACTERITIC', 'MORTIER', None), 'found': True, 'matches': 1, 'top_is_truth': True, 'top_q': -5.0}, {'truth': ('KRYPTOS', 'beaufort', 'INSECTICIDE', 'FLOORCLOTH', None), 'found': True, 'matches': 1, 'top_is_truth': True, 'top_q': -5.202}, {'truth': ('KRYPTOS', 'variant_beaufort', 'ROUSEMENT', 'APOSTOLICI', None), 'found': True, 'matches': 1, 'top_is_truth': True, 'top_q': -4.717}, {'truth': ('KRYPTOS', 'beaufort', 'CALORIFIER', 'ABETTAL', None), 'mistake_at': 73, 'exact_finds': False, 'drop_finds': True}]

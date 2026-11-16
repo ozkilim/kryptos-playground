@@ -1,0 +1,75 @@
+{
+ "name": "letter-class tableau switch",
+ "survivors": 0,
+ "controls_mean": 0.0,
+ "controls": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "best_quadgram": null,
+ "planted": [
+  {
+   "truth": [
+    "K->AZ",
+    "variant_beaufort",
+    false,
+    "RFHHRIMR"
+   ],
+   "true_config_survives": true,
+   "letters_right": 95
+  },
+  {
+   "truth": [
+    "K->KA",
+    "vigenere",
+    false,
+    "KSVLMIMWA"
+   ],
+   "true_config_survives": true,
+   "letters_right": 90
+  },
+  {
+   "truth": [
+    "K->KA",
+    "vigenere",
+    true,
+    "VFLTJLO"
+   ],
+   "true_config_survives": true,
+   "letters_right": 94
+  },
+  {
+   "truth": [
+    "K->KA",
+    "vigenere",
+    false,
+    "PABDZ"
+   ],
+   "true_config_survives": true,
+   "letters_right": 88
+  }
+ ],
+ "verdict": "dead: no key fits the clues (shuffled K4s: mean 0.00 survivors)",
+ "top": [],
+ "minutes": 0.4,
+ "idea": "51",
+ "finished": "2026-11-16T04:29:22+00:00"
+}

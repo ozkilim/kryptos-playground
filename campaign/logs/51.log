@@ -1,0 +1,5 @@
+
+[letter-class tableau switch (KRYPTOS letters on the KRYPTOS tableau)] tried 114,348 candidates on K4
+  full crib passes: 0
+  saved -> results/2026-11-16T042922Z_k4_letter-class-tableau-switch--KRYPTOS-letters-on-the-KRYPTOS-tableau-.json  (+1 line in ledger.csv)
+[51] dead: no key fits the clues (shuffled K4s: mean 0.00 survivors) | planted: [{'truth': ('K->AZ', 'variant_beaufort', False, 'RFHHRIMR'), 'true_config_survives': True, 'letters_right': 95}, {'truth': ('K->KA', 'vigenere', False, 'KSVLMIMWA'), 'true_config_survives': True, 'letters_right': 90}, {'truth': ('K->KA', 'vigenere', True, 'VFLTJLO'), 'true_config_survives': True, 'letters_right': 94}, {'truth': ('K->KA', 'vigenere', False, 'PABDZ'), 'true_config_survives': True, 'letters_right': 88}]
