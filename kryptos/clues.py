@@ -155,6 +155,42 @@ def _sel_restart(pt, rng):
     return "".join(out)
 
 
+def _word_keys(pt, rng):
+    from . import wordkeys
+    if "words" not in _CACHE:
+        _CACHE["words"] = [w for w in wordkeys.common_words(8000) if 5 <= len(w) <= 14]
+    ws = _CACHE["words"]
+    a, b = rng.choice(ws), rng.choice(ws)
+    A, B = [AZ.index(c) for c in a], [AZ.index(c) for c in b]
+    return "".join(AZ[(AZ.index(p) + A[i % len(A)] + B[i % len(B)]) % 26] for i, p in enumerate(pt))
+
+
+def _text_hidden(pt, rng):
+    from .data import load, letters
+    t = letters(load("k3")["plaintext"])
+    o = rng.randrange(0, len(t) - N)
+    pa, ca = "".join(rng.sample(AZ, 26)), "".join(rng.sample(AZ, 26))
+    return "".join(ca[(pa.index(p) + AZ.index(t[o + i])) % 26] for i, p in enumerate(pt))
+
+
+def _dial(pt, rng):
+    m = rng.choice([12, 24, 60])
+    a, b = rng.randrange(1, m), rng.randrange(m)
+    return "".join(AZ[(AZ.index(p) + ((a * i + b) % m)) % 26] for i, p in enumerate(pt))
+
+
+def _class_tableau(pt, rng):
+    key = [rng.choice(AZ) for _ in range(rng.randint(4, 12))]
+    out = []
+    for i, p in enumerate(pt):
+        T = KRYPTOS_ALPHABET if p in LIGHT else AZ
+        out.append(T[(T.index(p) + T.index(key[i % len(key)])) % 26])
+    return "".join(out)
+
+
+_CACHE = {}
+
+
 def _gromark_base(pt, rng):
     base = rng.choice([5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16])
     k = [rng.randrange(base) for _ in range(5)]
@@ -258,6 +294,25 @@ FAMILIES = [
            {"cribs": (U, "round 7"), "hand": (P, "trivial on a chart"), "multistage": (P, "two treatments"),
             "two_systems": (E, "two rules by letter class"), "k123_keys": (E, "the KRYPTOS keyword decides"),
             "nonperiodic": (E, "")}),
+    Family("word_keys", "Two (or three) stacked keys that are real words/phrases/dates", ["47", "48"], "pending",
+           _word_keys,
+           {"cribs": (U, "round 8; exact, every match fully determined"), "hand": (P, "hand keys are words"),
+            "multistage": (P, "two layers"), "nonperiodic": (E, "lcm of two word lengths > 97"),
+            "layer_two": (E, "literally two layers"), "k123_keys": (E, "K1/K2 keys were words"),
+            "berlin_clock": (C, "if a key is a 1989 word/date"), "egypt": (C, "if a key is an Egypt word"),
+            "mistakes": (C, "one-wrong-clue pass")}),
+    Family("text_hidden", "K1-K3 plaintexts as keys with hidden alphabets", ["49"], "pending", _text_hidden,
+           {"cribs": (U, "round 8"), "hand": (P, "a text and a mixed alphabet on a chart"), "multistage": (P, ""),
+            "nonperiodic": (E, "running or long key"), "k123_keys": (E, "answers to K1-K3 contain clues to K4"),
+            "k5": (C, "only if K5 used the same key text at the same offset")}),
+    Family("clock_arith", "Clock arithmetic keys (dials, two hands) and carved-row restarts", ["50"], "pending", _dial,
+           {"cribs": (U, "round 8"), "hand": (P, "a dial"), "multistage": (C, ""), "berlin_clock": (E, "a clock's arithmetic"),
+            "math_base": (E, "bases 12/24/60"), "layout": (C, "carved-row restarts")}),
+    Family("class_tableau", "Letter class picks the table: KRYPTOS letters on the KRYPTOS tableau", ["51"], "pending",
+           _class_tableau,
+           {"cribs": (U, "round 8"), "hand": (P, "two tableaux on the sculpture/paper"), "multistage": (P, "two tables"),
+            "two_systems": (E, "two tables by letter class"), "k123_keys": (E, "the KRYPTOS keyword and tableau"),
+            "nonperiodic": (C, "")}),
     Family("sel_restart", "Hybrid: KRYPTOS letters light only in the clue sentences + key restarting per sentence", ["46"],
            "pending", _sel_restart,
            {"cribs": (U, "round 7"), "hand": (P, "two simple rules on a chart"), "multistage": (P, "two treatments"),

@@ -269,5 +269,50 @@
   "script": "attacks/46_masking_in_sentences.py",
   "est_min": 20,
   "why": "Clue matrix: selective masking explains the KRYPTOS closeness but breaks flatness unless <=~20 letters are masked; top hybrid = masking x sentence restarts."
+ },
+ {
+  "id": "47",
+  "title": "Two stacked keys that are both real words/phrases/dates (+ one-wrong-clue pass)",
+  "script": "attacks/47_word_stacked_keys.py",
+  "est_min": 60,
+  "why": "Round 6: long stacked keys are information-limited; hand keys are words (PALIMPSEST, ABSCISSA), which removes every free slot."
+ },
+ {
+  "id": "48",
+  "title": "Three layers: theme word + two word keys",
+  "script": "attacks/47_word_stacked_keys.py",
+  "args": [
+   "--three-layers"
+  ],
+  "est_min": 30,
+  "why": "Same, with a theme word (Berlin/Egypt/clock/K1-K3) as a third layer; three-stage stacks are a listed community gap."
+ },
+ {
+  "id": "49",
+  "title": "K1-K3 plaintexts as keys with hidden alphabets (4 models)",
+  "script": "attacks/49_text_keys_hidden_alphabets.py",
+  "est_min": 60,
+  "why": "'Answers to K1-K3 contain clues to K4'; text keys were only tried on A-Z/KRYPTOS alphabets."
+ },
+ {
+  "id": "50",
+  "title": "Clock arithmetic keys (dials 12/24/60, two hands) + carved-row restarts",
+  "script": "attacks/50_clock_arithmetic.py",
+  "est_min": 20,
+  "why": "'Delve into that particular clock': a clock is modular arithmetic; carved row 4 restarts inside BERLINCLOCK, which idea 43 couldn't test."
+ },
+ {
+  "id": "51",
+  "title": "Letter class picks the table (KRYPTOS letters on the KRYPTOS tableau)",
+  "script": "attacks/51_letter_class_tableaux.py",
+  "est_min": 10,
+  "why": "KRYPTOS-letter clues behave differently; two tables by letter class is a fully keyed version that can stay flat."
+ },
+ {
+  "id": "52",
+  "title": "Second look at every saved candidate (big model, word coverage, LLM judge)",
+  "script": "attacks/52_second_look.py",
+  "est_min": 30,
+  "why": "Every candidate was judged by one score at the time; re-judge all together, calibrated on real English with forced clues."
  }
 ]
