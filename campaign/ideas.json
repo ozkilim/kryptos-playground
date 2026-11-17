@@ -552,5 +552,12 @@
   "script": "attacks/88_spaces_use_key_letters.py",
   "est_min": 27,
   "why": "Scheidt 2015: 'special characters don't work' and must be accounted for. If Sanborn enciphered from a sheet with word spaces and the key ran on over each space, the key position is the letter number plus the number of word breaks so far. Our tests restarted keys at words (idea 56) or moved the second clue by up to 3 places (idea 68), but never let the key slip one place per word inside the clues."
+ },
+ {
+  "id": "90",
+  "title": "Autokey one worksheet row back: plain feed at lags 7, 8 and 34-48 (first clue keys the second, second clue moved -3..3), cipher feed at lags 1-66, with a constant or a repeating word of 2-4 on top, on 666,993 keyword tableaux",
+  "script": "attacks/90_row_keys_next_row.py",
+  "est_min": 35,
+  "why": "The K3 worksheet is 42 wide and the two clues start exactly 42 apart; with the '?' K4 is a 7 x 14 grid and five of the six doubled letters end a row of 7. If each row is keyed by the row above (the letter 7 or 42 places back, plaintext or ciphertext), the first clue is the key for the second. The battery tried lags 1-6 only on keyword tableaux, and lags 30-52 got only a quick look on A-Z/KRYPTOS (3 of 6)."
  }
 ]
