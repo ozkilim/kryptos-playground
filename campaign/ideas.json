@@ -503,5 +503,12 @@
   "script": "attacks/79_gap_slack_formulas_and_join.py",
   "est_min": 33,
   "why": "Idea 68 showed nothing with the gap between the clues off by 1-3 letters, but only for the key-rule battery. Formula mining (54) and the Quagmire IV hash join (63) also tie the two clues together through absolute positions."
+ },
+ {
+  "id": "81",
+  "title": "One wrong clue letter: key-rule battery, multiplier+adder words (71A) and word-turned rotor (72) on every 23 of the 24 clue letters",
+  "script": "attacks/81_one_wrong_clue_letter.py",
+  "est_min": 55,
+  "why": "Sanborn's texts carry deliberate misspellings (IQLUSION, UNDERGRUUND, DESPARATLY). Round 7 tested one wrong clue letter only for periodic, two-key and Gromark models."
  }
 ]
