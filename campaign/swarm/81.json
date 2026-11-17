@@ -1,0 +1,21 @@
+{
+  "id": 81,
+  "title": "One wrong clue letter: key-rule battery, multiplier+adder words (71A) and word-turned rotor (72) on every 23 of the 24 clue letters",
+  "verdict": "dead-in-scope",
+  "k4_result": "0 settings pass with any clue letter dropped: battery 0 of 52,876,320 (220,318 keyword alphabets x 5 layouts x Vigenere/Beaufort x 24 drops, 7+ checks); multiplier word + adder word 0 of 27,744 systems (p, q = 1..17, 4 A-Z/KRYPTOS views, 24 drops, 7+ checks); rotor 0 of 286,266,240 (248,495 words x 3 schemes x 2 numberings x 4 face pairs x 2 directions x 24 drops; 0 even at 5+ coincidences)",
+  "controls": "3 shuffled K4s, every drop each: battery on a different third of the alphabets (73,440 / 73,439 / 73,439; 17.6M settings each) 0 pass; pairs in full 0; rotor in full 0 at 5+ coincidences",
+  "planted": "7/7 (3 sliding-key messages on keyword alphabets, 2 multiplier+adder, 2 word-turned rotors, each with one clue letter changed; the changed position was named correctly every time)",
+  "tested": 339170304,
+  "scope_limits": "Exactly one wrong clue letter (two or more are not covered). Only the three tests named: the round 11 battery on plain keyword alphabets (not the transposition-mixed forms), attack 71 part A, and attack 72's dictionary-word turning; not 72's constant speeds, letter-fed turning or exhaustive keys of length 1-6, not 71 part B, and none of the other round 9-11 tests (formula mining, hash joins, hidden-alphabet solves, evolving alphabets, keyed-lag autokey, mod 27-31). Dropping a letter also drops the links through it, so the battery is slightly weaker than on 24 letters. The battery controls saw a third of the alphabets each, not all. Planted sliding-key messages were searched on 9,001-alphabet samples that include the planted alphabet. Each test keeps the limits of its original attack (periods, lags, 7+ checks).",
+  "negative": {
+    "family": "One deliberately wrong clue letter (round 11 exact tests)",
+    "hypothesis": "One of the 24 clue letters is deliberately wrong, which hid a keyword-alphabet key rule, a multiplier word + adder word, or a word-turned rotor from the exact tests that need all 24 letters to fit.",
+    "scope": "each of the 24 clue positions dropped in turn; kryptos.round11.battery (repeating, sliding, progressive, autokey, two stacked keys, chain addition) on 220,318 plain keyword alphabets x 5 layouts x Vigenere/Beaufort with 7+ checks; C = A[i mod p]*P + B[i mod q] for p, q = 1..17 on A-Z/KRYPTOS with 7+ checks; hidden-wiring rotor turned by 248,495 dictionary words (word, sliding word, word + 1 per letter; 2 numberings; 4 face pairs; 2 directions) with 5+ forced coincidences; 339.2M settings",
+    "outcome": "Dead: K4 has 0 settings passing in all three tests with any one clue letter dropped (controls: 3 shuffled K4s, 0 in every test, battery on a third of the alphabets each; planted 7/7 with the wrong letter located)",
+    "confidence": "solid"
+  },
+  "follow_ups": [
+    "Drop-one for the tests this run skipped: attack 74 (keyed-lag autokey) and attack 73 (evolving alphabet), where one wrong letter breaks the whole chain after it rather than one equation",
+    "Two wrong clue letters, one per clue (276 pairs, or 143 if one in each block), for the cheap exact tests only (71A and the rotor wire test cost seconds per pass)"
+  ]
+}
