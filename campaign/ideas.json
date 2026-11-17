@@ -538,5 +538,12 @@
   "script": "attacks/85_skip_counts_through_the_text.py",
   "est_min": 19,
   "why": "Sanborn 2019: no particular book is needed, 'just to be able to read'; 2025: 'Who says it is even a math solution?'; 2005-2006: the earlier passages hold instructions and clues for the fourth. A reading method fits all three: each K4 letter says how far to count on (A=1..Z=26) through K1-K3 to reach the next plaintext letter. The encoder can choose among occurrences, which flattens the letter counts (masking) and lets S give S. Every earlier test treats the cipher letter as a letter added to a key, never as a distance."
+ },
+ {
+  "id": "86",
+  "title": "Any keyword alphabet (keyword of 1-25 different letters, then A-Z), solved exactly from the clue equations with no dictionary: Quagmire III/I/II, repeating key 1-26 and sliding key period 1-26",
+  "script": "attacks/86_keyword_tail.py",
+  "est_min": 40,
+  "why": "Scheidt: K4 runs 'with the correct key word/s', and K1's own keyword was a misspelling (PALIMPCEST). Every keyword-tableau test used about 220k dictionary words, so a name, a German word, a misspelling or a short phrase as the alphabet keyword was never tested. A keyword alphabet is far from arbitrary: after the keyword's letters the rest run in A-Z order, and that gives enough extra equations to decide key lengths where the arbitrary-alphabet tests could not (13, 16, 18-20, 23, 24, 26)."
  }
 ]
