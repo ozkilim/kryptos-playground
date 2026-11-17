@@ -706,5 +706,12 @@
   "script": "attacks/110_any_linear_key_rule.py",
   "est_min": 15,
   "why": "Scheidt: simple, can be remembered, run years later. Rounds 9-11 tested named key rules one by one (progressive, chain addition with two taps, formulas from a list). Every such rule, and any rule nobody listed, where each key letter is a fixed linear mix of the few key letters before it, obeys ONE linear recurrence, and that can be tested exactly without naming the rule. It also does not care where the clues sit, so it is immune to a wrong gap or a miscounted position."
+ },
+ {
+  "id": "111",
+  "title": "Vowels and consonants keyed by two separate words (class by plain or cipher letter, Vigenere/Beaufort per class), and one key that holds or skips on a letter set, on 666,993 keyword tableaux",
+  "script": "attacks/111_vowel_and_consonant_keys.py",
+  "est_min": 41,
+  "why": "Sanborn 1990: two separate systems; Scheidt masked the English language and explains the problem as the E against the Z. A hand way to do both: two key words, one used up by the vowels and one by the consonants, each moving on only when it is used. The key place of a letter then depends on the text before it, so every position-based test of rounds 9-11 fails on such a message even with short words. Idea 60 split letters by position (odd and even), never by kind of letter; the community pause tests were on plain A-Z only."
  }
 ]
