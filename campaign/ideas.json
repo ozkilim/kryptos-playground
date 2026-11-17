@@ -531,5 +531,12 @@
   "script": "attacks/84_two_tableaux.py",
   "est_min": 46,
   "why": "K2 ends LAYER TWO and Scheidt calls K4 'more than one stage'. Every stacked-key test so far put both layers on the same tableau, where the two keys simply add. A KRYPTOS-tableau layer followed by an A-Z layer (or any two different keyword tableaux) is not a sum of keys on any single alphabet, so none of the earlier exact tests can see it."
+ },
+ {
+  "id": "85",
+  "title": "K4 letters as skip counts through the sculpture's own text: moving window (rule A) and pointer walk (rule B) over 39 texts",
+  "script": "attacks/85_skip_counts_through_the_text.py",
+  "est_min": 19,
+  "why": "Sanborn 2019: no particular book is needed, 'just to be able to read'; 2025: 'Who says it is even a math solution?'; 2005-2006: the earlier passages hold instructions and clues for the fourth. A reading method fits all three: each K4 letter says how far to count on (A=1..Z=26) through K1-K3 to reach the next plaintext letter. The encoder can choose among occurrences, which flattens the letter counts (masking) and lets S give S. Every earlier test treats the cipher letter as a letter added to a key, never as a distance."
  }
 ]
