@@ -664,5 +664,12 @@
   "script": "attacks/104_stacked_pairs_and_feed_numbering.py",
   "est_min": 33,
   "why": "Idea 91 fed 678 textbook-enciphered messages to the round 9-11 tests and attack 66 missed 115 that had enough checks. Two causes: (a) the stacked-key pre-filter adds two partial counts (c1 + c2 < 8) and wrongly drops 20 length pairs that the exact solve can judge; (b) autokey was tested only with the fed letter numbered on the tableau alphabet, not on A-Z, KRYPTOS or the other side (Quagmire I autokey as the ACA defines it, or rows picked by the A-Z labels as carved). Until these run, two stacked key words on a keyword tableau and plain autokey at lags 1-6 are not closed as the summaries say."
+ },
+ {
+  "id": "105",
+  "title": "Independent-encryptor audit, part 2: 3,192 K4-shaped messages from textbook encryptors (no shared code) fed to the test functions of attacks 54, 56, 57, 59, 60, 61, 62, 65, 68, 69, 70, 73, 74, 78, 79, 81, 84, 86, 88, 89, 90, plus 918 messages mapping two stacked keys",
+  "script": "attacks/105_textbook_audit_part2.py",
+  "est_min": 38,
+  "why": "Idea 91 was the only check so far that did not share code with the attacks, and it found two real scope holes in attack 66 that every planted test had passed. It reached six attacks. The other exact tests (rounds 9-10: 54-62, 65, 67; round 11: 69, 70, 73, 75-77; swarm: 79-90) still rest only on planted answers made by their own code, and every negative in the log that says autokey or stacked keys p < q <= 13 may repeat the same holes."
  }
 ]
