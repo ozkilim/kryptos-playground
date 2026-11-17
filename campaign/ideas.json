@@ -615,5 +615,12 @@
   "script": "attacks/98_turning_second_tableau.py",
   "est_min": 11,
   "why": "K2 ends LAYER TWO; Scheidt taught 'shifting matrices' and calls K4 'more than one stage'. Idea 84 closed two repeating keys on two different tableaux and its worker noted the same test works when layer two is not periodic but known up to a few numbers. A steadily turning second tableau (shift s*i + t) is the simplest such layer, hides the period of the first, and was only ever tested with both layers on the same tableau, where it folds into one key."
+ },
+ {
+  "id": "97",
+  "title": "A key written with few symbols (digits in any base, clock hours, Roman numerals): smallest window and number of distinct key values on 666,993 keyword tableaux, no rule for the key",
+  "script": "attacks/97_few_symbol_key.py",
+  "est_min": 74,
+  "why": "Scheidt: 'I could have moved to a different math base' (2 to 16); Sanborn: 'delve into that particular clock' (clock faces carry numerals). A key that is a list of numbers, however irregular, uses few distinct values. The community showed no alphabet makes all 24 key values digits 0-9 or keeps them below 16, but only for a window starting at 0 and one way of naming the key letter. Any window of 12 or fewer values has a chance rate of 2e-7 per setting, so the question is decidable on every tableau with no rule for the key at all."
  }
 ]
