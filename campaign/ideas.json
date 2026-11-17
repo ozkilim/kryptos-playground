@@ -587,5 +587,12 @@
   "script": "attacks/92_formula_keys_hidden_alphabet.py",
   "est_min": 55,
   "why": "The fingerprint ranking names 'a structured key under an unknown mixed alphabet' as a top open target, and Sanborn's coding chart need not be a keyword alphabet. Idea 54 mined 9 million key formulas, but only on A-Z and KRYPTOS. A KNOWN key stream stays decidable when one hidden alphabet is used on both sides: the 24 clue letters tie 21 letters into one piece with 4 closed loops, and the 21 positions must all differ (chance about 1e-11 per stream, 4e-10 with a free constant)."
+ },
+ {
+  "id": "94",
+  "title": "Word autokey: each word is enciphered with the previous word (or the word two back) as key, plain or cipher letters, forwards or reversed, wrap or run-on, on 666,993 keyword tableaux, on any tableau, and on one hidden alphabet",
+  "script": "attacks/94_word_autokey.py",
+  "est_min": 27,
+  "why": "Scheidt: 'simple, can be remembered'; he 'masked the English language'. A key that never repeats and needs no key text: after a primer word, each plaintext word is enciphered with the word before it. Inside the clues the previous word is known (EAST keys NORTH, NORTH keys EAST, BERLIN keys CLOCK), so there are up to 14 equations with no unknown key letter. The fixed-lag autokey tests (lags 1-6, and idea 74's repeating lag patterns) cannot see it because the lag changes with each word's length."
  }
 ]
