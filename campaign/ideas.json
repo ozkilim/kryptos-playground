@@ -664,5 +664,26 @@
   "script": "attacks/104_stacked_pairs_and_feed_numbering.py",
   "est_min": 33,
   "why": "Idea 91 fed 678 textbook-enciphered messages to the round 9-11 tests and attack 66 missed 115 that had enough checks. Two causes: (a) the stacked-key pre-filter adds two partial counts (c1 + c2 < 8) and wrongly drops 20 length pairs that the exact solve can judge; (b) autokey was tested only with the fed letter numbered on the tableau alphabet, not on A-Z, KRYPTOS or the other side (Quagmire I autokey as the ACA defines it, or rows picked by the A-Z labels as carved). Until these run, two stacked key words on a keyword tableau and plain autokey at lags 1-6 are not closed as the summaries say."
+ },
+ {
+  "id": "105",
+  "title": "Independent-encryptor audit, part 2: 3,192 K4-shaped messages from textbook encryptors (no shared code) fed to the test functions of attacks 54, 56, 57, 59, 60, 61, 62, 65, 68, 69, 70, 73, 74, 78, 79, 81, 84, 86, 88, 89, 90, plus 918 messages mapping two stacked keys",
+  "script": "attacks/105_textbook_audit_part2.py",
+  "est_min": 38,
+  "why": "Idea 91 was the only check so far that did not share code with the attacks, and it found two real scope holes in attack 66 that every planted test had passed. It reached six attacks. The other exact tests (rounds 9-10: 54-62, 65, 67; round 11: 69, 70, 73, 75-77; swarm: 79-90) still rest only on planted answers made by their own code, and every negative in the log that says autokey or stacked keys p < q <= 13 may repeat the same holes."
+ },
+ {
+  "id": "106",
+  "title": "K4 letters as word counts through the K1-K3 plaintexts and the Morse text: walk (W), moving window (B) and letter pairs (C) over 56 word lists",
+  "script": "attacks/106_word_counts_through_k1_k3.py",
+  "est_min": 10,
+  "why": "Scheidt: K4 is like ciphers given to agents or pilots in case of capture, not mathematical, simple, can be remembered; the letter codes taught to air crews hid a message in an ordinary text and found it by counting words. Sanborn: the earlier text holds instructions for the later text, the first three answers contain clues to the fourth, and the solver needs just to be able to read. Idea 85 counted letters and showed a 26-letter window can hardly encode English; its worker noted that word counting can, because word starts are rich in the letters a message needs."
+ },
+ {
+  "id": "108",
+  "title": "Strip moved by a text: first and second differences of the forced key (12+10 and 11+9 letters) against 198,934 sculpture readings and as unknown English, on 666,993 dictionary tableaux",
+  "script": "attacks/108_strip_moved_by_text.py",
+  "est_min": 21,
+  "why": "Scheidt: simple, can be remembered, with the correct key word/s; Sanborn: just be able to read. Round 10 introduced the sliding key (each key letter says how far to MOVE the strip, so the key is the running sum of the word) but only for repeating words up to 17 letters. With a sentence or a sculpture reading as the moving text the key never repeats, the clues force 22 of its letters (the differences inside each block), and no earlier test looks at differences: attacks 57 and 58 compare the key letters themselves with text."
  }
 ]
