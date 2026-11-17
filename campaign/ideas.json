@@ -517,5 +517,12 @@
   "script": "attacks/82_two_paper_rotors.py",
   "est_min": 73,
   "why": "Idea 72 closed one rotor with hidden wiring. Two rotors is the smallest machine that idea cannot see, and the wire-collision test extends to it when the slow rotor moves rarely."
+ },
+ {
+  "id": "83",
+  "title": "Any state machine moved by a hidden table of the letter (cipher = F(state), state += g(letter) mod m, m = 2..60): the plain pair S,T is doubled once and not doubled once",
+  "script": "attacks/83_repeats_any_state_machine.py",
+  "est_min": 86,
+  "why": "The Wheatstone proof (idea 75) used only this: plain S then T gives cipher S,S at letters 32-33, and plain S ... T gives cipher R,R at letters 23 and 28. Any state machine must treat T after S,T,N,O,R as it treated S."
  }
 ]
