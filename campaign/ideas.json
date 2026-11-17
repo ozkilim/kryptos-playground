@@ -608,5 +608,33 @@
   "script": "attacks/95_keyword_rotor_plus_hidden_rotor.py",
   "est_min": 48,
   "why": "Idea 82 found that two hidden wirings (52 unknown contacts) cannot be judged from 24 letters, and its worker noted that with one wiring known the test turns into idea 72's wire test with about 8 forced coincidences. Scheidt's 'key word/s' fits a device with one remembered keyword strip and one chart Sanborn changed 'so that Scheidt could not decipher it'. Open after round 11: two rotors."
+ },
+ {
+  "id": "98",
+  "title": "Key word on one tableau, steadily turning (shift s*i + t) second tableau, both orders, two different alphabets",
+  "script": "attacks/98_turning_second_tableau.py",
+  "est_min": 11,
+  "why": "K2 ends LAYER TWO; Scheidt taught 'shifting matrices' and calls K4 'more than one stage'. Idea 84 closed two repeating keys on two different tableaux and its worker noted the same test works when layer two is not periodic but known up to a few numbers. A steadily turning second tableau (shift s*i + t) is the simplest such layer, hides the period of the first, and was only ever tested with both layers on the same tableau, where it folds into one key."
+ },
+ {
+  "id": "97",
+  "title": "A key written with few symbols (digits in any base, clock hours, Roman numerals): smallest window and number of distinct key values on 666,993 keyword tableaux, no rule for the key",
+  "script": "attacks/97_few_symbol_key.py",
+  "est_min": 74,
+  "why": "Scheidt: 'I could have moved to a different math base' (2 to 16); Sanborn: 'delve into that particular clock' (clock faces carry numerals). A key that is a list of numbers, however irregular, uses few distinct values. The community showed no alphabet makes all 24 key values digits 0-9 or keeps them below 16, but only for a window starting at 0 and one way of naming the key letter. Any window of 12 or fewer values has a chance rate of 2e-7 per setting, so the question is decidable on every tableau with no rule for the key at all."
+ },
+ {
+  "id": "100",
+  "title": "Plaintext autokey at a long lag, 9-33 letters back or ahead, decided by chains through the unknown letters, on 666,993 keyword tableaux",
+  "script": "attacks/100_long_lag_autokey_chains.py",
+  "est_min": 47,
+  "why": "Bean measured 11 repeated vertical pairs at width 21, both clue blocks start a row of 21, and the K3 worksheet rows are 42 wide: a row keyed by the row above is plaintext autokey at a long lag. Idea 90 wrote that plain feed at lags 9-12 and 13-33 cannot be decided because few clue pairs sit exactly one lag apart. That misses chains: with a known tableau, a known letter and the cipher letter one lag on (or back) give the next plaintext letter, so each clue letter fixes its whole residue class and the classes of the two blocks meet. Counted: lag 9 has 15 checks, lag 13 has 11, lags 20 and 21 have 11, and lags 24-33 force 58-86 of the 97 letters."
+ },
+ {
+  "id": "101",
+  "title": "Second pass of the key word differs: key read back and forth (and its sliding form), form alternating by pass, odd passes shifted by a constant, tableau alternating by pass, on 666,993 keyword tableaux",
+  "script": "attacks/101_second_pass_differs.py",
+  "est_min": 25,
+  "why": "K1 key PALIMPSEST is a sheet written over a second time, K2 ends LAYER TWO, and Sanborn said the lower half uses two separate systems. A hand encoder who changes something each time the key word comes round (reads it backwards, switches from Vigenere to Beaufort, switches chart) gives a key of period 2L that no repeating-key test at length L sees, and for L = 14-24 the period is 28-48, outside every exact test so far. The mirror rule halves the unknowns: counted from the clue positions, a back-and-forth key has 7-11 checks at every period 28-46."
  }
 ]
