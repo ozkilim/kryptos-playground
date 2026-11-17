@@ -608,5 +608,12 @@
   "script": "attacks/95_keyword_rotor_plus_hidden_rotor.py",
   "est_min": 48,
   "why": "Idea 82 found that two hidden wirings (52 unknown contacts) cannot be judged from 24 letters, and its worker noted that with one wiring known the test turns into idea 72's wire test with about 8 forced coincidences. Scheidt's 'key word/s' fits a device with one remembered keyword strip and one chart Sanborn changed 'so that Scheidt could not decipher it'. Open after round 11: two rotors."
+ },
+ {
+  "id": "98",
+  "title": "Key word on one tableau, steadily turning (shift s*i + t) second tableau, both orders, two different alphabets",
+  "script": "attacks/98_turning_second_tableau.py",
+  "est_min": 11,
+  "why": "K2 ends LAYER TWO; Scheidt taught 'shifting matrices' and calls K4 'more than one stage'. Idea 84 closed two repeating keys on two different tableaux and its worker noted the same test works when layer two is not periodic but known up to a few numbers. A steadily turning second tableau (shift s*i + t) is the simplest such layer, hides the period of the first, and was only ever tested with both layers on the same tableau, where it folds into one key."
  }
 ]
