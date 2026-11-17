@@ -601,5 +601,12 @@
   "script": "attacks/96_enciphered_back_to_front.py",
   "est_min": 18,
   "why": "Sanborn 2005: he left 'instructions in the earlier text that refer to later text'. If K4 was enciphered from its last letter backwards, an autokey takes its key from the letters that FOLLOW, and the second clue can be the key for the first (the blocks start 42 apart, the K3 worksheet width). Idea 54 covered neighbours 1-5 ahead on A-Z and KRYPTOS only; the keyword-tableau battery (66), the hidden-alphabet autokey (55), the stacked autokey (59) and idea 90 all look backwards."
+ },
+ {
+  "id": "95",
+  "title": "Two rotors in series, one wired from a dictionary keyword strip and one hidden, in both orders",
+  "script": "attacks/95_keyword_rotor_plus_hidden_rotor.py",
+  "est_min": 48,
+  "why": "Idea 82 found that two hidden wirings (52 unknown contacts) cannot be judged from 24 letters, and its worker noted that with one wiring known the test turns into idea 72's wire test with about 8 forced coincidences. Scheidt's 'key word/s' fits a device with one remembered keyword strip and one chart Sanborn changed 'so that Scheidt could not decipher it'. Open after round 11: two rotors."
  }
 ]
