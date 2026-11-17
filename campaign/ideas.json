@@ -622,5 +622,12 @@
   "script": "attacks/97_few_symbol_key.py",
   "est_min": 74,
   "why": "Scheidt: 'I could have moved to a different math base' (2 to 16); Sanborn: 'delve into that particular clock' (clock faces carry numerals). A key that is a list of numbers, however irregular, uses few distinct values. The community showed no alphabet makes all 24 key values digits 0-9 or keeps them below 16, but only for a window starting at 0 and one way of naming the key letter. Any window of 12 or fewer values has a chance rate of 2e-7 per setting, so the question is decidable on every tableau with no rule for the key at all."
+ },
+ {
+  "id": "100",
+  "title": "Plaintext autokey at a long lag, 9-33 letters back or ahead, decided by chains through the unknown letters, on 666,993 keyword tableaux",
+  "script": "attacks/100_long_lag_autokey_chains.py",
+  "est_min": 47,
+  "why": "Bean measured 11 repeated vertical pairs at width 21, both clue blocks start a row of 21, and the K3 worksheet rows are 42 wide: a row keyed by the row above is plaintext autokey at a long lag. Idea 90 wrote that plain feed at lags 9-12 and 13-33 cannot be decided because few clue pairs sit exactly one lag apart. That misses chains: with a known tableau, a known letter and the cipher letter one lag on (or back) give the next plaintext letter, so each clue letter fixes its whole residue class and the classes of the two blocks meet. Counted: lag 9 has 15 checks, lag 13 has 11, lags 20 and 21 have 11, and lags 24-33 force 58-86 of the 97 letters."
  }
 ]
