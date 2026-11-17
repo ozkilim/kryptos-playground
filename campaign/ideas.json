@@ -643,5 +643,19 @@
   "script": "attacks/99_half_hidden_quagmire4.py",
   "est_min": 146,
   "why": "Sanborn 2005: he modified the system 'so that Scheidt could not decipher it'; Scheidt: 'key word/s'. Idea 63 closed three dictionary words, idea 20 closed one hidden alphabet against A-Z or KRYPTOS, and idea 86 covers an unknown keyword alphabet. Nobody has tested a dictionary keyword alphabet on one side with a freely written alphabet on the other and a short repeating key. It is exact: with the plain side known the 14 cipher letters and L key letters leave 11 - L checks, plus the need for 14 different positions."
+ },
+ {
+  "id": "102",
+  "title": "One place lost in the key inside a clue word: repeating and sliding keys with one key letter skipped or used twice inside EASTNORTHEAST or BERLINCLOCK",
+  "script": "attacks/102_lost_place_in_key.py",
+  "est_min": 63,
+  "why": "Sanborn dropped a letter carving K2, misspelled the K1 key on his own worksheet (PALIMPCEST) and calls his work rife with mistakes. In a hand Vigenere the commonest slip is losing the place in the key: one key letter skipped or repeated, after which every later letter is one place off. Idea 68 moved the whole second clue by 1-3 places, which covers slips BETWEEN the clues, and idea 81 dropped single clue letters, which covers one wrong letter; neither covers a slip that falls inside EASTNORTHEAST or BERLINCLOCK, where it breaks every periodic test."
+ },
+ {
+  "id": "103",
+  "title": "Matrix codes on 26/27-cell rectangles (2x13, 13x2, 3x9, 9x3): any pair-for-pair substitution, two-square and four-square, pairing widths 1-48",
+  "script": "attacks/103_matrix_codes_on_rectangles.py",
+  "est_min": 43,
+  "why": "Sanborn 2005: he used matrix codes Ed gave him. Scheidt 2015: special characters do not work and must be accounted for; with the carved ? K4 has 98 symbols = 49 pairs, and 26 letters + ? = 27 = 3 x 9. The negatives close Playfair, two-square and four-square only because a 5x5 square cannot output 26 letters, and Bean tested paired letters only at widths 7 and 21. Squares that are 2x13 or 3x9 rectangles keep all 26 letters, work on fixed pairs (so clue letters stay in place) and two-square can leave a letter unchanged (K to K)."
  }
 ]
