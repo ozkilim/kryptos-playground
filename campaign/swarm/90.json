@@ -1,0 +1,21 @@
+{
+  "id": 90,
+  "title": "Autokey one worksheet row back: plain feed at lags 7, 8 and 34-48 (first clue keys the second, second clue moved -3..3), cipher feed at lags 1-66, with a constant or a repeating word of 2-4 on top, on 666,993 keyword tableaux",
+  "verdict": "dead-in-scope",
+  "k4_result": "31.6 billion settings (666,993 alphabets x 5 layouts x Vigenere/Beaufort x fed letter numbered in M/A-Z/KRYPTOS x sign x 221 (feed, lag, clue shift) tests x word length 1-4). 1 setting passes, at the 7-check floor: WORTHLESSNESS~cols, KR/M, Beaufort, cipher feed 61 back, word of 4 (11 pairs - 4 = 7 checks). It forces 36 letters after the primer and they are noise: ...EYBERLINCLOCKWQTIMQQZBFFNETMJZFSLJCY, English -8.28 over 25 quadgrams (English needs -5.1). Nothing passes at lag 42, 7 or 8, plain or cipher feed, with any word length.",
+  "controls": "3 shuffled K4s, each on a different third of the alphabets (222,331 each, one full pass together): 0 settings pass. About one chance pass per full run is expected at exactly 7 checks (roughly 7 billion settings sit at the floor, each passing 1 time in 26^7 = 8 billion), so K4's single 7-check pass is what chance gives.",
+  "planted": "5/5 (plain feed 42 back under a 42-letter primer: 10 checks; cipher feed 7 back: 23 checks; plain feed 41 back with the second clue moved +2 and a word of 2: 8 checks; cipher feed 50 back with a word of 3: 8 checks; plain feed 7 back with a word of 3: 7 checks). Forced text read -3.3 to -4.8.",
+  "tested": 31615446080,
+  "scope_limits": "Dictionary keyword alphabets only (plain, ~cols, ~keyed) plus A-Z and KRYPTOS; layouts M/M, M/AZ, AZ/M, M/KR, KR/M. Plain feed: lags 7 and 8 with the clues in place; lags 34-48 only where 8+ clue pairs remain (lag minus clue shift = 37..45). NOT decidable from the clues: plain feed at lags 9-12 (5 or fewer checks) and 13-33 (no pairs). Cipher feed: lags 1-66 with the clues in place, clue shifts -3..3 only for lags 34-48. Words on top of length 2-4 only where 7+ checks remain (e.g. plain lag 42: up to 4; plain lag 8: none; cipher lags 34-63: up to 4). No hidden (non-dictionary) alphabet, no transposition before or after, no key that mixes plain and cipher feed. Controls saw a third of the alphabets each.",
+  "negative": {
+    "family": "Autokey a worksheet row back",
+    "hypothesis": "Each row of the K4 worksheet is keyed by the row above: the key letter is the plaintext or ciphertext letter 7, 8 or about 42 places earlier, so the first clue is the key of the second.",
+    "scope": "Exact test on the clue letters, 7+ checks. Plain feed lags 7, 8 and 34-48 (second clue moved -3..3, 8+ pairs); cipher feed lags 1-66 (clue moved -3..3 for 34-48); constant or repeating word of 2-4 on top; 666,993 alphabets (A-Z, KRYPTOS, every dictionary keyword alphabet and its two transposition-mixed forms) x 5 layouts x Vigenere/Beaufort x fed letter numbered in M/A-Z/KRYPTOS x added or subtracted; 31.6 billion settings.",
+    "outcome": "Dead in scope: 1 of 31.6 billion settings passes, at the 7-check floor (cipher feed 61 back, word of 4), and its 36 forced letters are noise (-8.28 against -5.1 needed); about one such pass is expected by chance (shuffled K4s: 0 on a third of the alphabets each; planted 5/5). Not decided: plain feed at lags 9-33 (too few or no clue pairs).",
+    "confidence": "solid"
+  },
+  "follow_ups": [
+    "Plain-feed autokey at lags 13-33 cannot be tested from the clues at all, but it is fully self-decrypting once a primer is guessed: for each lag and tableau, hill-climb the primer (lag letters) on the big English model with the 24 clue letters as hard constraints. Planted test: lag 21 (rows of 21) on a dictionary tableau.",
+    "Row keys the next row AFTER a row-wise transposition (each row of 7 or 14 read in a keyed column order): the lag is then 7 +/- a column offset that repeats with the row width, which is idea 74's keyed distance at period 7/14 but with plain feed beyond lag 8 and cipher feed beyond lag 20, which 74 did not reach."
+  ]
+}
