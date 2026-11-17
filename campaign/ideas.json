@@ -545,5 +545,12 @@
   "script": "attacks/86_keyword_tail.py",
   "est_min": 40,
   "why": "Scheidt: K4 runs 'with the correct key word/s', and K1's own keyword was a misspelling (PALIMPCEST). Every keyword-tableau test used about 220k dictionary words, so a name, a German word, a misspelling or a short phrase as the alphabet keyword was never tested. A keyword alphabet is far from arbitrary: after the keyword's letters the rest run in A-Z order, and that gives enough extra equations to decide key lengths where the arbitrary-alphabet tests could not (13, 16, 18-20, 23, 24, 26)."
+ },
+ {
+  "id": "88",
+  "title": "Spaces use up key letters: key-rule battery with the key slipping one place per word break (3 x 2 clue parsings, extra offset 0-25)",
+  "script": "attacks/88_spaces_use_key_letters.py",
+  "est_min": 27,
+  "why": "Scheidt 2015: 'special characters don't work' and must be accounted for. If Sanborn enciphered from a sheet with word spaces and the key ran on over each space, the key position is the letter number plus the number of word breaks so far. Our tests restarted keys at words (idea 56) or moved the second clue by up to 3 places (idea 68), but never let the key slip one place per word inside the clues."
  }
 ]
