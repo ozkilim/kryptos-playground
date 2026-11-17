@@ -1,0 +1,20 @@
+{
+  "id": 88,
+  "title": "Spaces use up key letters: key-rule battery with the key slipping one place per word break (3 x 2 clue parsings, extra offset 0-25)",
+  "verdict": "dead-in-scope",
+  "k4_result": "0 settings with 7+ checks out of 343,695,768 (2,203,178 key streams x 156 position sets; chance expects 0.055). Near misses with 5-6 checks: 5, all with exactly 5 (chance expects 5.8); best 5 checks",
+  "controls": "3 shuffled K4s, same parsings and offsets: 0 settings with 7+ checks each; near misses 13, 4 and 11, all with exactly 5 checks",
+  "planted": "3/3",
+  "tested": 343695768,
+  "scope_limits": "Only the key slipping exactly one place per word break, with the clue words split as EASTNORTHEAST / EAST|NORTHEAST / EAST|NORTH|EAST and BERLINCLOCK / BERLIN|CLOCK, and 0-25 extra breaks between the end of clue 1 and the B of BERLIN (so a double slip at a sentence break in the gap is covered, a double slip inside a clue is not). Rules: repeating key periods 1-17, sliding key 1-15, progressive key 1-12 (any number of breaks before EAST), two stacked repeating keys (periods 2-12 and 3-13), chain addition taps up to 6; 7+ checks, which the repeating key always has but other rules do not at long periods. Sliding, stacked and chain use only letter pairs inside one word, so they are weaker than on unbroken clues (sliding has 19 differences with both clues split, against 22). Tableaux: A-Z, KRYPTOS and 220,316 plain dictionary keyword alphabets in five layouts, Vigenere and Beaufort; no transposition-mixed alphabets, no hidden alphabets. Autokey not run (spaces do not change it). Punctuation or X separators that use a key letter are covered only as far as they act like one more break. No transposition layer. Only 3 controls and 3 planted answers in the full run.",
+  "negative": {
+    "family": "interrupted key: spaces use up key letters",
+    "hypothesis": "K4 was enciphered from a sheet with word spaces and the key ran on over each space, so the key position of a letter is its number plus the word breaks before it; a standard key rule then fits the clues.",
+    "scope": "Key positions i + breaks so far: clue 1 as EASTNORTHEAST, EAST|NORTHEAST or EAST|NORTH|EAST, clue 2 as BERLINCLOCK or BERLIN|CLOCK, extra offset 0-25 between the clues (156 position sets; progressive also with 0-11 breaks before clue 1). kryptos.round11.battery: repeating (period 1-17), sliding (1-15), progressive (1-12), two stacked keys, chain addition, 7+ checks. A-Z, KRYPTOS and 220,316 dictionary keyword alphabets x 5 layouts x Vigenere/Beaufort = 2,203,178 key streams, 343,695,768 settings",
+    "outcome": "Dead: 0 settings with 7+ checks on K4 (3 shuffled K4s: 0, 0, 0; chance expects 0.055); near misses with 5 checks: K4 5, shuffled 13, 4, 11 (chance expects 5.8); planted slipping keys found 3/3 and none of them passes with the carved positions",
+    "confidence": "solid"
+  },
+  "follow_ups": [
+    "The sliding, stacked and chain tests lose the letter pairs that straddle a word break. An exact linear solve mod 26 for a sliding key across the breaks (K(t+2)-K(t) = w[t+1]+w[t+2]) would use them and add about 4 checks; with idea 88's chance rate so low this is unlikely to change the answer, but it would close the scope limit."
+  ]
+}
