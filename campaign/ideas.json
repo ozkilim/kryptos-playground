@@ -580,5 +580,12 @@
   "script": "attacks/93_word_keys_hidden_tableau.py",
   "est_min": 42,
   "why": "Scheidt: K4 runs 'with the correct key word/s'. open_gaps lists hidden-alphabet keys of 23+ letters as open, but only because the key letters were treated as unknowns. If the key is a dictionary word or a reading of the sculpture, the stream is known and one hidden alphabet is decidable at every key length. In true Quagmire III the key letter is found on the same hidden alphabet, so S->S (33) and K->K (74) force the key letters at those two places to be the same letter: a filter no earlier test used."
+ },
+ {
+  "id": "92",
+  "title": "Key formulas of 0-3 ingredients (position, number sequences, grids of width 2-40, carved layout) with a hidden tableau alphabet: one hidden alphabet on both sides (Vigenere and Beaufort form) or on one side against A-Z / KRYPTOS",
+  "script": "attacks/92_formula_keys_hidden_alphabet.py",
+  "est_min": 55,
+  "why": "The fingerprint ranking names 'a structured key under an unknown mixed alphabet' as a top open target, and Sanborn's coding chart need not be a keyword alphabet. Idea 54 mined 9 million key formulas, but only on A-Z and KRYPTOS. A KNOWN key stream stays decidable when one hidden alphabet is used on both sides: the 24 clue letters tie 21 letters into one piece with 4 closed loops, and the 21 positions must all differ (chance about 1e-11 per stream, 4e-10 with a free constant)."
  }
 ]
