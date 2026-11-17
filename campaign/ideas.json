@@ -573,5 +573,12 @@
   "script": "attacks/91_independent_encryptor_audit.py",
   "est_min": 14,
   "why": "AGENTS.md: a search that cannot find a planted answer proves nothing. Every planted test so far was built with the attack's own helper code, so a shared mistake (clue positions off by one, an alphabet indexed the wrong way, a Beaufort sign) would pass its planted test and still miss the real K4. 343 negatives rest on those shared conventions."
+ },
+ {
+  "id": "93",
+  "title": "Known word keys (264,828 words and K1-K3 phrases at every phase: repeating, sliding, progressive) and 45,104 sculpture readings as running keys, on one fully hidden alphabet: numeric key, true Quagmire III, true Quagmire II, hidden alphabet on one side",
+  "script": "attacks/93_word_keys_hidden_tableau.py",
+  "est_min": 42,
+  "why": "Scheidt: K4 runs 'with the correct key word/s'. open_gaps lists hidden-alphabet keys of 23+ letters as open, but only because the key letters were treated as unknowns. If the key is a dictionary word or a reading of the sculpture, the stream is known and one hidden alphabet is decidable at every key length. In true Quagmire III the key letter is found on the same hidden alphabet, so S->S (33) and K->K (74) force the key letters at those two places to be the same letter: a filter no earlier test used."
  }
 ]
