@@ -692,5 +692,12 @@
   "script": "attacks/107_one_word_per_line.py",
   "est_min": 32,
   "why": "The K4 plaintext survives as strips cut from a handwritten sheet, the K1 worksheet is written in short clusters, and the Cyrillic Projector restarts its key at each block. If the worksheet had one word per line, the key letter depends on the place inside the word, and each line may add its own letter (a row word down the side). Idea 66 tested a key that restarts at each word with nothing added and idea 65 tested row word + column word only on grids of fixed width; lines of ragged length were never tested. It is exact: for EAST / NORTH / EAST and BERLIN / CLOCK there are 10 unknown key letters against 24 clue letters, so 14 checks."
+ },
+ {
+  "id": "109",
+  "title": "Each plain letter keeps its own counter into a key word (homophone cycling) on known keyword tableaux: dictionary words and K1-K3 phrases, any-letter keys to length 5, row restarts, 3-4 fixed alphabets in turn",
+  "script": "attacks/109_letter_counters.py",
+  "est_min": 24,
+  "why": "Scheidt: I masked the English language, and the cipher is simple, remembered, run with the correct key word/s. The classic hand way to flatten letter counts while staying letter-for-letter is to give every plaintext letter its own counter: the first E takes key letter 1, the second E key letter 2, and so on. The key then depends on how often THAT letter has occurred, not on the position, which no earlier test models (idea 83 had one shared state, and its doubled-pair rule does not apply here)."
  }
 ]
