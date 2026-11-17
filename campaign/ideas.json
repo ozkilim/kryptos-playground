@@ -629,5 +629,19 @@
   "script": "attacks/100_long_lag_autokey_chains.py",
   "est_min": 47,
   "why": "Bean measured 11 repeated vertical pairs at width 21, both clue blocks start a row of 21, and the K3 worksheet rows are 42 wide: a row keyed by the row above is plaintext autokey at a long lag. Idea 90 wrote that plain feed at lags 9-12 and 13-33 cannot be decided because few clue pairs sit exactly one lag apart. That misses chains: with a known tableau, a known letter and the cipher letter one lag on (or back) give the next plaintext letter, so each clue letter fixes its whole residue class and the classes of the two blocks meet. Counted: lag 9 has 15 checks, lag 13 has 11, lags 20 and 21 have 11, and lags 24-33 force 58-86 of the 97 letters."
+ },
+ {
+  "id": "101",
+  "title": "Second pass of the key word differs: key read back and forth (and its sliding form), form alternating by pass, odd passes shifted by a constant, tableau alternating by pass, on 666,993 keyword tableaux",
+  "script": "attacks/101_second_pass_differs.py",
+  "est_min": 25,
+  "why": "K1 key PALIMPSEST is a sheet written over a second time, K2 ends LAYER TWO, and Sanborn said the lower half uses two separate systems. A hand encoder who changes something each time the key word comes round (reads it backwards, switches from Vigenere to Beaufort, switches chart) gives a key of period 2L that no repeating-key test at length L sees, and for L = 14-24 the period is 28-48, outside every exact test so far. The mirror rule halves the unknowns: counted from the clue positions, a back-and-forth key has 7-11 checks at every period 28-46."
+ },
+ {
+  "id": "99",
+  "title": "Half-hidden Quagmire IV: one dictionary keyword alphabet (666,993 incl. transposition-mixed), the other alphabet anything; repeating key of 1-12 unknown numbers or sliding key (running sum of an unknown word) of 1-9",
+  "script": "attacks/99_half_hidden_quagmire4.py",
+  "est_min": 146,
+  "why": "Sanborn 2005: he modified the system 'so that Scheidt could not decipher it'; Scheidt: 'key word/s'. Idea 63 closed three dictionary words, idea 20 closed one hidden alphabet against A-Z or KRYPTOS, and idea 86 covers an unknown keyword alphabet. Nobody has tested a dictionary keyword alphabet on one side with a freely written alphabet on the other and a short repeating key. It is exact: with the plain side known the 14 cipher letters and L key letters leave 11 - L checks, plus the need for 14 different positions."
  }
 ]
