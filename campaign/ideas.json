@@ -678,5 +678,19 @@
   "script": "attacks/106_word_counts_through_k1_k3.py",
   "est_min": 10,
   "why": "Scheidt: K4 is like ciphers given to agents or pilots in case of capture, not mathematical, simple, can be remembered; the letter codes taught to air crews hid a message in an ordinary text and found it by counting words. Sanborn: the earlier text holds instructions for the later text, the first three answers contain clues to the fourth, and the solver needs just to be able to read. Idea 85 counted letters and showed a 26-letter window can hardly encode English; its worker noted that word counting can, because word starts are rich in the letters a message needs."
+ },
+ {
+  "id": "108",
+  "title": "Strip moved by a text: first and second differences of the forced key (12+10 and 11+9 letters) against 198,934 sculpture readings and as unknown English, on 666,993 dictionary tableaux",
+  "script": "attacks/108_strip_moved_by_text.py",
+  "est_min": 21,
+  "why": "Scheidt: simple, can be remembered, with the correct key word/s; Sanborn: just be able to read. Round 10 introduced the sliding key (each key letter says how far to MOVE the strip, so the key is the running sum of the word) but only for repeating words up to 17 letters. With a sentence or a sculpture reading as the moving text the key never repeats, the clues force 22 of its letters (the differences inside each block), and no earlier test looks at differences: attacks 57 and 58 compare the key letters themselves with text."
+ },
+ {
+  "id": "107",
+  "title": "One word per worksheet line on 666,993 keyword tableaux: column key + a free letter per line, a speed per word, own speed and start per word, and a strip moved by the column key; 6 word-break parsings of the clues, column from word start or end, Vigenere / Beaufort / lines taking turns",
+  "script": "attacks/107_one_word_per_line.py",
+  "est_min": 32,
+  "why": "The K4 plaintext survives as strips cut from a handwritten sheet, the K1 worksheet is written in short clusters, and the Cyrillic Projector restarts its key at each block. If the worksheet had one word per line, the key letter depends on the place inside the word, and each line may add its own letter (a row word down the side). Idea 66 tested a key that restarts at each word with nothing added and idea 65 tested row word + column word only on grids of fixed width; lines of ragged length were never tested. It is exact: for EAST / NORTH / EAST and BERLIN / CLOCK there are 10 unknown key letters against 24 clue letters, so 14 checks."
  }
 ]
