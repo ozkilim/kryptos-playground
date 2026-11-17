@@ -489,5 +489,12 @@
   "script": "attacks/78_mixed_alphabet_battery.py",
   "est_min": 52,
   "why": "Ideas 68, 70, 71 and 74 used the 220k plain keyword alphabets; round 10 showed the two transposition-mixed forms triple the alphabet set and are how a keyword alphabet is often built by hand."
+ },
+ {
+  "id": "80",
+  "title": "German sentence keys on keyword tableaux: not run, the repository has no German language model",
+  "script": "attacks/80_german_sentence_keys.py",
+  "est_min": 3,
+  "why": "BERLIN CLOCK and the 1989 Berlin setting make German text a natural running key; attack 57 scored forced key fragments only against English."
  }
 ]

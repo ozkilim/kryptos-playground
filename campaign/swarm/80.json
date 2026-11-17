@@ -1,0 +1,21 @@
+{
+  "id": 80,
+  "title": "German sentence keys on keyword tableaux: not run, the repository has no German language model",
+  "verdict": "untestable",
+  "k4_result": "K4 was not run. No German text or German quadgram table exists in the repository (data/ holds only the English tables, the puzzle JSONs, two key lists and the World Clock city names), and no network is allowed.",
+  "controls": "Not run, for the same reason.",
+  "planted": "0/0 German keys (none could be cut: no German text). Machinery check only, with a stand-in language (table built from the K1-K3 plaintexts, not German): 4/4 planted keys ranked first of 400 alphabets x 560 views.",
+  "tested": 0,
+  "scope_limits": "Nothing about K4 was tested, so nothing is ruled out. A German running key on a keyword tableau stays exactly as open as before. The repository's earlier entries only cover German keys from known books (catalog negative, best 9/24) and attack 57's English scoring.",
+  "negative": {
+    "family": "Running key of unknown German text on a keyword-alphabet tableau",
+    "hypothesis": "K4's key is a German sentence on a Quagmire I-IV tableau built from a keyword alphabet, so the 24 key letters forced by the clues read as German for the right alphabet.",
+    "scope": "Nothing searched. Needs data/german/quadgrams.txt ('ABCD count' per line, from a few million letters of German prose, umlauts as AE OE UE, sharp s as SS) and data/german/sample.txt (a few thousand letters of German prose not used for the table, for planted keys).",
+    "outcome": "Untestable here: no German model in the repository (controls not run; planted German keys not possible). attacks/80_german_sentence_keys.py is ready and runs the full attack-57 search as soon as the two files exist.",
+    "confidence": "partial"
+  },
+  "follow_ups": [
+    "Add data/german/quadgrams.txt and data/german/sample.txt (build the table with tools/build_ngrams.py logic on any public-domain German prose, after transliterating umlauts), then run attacks/80_german_sentence_keys.py unchanged: about 236k alphabets x 560 views on K4, 3 shuffled controls and 4 planted German keys, roughly the cost of attack 57 x 8 runs.",
+    "Expect the same limit attack 57 found for English: 24 key letters give only 18 quadgrams, so a real key fragment made of rare words can sit inside the noise top. A German word list for word coverage of the top fragments would help the human read."
+  ]
+}
