@@ -580,5 +580,26 @@
   "script": "attacks/93_word_keys_hidden_tableau.py",
   "est_min": 42,
   "why": "Scheidt: K4 runs 'with the correct key word/s'. open_gaps lists hidden-alphabet keys of 23+ letters as open, but only because the key letters were treated as unknowns. If the key is a dictionary word or a reading of the sculpture, the stream is known and one hidden alphabet is decidable at every key length. In true Quagmire III the key letter is found on the same hidden alphabet, so S->S (33) and K->K (74) force the key letters at those two places to be the same letter: a filter no earlier test used."
+ },
+ {
+  "id": "92",
+  "title": "Key formulas of 0-3 ingredients (position, number sequences, grids of width 2-40, carved layout) with a hidden tableau alphabet: one hidden alphabet on both sides (Vigenere and Beaufort form) or on one side against A-Z / KRYPTOS",
+  "script": "attacks/92_formula_keys_hidden_alphabet.py",
+  "est_min": 55,
+  "why": "The fingerprint ranking names 'a structured key under an unknown mixed alphabet' as a top open target, and Sanborn's coding chart need not be a keyword alphabet. Idea 54 mined 9 million key formulas, but only on A-Z and KRYPTOS. A KNOWN key stream stays decidable when one hidden alphabet is used on both sides: the 24 clue letters tie 21 letters into one piece with 4 closed loops, and the 21 positions must all differ (chance about 1e-11 per stream, 4e-10 with a free constant)."
+ },
+ {
+  "id": "94",
+  "title": "Word autokey: each word is enciphered with the previous word (or the word two back) as key, plain or cipher letters, forwards or reversed, wrap or run-on, on 666,993 keyword tableaux, on any tableau, and on one hidden alphabet",
+  "script": "attacks/94_word_autokey.py",
+  "est_min": 27,
+  "why": "Scheidt: 'simple, can be remembered'; he 'masked the English language'. A key that never repeats and needs no key text: after a primer word, each plaintext word is enciphered with the word before it. Inside the clues the previous word is known (EAST keys NORTH, NORTH keys EAST, BERLIN keys CLOCK), so there are up to 14 equations with no unknown key letter. The fixed-lag autokey tests (lags 1-6, and idea 74's repeating lag patterns) cannot see it because the lag changes with each word's length."
+ },
+ {
+  "id": "96",
+  "title": "Message enciphered back to front: look-ahead autokey, plain feed d = 1-8 and 34-48 (second clue keys the first, moved -3..3), cipher feed d = 1-68, on 666,993 keyword tableaux; plus multiplier 1-25 with a word of 1-13 on A-Z/KRYPTOS, and one hidden alphabet at d = 1-8",
+  "script": "attacks/96_enciphered_back_to_front.py",
+  "est_min": 18,
+  "why": "Sanborn 2005: he left 'instructions in the earlier text that refer to later text'. If K4 was enciphered from its last letter backwards, an autokey takes its key from the letters that FOLLOW, and the second clue can be the key for the first (the blocks start 42 apart, the K3 worksheet width). Idea 54 covered neighbours 1-5 ahead on A-Z and KRYPTOS only; the keyword-tableau battery (66), the hidden-alphabet autokey (55), the stacked autokey (59) and idea 90 all look backwards."
  }
 ]
