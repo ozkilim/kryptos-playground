@@ -510,5 +510,12 @@
   "script": "attacks/81_one_wrong_clue_letter.py",
   "est_min": 55,
   "why": "Sanborn's texts carry deliberate misspellings (IQLUSION, UNDERGRUUND, DESPARATLY). Round 7 tested one wrong clue letter only for periodic, two-key and Gromark models."
+ },
+ {
+  "id": "82",
+  "title": "Two paper rotors in series: two different hidden wirings (form H, mostly cannot be judged) and one hidden strip used there and back (form B, dead)",
+  "script": "attacks/82_two_paper_rotors.py",
+  "est_min": 73,
+  "why": "Idea 72 closed one rotor with hidden wiring. Two rotors is the smallest machine that idea cannot see, and the wire-collision test extends to it when the slow rotor moves rarely."
  }
 ]
