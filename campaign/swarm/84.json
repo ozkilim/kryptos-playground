@@ -1,0 +1,22 @@
+{
+  "id": 84,
+  "title": "Two repeating-key layers on two different tableaux (A-Z, KRYPTOS, theme and dictionary keyword alphabets), exact test on the clue letters",
+  "verdict": "dead-in-scope",
+  "k4_result": "778,096,488 settings (888,238 ordered alphabet pairs x 4 Vigenere/Beaufort type pairs x 219 key-length plans). 0 settings pass with 7+ checks, out of 575,578,224 tested at that bar. At the 5-6 check gauge level 2 settings pass (both 5 checks; chance predicts about 8.7); their readings are gibberish, big-model English -7.36 and -7.48 (English needs -5.1).",
+  "controls": "3 shuffled K4s, part 1 in full and a different third of the dictionary alphabets each (about 263.6M settings each): 0 pass with 7+ checks in all three. At 5-6 checks: 4, 1 and 2 pass (chance predicts about 2.9 each); best readings -7.23, -7.53, -6.67. Same picture as K4.",
+  "planted": "4/4 (KRYPTOS key SHADOW then A-Z key LANTERN; BERLIN-alphabet key ABSCISSA then WORLDCLOCK-alphabet key LODESTONE, Vigenere then Beaufort, p+q = 17; dictionary alphabet EPIGRAMMATISM key BERLIN then KRYPTOS key ILLUSION; A-Z key COMPASS (Beaufort) then dictionary alphabet POCKETED key TUNNEL). Each time the true setting was the only survivor at 7+ checks and the full 97-letter message was read back, English -4.18 to -4.64.",
+  "tested": 778096488,
+  "scope_limits": "Both alphabets must be known: part 1 is every ordered pair of different alphabets among A-Z, KRYPTOS and 84 theme-word keyword alphabets (7,310 pairs); part 2 is each of 220,232 plain dictionary keyword alphabets paired with A-Z or with KRYPTOS, in both orders. NOT covered: two dictionary alphabets at once (outside the 86 small ones), transposition-mixed or otherwise hidden alphabets, a hidden alphabet in either layer. Keys: any letters (no word list), repeating, lengths p and q with 7+ checks, which means every p + q <= 17 plus a few long keys the clues only partly touch (one key of 19-22 with a partner of 1-4, 15/16 with 1-2); p + q of 18 or more is NOT decided. Each layer Vigenere, variant Beaufort or Beaufort; no autokey, progressive or running keys, no transposition between the layers, no third layer. The second clue is taken at its stated place (no gap slack).",
+  "negative": {
+    "family": "Two periodic layers on two different tableaux",
+    "hypothesis": "K4 is two repeating-key layers, the first on one keyword tableau and the second on a different one (for example KRYPTOS then A-Z), so that the two keys do not add up on any single alphabet.",
+    "scope": "C = B[+-B^-1(A[+-A^-1(P) + a_(i mod p)]) + b_(i mod q)]; keys a, b any letters; all (p, q) with 7+ checks on the 24 clue letters (every p + q <= 17); Vigenere/variant/Beaufort per layer; ordered pairs (A, B) of different alphabets from A-Z, KRYPTOS and 84 theme-word alphabets, plus 220,232 dictionary keyword alphabets against A-Z and against KRYPTOS in both orders. 778.1M settings, exact propagation, no key guessed.",
+    "outcome": "Dead in scope: 0 of 575.6M settings pass with 7+ checks (3 shuffled K4s: 0, 0, 0); at 5-6 checks K4 2 vs shuffled 4, 1, 2 (chance level), best K4 reading -7.36 against -5.1 needed; planted 4/4, each the single survivor and read back in full.",
+    "confidence": "solid"
+  },
+  "follow_ups": [
+    "Two different dictionary alphabets at once (neither A-Z nor KRYPTOS) is 220k x 220k pairs, too many for this test. It splits into a hash join if the middle letters are the meeting point: for p = q or for q dividing p the clue letters in one residue class give, per alphabet A and key letter, a pattern of middle letters that B must then explain. Worth a count of how many checks survive the split before building it.",
+    "The same exact propagation works when layer two is not periodic but still known up to a few letters (progressive key, or a key that restarts at each clue block): only the edge list of the graph changes. kryptos/idea84_twotab.plan takes any (i -> a slot, i -> b slot) map with a small edit.",
+    "Transposition-mixed keyword alphabets (the ~cols / ~keyed forms of round 11, 446,675 alphabets) against A-Z and KRYPTOS: the run is the same script with dictionary_alphabets(mixed=True), about three times the cost (this run took 8 minutes of the slot, so roughly 25 minutes)."
+  ]
+}
