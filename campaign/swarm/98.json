@@ -1,0 +1,21 @@
+{
+  "id": 98,
+  "title": "Key word on one tableau, steadily turning (shift s*i + t) second tableau, both orders, two different alphabets",
+  "verdict": "dead-in-scope",
+  "k4_result": "888,238 alphabet pairs x 15,600 settings x key lengths 1-23 = 318.7 billion tests. 2 settings pass with exactly 7 checks (chance predicts about 5.2), 0 with 8 or more (chance 0.07). Both are long non-word keys (length 17 and 23) and read as gibberish: best english -7.22 on the big model, word cover 0.30-0.33 (English needs -5.1). Gauge at 5 checks (key length 24): 1,172 against about 1,166 predicted.",
+  "controls": "3 shuffled K4s on exactly the same pairs: 6, 7 and 0 settings pass with exactly 7 checks, 0 with 8 or more; best readings -6.77, -6.77, none. Gauge at 5 checks: 1,098, 1,212, 1,042. K4 sits inside the controls on every count.",
+  "planted": "4/4, each the single survivor with the message and the key word read back (english -4.16 to -4.52)",
+  "tested": 318699794400,
+  "scope_limits": "Both alphabets must be on the lists: A-Z, KRYPTOS and 84 theme keyword alphabets against each other (7,310 ordered pairs), and each of 220,232 dictionary keyword alphabets against A-Z or KRYPTOS in either role; two dictionary alphabets together, transposition-mixed and hidden alphabets are not covered. The key word must repeat with length 1-23 (lengths 17, 18 and 23 are only decided up to about 2-7 chance survivors, which were read and are not English; 24+ not decided). The turn is exactly s*g(i)+t with a fixed step s = 1-25, counted over the whole text, the carved rows (K4 letters 1, 5, 36, 67) or rows of 21/42; a turn driven by a word, a step that changes, or a turn that restarts at words is not covered. s = 0 is idea 84's one-letter second key. Same alphabet for both layers was skipped (folds into one progressive key, closed earlier). No transposition, no third layer, no gap slack.",
+  "negative": {
+    "family": "two tableaux: key word + progressive layer",
+    "hypothesis": "K4 is a repeating key word on one keyword tableau stacked with a second, different tableau that turns by a fixed step every letter (shift s*i + t), in either order",
+    "scope": "Key word length 1-23 on alphabet A, turn s = 1-25, t = 0-25 on alphabet B, both layer orders, Vigenere/Beaufort per layer, turn counted over the whole text, carved rows, rows of 21 or 42; A different from B over A-Z, KRYPTOS and 84 theme alphabets (7,310 ordered pairs) plus 220,232 dictionary keyword alphabets against A-Z and KRYPTOS in both roles; 318.7 billion exact tests on the 24 clue letters",
+    "outcome": "Dead in scope: 0 settings pass with 8+ checks; 2 pass with exactly 7 (chance predicts 5.2), both gibberish (best english -7.22, needs -5.1). Controls: 3 shuffled K4s on the same pairs give 6, 7, 0 at 7 checks and 0 at 8+; planted key words under a turning second tableau found 4/4 as the single survivor",
+    "confidence": "solid"
+  },
+  "follow_ups": [
+    "The byte-string trick used here (one bytes.translate per clue letter, big-integer XOR to compare all settings at once) tests 15,600 settings per alphabet pair in about 1 ms. It makes dictionary x dictionary alphabet pairs affordable for any two-layer model whose second layer is known up to two small numbers: 220k x 220k is too many, but 220k x the 3,000 most common words is about 20 CPU-hours.",
+    "Turning layer whose step is not constant but follows a short repeating list of steps (s1, s2, ..., sk, k = 2-4): the same exact test with 26^k step lists, still cheap with the translate trick for k = 2."
+  ]
+}

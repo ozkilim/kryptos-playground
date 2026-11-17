@@ -594,5 +594,26 @@
   "script": "attacks/94_word_autokey.py",
   "est_min": 27,
   "why": "Scheidt: 'simple, can be remembered'; he 'masked the English language'. A key that never repeats and needs no key text: after a primer word, each plaintext word is enciphered with the word before it. Inside the clues the previous word is known (EAST keys NORTH, NORTH keys EAST, BERLIN keys CLOCK), so there are up to 14 equations with no unknown key letter. The fixed-lag autokey tests (lags 1-6, and idea 74's repeating lag patterns) cannot see it because the lag changes with each word's length."
+ },
+ {
+  "id": "96",
+  "title": "Message enciphered back to front: look-ahead autokey, plain feed d = 1-8 and 34-48 (second clue keys the first, moved -3..3), cipher feed d = 1-68, on 666,993 keyword tableaux; plus multiplier 1-25 with a word of 1-13 on A-Z/KRYPTOS, and one hidden alphabet at d = 1-8",
+  "script": "attacks/96_enciphered_back_to_front.py",
+  "est_min": 18,
+  "why": "Sanborn 2005: he left 'instructions in the earlier text that refer to later text'. If K4 was enciphered from its last letter backwards, an autokey takes its key from the letters that FOLLOW, and the second clue can be the key for the first (the blocks start 42 apart, the K3 worksheet width). Idea 54 covered neighbours 1-5 ahead on A-Z and KRYPTOS only; the keyword-tableau battery (66), the hidden-alphabet autokey (55), the stacked autokey (59) and idea 90 all look backwards."
+ },
+ {
+  "id": "95",
+  "title": "Two rotors in series, one wired from a dictionary keyword strip and one hidden, in both orders",
+  "script": "attacks/95_keyword_rotor_plus_hidden_rotor.py",
+  "est_min": 48,
+  "why": "Idea 82 found that two hidden wirings (52 unknown contacts) cannot be judged from 24 letters, and its worker noted that with one wiring known the test turns into idea 72's wire test with about 8 forced coincidences. Scheidt's 'key word/s' fits a device with one remembered keyword strip and one chart Sanborn changed 'so that Scheidt could not decipher it'. Open after round 11: two rotors."
+ },
+ {
+  "id": "98",
+  "title": "Key word on one tableau, steadily turning (shift s*i + t) second tableau, both orders, two different alphabets",
+  "script": "attacks/98_turning_second_tableau.py",
+  "est_min": 11,
+  "why": "K2 ends LAYER TWO; Scheidt taught 'shifting matrices' and calls K4 'more than one stage'. Idea 84 closed two repeating keys on two different tableaux and its worker noted the same test works when layer two is not periodic but known up to a few numbers. A steadily turning second tableau (shift s*i + t) is the simplest such layer, hides the period of the first, and was only ever tested with both layers on the same tableau, where it folds into one key."
  }
 ]
