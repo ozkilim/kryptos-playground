@@ -559,5 +559,12 @@
   "script": "attacks/90_row_keys_next_row.py",
   "est_min": 35,
   "why": "The K3 worksheet is 42 wide and the two clues start exactly 42 apart; with the '?' K4 is a 7 x 14 grid and five of the six doubled letters end a row of 7. If each row is keyed by the row above (the letter 7 or 42 places back, plaintext or ciphertext), the first clue is the key for the second. The battery tried lags 1-6 only on keyword tableaux, and lags 30-52 got only a quick look on A-Z/KRYPTOS (3 of 6)."
+ },
+ {
+  "id": "89",
+  "title": "140,752 alphabets that are not keyword alphabets (first-appearance orders from the sculpture's texts, QWERTY, Morse and frequency orders): key-rule battery, sentence-key score, and two-alphabet join for key lengths 1-20",
+  "script": "attacks/89_non_keyword_alphabets.py",
+  "est_min": 51,
+  "why": "Every exact test since round 9 drew its alphabets from A-Z, KRYPTOS or dictionary keywords, and open_gaps lists non-keyword alphabets as still open. The hand-made alternatives are few and listable: a sentence's letters in order of first appearance (a keyphrase alphabet from K1-K3 or the Morse text; 'the answers to the first three passages contain clues to the fourth'), typewriter rows, Morse-code order (the entrance slabs), letter-frequency order."
  }
 ]
