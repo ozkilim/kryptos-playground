@@ -839,5 +839,12 @@
   "script": "attacks/128_two_word_keys_hidden_tableau.py",
   "est_min": 61,
   "why": "Scheidt said the key is remembered 'key word/s', and idea 93 closed single known words on a fully hidden alphabet but not two words written one after the other. On any one-alphabet tableau, S->S at 33 with K->K at 74 and R->P at 28 and 66 force equal key letters, and about 60 pairs are forced different: conditions on the key alone, which split by word."
+ },
+ {
+  "id": "130",
+  "title": "Quagmire III (one arbitrary alphabet on both sides), Beaufort form, repeating key of length 18: decided exactly for every one of the 26! alphabets",
+  "script": "attacks/130_quagmire3_beaufort_18.py",
+  "est_min": 27,
+  "why": "K1 and K2 are Quagmire III on one keyed alphabet. The community's exact arbitrary-alphabet search closed the Beaufort form at every length except 13, 18, 23 and 26. Idea 86 closed 13 for every alphabet, but 18 only for keyword alphabets of up to 16 letters, because its budget ran out. 18 is the one length where an exact answer for every alphabet is still missing and is within reach."
  }
 ]
