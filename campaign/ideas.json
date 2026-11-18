@@ -881,5 +881,12 @@
   "script": "attacks/135_cipher_fed_keyword_side.py",
   "est_min": 140,
   "why": "Idea 83 found that a cipher-fed device with every table hidden fits every modulus m >= 14, so it cannot be judged. Fixing the plain or cipher table to a keyword alphabet, as on the K1/K2 tableau, leaves about 8 exact equations. That is enough to decide a whole class of 'machine' hand ciphers that Scheidt's 'not mathematical, simple, can be remembered' allows."
+ },
+ {
+  "id": "134",
+  "title": "One hidden strip used twice in the same direction, C = R[R[P+s]-s+t]-t, any wiring, solved exactly by backtracking: constant speeds, fast/slow pairs, keys of 1-5 letters (6 sampled), 21,510 theme and common words",
+  "script": "attacks/134_one_strip_twice.py",
+  "est_min": 149,
+  "why": "Idea 82 closed two rotors where the second strip is the first read backwards, and showed that two different hidden strips cannot be judged. A hand encoder with one strip would more likely pass the letter through it twice the same way. With 26 unknown contacts against 24 clue letters this is about 5 letters over-determined, so it is decidable and was left open only because the equations are not linear."
  }
 ]
