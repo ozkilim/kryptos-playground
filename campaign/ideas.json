@@ -825,5 +825,33 @@
   "script": "attacks/127_gromark_one_dictionary_side.py",
   "est_min": 22,
   "why": "Bean and Scheidt's 'different math base' point to Gromark. The standard form (straight A-Z plain side) is dead by Bean. The both-hidden form survives the clues (454 base-10 primers) but was only judged by an English completion with about 50% power. Fixing one side to a dictionary keyword alphabet, as K1/K2 did, makes the test exact and the reading decisive."
+ },
+ {
+  "id": "126",
+  "title": "Hidden message in the solved K1-K3 (+ Morse) text: acrostics (1st/2nd/3rd/last letter of words), every k-th word or letter (k up to 40, every start), K2 coordinate digits as step counts, carved-row first/last letters and columns, sentence initials, doubled letters; forwards and backwards; scored against word-order-shuffled texts",
+  "script": "attacks/126_hidden_readings_k1k3.py",
+  "est_min": 76,
+  "why": "Sanborn 2005: he left instructions in the earlier text that refer to later text; 2006: the answers to the first three passages contain clues to the fourth. Wartime letter codes hid a message in the first or n-th letters of words. Earlier work used such letters only as K4 keys (ruled out); nobody here has tested whether they READ as a message, which needs no K4 and no cipher model and would give the missing method directly."
+ },
+ {
+  "id": "128",
+  "title": "Two-word keys (A+B and sandwich A+B+A, repeating, every phase, L 4-26) on one hidden alphabet: true Quagmire III (C = P + K, P - K, K - P), true Quagmire II, and idea 93's numeric one-alphabet model (repeating and sliding), joined through the forced key slots and solved exactly",
+  "script": "attacks/128_two_word_keys_hidden_tableau.py",
+  "est_min": 61,
+  "why": "Scheidt said the key is remembered 'key word/s', and idea 93 closed single known words on a fully hidden alphabet but not two words written one after the other. On any one-alphabet tableau, S->S at 33 with K->K at 74 and R->P at 28 and 66 force equal key letters, and about 60 pairs are forced different: conditions on the key alone, which split by word."
+ },
+ {
+  "id": "130",
+  "title": "Quagmire III (one arbitrary alphabet on both sides), Beaufort form, repeating key of length 18: decided exactly for every one of the 26! alphabets",
+  "script": "attacks/130_quagmire3_beaufort_18.py",
+  "est_min": 27,
+  "why": "K1 and K2 are Quagmire III on one keyed alphabet. The community's exact arbitrary-alphabet search closed the Beaufort form at every length except 13, 18, 23 and 26. Idea 86 closed 13 for every alphabet, but 18 only for keyword alphabets of up to 16 letters, because its budget ran out. 18 is the one length where an exact answer for every alphabet is still missing and is within reach."
+ },
+ {
+  "id": "131",
+  "title": "Quagmire IV with two keyword alphabets of 1-9 letters (any letters, no dictionary), plain or read off by columns, repeating key 1-16, solved exactly from both alphabetical tails",
+  "script": "attacks/131_quagmire4_two_keyword_tails.py",
+  "est_min": 23,
+  "why": "Scheidt said the cipher runs 'with the correct key word/s', so the two alphabets of a Quagmire IV are most likely keyword alphabets. They need not be dictionary words, though: PALIMPCEST was itself a misspelling. Idea 113 left 118M placings of the 13 clue plain letters at key length 8 with no power. Idea 86 showed that a keyword alphabet is fixed by its alphabetical tail. Combining the two puts a strong prior on what was a noise search."
  }
 ]

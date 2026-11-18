@@ -1,0 +1,21 @@
+{
+  "id": 130,
+  "title": "Quagmire III (one arbitrary alphabet on both sides), Beaufort form, repeating key of length 18: decided exactly for every one of the 26! alphabets",
+  "verdict": "dead",
+  "k4_result": "No alphabet exists at L=18. Two of the 7 shared residue classes give x[P]+x[R] = x[N]+x[B] (positions 27 and 63) and x[N]+x[H] = x[P]+x[R] (positions 29 and 65), so x[B] = x[H] for any key, which no alphabet allows. Found independently by linear algebra mod 2 and mod 13 (the only forced equality is B=H) and by complete backtracking (UNSAT after 1,951 steps). The same two classes meet whenever L divides 36, so L=36 is also closed. Across all lengths the exact solver reproduces the published picture: Beaufort form empty at 1-22, 24, 25 (13 by T=H), satisfiable at 23 (>=100,000 gauge-fixed solutions on the 17 letters in the equations) and 26 (1 equation, 2 solutions); Vigenere form empty at all 1-26. Every empty case has a short linear proof (two letters forced to the same place).",
+  "controls": "50 shuffled K4s, Beaufort form: at L=18, 31 of 50 also have no alphabet, 19 are satisfiable (2 counted: >=100,000 solutions each). So being closed at 18 is common for random texts and is no signal either way. L=23: 24 SAT / 26 UNSAT; L=26: 45 SAT / 5 UNSAT. Over lengths 1-26 K4 is closed at 24; shuffled min 16, median 21, max 24; 3/50 match or beat K4 (the repeated clue pairs and the S->S, K->K fixed points help close K4).",
+  "planted": "13/13: 10 at L=18 plus 1 each at 13, 23, 26 (random alphabet, random key, Beaufort form, English with K4's clue words). Each came out SAT with no false certificate; with 5 equation letters freed, the solver listed the true alphabet (1-624 alphabets listed) and its reading ranked first (-4.05 to -4.98 on the big model) and gave back the planted text everywhere the clues fix the key.",
+  "tested": 1396,
+  "scope_limits": "Only Quagmire III (the same alphabet on plaintext and ciphertext sides) with a plain repeating key, both forms, carved clue positions with no gap slack. NOT covered: Quagmire I, II, IV at 18; sliding/running/autokey keys; transposition before or after; any change to the clue positions. Lengths 23 and 26 are satisfiable for K4 and for most shuffled K4s, and the arbitrary-alphabet solutions there were counted, not read (the clue letters do not fix the rest of the alphabet, so there is nothing to read without a further model). Lengths 27-48 were run on K4 as a by-product (no controls there): Beaufort form closed at 34-45 and 48, satisfiable at 27-33, 46, 47; Vigenere form satisfiable at 27-30 and 41. Long keys leave 0-10 equations, so satisfiable means little there.",
+  "negative": {
+    "family": "Quagmire III arbitrary alphabet",
+    "hypothesis": "K4 is Quagmire III in the Beaufort form (key = x[C] + x[P] on one unknown mixed alphabet) with a repeating key of length 18.",
+    "scope": "All 26! alphabets, all keys, repeating key of length 18 (also 36), carved clue positions 21-33 and 63-73; exact decision by linear algebra mod 2/13 and complete backtracking.",
+    "outcome": "Dead: the clues force x[B] = x[H] (classes 27/63 and 29/65), so no alphabet exists; backtracking agrees (controls: 31/50 shuffled K4s also have none at 18, so the closure is not a signal; planted 13/13 found SAT, listed and read back).",
+    "confidence": "solid"
+  },
+  "follow_ups": [
+    "Quagmire III Beaufort is now closed for every alphabet at all lengths 1-26 except 23 and 26, which stay satisfiable for K4 and for about half (23) or most (26) of the shuffled K4s. They can only be judged by English: hill-climb the full alphabet with the big model, keeping the 7 (or 1) clue equations as hard constraints, against shuffled controls.",
+    "The linear certificate (two letters forced to the same place) decided every closed case here in under a second. The same check could quickly re-verify the community's Quagmire I/II/IV tables and the open Quagmire IV lengths (8, 13, 16, 19, 20, 23, 24, 26), where two alphabets enter."
+  ]
+}
