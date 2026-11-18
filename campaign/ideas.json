@@ -867,5 +867,12 @@
   "script": "attacks/132_two_wrong_clue_letters.py",
   "est_min": 72,
   "why": "Sanborn says his work is 'rife with mistakes on purpose', and K1-K3 hold at least five deliberate or accidental errors (IQLUSION, UNDERGRUUND, DESPARATLY, PALIMPCEST, the dropped S). Idea 81 closed one wrong clue letter, but two mistakes in 24 letters is as likely as one at K1-K3's error rate, and two would hide the true method from every exact test run so far."
+ },
+ {
+  "id": "133",
+  "title": "First part only (letters 1..E, E=49-63) under a small-number key (window 5 or 6) on a hidden plain alphabet against A-Z: free key by beam search, period 2-13 keys exactly",
+  "script": "attacks/133_first_part_small_shift.py",
+  "est_min": 45,
+  "why": "This is the one measured anomaly left. With a hidden plain alphabet against A-Z, EASTNORTHEAST alone fits a key window of 5 (0.3% of 5,000 shuffles, idea 112), BERLINCLOCK does not, and Bean's closeness is the same fact. Sanborn's 'two separate systems' allows the first part of K4 to carry a small-number key (digits, a dial) that changes regime before BERLINCLOCK."
  }
 ]
