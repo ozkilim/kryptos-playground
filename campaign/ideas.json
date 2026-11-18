@@ -811,5 +811,12 @@
   "script": "attacks/124_grow_key_and_message.py",
   "est_min": 100,
   "why": "Sanborn 2019: you just need to be able to read; Scheidt: the correct key word/s. A sentence used as the key on a keyword tableau was tested (ideas 57, 65, 89) only by scoring the 13 and 11 key letters the clues force, and the true key sat inside the noise in 1 of 4 planted runs, so the negative has a stated thin margin. A true setting has a property noise cannot copy: one letter further on, some plaintext letter makes BOTH the key and the message continue as English, and it keeps doing so."
+ },
+ {
+  "id": "125",
+  "title": "One-letter-misspelled keyword alphabets (8.1M) and other alphabet constructions (1.7M) through the full key-rule battery, plus a Quagmire IV join for the new constructions",
+  "script": "attacks/125_misspelled_keyword_alphabets.py",
+  "est_min": 101,
+  "why": "Sanborn misspells on purpose and by accident: his K1 key header reads PALIMPCEST, the text has IQLUSION, UNDERGRUUND and DESPARATLY, and K2 lost a letter. A keyword alphabet built from a misspelled word is in no dictionary, so every dictionary test would miss an otherwise ordinary cipher. Idea 86 solved arbitrary keywords only for repeating and sliding keys; the other rules (progressive, stacked, autokey, chain addition) were run on dictionary spellings only, and always with the keyword first and the rest in A-Z order."
  }
 ]
