@@ -874,5 +874,19 @@
   "script": "attacks/133_first_part_small_shift.py",
   "est_min": 45,
   "why": "This is the one measured anomaly left. With a hidden plain alphabet against A-Z, EASTNORTHEAST alone fits a key window of 5 (0.3% of 5,000 shuffles, idea 112), BERLINCLOCK does not, and Bean's closeness is the same fact. Sanborn's 'two separate systems' allows the first part of K4 to carry a small-number key (digits, a dial) that changes regime before BERLINCLOCK."
+ },
+ {
+  "id": "135",
+  "title": "Cipher-fed state device C = F(s + h(P)), s += g(C) mod 26..31: one side a dictionary keyword alphabet (other side and g hidden), and both sides any two keyword alphabets (only g hidden)",
+  "script": "attacks/135_cipher_fed_keyword_side.py",
+  "est_min": 140,
+  "why": "Idea 83 found that a cipher-fed device with every table hidden fits every modulus m >= 14, so it cannot be judged. Fixing the plain or cipher table to a keyword alphabet, as on the K1/K2 tableau, leaves about 8 exact equations. That is enough to decide a whole class of 'machine' hand ciphers that Scheidt's 'not mathematical, simple, can be remembered' allows."
+ },
+ {
+  "id": "134",
+  "title": "One hidden strip used twice in the same direction, C = R[R[P+s]-s+t]-t, any wiring, solved exactly by backtracking: constant speeds, fast/slow pairs, keys of 1-5 letters (6 sampled), 21,510 theme and common words",
+  "script": "attacks/134_one_strip_twice.py",
+  "est_min": 149,
+  "why": "Idea 82 closed two rotors where the second strip is the first read backwards, and showed that two different hidden strips cannot be judged. A hand encoder with one strip would more likely pass the letter through it twice the same way. With 26 unknown contacts against 24 clue letters this is about 5 letters over-determined, so it is decidable and was left open only because the equations are not linear."
  }
 ]
