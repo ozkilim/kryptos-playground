@@ -853,5 +853,19 @@
   "script": "attacks/131_quagmire4_two_keyword_tails.py",
   "est_min": 23,
   "why": "Scheidt said the cipher runs 'with the correct key word/s', so the two alphabets of a Quagmire IV are most likely keyword alphabets. They need not be dictionary words, though: PALIMPCEST was itself a misspelling. Idea 113 left 118M placings of the 13 clue plain letters at key length 8 with no power. Idea 86 showed that a keyword alphabet is fixed by its alphabetical tail. Combining the two puts a strong prior on what was a noise search."
+ },
+ {
+  "id": "129",
+  "title": "Repeating key word of 1-13 plus a steady step (per letter or once per pass, every start phase) on one hidden alphabet: both sides hidden (Vigenere, Beaufort) or one side hidden against A-Z / KRYPTOS, solved exactly mod 13 and mod 2 with distinct places required",
+  "script": "attacks/129_stepped_word_hidden_alphabet.py",
+  "est_min": 103,
+  "why": "Bean found the clue key values close together, and Sanborn's charts are hand tools. A key word moved on one place per pass, or a steady step added to it, is the simplest key a person remembers that is not periodic. Idea 92 tested pure formulas on a hidden alphabet and idea 86 keyword alphabets, but nobody has tested formula plus free key word with the alphabet arbitrary."
+ },
+ {
+  "id": "132",
+  "title": "Two wrong clue letters (276 drop pairs: one per block at 7+ checks, both in one block at 9+): key-rule battery with idea-104 hole fixes on 666,993 keyword alphabets, multiplier+adder words (71A) and word-turned rotor (72) on 22 of the 24 clue letters",
+  "script": "attacks/132_two_wrong_clue_letters.py",
+  "est_min": 72,
+  "why": "Sanborn says his work is 'rife with mistakes on purpose', and K1-K3 hold at least five deliberate or accidental errors (IQLUSION, UNDERGRUUND, DESPARATLY, PALIMPCEST, the dropped S). Idea 81 closed one wrong clue letter, but two mistakes in 24 letters is as likely as one at K1-K3's error rate, and two would hide the true method from every exact test run so far."
  }
 ]
