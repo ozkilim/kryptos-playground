@@ -1,0 +1,21 @@
+{
+  "id": 121,
+  "title": "Any linear cipher-feedback rule up to 15 letters back with free coefficients (plus sparse worksheet lags to 96, plain feedback, and feedback with a repeating word of 3-5), on 666,993 keyword tableaux",
+  "verdict": "dead-in-scope",
+  "k4_result": "0 of 268,269,498 settings pass with 7+ exact checks. A (cipher lags 1-15 + constant, 8 checks, all 666,993 alphabets x 19-27 numberings x 2 signs = 25,345,674 settings): 0, chance 0.00012. B (126 sparse shapes {1,w}, {w-1,w,w+1}, {1,w,w+1}, {w,2w} with a lag over 15, 7-21 checks, 214,044,768 settings): 0, chance 0.0072. C (cipher lags 1-R + plain lags 1-S, R+S <= 8, 7-13 checks, 8,493,840): 0, chance 0.0004. D (cipher + plain feedback, R+S = 6, plus a word of 3-5, 7-15 checks, 20,385,216): 0, chance 0.0002. Nothing to decrypt. Gauge (lags 1-19, 4 checks): 54 passes against 55.5 predicted (mod 13 half 862 against 887), and no rank-deficient systems, so the filter behaves as chance says.",
+  "controls": "3 shuffled K4s, test A on a third of the alphabets each and B-D on the theme alphabets plus a third of the sample (about 90M settings each): 0, 0, 0 pass in every test. Gauges 18, 16, 10 against 18.5 predicted each.",
+  "planted": "6/6, each the only passing setting among 1,208 alphabets and read back with 0 wrong letters: double running sum (95/97 read), left plus above at width 7 (90/97), lags 3, 8, 13 with random multipliers on a KRYPTOS/A-Z numbering (84/97), mixed plain and cipher rule (96/97), left plus above at width 31 (test B, 66/97), feedback plus a word of 4 (test D, 96/97). The unread letters are the ones before the deepest cipher lag, which need the unknown primer.",
+  "tested": 539323380,
+  "scope_limits": "Keyword tableaux from the dictionary (plain keyword and two transposition-mixed forms), A-Z and KRYPTOS only; no hidden alphabet. Plain, cipher and fed cipher letters each numbered on M, A-Z or KRYPTOS; plain feedback letters use the plain numbering. Linear mod 26 only, s = +/-1 on the plain letter (no other multiplier on P). Test A on all alphabets; tests B-D only on the 254 theme alphabets and every 15th dictionary alphabet (44,450). Order 16+ with arbitrary lags is not decided (only the sparse shapes in B). Non-linear feedback (a table of the fed letter) is not covered here (idea 117 for single lags). A word key longer than 5 on top of feedback, or a drift term, is not covered. The rule must run unbroken through the clue letters with the carved positions (feedback reaches back into the ciphertext, which is known).",
+  "negative": {
+    "family": "linear cipher feedback, multi-lag",
+    "hypothesis": "Each K4 cipher letter is the plain letter (plus or minus) plus a fixed linear mix of earlier cipher letters (any lags 1-15, or worksheet shapes to 96 back), optionally with plain feedback and a constant or a repeating word of 3-5, on a keyword tableau.",
+    "scope": "Order 15 + constant on 666,993 dictionary/mixed alphabets x numberings of plain, cipher and fed letters on M/A-Z/KRYPTOS x sign; 126 sparse shapes {1,w},{w-1,w,w+1},{1,w,w+1},{w,2w} (w<=48, lag>15); cipher+plain feedback R+S<=8; R+S=6 plus a word of 3-5; B-D on the theme alphabets and 1 in 15 of the dictionary. 268.3M settings on K4, 7-21 exact checks each.",
+    "outcome": "Dead: 0 of 268.3M settings pass (chance 0.008); gauge at 4 checks 54 vs 55.5 predicted (controls: 3 shuffled K4s, 0 passes each, gauges 18, 16, 10 vs 18.5; planted 6/6, each the only survivor, 0 wrong letters)",
+    "confidence": "solid"
+  },
+  "follow_ups": [
+    "Allow any unit multiplier u on the plain letter (u nP(P) instead of +/-P): 12 times the settings, same solve, still 8 checks.",
+    "Tests B-D on the full dictionary (about 40 ms per alphabet, about 7 CPU hours) if a worksheet shape becomes favoured by a new clue."
+  ]
+}
