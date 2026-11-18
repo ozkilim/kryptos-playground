@@ -1,0 +1,21 @@
+{
+  "id": 87,
+  "title": "Free choice per letter between Vigenere/Beaufort/variant (one tableau) or between two tableaux, with a repeating or sliding key, on 220,318 keyword alphabets",
+  "verdict": "dead-in-scope",
+  "k4_result": "167,589,803 settings. 0 pass at strength 7+ (chance bound 0.0004), 0 at 5-7 (bound 0.24). Strength 3-5 (undecided): repeating 0 (bound 109), sliding 18 (bound 76). Nothing reached the reading stage.",
+  "controls": "3 shuffled K4s, each on A-Z and a different third of the alphabets (55.8M-55.9M settings each): 0 at 7+, 0 at 5-7 in all three; strength 3-5: repeating 3/1/0, sliding 2/1/4 (scaled x3: 9/3/0 and 6/3/12, K4 0 and 18).",
+  "planted": "4/4: KRYPTOS Vig/Beau key LANTERN, dictionary M/AZ Vig/Beau key UNDERGROUND, dictionary-vs-A-Z tableau choice key COMPASS, A-Z Vig/Beau sliding word BERLIN; all a coin flip per letter, each true setting over the bar (strength 9.2-12.5) among ~4.2M settings, read back 90-98% of letters at -4.14 to -4.42, no survivor without the planted text read as English",
+  "tested": 167589803,
+  "scope_limits": "Strength 7 is reached only for short keys (exact on K4's clue letters, varies by alphabet): 2-way choice repeating L up to 11-14 (at least 11), sliding up to 10-12 (at least 10); 3-way form choice repeating up to 9-10, sliding 8-9; 4-way (Vig/Beau x two tableaux) up to 7-9. Longer keys up to 17 were tested but are not decided. Keys longer than 17 not run. Alphabets: A-Z, KRYPTOS and 220,316 dictionary keyword alphabets in the 5 layouts of idea 66; no transposition-mixed or hidden alphabets. The two-tableau choice was tested only with a repeating key, only with M paired with A-Z or KRYPTOS, and with the key letter named on each tableau's own alphabet. No choice among more than 3 forms or 4 systems, no autokey or running keys, no transposition.",
+  "negative": {
+    "family": "free per-letter choice of system (Vig/Beau/variant or two tableaux)",
+    "hypothesis": "K4 uses one repeating (or sliding) key, and at each letter the encoder freely chose between Vigenere, Beaufort and variant Beaufort on one keyword tableau, or between two tableaux, so the reader tries each and keeps what reads.",
+    "scope": "A-Z, KRYPTOS and 220,316 dictionary keyword alphabets; 5 layouts (M/M, M/AZ, AZ/M, M/KR, KR/M); choice sets {V,B}, {V,var}, {B,var}, {V,B,var}; tableau choice M|AZ and M|KR in one form or Vig/Beau on both; repeating key L 1-17, sliding key L 1-17 (form choice only); bar = strength 7, where strength = -log26 of the expected chance solutions",
+    "outcome": "Dead for 2-way choice with repeating key length up to 11 (sliding up to 10), 3-way up to 9 (sliding 8), 4-way up to 7 (longer where the alphabet allows: 2-way up to 14): 0 of 167.6M settings at strength 7+ and 0 at 5+ (controls: 3 shuffled K4s on a third of the alphabets each, 0 and 0; planted 4/4 found and read back 90-98%). Longer keys up to 17 tested but too weak to decide.",
+    "confidence": "solid"
+  },
+  "follow_ups": [
+    "Free per-letter choice of form on transposition-mixed (~cols/~keyed) and the idea-89 non-keyword alphabets: same bitmask test, about 10 minutes.",
+    "Free choice where the encoder's rule is 'pick whichever system gives a letter not yet used much' (count-flattening): this makes the choice sequence computable from the plaintext, which gives an exact test instead of a set test."
+  ]
+}
