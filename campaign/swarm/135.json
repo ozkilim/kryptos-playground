@@ -1,0 +1,21 @@
+{
+  "id": 135,
+  "title": "Cipher-fed state device C = F(s + h(P)), s += g(C) mod 26..31: one side a dictionary keyword alphabet (other side and g hidden), and both sides any two keyword alphabets (only g hidden)",
+  "verdict": "dead-in-scope",
+  "k4_result": "Check count first: K4's 22 fed clue letters repeat 8 times, so 8 equations. With one side known they hold 13 (plain side known) or 12 (cipher side known) unknown table places at full rank in every modulus: 0 linear checks. Only the rule that different letters need different values bites, and it is exact per alphabet: F hidden, 53-59% of 666,993 alphabets fit (310,788 proved impossible at m=26); h hidden, 88-90% fit. Both sides known, any pair of keyword alphabets, both signs: 8 exact checks, 17 hits of 5.34e12 pairs (13.9 expected by chance); all 17 read on English, best -5.689 on the big model (coverage 0.46), 0 above -5.1.",
+  "controls": "3 shuffled K4s (seeds 13500-13502). One side known, on a third of the alphabets each: F hidden fits 0.6%, 2.0%, 2.9%; h hidden fits 33-48%, 100%, 79-82% (the fit rate depends on how the cipher letters repeat: the controls have 11, 8, 8 equations). Both sides known: 0, 6 and 21 hits; best readings -, -5.984, -5.472. K4's best (-5.689) is below control #3.",
+  "planted": "5/5. One side known (m=26 and 29 with F hidden, m=26 with h hidden): the true alphabet fits 3/3, but 5,519, 0 and 4,414 of 9,000 decoys fit too, so it is not singled out except at m=29. Both sides known (m=26, m=29): found by the join among 9,000 x 9,000 alphabets 2/2, read back 93/97 and 97/97, ranked first.",
+  "tested": 5338563948504,
+  "scope_limits": "Layouts with one side hidden are decided only by the distinct-values rule; the 53-90% of alphabets that pass it cannot be judged from 24 clue letters (about 40 free table values against 73 unknown letters), so that class stays open, and so does the case with both tables hidden. Covered: dictionary keyword alphabets with their two transposition-mixed forms, A-Z and KRYPTOS (666,993), m = 26..31, state moved by the cipher letter just written (not the one before, not position or key-word steps). One-to-one F only; m = 13 and 2 cannot hold one (14 different clue cipher letters). For m > 26 the whole 97 letters must avoid values with no letter; only the readings enforce that. Layout-C readings come from a beam search plus hill climbing; on 10 planted texts it read back 89-97 of 97. Only 2 of shuffled #2's 6 hits gave a reading; the others could not close the gap between the clues.",
+  "negative": {
+    "family": "cipher-fed state device, keyword side",
+    "hypothesis": "K4 comes from a device C = F(s + h(P)), s += g(C) mod m, with F^-1 and h both keyword alphabets (any two, either relative sign) and a hidden step table g; or with one of them a keyword alphabet and the other hidden.",
+    "scope": "666,993 dictionary and transposition-mixed keyword alphabets incl. A-Z and KRYPTOS; m = 26..31; both sides known: every ordered pair x 2 signs (5.34e12 settings, 8 exact checks); one side known: every alphabet, exact distinct-values test for both layouts.",
+    "outcome": "Dead with both sides known: 17 hits vs 13.9 by chance, best reading -5.689, none English (controls 0/6/21 hits, best -5.984/-5.472; planted 2/2 found and read back 93/97, 97/97). One side known: 0 linear checks; 47% (F hidden) and 12% (h hidden) of alphabets proved impossible, the rest cannot be judged (planted true alphabets fit 3/3).",
+    "confidence": "partial"
+  },
+  "follow_ups": [
+    "The one-side-known survivors could be scored by a hill climb over F (or h) and g on English, but with about 40 free values against 73 unknown letters, controls would score as well; it needs a constraint on g (e.g. g = a keyword alphabet index too) to become decidable.",
+    "g as a keyword alphabet index (state moves by the cipher letter's place in the same or another keyword alphabet) adds 8 more checks and would make layout A/B decidable."
+  ]
+}

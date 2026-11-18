@@ -1,0 +1,21 @@
+{
+  "id": 137,
+  "title": "Quagmire III Beaufort (one arbitrary alphabet both sides), repeating key 23 and 26: parallel-tempering English search over full alphabets with the clue equations hard; Vigenere form closed exactly",
+  "verdict": "no-signal",
+  "k4_result": "Vigenere form (x[C]-x[P]): no alphabet at L=23 (the clues force x[P]=x[R]) or L=26 (x[F]=x[E]), so it needs no search. Beaufort form, best of 3 tempering runs: L=23 -5.212 on the big model (word cover 0.62), text BWHENSTOGCANTOODCWSAMEASTNORTHEASTOBEDROPNLKFMULLDIFINEIFYACLIMBERLINCLOCKELTAREDOITFARIMOBJPDTDP, which is gibberish. L=26 -5.279 (cover 0.42), QJKARLBECFCINTTBESMGLEASTNORTHEASTTARACTHEDFFDSLEAVCPUACAKEDWHYBERLINCLOCKECHRHAREPYNZISASTLESBYT, gibberish. Every state visited decrypts all 24 clue letters exactly.",
+  "controls": "10 shuffled K4s per length, each satisfiable at that length (exact check), same budget. L=23: -5.429 to -5.130, median -5.273; 1/10 at or above K4 (K4 ranks 2nd of 11). L=26: -5.350 to -4.967, median -5.134; 8/10 at or above K4. K4 sits inside the controls. Like K4's best readings, the control readings are gibberish that still scores -5.0 to -5.4.",
+  "planted": "Mechanics check 8/8: started one swap away from the planted alphabet with random free key values, the climber came back to the truth exactly (97/97 letters). Real test from a cold start, same budget as K4: 0/8. L=23: found -5.03 to -5.10 against truths of -4.19 to -4.64, 39-48 of 97 letters right (24 of them are the clue letters). L=26: found -4.90 to -5.12 against truths of -4.03 to -4.66, 32-43 letters right. One extra run at 7.5x the budget (15,000 sweeps) on an L=23 plant reached -5.06 against a truth of -4.58, no better than the normal budget.",
+  "tested": 360000012,
+  "scope_limits": "Not a negative for the cipher. The search cannot find a planted answer from a cold start (0/8), so it would very likely have missed the true K4 alphabet too. Searched: 2 lengths x 15 texts x 3 parallel-tempering runs x 2,500 rounds x 8 replicas x 200 moves (4M moves per run; 360M decrypts in all), big quadgram model, clue equations exact. The truth is a sharp local optimum: in tests, 3 random swaps away from it the climber usually failed to come back, and 6 swaps away it never did. The decoy optima score -4.9 to -5.4, close to the -5.1 'English' line, so at these lengths a quadgram score alone cannot judge a reading. Covered: Quagmire III, one alphabet on both sides, plain repeating key 23 or 26, carved clue positions. Not covered: other key rules, Quagmire I/II/IV, transposition layers, gap slack.",
+  "negative": {
+    "family": "Quagmire III arbitrary alphabet",
+    "hypothesis": "K4 is Quagmire III in the Beaufort form (key = x[C] + x[P] on one unknown mixed alphabet) with a repeating key of length 23 or 26, which idea 130 left satisfiable.",
+    "scope": "Beaufort form, L=23 and 26, any alphabet, clue equations hard; 3 parallel-tempering runs (4M moves each) on the big quadgram model per text; Vigenere form at 23 and 26 decided exactly.",
+    "outcome": "No signal within annealer power: K4 best -5.212 (L=23) and -5.279 (L=26), gibberish (controls: 1/10 and 8/10 satisfiable shuffles at or above K4; planted from a cold start 0/8, near-truth mechanics 8/8). Vigenere form dead at both lengths (x[P]=x[R], x[F]=x[E]).",
+    "confidence": "partial"
+  },
+  "follow_ups": [
+    "Use a stronger solver for Quagmire III with a long key and a hidden alphabet than swap-based tempering: a beam or tree search that assigns letter places one at a time and scores only fully known quadgrams, or a search over the key differences that uses the fact that column substitutions compose to shifts in the mixed alphabet (S_r' after S_r is a shift by k_r' - k_r). Gate it on cold-start planted recovery at L=23 before running it on K4.",
+    "At these lengths, a reading that scores around -5.0 means nothing: decoys and shuffled controls reach -4.97. Any future judge at L=23/26 should demand much better than -4.9, plus word coverage and a human read."
+  ]
+}

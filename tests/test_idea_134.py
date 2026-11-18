@@ -6,7 +6,7 @@ from pathlib import Path
 
 from kryptos import CRIBS, K4
 from kryptos.ciphers import AZ
-from kryptos.idea134_onestrip import decrypt, encrypt, solve, test
+from kryptos.idea134_onestrip import decrypt, encrypt, solve, test as strip_test
 from kryptos.round11 import POS, english97
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -29,7 +29,7 @@ def test_solver_recovers_planted_wiring_and_text():
         s = [key[i % 3] for i in range(97)]
         t = [(5 + i // 3) % 26 for i in range(97)]
         cv = encrypt([AZ.index(ch) for ch in pt], r, s, t)
-        status, sols, _ = test([AZ.index(pt[i]) for i in POS], [cv[i] for i in POS],
+        status, sols, _ = strip_test([AZ.index(pt[i]) for i in POS], [cv[i] for i in POS],
                                [s[i] for i in POS], [t[i] for i in POS])
         assert status == "alive"
         w = sols[0]
@@ -46,7 +46,7 @@ def test_random_settings_die_on_k4():
     for _ in range(300):
         s = [rng.randrange(26) for _ in POS]
         t = [rng.randrange(26) for _ in POS]
-        assert test(pv, cv, s, t)[0] == "dead"
+        assert strip_test(pv, cv, s, t)[0] == "dead"
 
 
 def test_attack_finds_planted_speed_pair():
