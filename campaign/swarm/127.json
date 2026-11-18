@@ -1,0 +1,21 @@
+{
+  "id": 127,
+  "title": "Gromark (chain-addition digit keys, bases 3-16) with one dictionary keyword alphabet and the other alphabet free: exact hash join on the clue pairs",
+  "verdict": "dead-in-scope",
+  "k4_result": "0 survivors. 2 signature hits on side A out of 134,945,192 primers x 666,993 alphabets x 2 forms x 2 sides; both failed the distinct-slot check. Nothing to decrypt.",
+  "controls": "3 shuffled K4s (seeds 1271, 1272, 1274: the first shuffles with 8+ equal-cipher-letter clue pairs, K4 has 10): 2, 2 and 0 survivors (944, 25, 0 signature hits). Their best completions on the big model are gibberish: -6.710 (SANIOUS~cols, fib base 8) and -6.714 (SCREENLIKE, ends base 13), word cover 0.45 and 0.37. K4 has fewer survivors than two of the three controls, as its 10 pairs predict.",
+  "planted": "2/2 found in the full search and ranked first by completion. Base-10 5-digit Gromark, dictionary plain alphabet WEALTHMONGER~keyed, random cipher alphabet: true setting found among 752 survivors (this plaintext gave only 6 equal-cipher pairs, so the side-A test was weak for it); forced text 74/97 letters right, completion 94/97 at -4.481, top of 752. Base-12 5-digit mirrored (dictionary cipher alphabet SLOSHER~cols, random plain alphabet, subtractive form): found among 5 survivors (the other 4 are neighbouring alphabets SHOOLER/SHOOTER/SHOPPER/SLOGGER~cols with the same primer); forced 78/97, completion 94/97 at -4.423, top. In the smoke run (6,002 alphabets) both read back 97/97.",
+  "tested": 360029993790624,
+  "scope_limits": "Only these key rules: d_i = d_{i-n}+d_{i-n+1} (Gromark) for primer lengths 2-7 with b^n <= 20M (base 10 and 11 to 7 digits, bases 12-16 to 6); d_i = d_{i-n}+d_{i-n+1}+d_{i-n+2} and d_i = d_{i-n}+d_{i-1} for lengths 3-7 with b^n <= 5M. The digit is added straight to the alphabet position mod 26 (forms + and -; Beaufort is the same test). Alphabets: the 666,993 dictionary keyword alphabets and their two transposition-mixed forms (round 11 list); one side such an alphabet, the other any permutation. Not covered: both alphabets free (idea 19/41, judged by completion only), longer primers in bases 12-16, other tap pairs or multipliers, digit streams with carries or a keyed digit-to-letter step, non-keyword alphabets (idea 89 list), a transposition layer, any wrong clue letter.",
+  "negative": {
+    "family": "Gromark / chain-addition digit key, one keyword alphabet",
+    "hypothesis": "K4 is a Gromark-type cipher (chain-addition digit key in base 3-16) with one alphabet a dictionary keyword alphabet, as in K1/K2, and the other alphabet arbitrary.",
+    "scope": "666,993 dictionary and transposition-mixed keyword alphabets on the plain side (cipher side free) or on the cipher side (plain side free); 134,945,192 primers: Gromark taps (n, n-1) primer lengths 2-7 up to 20M per base/length, three-term taps and end taps (n, 1) lengths 3-7 up to 5M; bases 3-16; additive and subtractive forms; exact on the 24 clue letters (equal pairs joined, distinct slots checked).",
+    "outcome": "Dead: 0 of 3.6e14 settings fit the clues (controls 2, 2, 0 chance survivors, gibberish at -6.71; planted 2/2 found and ranked first, 94/97 letters read back).",
+    "confidence": "solid"
+  },
+  "follow_ups": [
+    "The same join with the idea 89 non-keyword alphabets (140,752) on the fixed side costs about 3 minutes more; it would close the 'one known alphabet' Gromark for every alphabet list we have.",
+    "Gromark with a keyed digit-to-letter step (the digit chooses a row of a keyword tableau rather than a straight shift) is a different, still untested variant."
+  ]
+}
