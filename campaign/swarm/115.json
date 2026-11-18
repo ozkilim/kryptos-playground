@@ -1,0 +1,21 @@
+{
+  "id": 115,
+  "title": "Key = two sculpture texts added or subtracted (K = T1 +- T2 + c), plus one text with a repeating or sliding word, exact hash join on the 24 clue letters",
+  "verdict": "dead-in-scope",
+  "k4_result": "0 hits. Part A (two texts): 361,112,192 hash lookups covering 2.38e12 window pairs per block; block 1 alone (13 letters, 12 checks) 0 hits, chance 2.5e-05; block 2 alone (11 letters, 10 checks) 0 hits, chance 0.017; both blocks at the true gap (23 checks) 0, chance 6e-21; other block with 8+ letters right at a gap shifted by up to 30: 0. Closest: 10 of 13 letters in block 1 (8 prefix candidates), 9 of 11 in block 2 (66). Part B (one text + repeating word L 1-10, text + sliding word L 1-10, running sum of a text + repeating word L 1-10): 1,693,516,160 window-tests, 0 hits, chance 2e-11. Nothing to decrypt.",
+  "controls": "5 shuffled K4s, same full search: 0 hits in every part for all five. Closest in block 1: 10 of 13 for all five (14, 18, 26, 4, 4 candidates; K4 8); block 2: 9 of 11 (62, 44, 124, 104, 98; K4 66), one shuffle reached 10 of 11 (4 candidates). K4 sits inside the controls.",
+  "planted": "6/6 found, each the only reading (all full-24 settings, including equivalent duplicates from overlapping texts, decrypt to the planted text) and read back 97/97: K3 plain minus K3 cipher at two offsets on KRYPTOS; a K2 line plus a tableau column on A-Z (Beaufort); tableau rows backwards minus K4 backwards on PALIMPSEST M/AZ; cipher panel columns plus SHADOW; running sum of K1-K3 plain plus LAYER; K1-K3 cipher backwards plus sliding BERLIN",
+  "tested": 2054628352,
+  "scope_limits": "Only the 20 texts listed (K1-K3 plain carved/corrected, K1-K3 cipher carved/K2-corrected, cipher and tableau panels by rows and by columns, Morse, K4 cipher; each forwards and backwards), read straight (no skips, diagonals or other walks), one letter per K4 letter. Text letters numbered on A-Z or KRYPTOS only (not on the theme alphabet itself, so no true Quagmire key lookup on a keyed alphabet). Tableaux: A-Z, KRYPTOS and 84 theme keyword alphabets (no dictionary alphabets, no hidden alphabets). Key = +-T1 +- T2 + constant only (no multipliers, no third text). Gap: the two texts move together; shifts up to 30 scanned only from a block hit. Part B words: lengths 1-10. Any key text not on the sculpture is outside this search.",
+  "negative": {
+    "family": "running key (two sculpture texts combined)",
+    "hypothesis": "K4's key is the sum or difference of two texts carved on the sculpture, each read straight from some start, or one such text plus a short repeating or sliding word.",
+    "scope": "20 sculpture texts (K1-K3 plain/cipher carved and corrected, both panels by rows and columns, Morse, K4; forwards and backwards), every start, letters on A-Z or KRYPTOS, free constant; K = +-T1 +- T2 + c; views C-P, P-C, C+P, -C-P on A-Z/KRYPTOS tableaux (4 layouts) and 84 theme alphabets (5 layouts); each clue block alone, both blocks at the true gap and shifted up to 30; Part B: text + repeating word L 1-10, text + sliding word L 1-10, running sum of text (from 0 or 1) + repeating word L 1-10",
+    "outcome": "Dead: 0 hits for each block alone (12 and 10 checks; chance 2.5e-05 and 0.017) and 0 for all 24 letters; Part B 0 of 1.69e9 window-tests (controls: 5 shuffled K4s, 0 hits each, same near-miss levels as K4; planted 6/6 found as the only reading and read back 97/97)",
+    "confidence": "solid"
+  },
+  "follow_ups": [
+    "Same join with the text letters numbered on the keyed alphabet itself (true Quagmire key lookup) and on the 666,993 dictionary alphabets: about 2.25x the lookups per alphabet, cheap for the theme set, a few hours for the full dictionary.",
+    "Same join with the other walks of attack 58 (diagonals, back-and-forth, every d-th letter) as the second text: the hash table holds any number of streams at no extra lookup cost."
+  ]
+}
