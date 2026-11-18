@@ -1,0 +1,21 @@
+{
+  "id": 122,
+  "title": "Clue blocks enciphered as separate runs: free key phase at BERLINCLOCK (and at NORTHEAST) for repeating, sliding, autokey+word, progressive and two stacked keys on 666,993 keyword tableaux",
+  "verdict": "dead-in-scope",
+  "k4_result": "0 of 37,018,100,400 exact tests pass (6,669,928 key streams x 5,550 free-phase settings; chance predicts 0.28). Nothing to read. Gauge (settings with 5-6 checks, plus 3-run autokey at exactly 7): 3 passes, chance predicts 9.2.",
+  "controls": "3 shuffled K4s, each on A-Z, KRYPTOS and a different third of the alphabets (about 2.22M key streams, 12.3 billion tests each): 0, 1, 0 passes (chance 0.09 each); the one pass reads as gibberish (big model -8.23; English needs -5.1). Gauge 2, 1, 1 (chance 3.1 each). K4 sits inside the controls; K4 and controls are both below the uniform-chance gauge prediction by about the same factor.",
+  "planted": "4/4 found with the phase named and read back 97/97 (big model -4.31 to -4.58): repeating 9 restarted at a sentence start between the clues (phase 7, 15 checks); sliding 6 with the two sentences enciphered in swapped order (phase 5, 16 checks); stacked 4+7 with both words restarted (phases 3,5, 14 checks); repeating 7 restarted at NORTHEAST and again between the clues (phases 3,6, 17 checks). Each among 20,000 decoy alphabets; every pass was on the planted alphabet, the break point was recovered by the reading stage.",
+  "tested": 37018100400,
+  "scope_limits": "Keyword tableaux from the repository vocabulary only (plain keyword alphabets and both transposition-mixed forms, A-Z, KRYPTOS; 666,993), five layouts, Vigenere and Beaufort; no hidden alphabets. Two runs (EASTNORTHEAST | BERLINCLOCK): repeating and sliding L 2-16, autokey (plain/cipher feed, lags 1-6, both signs, fed letter numbered on the keyword alphabet only) with a repeating word L 2-16 on top, progressive p 1-12 with free pass count (any phase incl. 0, step not 0), two stacked words p<q<=9 with a free phase in each. Three runs (EAST | NORTHEAST | BERLINCLOCK): repeating, sliding, autokey+word L 2-9 only; no stacked or progressive over three runs. Carved phase (0) left out except for progressive. Longer keys (L above 16, stacked q above 9) not decided. A restart inside BERLINCLOCK or more restarts inside the clues are not covered (round 8 closed restarts inside BERLINCLOCK). 7+ checks needed (8 for 3-run autokey, where 7 would let in 0.26 chance passes).",
+  "negative": {
+    "family": "Sentence strips enciphered separately (free key phase between clue blocks)",
+    "hypothesis": "Each sentence (or the two clue sentences in another order) was enciphered on its own on a keyword tableau, so the key is continuous inside each clue but its phase at BERLINCLOCK (and possibly at NORTHEAST) is unrelated to the carved 42-letter gap.",
+    "scope": "666,993 keyword alphabets (dictionary keyword alphabets, both transposition-mixed forms, A-Z, KRYPTOS) x 5 layouts x Vigenere/Beaufort = 6,669,928 key streams x 5,550 settings. Two runs with free phase: repeating and sliding L 2-16, plain/cipher autokey lags 1-6 both signs with a restarting word L 2-16 on top, progressive p 1-12 with free pass count, two stacked words p<q<=9 with independent free phases (exact loop test). Three runs EAST|NORTHEAST|BERLINCLOCK with two free phases: repeating, sliding, autokey+word L 2-9. 7+ exact checks (8 for 3-run autokey).",
+    "outcome": "Dead: 0 of 37,018,100,400 tests pass on K4 (chance 0.28); 3 shuffled K4s on a third of the alphabets each: 0, 1, 0 (chance 0.09 each, the one pass reads -8.23); planted 4/4 found with phase named and read 97/97.",
+    "confidence": "solid"
+  },
+  "follow_ups": [
+    "Run the same free-phase test on the non-keyword alphabets of attack 89 (QWERTY, Morse order, historic alphabets): same code, a few minutes.",
+    "Free phase with a hidden alphabet: for a repeating key of length L the free phase only adds L-1 cases to the exact linear systems of kryptos/round9.py (distinct-positions rule as in attack 67), so it could be tested for L up to about 9."
+  ]
+}
