@@ -769,5 +769,12 @@
   "script": "attacks/118_close_audit_holes.py",
   "est_min": 35,
   "why": "Idea 105 fed textbook messages to twenty attacks and found places where K4 was never tested although the negatives say it was: a bug in attack 90, a skipped lag range in 59, progressive and stacked keys in 88, and four convention gaps. Idea 104 closed only the stacked pairs of 68, 70, 71B and 81. Each remaining hole is a region where a simple remembered-key cipher (Scheidt 2011) could still sit."
+ },
+ {
+  "id": "119",
+  "title": "Key added to the message as a long number with carries (base 26 from 0 / base 27 from 1), add/sub/Beaufort, carries right-to-left and left-to-right, optional row restarts; repeating, sliding, progressive keys L 1-12",
+  "script": "attacks/119_key_added_with_carries.py",
+  "est_min": 67,
+  "why": "Scheidt: I could have moved to a different math base; the cipher is simple and can be remembered. Every exact test so far adds key and text letter by letter with no carry. If the message and the repeated key word were added as two long numbers in base 26, each cipher letter is plain + key + a carry of 0 or 1 that depends on the next letter, so the key values the clues force differ by one in an irregular way and every repeating-key test fails on a short word."
  }
 ]
