@@ -895,5 +895,12 @@
   "script": "attacks/137_quagmire3_beaufort_23_26_climb.py",
   "est_min": 48,
   "why": "Idea 130 closed Quagmire III Beaufort (key = x[C]+x[P] on one hidden alphabet) for every alphabet at lengths 1-26 except 23 and 26, where K4 and many shuffles stay satisfiable; these are the last two repeating-key lengths of the K1/K2 machine with an arbitrary alphabet, so only an English score can judge them."
+ },
+ {
+  "id": "136",
+  "title": "Plain autokey lags 5-12 back / 7-12 ahead on a half-hidden tableau (one dictionary alphabet, one free)",
+  "script": "attacks/136_half_hidden_autokey.py",
+  "est_min": 67,
+  "why": "Idea 117 left plaintext autokey 5-12 letters back alive on every Latin-square tableau and undecided on one hidden alphabet. Ideas 90 and 100 tested only tableaux whose two sides are both known. The half-hidden form (one keyword alphabet, one written freely: Sanborn's 'modified so Scheidt couldn't decipher it') sits between the two and has enough clue equations at these lags to decide it exactly."
  }
 ]
