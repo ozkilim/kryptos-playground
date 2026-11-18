@@ -832,5 +832,12 @@
   "script": "attacks/126_hidden_readings_k1k3.py",
   "est_min": 76,
   "why": "Sanborn 2005: he left instructions in the earlier text that refer to later text; 2006: the answers to the first three passages contain clues to the fourth. Wartime letter codes hid a message in the first or n-th letters of words. Earlier work used such letters only as K4 keys (ruled out); nobody here has tested whether they READ as a message, which needs no K4 and no cipher model and would give the missing method directly."
+ },
+ {
+  "id": "128",
+  "title": "Two-word keys (A+B and sandwich A+B+A, repeating, every phase, L 4-26) on one hidden alphabet: true Quagmire III (C = P + K, P - K, K - P), true Quagmire II, and idea 93's numeric one-alphabet model (repeating and sliding), joined through the forced key slots and solved exactly",
+  "script": "attacks/128_two_word_keys_hidden_tableau.py",
+  "est_min": 61,
+  "why": "Scheidt said the key is remembered 'key word/s', and idea 93 closed single known words on a fully hidden alphabet but not two words written one after the other. On any one-alphabet tableau, S->S at 33 with K->K at 74 and R->P at 28 and 66 force equal key letters, and about 60 pairs are forced different: conditions on the key alone, which split by word."
  }
 ]
