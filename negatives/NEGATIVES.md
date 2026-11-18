@@ -2985,10 +2985,6 @@ Every K4 experiment run through `kryptos.harness.Experiment` that found no full 
   - Scope: 160,116 hypotheses/candidates. 7 layouts (one hidden alphabet both sides vig/beau; hidden plain or cipher side vs A-Z/KRYPTOS; two hidden alphabets), smallest circular window w any arrangement allows, exact backtracking; all clues and each block; 200 shuffled controls; 3 planted texts x 3 small-number keys
   - Outcome: 0 full crib passes; best decrypt matched 2/24 clue letters
   - Solid elimination · this repo, 2026-11-18 · experiments/ledger.csv
-- **Quagmire IV both alphabets hidden, key length 8 (repeating and sliding W=13)**
-  - Scope: 171,092,412 hypotheses/candidates. exhaustive placings of the 13 clue plain letters closing the 4 loops at L=8 (up to shift and unit multiple), forced-letter Markov score, top 300 completed; no signal: K4 does not beat the shuffled controls (planted ranked first 0/4)
-  - Outcome: 0 full crib passes
-  - Solid elimination · this repo, 2026-11-18 · experiments/ledger.csv
 - **free choice per letter between Vig/Beau/variant or two tableaux, repeating or sliding key**
   - Scope: 167,589,803 hypotheses/candidates. label sets per clue letter, classes must intersect; 220318 alphabets x 5 layouts x 4 form sets + tableau sets (M|AZ, M|KR); repeating L 1-17, sliding L 1-17 (strength>=3); bar = strength 7; 3 shuffled K4s; beam read on big model
   - Outcome: 0 full crib passes
@@ -3015,6 +3011,10 @@ Every K4 experiment run through `kryptos.harness.Experiment` that found no full 
   - Solid elimination · this repo, 2026-11-18 · experiments/ledger.csv
 - **idea115-two-sculpture-texts**
   - Scope: 12,327,770,112 hypotheses/candidates. K = T1 +- T2 (+c), 20 sculpture texts, all starts; A-Z/KRYPTOS + 84 theme alphabets; blocks alone, gap scan, part B text + word
+  - Outcome: 0 full crib passes
+  - Solid elimination · this repo, 2026-11-18 · experiments/ledger.csv
+- **Quagmire IV both alphabets hidden, key length 8 (repeating and sliding W=13)**
+  - Scope: 171,092,412 hypotheses/candidates. exhaustive placings of the 13 clue plain letters closing the 4 loops at L=8 (up to shift and unit multiple), forced-letter Markov score, top 300 completed; no signal: K4 does not beat the shuffled controls (planted ranked first 0/4)
   - Outcome: 0 full crib passes
   - Solid elimination · this repo, 2026-11-18 · experiments/ledger.csv
 

@@ -748,5 +748,12 @@
   "script": "attacks/115_two_sculpture_texts.py",
   "est_min": 14,
   "why": "K2 ends LAYER TWO, Sanborn says the first three answers contain clues to the fourth and that the solver needs just to be able to read. One sculpture text as a running key is dead (best 10 of 24), and two stacked keys were closed only for repeating words and phrases. Two running texts laid over each other, for example K3 plaintext against K3 ciphertext or a K2 line against a tableau row, give a key that never repeats and that no test so far can see, yet the 24 forced key letters decide it exactly."
+ },
+ {
+  "id": "116",
+  "title": "Encoder picks one of two (or three) systems per letter with a repeating or sliding key: duplicate of idea 87, which did run",
+  "script": "",
+  "est_min": 1,
+  "why": "Idea 87 failed at start-up after 7 seconds and was never tested. Scheidt masked the English language; Sanborn 1990: two separate systems; 2019: the solver needs just to be able to read. If the encoder was free at each letter to use either of two systems, whichever flattens the counts, the reader tries both and keeps the one that reads. Idea 60 tested switching between fixed rows and rule-based switching; a repeating key word with a free choice of form at every letter was never tested."
  }
 ]
