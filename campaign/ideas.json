@@ -755,5 +755,12 @@
   "script": "",
   "est_min": 1,
   "why": "Idea 87 failed at start-up after 7 seconds and was never tested. Scheidt masked the English language; Sanborn 1990: two separate systems; 2019: the solver needs just to be able to read. If the encoder was free at each letter to use either of two systems, whichever flattens the counts, the reader tries both and keeps the one that reads. Idea 60 tested switching between fixed rows and rule-based switching; a repeating key word with a free choice of form at every letter was never tested."
+ },
+ {
+  "id": "117",
+  "title": "Fed-key models (plain/cipher autokey, idea-74 lag patterns, sculpture and K1-K3 running keys) tested on every Latin-square tableau, on one hidden alphabet, and with the key read on A-Z/KRYPTOS",
+  "script": "attacks/117_clash_on_every_tableau.py",
+  "est_min": 29,
+  "why": "Nearly every negative assumes the tableau is built from a keyword; the open gaps are mostly hidden alphabets. Idea 94 found a test that needs no alphabet at all: on any tableau with distinct rows and columns, the same key letter with the same plain letter must give the same cipher letter (it killed word autokey outright: T under T gives R at 28 and S at 33). Wherever the key letter inside the clues is itself a text letter, this decides the model for ALL tableaux at once, hidden ones included."
  }
 ]
