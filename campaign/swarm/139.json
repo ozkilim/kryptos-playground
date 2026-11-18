@@ -1,0 +1,21 @@
+{
+  "id": 139,
+  "title": "Four-square and two-square on 2x13 / 13x2 / 3x9 / 9x3 with all squares free: exact row/column capacity test, w = 1..48",
+  "verdict": "dead-in-scope",
+  "k4_result": "Four-square with ANY four squares: ordinary pairs (w = 1) impossible on 2x13 and 13x2 (0 of 4 settings: 2 starts x 2 orders), possible on 3x9 / 9x3 only at block start 0 (2 of 4 each). w = 7: impossible at every start, order and grid (0 of 28 per grid). w = 21: possible only at starts 5 and 26 (2 of 84 on 2x13/13x2, 3 of 84 on 3x9/9x3). Over w = 1..28: 211 of 1,624 settings possible on 2x13, 540 of 1,624 on 3x9. Two-square with ANY two squares: 0 possible at w = 1, 7, 21 on all grids; over w = 1..28 only 4 settings (9x3, w = 16 and 27), the same as idea 103's quick test. 0 undecided of 37,632 settings.",
+  "controls": "100 shuffled K4s, same code. w = 1 four-square: 56 of 100 have some feasible setting on 2x13 (mean 1.21 of 4; K4 0), 83 of 100 on 3x9 (mean 2.44; K4 2). w = 7 four-square: 95/100 feasible on 2x13 (mean 5.6; K4 0), 100/100 on 3x9 (mean 14.4; K4 0) - K4's zero is Bean's known w = 7 repeat (BQ), not a new signal. w = 21: means 4.65 (2x13) and 13.4 (3x9) vs K4 2 and 3. w = 1..28: four-square mean 216 (2x13) and 556 (3x9) vs K4 211 and 540. Two-square w = 1: 0 of 100 controls feasible on any grid (like K4). K4 looks like the shuffled texts.",
+  "planted": "57/57 random-square encryptions of English (four-square and two-square, all four grids, w = 1, 7, 21 and random) decided feasible and rebuilt into real squares that give back every clue letter; 32/32 more in the unit test",
+  "tested": 3800832,
+  "scope_limits": "Feasible is not a solution: where any squares fit (four-square 3x9/9x3 at w = 1 start 0; w = 21 starts 5 and 26; many wider pairings) the clues do not fix the squares and nothing can be decrypted - those settings stay open. Squares all the same shape, fixed for the whole message; textbook four-square rule and idea 103's two-square rule (vertical two-square = the turned grid), both output orders; the 27th cell is the ? or a null. Pairing letter i with i + w in blocks of 2w only; no transposition before or after, no nulls in the text, clue positions exact. Plain letters on the ? cell and the ? pair are allowed (makes the test weaker, not stronger).",
+  "negative": {
+    "family": "matrix codes on 26/27-cell rectangles (free squares)",
+    "hypothesis": "K4 is a four-square or two-square on 2x13, 13x2, 3x9 or 9x3 squares that can be any arrangement of the letters (no keyword), on letter pairs i, i + w.",
+    "scope": "All 2,352 pairings (w = 1..48, every block start) x 2 output orders x 4 grids x four-square / two-square, decided exactly (backtracking over the row and column of every letter in every square) for any squares at all.",
+    "outcome": "Dead for any squares: four-square at w = 1 on 2x13/13x2, at w = 7 everywhere, at w = 21 except starts 5 and 26; two-square at every w <= 28 except 9x3 w = 16, 27. Open (squares exist, unreadable): four-square 3x9/9x3 w = 1 start 0, w = 21 starts 5/26, 211-540 wider settings (controls: 100 shuffled K4s give the same or more feasible settings, e.g. w = 1 3x9 mean 2.44 vs K4 2; planted 57/57 feasible).",
+    "confidence": "solid"
+  },
+  "follow_ups": [
+    "Four-square on 3x9 / 9x3 at w = 1 block start 0 (the ? unpaired, pairs 0-1, 2-3, ...) is the one ordinary-pair matrix-code setting left alive for every square: attack it with keyword squares in all four positions (dictionary alphabets, rows/columns, ? first or last), hash-joining the four squares on the row/column labels this solver produces.",
+    "Same exact solver could test Playfair-like rules with a leave-in-place exception, or squares of 28 cells (4x7) with the ? and one null."
+  ]
+}
