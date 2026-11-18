@@ -804,5 +804,12 @@
   "script": "attacks/123_compass_steps_on_grid.py",
   "est_min": 13,
   "why": "The first clue is itself two compass bearings, the site has a compass rose, Sanborn used matrix codes and Scheidt taught shifting matrices, and Bean found the clue plain and cipher letters unusually close in the alphabet (1 in 5,520). If the alphabet is written in a grid and the key is a string of compass moves (N, NE, E ... or stay), close letters are sideways moves and the far ones are up or down moves. Idea 97 tested small windows of shifts only in one dimension; round 6 tested grid moves only with repeating wheels."
+ },
+ {
+  "id": "124",
+  "title": "Sentence key on a keyword tableau judged by growing plain and key together across the gap (beam on both strings, 20,000 best key-fragment settings)",
+  "script": "attacks/124_grow_key_and_message.py",
+  "est_min": 100,
+  "why": "Sanborn 2019: you just need to be able to read; Scheidt: the correct key word/s. A sentence used as the key on a keyword tableau was tested (ideas 57, 65, 89) only by scoring the 13 and 11 key letters the clues force, and the true key sat inside the noise in 1 of 4 planted runs, so the negative has a stated thin margin. A true setting has a property noise cannot copy: one letter further on, some plaintext letter makes BOTH the key and the message continue as English, and it keeps doing so."
  }
 ]
