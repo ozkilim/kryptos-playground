@@ -769,5 +769,19 @@
   "script": "attacks/118_close_audit_holes.py",
   "est_min": 35,
   "why": "Idea 105 fed textbook messages to twenty attacks and found places where K4 was never tested although the negatives say it was: a bug in attack 90, a skipped lag range in 59, progressive and stacked keys in 88, and four convention gaps. Idea 104 closed only the stacked pairs of 68, 70, 71B and 81. Each remaining hole is a region where a simple remembered-key cipher (Scheidt 2011) could still sit."
+ },
+ {
+  "id": "119",
+  "title": "Key added to the message as a long number with carries (base 26 from 0 / base 27 from 1), add/sub/Beaufort, carries right-to-left and left-to-right, optional row restarts; repeating, sliding, progressive keys L 1-12",
+  "script": "attacks/119_key_added_with_carries.py",
+  "est_min": 67,
+  "why": "Scheidt: I could have moved to a different math base; the cipher is simple and can be remembered. Every exact test so far adds key and text letter by letter with no carry. If the message and the repeated key word were added as two long numbers in base 26, each cipher letter is plain + key + a carry of 0 or 1 that depends on the next letter, so the key values the clues force differ by one in an irregular way and every repeating-key test fails on a short word."
+ },
+ {
+  "id": "120",
+  "title": "Known K1/K2 layer (ABSCISSA, PALIMPSEST, PALIMPCEST, KRYPTOS on the KRYPTOS or A-Z tableau, every phase, both directions, before or after) plus the full key-rule battery on a second keyword tableau",
+  "script": "attacks/120_known_first_layer.py",
+  "est_min": 86,
+  "why": "K2 ends LAYER TWO; Scheidt: two of the four processes are similar; the Cyrillic Projector shows Sanborn reusing the K1/K2 machine. If K4 was first run through the K2 or K1 chart (KRYPTOS tableau, ABSCISSA or PALIMPSEST) and then through a second, different chart, the clue letters seen by layer two are not EASTNORTHEAST and BERLINCLOCK, so the battery never tested the right letters. Idea 84 covered only two repeating keys; a known first layer with a sliding, progressive or autokey second layer is untested."
  }
 ]
