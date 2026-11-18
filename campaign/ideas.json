@@ -720,5 +720,19 @@
   "script": "attacks/87_free_choice_per_letter.py",
   "est_min": 24,
   "why": "Scheidt 'masked the English language'; Sanborn 1990: 'two separate systems'; 2019: the solver needs 'just to be able to read'. If the encoder was free to use either of two systems for each letter, picking whichever flattens the counts, the reader tries both and keeps the one that reads. Idea 60 tested free switching between fixed rows and rule-based switching with keys, and the community tested a fixed form per key letter; a repeating key word with a free choice of form at every letter has not been tested."
+ },
+ {
+  "id": "112",
+  "title": "Smallest window of the 24 clue key values that ANY hidden alphabet allows (exact), 7 layouts, all clues and each block alone",
+  "script": "attacks/112_hidden_alphabet_window.py",
+  "est_min": 124,
+  "why": "Bean: the clue plaintext and ciphertext letters sit unusually close in the alphabet (about 1 in 5,520), and the fingerprint ranking names small-shift keys under an unknown mixed alphabet as a top open target. Idea 97 measured the narrowest window of key values on 667k keyword tableaux (K4: 12, inside the controls) but only for listed alphabets. With the alphabet free it becomes a constraint problem that can be solved exactly."
+ },
+ {
+  "id": "113",
+  "title": "Quagmire IV with both alphabets hidden, key of 8 (repeating, and sliding with word sum 13): exhaustive placings of the 13 clue plain letters that close the 4 loops, scored by the forced letters, best 300 completed",
+  "script": "attacks/113_both_hidden_length8.py",
+  "est_min": 125,
+  "why": "ABSCISSA has 8 letters and the K3 grid is 8 wide; length 8 is the one short repeating key that K4's clue letters do not block when both alphabets are free, and the community annealers could not detect it. Idea 99 found that at length 8 the clue cipher letters fall into two pieces (11 and 3 letters) with 4 loop checks that involve only the places of the 13 clue plain letters, and that 54 further plaintext letters are then forced."
  }
 ]
