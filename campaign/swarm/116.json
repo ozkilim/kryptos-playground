@@ -1,0 +1,20 @@
+{
+  "id": 116,
+  "title": "Encoder picks one of two (or three) systems per letter with a repeating or sliding key: duplicate of idea 87, which did run",
+  "verdict": "duplicate",
+  "k4_result": "Not re-run. Idea 87 (attacks/87_free_choice_per_letter.py, commit f31f5a9, ledger line 304) already ran this exact plan: 167,589,803 settings, 0 at strength 7+ (chance bound 0.0004), 0 at 5-7 (bound 0.24); nothing reached the reading stage.",
+  "controls": "From idea 87: 3 shuffled K4s on A-Z plus a different third of the alphabets each (55.8M-55.9M settings each): 0 at 7+ and 0 at 5-7 in all three.",
+  "planted": "From idea 87: 4/4 (KRYPTOS Vig/Beau key LANTERN (7), dictionary M/AZ Vig/Beau key UNDERGROUND (11), dictionary-vs-A-Z tableau key COMPASS, A-Z sliding BERLIN; coin flip per letter; read back 90-98%). tests/test_idea_87.py re-run in this tree on 2026-11-17: 3/3 pass in 1.8 s.",
+  "tested": 0,
+  "scope_limits": "This card adds no new search. The scope is idea 87's: decided only for short keys (2-way repeating L up to 11, up to 14 on some alphabets; 2-way sliding up to 10; 3-way up to 9 repeating, 8 sliding; 4-way up to 7); L 12-17 run but too weak to decide; L above 17 not run; keyword alphabets only (A-Z, KRYPTOS, 220,316 dictionary words in 5 layouts), no transposition-mixed or hidden alphabets; tableau choice only M vs A-Z or KRYPTOS with a repeating key; no choice among more than 3 forms or 4 systems.",
+  "negative": {
+    "family": "free per-letter choice of system (Vig/Beau/variant or two tableaux)",
+    "hypothesis": "Same as idea 87: one repeating or sliding key, and at each letter the encoder freely chose among Vigenere, Beaufort and variant on one tableau, or between two tableaux.",
+    "scope": "Covered by idea 87's entry (campaign/swarm/87.json); no new search.",
+    "outcome": "Duplicate of idea 87 (dead-in-scope, solid): the premise that 87 crashed unrun is out of date; it ran in the swarm with 0 of 167.6M settings at strength 7+ (controls 0, 0, 0; planted 4/4).",
+    "confidence": "solid"
+  },
+  "follow_ups": [
+    "Idea 87's own follow-ups are still open: the same set test on transposition-mixed and idea-89 non-keyword alphabets (about 10 minutes), and a count-flattening choice rule, which turns the set test into an exact one."
+  ]
+}
