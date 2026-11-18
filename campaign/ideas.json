@@ -846,5 +846,12 @@
   "script": "attacks/130_quagmire3_beaufort_18.py",
   "est_min": 27,
   "why": "K1 and K2 are Quagmire III on one keyed alphabet. The community's exact arbitrary-alphabet search closed the Beaufort form at every length except 13, 18, 23 and 26. Idea 86 closed 13 for every alphabet, but 18 only for keyword alphabets of up to 16 letters, because its budget ran out. 18 is the one length where an exact answer for every alphabet is still missing and is within reach."
+ },
+ {
+  "id": "131",
+  "title": "Quagmire IV with two keyword alphabets of 1-9 letters (any letters, no dictionary), plain or read off by columns, repeating key 1-16, solved exactly from both alphabetical tails",
+  "script": "attacks/131_quagmire4_two_keyword_tails.py",
+  "est_min": 23,
+  "why": "Scheidt said the cipher runs 'with the correct key word/s', so the two alphabets of a Quagmire IV are most likely keyword alphabets. They need not be dictionary words, though: PALIMPCEST was itself a misspelling. Idea 113 left 118M placings of the 13 clue plain letters at key length 8 with no power. Idea 86 showed that a keyword alphabet is fixed by its alphabetical tail. Combining the two puts a strong prior on what was a noise search."
  }
 ]
