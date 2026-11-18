@@ -755,5 +755,19 @@
   "script": "",
   "est_min": 1,
   "why": "Idea 87 failed at start-up after 7 seconds and was never tested. Scheidt masked the English language; Sanborn 1990: two separate systems; 2019: the solver needs just to be able to read. If the encoder was free at each letter to use either of two systems, whichever flattens the counts, the reader tries both and keeps the one that reads. Idea 60 tested switching between fixed rows and rule-based switching; a repeating key word with a free choice of form at every letter was never tested."
+ },
+ {
+  "id": "117",
+  "title": "Fed-key models (plain/cipher autokey, idea-74 lag patterns, sculpture and K1-K3 running keys) tested on every Latin-square tableau, on one hidden alphabet, and with the key read on A-Z/KRYPTOS",
+  "script": "attacks/117_clash_on_every_tableau.py",
+  "est_min": 29,
+  "why": "Nearly every negative assumes the tableau is built from a keyword; the open gaps are mostly hidden alphabets. Idea 94 found a test that needs no alphabet at all: on any tableau with distinct rows and columns, the same key letter with the same plain letter must give the same cipher letter (it killed word autokey outright: T under T gives R at 28 and S at 33). Wherever the key letter inside the clues is itself a text letter, this decides the model for ALL tableaux at once, hidden ones included."
+ },
+ {
+  "id": "118",
+  "title": "Close the idea-105 audit holes with fixed copies of the tests: attack 90 cipher feed 30-33 (bug), 59 cipher feed 34-60 / plain feed 7-8, 88 progressive key across word breaks (stacked keys re-checked against idea 104), 60C Slidefair same-column rule, 61 clockwise quarter turns, 69B join on key letters, 57 key letter M[s+c] / KRYPTOS[s+c]",
+  "script": "attacks/118_close_audit_holes.py",
+  "est_min": 35,
+  "why": "Idea 105 fed textbook messages to twenty attacks and found places where K4 was never tested although the negatives say it was: a bug in attack 90, a skipped lag range in 59, progressive and stacked keys in 88, and four convention gaps. Idea 104 closed only the stacked pairs of 68, 70, 71B and 81. Each remaining hole is a region where a simple remembered-key cipher (Scheidt 2011) could still sit."
  }
 ]
