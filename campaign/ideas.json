@@ -741,5 +741,26 @@
   "script": "attacks/114_flawed_chart.py",
   "est_min": 36,
   "why": "The carved tableau has an extra L in one row, Sanborn said the K1 worksheet tableau was slightly different from the carved one and was used like a mileage chart, and his K1 key header was misspelled. If the K4 chart had one letter too many or too few in the header or in the strip, every lookup past the flaw lands one cell off. All earlier tests assume the tableau is a perfect square of shifted alphabets, so a flawed chart fails them all although the method is an ordinary one."
+ },
+ {
+  "id": "115",
+  "title": "Key = two sculpture texts added or subtracted (K = T1 +- T2 + c), plus one text with a repeating or sliding word, exact hash join on the 24 clue letters",
+  "script": "attacks/115_two_sculpture_texts.py",
+  "est_min": 14,
+  "why": "K2 ends LAYER TWO, Sanborn says the first three answers contain clues to the fourth and that the solver needs just to be able to read. One sculpture text as a running key is dead (best 10 of 24), and two stacked keys were closed only for repeating words and phrases. Two running texts laid over each other, for example K3 plaintext against K3 ciphertext or a K2 line against a tableau row, give a key that never repeats and that no test so far can see, yet the 24 forced key letters decide it exactly."
+ },
+ {
+  "id": "116",
+  "title": "Encoder picks one of two (or three) systems per letter with a repeating or sliding key: duplicate of idea 87, which did run",
+  "script": "",
+  "est_min": 1,
+  "why": "Idea 87 failed at start-up after 7 seconds and was never tested. Scheidt masked the English language; Sanborn 1990: two separate systems; 2019: the solver needs just to be able to read. If the encoder was free at each letter to use either of two systems, whichever flattens the counts, the reader tries both and keeps the one that reads. Idea 60 tested switching between fixed rows and rule-based switching; a repeating key word with a free choice of form at every letter was never tested."
+ },
+ {
+  "id": "117",
+  "title": "Fed-key models (plain/cipher autokey, idea-74 lag patterns, sculpture and K1-K3 running keys) tested on every Latin-square tableau, on one hidden alphabet, and with the key read on A-Z/KRYPTOS",
+  "script": "attacks/117_clash_on_every_tableau.py",
+  "est_min": 29,
+  "why": "Nearly every negative assumes the tableau is built from a keyword; the open gaps are mostly hidden alphabets. Idea 94 found a test that needs no alphabet at all: on any tableau with distinct rows and columns, the same key letter with the same plain letter must give the same cipher letter (it killed word autokey outright: T under T gives R at 28 and S at 33). Wherever the key letter inside the clues is itself a text letter, this decides the model for ALL tableaux at once, hidden ones included."
  }
 ]
