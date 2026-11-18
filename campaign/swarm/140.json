@@ -1,0 +1,20 @@
+{
+  "id": 140,
+  "title": "Cipher-letter counters into one key word: C = Tab(P, W[n mod L]), n = earlier copies of the cipher letter, counted from K4's start or from any point of the K1-K3 ciphertext",
+  "verdict": "dead-in-scope",
+  "k4_result": "Counting from K4's first letter is impossible for every tableau, key word and L: positions 22 and 31 are E->F and E->G with n = 1 both. Counting from the start of K1 is impossible for every L = 1..26, and so are 487 of the 769 start points. The other starts leave 3,478 (start, L) settings with 7+ checks (2,030 groupings). Against 6,669,918 key streams (666,993 keyword alphabets x 5 layouts x Vigenere/Beaufort, variant included) 0 tableaux are consistent (chance 0.022), 0 dictionary words fit, nothing to read. K4 has no 5-6 check groupings, so its near-miss gauge is empty.",
+  "controls": "3 shuffled K4s, each on a third of the alphabets (2.22M key streams each): 5,768 / 4,263 / 7,112 settings left; consistent tableaux at 7+ checks 2 / 0 / 0 (chance 0.049 / 0.041 / 0.158); 0 dictionary word fits in all three; the 2 seed-1 hits, hill-climbed with W free, read at best -7.02 (not English); 5-6 check near misses 4 / 4 / 34 (chance 2.7 / 3.0 / 22.6). K4 on the same thirds: 0 consistent. K4 is no better than the controls.",
+  "planted": "4/4. Keys FUTWA (KRYPTOS, variant, count from K4's start), LAWNED (transposition-mixed dictionary tableau, Vigenere, count from K1's start), PRECONFIGURE (mixed dictionary tableau, variant, from K1K2K3[31:]), UNRIGHTEOUS (A-Z, Vigenere, from K1K2K3[19:]). Each was named with its key, alphabet and start, and read back exactly. The planted plaintexts are random letters, not English, because English cannot be enciphered this way (see scope_limits).",
+  "tested": 13539933540,
+  "scope_limits": "One key word, read through the counter of the cipher letter, on known keyword tableaux (A-Z, KRYPTOS, dictionary keyword alphabets and their two transposition-mixed forms, 5 layouts, Vig/Beau/variant). Counts start at 0 and run either from K4's first letter or from a point in K1K2K3's carved ciphertext (letters only, carving order). Not covered: a separate start count for each letter, counts through other texts, or two key words. The K4-start and K1-start proofs hold for every tableau, hidden ones included; at the other starts, hidden alphabets were not tested. Workability: of 1,000 English messages with random dictionary keys of 5-12 letters, 941 cannot be enciphered past 10 letters even with full backtracking, 1 gets past 20 and 0 past 30. So as stated the method cannot be used on English at all, and planted texts had to be made by decrypting random ciphertext.",
+  "negative": {
+    "family": "homophone cycling / counters",
+    "hypothesis": "K4 is C = Tab(P, W[n mod L]) with n the number of earlier occurrences of the cipher letter, so the key word steps on with each repeat of the cipher letter.",
+    "scope": "Counts from K4's start and from every point of K1K2K3's ciphertext (769 starts), L = 1..26, one key word; tableau-free proof on all settings, then 666,993 keyword alphabets x 5 layouts x Vig/Beau/variant, joined with 264k words and K1-K3 phrase windows (any rotation), and W free.",
+    "outcome": "Dead: impossible for every tableau when counting from K4's start (E->F and E->G at 22 and 31, both with n = 1) or from K1's start; at the other starts 0 of 6.67M key streams are consistent (chance 0.022), 0 word fits (controls: 3 shuffled K4s on thirds, consistent 2, 0, 0, word fits 0, 0, 0, best W-free reading -7.02; planted 4/4 named and read back exactly). Also: English cannot be enciphered this way (0 of 1,000 messages get past 30 letters).",
+    "confidence": "solid"
+  },
+  "follow_ups": [
+    "A writer can only use a cipher-side counter if he may pick a homophone and can always find one. A variant with that guarantee (for example, the counter moves only when the letter it reaches is free) would be a different and workable model. Check it is workable on English before testing it on K4."
+  ]
+}
