@@ -909,5 +909,12 @@
   "script": "attacks/138_quagmire_open_lengths.py",
   "est_min": 12,
   "why": "keithadler lists Quagmire I/II at 13, 16, 19, 20, 23, 24, 26 and Quagmire IV at 8, 13, 16, 19, 20, 23, 24, 26 as satisfiable but undecided; idea 130 showed a mod-2/mod-13 linear certificate (two letters forced to one place) decides such cases in a second, and found Quagmire III Beaufort at 18 dead that way."
+ },
+ {
+  "id": "139",
+  "title": "Four-square and two-square on 2x13 / 13x2 / 3x9 / 9x3 with all squares free: exact row/column capacity test, w = 1..48",
+  "script": "attacks/139_free_square_capacity.py",
+  "est_min": 18,
+  "why": "Sanborn used 'matrix codes Ed gave me'; idea 103 tested two-square and four-square on 26/27-cell grids only with listed keyword squares, and noted that with all four squares free each clue digraph says 'cipher letter 1 sits in the row of plain letter 1 and the column of plain letter 2', which is a pure capacity problem decidable without any alphabet list."
  }
 ]
