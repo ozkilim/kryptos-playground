@@ -713,5 +713,12 @@
   "script": "attacks/111_vowel_and_consonant_keys.py",
   "est_min": 41,
   "why": "Sanborn 1990: two separate systems; Scheidt masked the English language and explains the problem as the E against the Z. A hand way to do both: two key words, one used up by the vowels and one by the consonants, each moving on only when it is used. The key place of a letter then depends on the text before it, so every position-based test of rounds 9-11 fails on such a message even with short words. Idea 60 split letters by position (odd and even), never by kind of letter; the community pause tests were on plain A-Z only."
+ },
+ {
+  "id": "87",
+  "title": "Free choice per letter between Vigenere/Beaufort/variant (one tableau) or between two tableaux, with a repeating or sliding key, on 220,318 keyword alphabets",
+  "script": "attacks/87_free_choice_per_letter.py",
+  "est_min": 24,
+  "why": "Scheidt 'masked the English language'; Sanborn 1990: 'two separate systems'; 2019: the solver needs 'just to be able to read'. If the encoder was free to use either of two systems for each letter, picking whichever flattens the counts, the reader tries both and keeps the one that reads. Idea 60 tested free switching between fixed rows and rule-based switching with keys, and the community tested a fixed form per key letter; a repeating key word with a free choice of form at every letter has not been tested."
  }
 ]
