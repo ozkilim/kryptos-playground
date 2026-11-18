@@ -888,5 +888,12 @@
   "script": "attacks/134_one_strip_twice.py",
   "est_min": 149,
   "why": "Idea 82 closed two rotors where the second strip is the first read backwards, and showed that two different hidden strips cannot be judged. A hand encoder with one strip would more likely pass the letter through it twice the same way. With 26 unknown contacts against 24 clue letters this is about 5 letters over-determined, so it is decidable and was left open only because the equations are not linear."
+ },
+ {
+  "id": "137",
+  "title": "Quagmire III Beaufort (one arbitrary alphabet both sides), repeating key 23 and 26: parallel-tempering English search over full alphabets with the clue equations hard; Vigenere form closed exactly",
+  "script": "attacks/137_quagmire3_beaufort_23_26_climb.py",
+  "est_min": 48,
+  "why": "Idea 130 closed Quagmire III Beaufort (key = x[C]+x[P] on one hidden alphabet) for every alphabet at lengths 1-26 except 23 and 26, where K4 and many shuffles stay satisfiable; these are the last two repeating-key lengths of the K1/K2 machine with an arbitrary alphabet, so only an English score can judge them."
  }
 ]
