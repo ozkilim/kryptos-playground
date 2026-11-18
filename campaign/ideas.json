@@ -776,5 +776,12 @@
   "script": "attacks/119_key_added_with_carries.py",
   "est_min": 67,
   "why": "Scheidt: I could have moved to a different math base; the cipher is simple and can be remembered. Every exact test so far adds key and text letter by letter with no carry. If the message and the repeated key word were added as two long numbers in base 26, each cipher letter is plain + key + a carry of 0 or 1 that depends on the next letter, so the key values the clues force differ by one in an irregular way and every repeating-key test fails on a short word."
+ },
+ {
+  "id": "120",
+  "title": "Known K1/K2 layer (ABSCISSA, PALIMPSEST, PALIMPCEST, KRYPTOS on the KRYPTOS or A-Z tableau, every phase, both directions, before or after) plus the full key-rule battery on a second keyword tableau",
+  "script": "attacks/120_known_first_layer.py",
+  "est_min": 86,
+  "why": "K2 ends LAYER TWO; Scheidt: two of the four processes are similar; the Cyrillic Projector shows Sanborn reusing the K1/K2 machine. If K4 was first run through the K2 or K1 chart (KRYPTOS tableau, ABSCISSA or PALIMPSEST) and then through a second, different chart, the clue letters seen by layer two are not EASTNORTHEAST and BERLINCLOCK, so the battery never tested the right letters. Idea 84 covered only two repeating keys; a known first layer with a sliding, progressive or autokey second layer is untested."
  }
 ]
