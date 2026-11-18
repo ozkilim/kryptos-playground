@@ -741,5 +741,12 @@
   "script": "attacks/114_flawed_chart.py",
   "est_min": 36,
   "why": "The carved tableau has an extra L in one row, Sanborn said the K1 worksheet tableau was slightly different from the carved one and was used like a mileage chart, and his K1 key header was misspelled. If the K4 chart had one letter too many or too few in the header or in the strip, every lookup past the flaw lands one cell off. All earlier tests assume the tableau is a perfect square of shifted alphabets, so a flawed chart fails them all although the method is an ordinary one."
+ },
+ {
+  "id": "115",
+  "title": "Key = two sculpture texts added or subtracted (K = T1 +- T2 + c), plus one text with a repeating or sliding word, exact hash join on the 24 clue letters",
+  "script": "attacks/115_two_sculpture_texts.py",
+  "est_min": 14,
+  "why": "K2 ends LAYER TWO, Sanborn says the first three answers contain clues to the fourth and that the solver needs just to be able to read. One sculpture text as a running key is dead (best 10 of 24), and two stacked keys were closed only for repeating words and phrases. Two running texts laid over each other, for example K3 plaintext against K3 ciphertext or a K2 line against a tableau row, give a key that never repeats and that no test so far can see, yet the 24 forced key letters decide it exactly."
  }
 ]
