@@ -1,0 +1,21 @@
+{
+  "id": 114,
+  "title": "Tableau with one flaw (one letter too many or too few past cell t in the header, the row labels, the strip, or one carved row such as row N) under repeating, sliding, progressive and autokey keys",
+  "verdict": "dead-in-scope",
+  "k4_result": "0 of 169,309,207 corrected key streams pass with 7+ checks (220,318 alphabets x 5 layouts x Vigenere/Beaufort x every flaw; chance predicts 0.032 passes, 77 times the 0.00056 of the unflawed search). Nothing to decrypt. 4 streams skipped because they needed more than 256 key combinations.",
+  "controls": "3 shuffled K4s, each on a third of the alphabets (plus A-Z and KRYPTOS for the single-row flaw): 0 / 0 / 0 passes out of 56,957,504 / 101,166,804 / 100,214,037 streams (chance predicts 0.011 / 0.022 / 0.022). Same picture as K4.",
+  "planted": "4/4, each with the flaw kind, direction and cell named: repeating key length 7 with a header flaw at cell 12 (found as col t=12 d=+1, 0 wrong letters); sliding key length 7 with a row-label flaw (row t=10 d=+1, 0 wrong); progressive key length 5 with a strip flaw (body t=21..22 d=+1, 5 wrong letters, because a flawed strip is not one-to-one); repeating key length 8 on the carved KRYPTOS chart with row N off (cell t=15..18 d=-1 row=13, 0 wrong). None of the four is found by the unflawed battery. Planted searches ran on the planted alphabet plus 20,000 random dictionary alphabets.",
+  "tested": 169309207,
+  "scope_limits": "One flaw only (no two flaws, no flaw that moves, no flaw of more than one cell). The flaw is modelled mod 26 (a 27-letter row's different wrap is not modelled). Header flaw tested in the layout's own header order, strip flaw in the strip's order, row flaw in row order. Key rules: repeating 1-17 (not for row flaws, where it is absorbed), sliding 1-15, progressive 1-12, autokey plain/cipher lags 1-6; no stacked keys, chain addition, running keys or long non-word keys. Alphabets: A-Z, KRYPTOS and 220,318 plain dictionary keyword alphabets; transposition-mixed alphabets not run. The single-row flaw (any row 0-25, every column threshold) ran only on the A-Z and KRYPTOS alphabets, Vigenere form; the literal carved chart is its row-13 case in layouts AZ/KR(M) and KR/KR. The 24 clue letters at their carved positions.",
+  "negative": {
+    "family": "flawed tableau",
+    "hypothesis": "K4 was enciphered on a tableau with one extra or missing letter (in the header, the row labels, the strip, or one row such as the carved row N with its extra L), so every lookup past the flaw is one cell off, with an ordinary repeating, sliding, progressive or autokey key.",
+    "scope": "220,318 alphabets (A-Z, KRYPTOS, plain dictionary keyword alphabets) x 5 layouts x Vigenere/Beaufort; header, row and strip flaws at every cell t=1..25, d=+1/-1, both candidate key values tried where the flaw makes two possible; single-row flaw at every row and column threshold on A-Z/KRYPTOS (Vigenere); repeating 1-17 (not row flaws), sliding 1-15, progressive 1-12, autokey lags 1-6; 7+ exact checks on the 24 clue letters.",
+    "outcome": "Dead: 0 of 169,309,207 corrected streams pass with 7+ checks, chance 0.032 (controls 0/0/0 of 57M-101M streams each; planted 4/4 with the flaw cell named)",
+    "confidence": "solid"
+  },
+  "follow_ups": [
+    "A flawed tableau with a 27-letter strip modelled exactly (rows wrap at 27, so the offset past the flaw is not a constant mod 26), on A-Z and KRYPTOS with repeating keys up to 26.",
+    "Single-row flaw (one row off past one column) on all 220k dictionary alphabets, not just A-Z and KRYPTOS: about 26 times the cost of the strip test, so it needs a batched pre-check."
+  ]
+}
