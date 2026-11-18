@@ -734,5 +734,12 @@
   "script": "attacks/113_both_hidden_length8.py",
   "est_min": 125,
   "why": "ABSCISSA has 8 letters and the K3 grid is 8 wide; length 8 is the one short repeating key that K4's clue letters do not block when both alphabets are free, and the community annealers could not detect it. Idea 99 found that at length 8 the clue cipher letters fall into two pieces (11 and 3 letters) with 4 loop checks that involve only the places of the 13 clue plain letters, and that 54 further plaintext letters are then forced."
+ },
+ {
+  "id": "114",
+  "title": "Tableau with one flaw (one letter too many or too few past cell t in the header, the row labels, the strip, or one carved row such as row N) under repeating, sliding, progressive and autokey keys",
+  "script": "attacks/114_flawed_chart.py",
+  "est_min": 36,
+  "why": "The carved tableau has an extra L in one row, Sanborn said the K1 worksheet tableau was slightly different from the carved one and was used like a mileage chart, and his K1 key header was misspelled. If the K4 chart had one letter too many or too few in the header or in the strip, every lookup past the flaw lands one cell off. All earlier tests assume the tableau is a perfect square of shifted alphabets, so a flawed chart fails them all although the method is an ordinary one."
  }
 ]
