@@ -1,0 +1,20 @@
+{
+  "id": 123,
+  "title": "Compass steps on a letter grid: king distance, distinct moves and compass-line moves of the 24 clue pairs on 14.5M grids",
+  "verdict": "dead-in-scope",
+  "k4_result": "0 of 14,541,780 K4 grids (98 small-set + 220,232 dictionary alphabets x widths 3-13 x 26/27 cells x flat/cwrap/twrap) give R = 1 (every clue pair a compass step); chance expectation 7.7e-6. Best R = 2 (small set: 2 grids; dictionary: ~5,700 per third). 0 grids with D <= 8 (best D = 12 small set, 9 dictionary). Best Q = 22 (small) and 24 (dictionary). Block 1 alone: 620 R=1 grids on the dictionary (0 on the small set), all at width 3 with wrapped columns, where a compass step is a letter shift of -4..+4 on a near-A-Z keyword alphabet: this is Bean's known closeness of the EASTNORTHEAST letters, not a grid effect. Block 2 alone: 2 R=1 grids on the small set (VALLEYOFTHEKINGS w3 twrap), 0 on the dictionary.",
+  "controls": "200 shuffled K4s on the small set: best R 2 (160) or 3 (40), K4 2 (share as extreme 0.80); best D 10-13, K4 12 (0.95); best Q 20-23, K4 22 (0.45); R=1 grids 0 in all 200. 3 shuffled K4s on a third of the dictionary each: best R 2, D 9/10/8, Q 23/24/24, R=1 grids 0 (one shuffle has 2 grids with D <= 8, K4 0). Block 1 alone R=1: shuffles 0/0/0 on the dictionary thirds vs K4 184/188/248 (the Bean closeness effect, which shuffling destroys). Block 2 alone R=1: shuffles 8/8/0 vs K4 0/0/0 on the dictionary; small set 1 of 200 shuffles has 4, K4 2 (p = 0.005, one of ~15 statistics looked at, and reversed on the dictionary).",
+  "planted": "3/3 found with R = 1 at the planted grid (KRYPTOS w7 flat, UNDERGROUND w5 flat, PALIMPSEST w9 27 cells both wraps); read back 54, 68, 50 of 97 letters vs 35, 35, 32.5 for a random choice among the candidates. The plan's bar of 60/97 was met by 1 of 3: with 9 plain candidates per letter, an exact quadgram Viterbi plus word split tops out at about 54/97 on average (tested on 12 plants), so the reading stage is weaker than hoped; the exact R = 1 test is unaffected.",
+  "tested": 30370692,
+  "scope_limits": "Alphabets only from A-Z, KRYPTOS, 84 theme-word keyword alphabets, 12 old-script orders and 220,232 dictionary keyword alphabets (no transposition-mixed forms, no free hidden alphabet). Grids filled row by row, widths 3-13, '?' only as the 27th (last) cell. Moves measured as the shortest move under each convention; no rule for the move sequence is assumed. Moves of 2 or more cells cannot be judged (in grids of width >= 9 with row wrap, or width 13 flat, row moves are always within 1, so those grids are weak tests). The reading stage reads back only about 55/97 of a planted text, so a real R = 1 survivor would need a human read; none arose.",
+  "negative": {
+    "family": "compass-step grid cipher",
+    "hypothesis": "With the alphabet written in a grid, each K4 cipher letter is one compass step (N, NE, ... or stay) from its plain letter, so all 24 clue pairs are king moves apart on the right grid.",
+    "scope": "A-Z, KRYPTOS, 84 theme, 12 old-script and 220,232 dictionary keyword alphabets; rows of width 3-13; 26 cells or 27 with '?' last; no wrap, columns wrap, both wrap; statistics R (largest king distance), D (distinct moves), Q (moves on compass lines), all 24 pairs and each clue block alone.",
+    "outcome": "Dead: 0 of 14.5M grids give R = 1 or D <= 8 on all 24 clue pairs; best R = 2, D = 9, Q = 24, same as shuffled K4s (200 on the small set, 3 on dictionary thirds: R 2, D 8-13, Q 20-24). Block-1-only hits (620) are all width-3 wrapped grids = Bean's known small-shift effect. Planted 3/3 found with R = 1.",
+    "confidence": "solid"
+  },
+  "follow_ups": [
+    "Free hidden alphabet: decide exactly whether ANY arrangement of 26 letters in a w-wide grid makes all 24 clue pairs king moves (a graph-embedding / backtracking test like idea 112's window solver), which the listed alphabets cannot settle."
+  ]
+}
