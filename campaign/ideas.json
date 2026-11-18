@@ -790,5 +790,12 @@
   "script": "attacks/121_cipher_feedback_any_lags.py",
   "est_min": 39,
   "why": "Scheidt masked the English language with something simple that can be remembered; the simplest masks are running sums and differences (add each letter to the ones before it, or to the letter on the left and the letter above on the worksheet). Those are cipher-feedback rules with several lags at once. Earlier tests tried one lag at a time (59, 74, 90) or one cipher term (110 test B). Because all 97 cipher letters are known, every rule C[i] = P[i] + a1 C[i-1] + ... + aR C[i-R] + c can be decided in one exact solve without naming the rule."
+ },
+ {
+  "id": "122",
+  "title": "Clue blocks enciphered as separate runs: free key phase at BERLINCLOCK (and at NORTHEAST) for repeating, sliding, autokey+word, progressive and two stacked keys on 666,993 keyword tableaux",
+  "script": "attacks/122_strips_enciphered_alone.py",
+  "est_min": 23,
+  "why": "Sanborn cut the plaintext into sentence strips and handled them out of order, and the Cyrillic Projector restarts its key at each block. If each sentence was enciphered on its own, or the sentences were enciphered in another order than they were carved, the key is continuous inside a clue but its place at the second clue is unrelated to the 42 letters between them. Idea 43 tested this only for repeating keys on 18 alphabets, idea 68 only for a gap off by 1-3; on the dictionary tableaux and for sliding, progressive and stacked keys it is untested."
  }
 ]
