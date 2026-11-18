@@ -902,5 +902,12 @@
   "script": "attacks/136_half_hidden_autokey.py",
   "est_min": 67,
   "why": "Idea 117 left plaintext autokey 5-12 letters back alive on every Latin-square tableau and undecided on one hidden alphabet. Ideas 90 and 100 tested only tableaux whose two sides are both known. The half-hidden form (one keyword alphabet, one written freely: Sanborn's 'modified so Scheidt couldn't decipher it') sits between the two and has enough clue equations at these lags to decide it exactly."
+ },
+ {
+  "id": "138",
+  "title": "Quagmire I, II, IV (ACA definitions) with an arbitrary alphabet (pair) and a repeating key: the community's open lengths decided exactly by linear certificates mod 2/13 plus complete backtracking with distinct places",
+  "script": "attacks/138_quagmire_open_lengths.py",
+  "est_min": 12,
+  "why": "keithadler lists Quagmire I/II at 13, 16, 19, 20, 23, 24, 26 and Quagmire IV at 8, 13, 16, 19, 20, 23, 24, 26 as satisfiable but undecided; idea 130 showed a mod-2/mod-13 linear certificate (two letters forced to one place) decides such cases in a second, and found Quagmire III Beaufort at 18 dead that way."
  }
 ]
