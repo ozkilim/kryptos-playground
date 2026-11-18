@@ -1,0 +1,21 @@
+{
+  "id": 136,
+  "title": "Plain autokey lags 5-12 back / 7-12 ahead on a half-hidden tableau (one dictionary alphabet, one free)",
+  "verdict": "dead-in-scope",
+  "k4_result": "Exactly decided cells (cipher alphabet = dictionary alphabet, fed letter numbered on the plain alphabet, lags 5-7 back, 7 ahead, 9 ahead minus; 9 cells, 0.3 chance passes expected): 0 passes. Read cells (35, up to 350 chance passes each): 4,243 passes against about 3,073 estimated; all read on the big model, best -5.56 per quadgram with 5 clue letters missed (plain-known, A-Z numbering, lag 7 ahead, CATCH), word coverage 0.59; English needs about -5.1. Counted-only cells (58): 1,213,030 consistent against about 826,598 estimated.",
+  "controls": "3 shuffled K4s, all 666,993 alphabets, each with its own tiers. Exact cells: 0, 0, 0 passes (0.8, 0.1, 0.6 expected). Read cells: 2,041, 2,548, 1,206 passes (estimates 1,818, 903, 2,260); best readings -5.48, -5.74, -5.47 with 4-6 clue letters missed. Counted cells: 1.5-2.3 million consistent, 1.1-1.7x their estimates (K4 1.47x).",
+  "planted": "3/3 searched among 9,000 alphabets and read back as the best reading: plain-known lag 7 back (CRAVE~keyed, 89/97 letters, -4.72), cipher-known lag 9 ahead (SENSUOSITY~keyed, 94/97, -4.52), cipher-known lag 5 back with A-Z numbering (SULPHOSILICIDE~keyed, 97/97, -4.63). Read back only (true alphabet given), 5 each: cipher-known lag 11 back 4/5 at 84+ letters; plain-known lag 9 ahead 2/5; plain-known A-Z numbering lag 7 ahead 3/5 and lag 7 back 2/5.",
+  "tested": 68033286,
+  "scope_limits": "Only the 9 cipher-known/plain-numbered cells are decided by exact checks. 35 cells are decided by reading, and on the plain-known side with A-Z/KRYPTOS numbering the reader recovers only 2-3 of 5 planted texts, so those cells are judged mainly by pass counts against the controls. 58 cells are only counted (consistency alone, distinct places not required), which is a weak gauge. 66 cells have no clue check at all and were not run: plain-known lags 8, 9, 11, 12 ahead and 12 back with plain numbering; plain-known 8-12 ahead and 12 back with A-Z/KRYPTOS numbering; cipher-known 8-12 back and 10-12 ahead with A-Z/KRYPTOS numbering. Dictionary keyword alphabets (plain, ~cols, ~keyed) only on the known side; fed letter times +-1, no multiplier; one constant; clue blocks in place; plain feed only (cipher feed: idea 117). Chance estimates assume random alphabets; keyword alphabets give 1-3x more passes, for K4 and the controls alike.",
+  "negative": {
+    "family": "autokey, half-hidden tableau",
+    "hypothesis": "K4 is a plaintext autokey with the key letter 5-12 back or 7-12 ahead, on a tableau with one dictionary keyword alphabet and one freely written alphabet.",
+    "scope": "666,993 dictionary alphabets on the plain or cipher side, other side free; Vigenere/Beaufort/variant; fed letter numbered on the plain alphabet, A-Z or KRYPTOS; 102 of 168 (layout, numbering, lag, sign) cells tested: 9 by exact linear clue checks, 35 by exact checks plus big-model reading, 58 by consistency counts; 66 cells with no check not run.",
+    "outcome": "Dead in scope: cipher-known, plain-numbered lags 5-7 back, 7 ahead and 9 ahead (minus) give 0 passes (0.3 expected); in the read cells K4's best is -5.56 with 5 clue letters missed, no better than 3 shuffled K4s (-5.47 to -5.74; exact cells 0 each); planted 3/3 found among 9,000 alphabets",
+    "confidence": "partial"
+  },
+  "follow_ups": [
+    "Plain-known side numbered on A-Z/KRYPTOS: the reader misses half of the planted texts because a chain's closure is only seen after the whole 29-letter gap. A CSP that solves the closures over the free cipher places first, then reads only consistent completions, would make these cells decisive.",
+    "Keyword alphabets pass linear place checks 1-3x more often than random permutations; future chance estimates should be calibrated on shuffled controls, not on the random-alphabet bound."
+  ]
+}
