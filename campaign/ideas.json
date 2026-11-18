@@ -818,5 +818,19 @@
   "script": "attacks/125_misspelled_keyword_alphabets.py",
   "est_min": 101,
   "why": "Sanborn misspells on purpose and by accident: his K1 key header reads PALIMPCEST, the text has IQLUSION, UNDERGRUUND and DESPARATLY, and K2 lost a letter. A keyword alphabet built from a misspelled word is in no dictionary, so every dictionary test would miss an otherwise ordinary cipher. Idea 86 solved arbitrary keywords only for repeating and sliding keys; the other rules (progressive, stacked, autokey, chain addition) were run on dictionary spellings only, and always with the keyword first and the rest in A-Z order."
+ },
+ {
+  "id": "127",
+  "title": "Gromark (chain-addition digit keys, bases 3-16) with one dictionary keyword alphabet and the other alphabet free: exact hash join on the clue pairs",
+  "script": "attacks/127_gromark_one_dictionary_side.py",
+  "est_min": 22,
+  "why": "Bean and Scheidt's 'different math base' point to Gromark. The standard form (straight A-Z plain side) is dead by Bean. The both-hidden form survives the clues (454 base-10 primers) but was only judged by an English completion with about 50% power. Fixing one side to a dictionary keyword alphabet, as K1/K2 did, makes the test exact and the reading decisive."
+ },
+ {
+  "id": "126",
+  "title": "Hidden message in the solved K1-K3 (+ Morse) text: acrostics (1st/2nd/3rd/last letter of words), every k-th word or letter (k up to 40, every start), K2 coordinate digits as step counts, carved-row first/last letters and columns, sentence initials, doubled letters; forwards and backwards; scored against word-order-shuffled texts",
+  "script": "attacks/126_hidden_readings_k1k3.py",
+  "est_min": 76,
+  "why": "Sanborn 2005: he left instructions in the earlier text that refer to later text; 2006: the answers to the first three passages contain clues to the fourth. Wartime letter codes hid a message in the first or n-th letters of words. Earlier work used such letters only as K4 keys (ruled out); nobody here has tested whether they READ as a message, which needs no K4 and no cipher model and would give the missing method directly."
  }
 ]
