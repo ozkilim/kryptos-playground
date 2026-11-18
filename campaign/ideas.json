@@ -916,5 +916,12 @@
   "script": "attacks/139_free_square_capacity.py",
   "est_min": 18,
   "why": "Sanborn used 'matrix codes Ed gave me'; idea 103 tested two-square and four-square on 26/27-cell grids only with listed keyword squares, and noted that with all four squares free each clue digraph says 'cipher letter 1 sits in the row of plain letter 1 and the column of plain letter 2', which is a pure capacity problem decidable without any alphabet list."
+ },
+ {
+  "id": "140",
+  "title": "Cipher-letter counters into one key word: C = Tab(P, W[n mod L]), n = earlier copies of the cipher letter, counted from K4's start or from any point of the K1-K3 ciphertext",
+  "script": "attacks/140_cipher_letter_counters.py",
+  "est_min": 21,
+  "why": "Idea 109 closed each plain letter keeping its own counter into a key word, but its worker found that model ambiguous to decrypt; keeping the counter on the cipher letter makes decryption unambiguous (a hand cipher a reader can undo) and the clue blocks contain five neighbour repeats (QQ 26-27, SS 33-34, TT 68-69, R 24/29, P 66/73) that make it testable."
  }
 ]
