@@ -1,0 +1,21 @@
+{
+  "id": 119,
+  "title": "Key added to the message as a long number with carries (base 26 from 0 / base 27 from 1), add/sub/Beaufort, carries right-to-left and left-to-right, optional row restarts; repeating, sliding, progressive keys L 1-12",
+  "verdict": "dead-in-scope",
+  "k4_result": "257,605,700 exact key vectors tested (666,993 alphabets x 5 layouts x 3 forms x 2 carry directions x 2 bases x up to 4 entering-carry choices, plus row-restart models on 58,390 alphabets): 0 passes with 7 or more checks (chance expects 6.0e-06 for repeating/sliding/progressive). 0 hits, so 0 decryptions return the 24 clue letters.",
+  "controls": "3 shuffled K4s on a third of the alphabets each: 0, 0, 0 passes (about 85.5M vectors each, chance 2e-06 each). K4 on the same thirds: 0, 0, 0. 200 shuffled K4s on A-Z and KRYPTOS with all models and the full battery: 0 passes in 529,152 vectors (K4 on the same: 0).",
+  "planted": "12/12 (key words of 5, 8 and 11 letters; KRYPTOS tableau with plain and row-restart models, and dictionary tableaux with one long number; both carry directions; add, sub and Beaufort forms). Each read back 97/97, and no survivor gave a different reading.",
+  "tested": 257605700,
+  "scope_limits": "Key rules: repeating, sliding and progressive with L 1-12, at 7 or more exact checks. Autokey, two stacked keys combined mod n before the carry pass, and chain addition were run only on A-Z, KRYPTOS and theme-word alphabets (256). Row restarts (carved 4+31+31+31; rows of 7, 14, 21, 31, 42; key running on or restarting) ran only on A-Z, KRYPTOS, theme and 21k common-word alphabets (58,390); the 236k-word dictionary was run with one long number only. Not covered: L above 12; carries in bases other than 26/27 (and base 26 numbered from 1); two key words added at the same time with carries 0-2 (true three-digit sums); the key added in two separate carry passes; hidden (non-keyword) alphabets; any transposition before or after. Base-27 letters must avoid the digit 0, so that model is narrower than base 26. Prefilter FLAG: a word shared with K5 at the same place encrypts the same in only 74% of probe pairs, because a carry can come in from the next letter.",
+  "negative": {
+    "family": "carry-addition",
+    "hypothesis": "K4 is the plaintext plus a repeating, sliding or progressive key word (L <= 12), added or subtracted as long numbers in base 26 or 27 with carries or borrows, on a keyword tableau.",
+    "scope": "666,993 keyword alphabets (dictionary, plain and two transposition-mixed forms) x 5 layouts; forms C=P+K, C=P-K, C=K-P; carries right-to-left and left-to-right; base 26 (A=0) and base 27 (A=1); the carry entering each clue block left free (reduction exact); repeating/sliding/progressive L 1-12 at >= 7 checks; row restarts (carved, 7, 14, 21, 31, 42; key on or restarted) on 58,390 alphabets; autokey/stacked/chain on 256.",
+    "outcome": "Dead: 0 of 257,605,700 key vectors pass (chance 6e-06) (controls: 3 shuffled K4s 0/0/0, 200 shuffled on A-Z/KRYPTOS 0; planted 12/12, read back 97/97)",
+    "confidence": "solid"
+  },
+  "follow_ups": [
+    "Two key words added at the same time with carries 0-2 (three-digit long addition): needs a search over each word's real digit values, not only their sum mod 26.",
+    "Carries in other bases (10 on letter numbers 1-26 written as decimals, e.g. A=01..Z=26) fit 'a different math base' more literally than base 26/27."
+  ]
+}
