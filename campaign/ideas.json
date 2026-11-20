@@ -951,5 +951,12 @@
   "script": "attacks/141_king_moves_any_grid.py",
   "est_min": 54,
   "why": "The sculpture has a compass rose pointing ENE and the plaintext names compass directions; idea 123 found no listed grid where all 24 clue pairs are king moves (best 2 breaks), but listed alphabets cannot settle the question for a hand-made grid."
+ },
+ {
+  "id": "158",
+  "title": "Recited lists (number words, boxed compass, hours, months, days, planets, zodiac, letter names, Roman numerals, World Clock city ring; English and German) at every start letter as exact running keys: any-tableau gate, 666,993 keyword tableaux, one hidden alphabet",
+  "script": "attacks/158_recited_list_keys.py",
+  "est_min": 16,
+  "why": "Scheidt: simple, can be remembered, run years later. The longest keys anyone carries in the head are recited lists: ONE TWO THREE..., NORTH NORTH BY EAST NORTHNORTHEAST... (EASTNORTHEAST is itself a point of that list), the 24 hours, months, days, the planets on top of the World Clock, EINS ZWEI DREI. Earlier text keys were sculpture texts, single words and unknown English judged by a noisy score; no named list was run as an exact key."
  }
 ]
