@@ -972,5 +972,12 @@
   "script": "attacks/160_find_letter_write_neighbour.py",
   "est_min": 15,
   "why": "K3 says: slowly ... upper left-hand corner ... peered in; Sanborn: you only need to be able to read, and the earlier text holds instructions for later text. A hand code that needs no arithmetic: keep a finger on the carved panel, move on to the next place where the letter occurs, and write the letter beside it (or one step EAST-NORTH-EAST of it: right, up, right). The output is as flat as the K1/K2 ciphertext it is read from. Ideas 85 and 106 used K4 letters as COUNTS; nobody has searched for the letter itself."
+ },
+ {
+  "id": "162",
+  "title": "Coordinate slip on one hidden grid: row digit from one letter, column digit from a letter s places on (8 grid shapes of 26-30 cells, slips -45..45, four role assignments, added constants; plus both lines slid)",
+  "script": "attacks/162_coordinate_slip.py",
+  "est_min": 16,
+  "why": "Sanborn: matrix codes Ed gave me; Scheidt taught shifting matrices and spoke of a different math base. By hand: write each letter as two grid digits, one above the other (the bifid worksheet), slide the lower line of digits a few places along, and turn the columns back into letters. Every cipher letter still sits over its own plain letter (N decodes to B as far as the row goes), yet English is masked. Idea 39 ADDED wheels to coordinates and ideas 103/139 took letters in separate pairs; no test let a coordinate come from a neighbouring letter."
  }
 ]
