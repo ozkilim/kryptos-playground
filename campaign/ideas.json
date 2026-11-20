@@ -944,5 +944,12 @@
   "script": "attacks/144_step_pattern_second_tableau.py",
   "est_min": 26,
   "why": "Idea 98 closed a key word on one tableau stacked with a second tableau that turns by one constant step per letter; a hand-turned strip moved by an alternating or three-step pattern (a 'shifting matrix', as Scheidt taught) is the natural next case and stays exact with idea 98's translate trick."
+ },
+ {
+  "id": "141",
+  "title": "King moves on ANY hidden grid: exact backtracking over the clue letters for a free arrangement of the 26 letters, widths 3-13, 26 or 27 cells, flat / column wrap / both wrap; feasibility and fewest different moves",
+  "script": "attacks/141_king_moves_any_grid.py",
+  "est_min": 54,
+  "why": "The sculpture has a compass rose pointing ENE and the plaintext names compass directions; idea 123 found no listed grid where all 24 clue pairs are king moves (best 2 breaks), but listed alphabets cannot settle the question for a hand-made grid."
  }
 ]
