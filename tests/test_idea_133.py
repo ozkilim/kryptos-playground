@@ -34,7 +34,8 @@ def test_planted_period_key_recovered():
     _, w, p, n, top = B.periodic_job(("t", ct, 5, 8, (49,), 7, 3))
     assert n >= 1
     s, E1, txt, k, _ = top[0]
-    assert list(k) == key
+    d = (k[0] - key[0]) % 26          # a hidden alphabet makes key + c (alphabet rotated by c) the same solution
+    assert [(a - d) % 26 for a in k] == key
     reg = [i for i in range(E1) if not 21 <= i <= 33]
     assert B.agreement(txt, pt, reg) >= 0.75 * len(reg)
 
