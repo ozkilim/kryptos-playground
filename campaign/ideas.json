@@ -923,5 +923,12 @@
   "script": "attacks/140_cipher_letter_counters.py",
   "est_min": 21,
   "why": "Idea 109 closed each plain letter keeping its own counter into a key word, but its worker found that model ambiguous to decrypt; keeping the counter on the cipher letter makes decryption unambiguous (a hand cipher a reader can undo) and the clue blocks contain five neighbour repeats (QQ 26-27, SS 33-34, TT 68-69, R 24/29, P 66/73) that make it testable."
+ },
+ {
+  "id": "143",
+  "title": "Two-step plain-autokey chains at lags 19-22 on one fully hidden alphabet (plain, cipher and fed letter), 4 sign forms, look-back and look-ahead: every cell decided exactly",
+  "script": "attacks/143_two_step_chains_hidden_alphabet.py",
+  "est_min": 7,
+  "why": "Idea 100's worker found that when the fed letter is numbered like the plaintext (Vigenere +, Beaufort -), two-step chains do not depend on the constant, so with ONE hidden alphabet on all three sides each two-step chain reads x[C1] - x[C2] = x[P0] - x[Pn]; lags 19-22 give 9-11 such equations, which is decidable for every alphabet."
  }
 ]
