@@ -1,0 +1,21 @@
+{
+  "id": 143,
+  "title": "Two-step plain-autokey chains at lags 19-22 on one fully hidden alphabet (plain, cipher and fed letter), 4 sign forms, look-back and look-ahead: every cell decided exactly",
+  "verdict": "no-signal",
+  "k4_result": "32 cells (4 lags x back/ahead x 4 sign forms), 9-11 constant-free equations each. 18 are impossible (two letters forced into the same place), 14 are possible (a witness alphabet with 26 distinct places was found and re-checked by running the cipher through the chains), 0 undecided. The 18 impossible are exactly the 18 of idea 117; the 14 that idea 117 left undecided are all possible. All 4 lags have a possible cell; lag 20 look-back is impossible in all 4 forms. Possible cells per lag: 19: 4, 20: 2, 21: 3, 22: 5. By form: C = P - K and C = K - P 13 of 16 possible, C = P + K and C = -P - K 1 of 16 (lag 22 ahead, P + K). No reading of K4: a possible cell still leaves 15-17 free dimensions for the alphabet.",
+  "controls": "50 shuffled K4s, same 32 cells: possible 9-22 (median 16), impossible 10-23 (median 16), undecided 0. K4's 14 possible is lower than 38 controls, equal to 4, higher than 8. All 4 lags have a possible cell in 50 of 50 controls. Same-sign forms possible: 0-8, median 3 (K4 1; 11 controls at or below K4). Opposite-sign forms: 8-16, median 13 (K4 13). K4 is ordinary.",
+  "planted": "160/160: 5 English texts with the clue words in place for each lag 19-22 x back/ahead x 4 forms, random hidden alphabet and constant. Each reads back, the true alphabet satisfies the equations (with its constant, and moved along by E without one), and the true cell is decided possible with a verified witness. The other 31 cells of a planted text are impossible 8-22 times (median 15): a wrong cell dies about half the time.",
+  "tested": 10016,
+  "scope_limits": "One alphabet numbers plain, cipher and fed letter; fed letter = plaintext exactly d back or ahead, d = 19-22 (15-18 and 23-26 as an extra table: K4 4-8 of 8 possible per lag, inside the control range); coefficients +-1 only; clue blocks in place (clue 2 not moved). 'Possible' means the 24 clue letters cannot rule the cell out, nothing more: the test has no power to pick a true lag, since about half of all wrong cells also pass. No alphabet search and no English reading was attempted. Fed letter on a different numbering, a keyword on top, and cipher feed are not covered (ideas 136, 117).",
+  "negative": {
+    "family": "autokey / hidden alphabet",
+    "hypothesis": "The two-step clue chains of a plain autokey at lag 19-22 on one hidden alphabet either rule the lag out or single K4 out from shuffled text.",
+    "scope": "X[C] = aX[P] + bX[K] + E, a, b = +-1, K = plaintext 19-22 back or ahead, one hidden alphabet on all three sides; 32 cells, each 9-11 linear equations mod 26 with distinct places required; decided exactly by forced-collision proof or verified witness.",
+    "outcome": "No signal: 18 of 32 cells impossible (same 18 as idea 117), the 14 undecided cells of idea 117 are all possible, so lags 19-22 stay open on a hidden alphabet (lag 20 look-back dead in all forms; P + K and -P - K dead except lag 22 ahead P + K). Controls: 50 shuffled K4s have 9-22 possible cells (median 16; K4 14), all 4 lags possible in 50/50. Planted 160/160 true cells possible with the true alphabet fitting; a wrong cell dies 50% of the time.",
+    "confidence": "solid"
+  },
+  "follow_ups": [
+    "Read the 14 surviving cells: at lags 19-22 a full alphabet fixes 65-75 of the 97 letters (41-51 outside the clues) and the chains leave 15-17 free dimensions. Hill-climb the alphabet inside the chain solution space (keep the 9-11 equations exact, move the free letters) and score the fixed letters on the big quadgram model; first show a planted lag-21 text is recovered, since about 41 free letters against about 70 bits of alphabet freedom is near the limit.",
+    "The constant never matters when one hidden alphabet numbers all three letters: moving the alphabet along absorbs E in all four sign forms (for C = -P - K by E/3). Any later hidden-alphabet test can set E = 0 and save a factor of 26."
+  ]
+}
