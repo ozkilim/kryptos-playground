@@ -930,5 +930,19 @@
   "script": "attacks/143_two_step_chains_hidden_alphabet.py",
   "est_min": 7,
   "why": "Idea 100's worker found that when the fed letter is numbered like the plaintext (Vigenere +, Beaufort -), two-step chains do not depend on the constant, so with ONE hidden alphabet on all three sides each two-step chain reads x[C1] - x[C2] = x[P0] - x[Pn]; lags 19-22 give 9-11 such equations, which is decidable for every alphabet."
+ },
+ {
+  "id": "142",
+  "title": "Plain autokey 9-14 letters back or ahead with a repeating word of 2-4 on top, decided by chains, on 666,993 keyword tableaux",
+  "script": "attacks/142_autokey_lag_9_14_with_word.py",
+  "est_min": 32,
+  "why": "Idea 100 closed plain autokey at lags 9-33 by chains with a constant added, and idea 90 added a word of 2-4 only at lags 7, 8 and 34-48; a remembered key word combined with the message itself at a worksheet-like lag (Scheidt: 'simple, can be remembered... key word/s') is still untested at lags 9-14, where the chains still give 11-15 checks."
+ },
+ {
+  "id": "144",
+  "title": "Key word on one tableau, second tableau turned by a repeating list of 2 or 3 steps, both orders, two different alphabets",
+  "script": "attacks/144_step_pattern_second_tableau.py",
+  "est_min": 26,
+  "why": "Idea 98 closed a key word on one tableau stacked with a second tableau that turns by one constant step per letter; a hand-turned strip moved by an alternating or three-step pattern (a 'shifting matrix', as Scheidt taught) is the natural next case and stays exact with idea 98's translate trick."
  }
 ]

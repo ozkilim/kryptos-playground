@@ -1,0 +1,21 @@
+{
+  "id": 144,
+  "title": "Key word on one tableau, second tableau turned by a repeating list of 2 or 3 steps, both orders, two different alphabets",
+  "verdict": "dead-in-scope",
+  "k4_result": "k = 2 (650 step lists, 888,238 alphabet pairs, 120.1 billion settings x key lengths 1-23): 0 settings pass with 8+ checks (chance 0.64), 60 with exactly 7 (chance about 45); none spells a dictionary key word; best reading -6.50 on the big model (English needs -5.1). k = 3 (17,550 step lists, 7,310 theme pairs, 26.7 billion settings): 0 with 8+ (chance 0.14), 12 with exactly 7 (chance 10.0); no dictionary key word; best reading -6.86. Gauge at 5 checks (key length 24): 9,529 against 10,107 predicted (k = 2), 2,131 against 2,246 (k = 3). All 3,375,806,636,824 (setting, key length) tests are exact.",
+  "controls": "3 shuffled K4s, each on all theme pairs plus a different third of the dictionary alphabets (300,954 pairs for k = 2, chance 15.2 at exactly 7; all 7,310 pairs for k = 3). k = 2: 15, 11, 8 pass with exactly 7, 0 with 8+, no dictionary key word, best readings -6.94, -7.02, -6.49. k = 3: 8, 20, 6 with exactly 7, 0 with 8+, no dictionary key word, best readings -6.73, -6.73, -6.77. K4's k = 2 count scaled to a third is 20.3 against 15, 11, 8: a little high (4 of K4's 60 are one family on TALLOWROOT), but nothing at 8+, no word and no better reading than the controls (K4 -6.50, shuffled -6.49).",
+  "planted": "4/4 (k = 2 key word first on KRYPTOS + dictionary tableau; k = 2 turn first, both Beaufort, key on a dictionary tableau; k = 3 key word first on theme tableaux; k = 3 Beaufort turn first, 11-letter key word): true setting found, key word read back from the word list, planted text is the best reading (-4.29 to -4.50)",
+  "tested": 3375806636824,
+  "scope_limits": "Both alphabets must be on the lists: k = 2 on ordered pairs of A-Z/KRYPTOS/84 theme alphabets and 220,232 dictionary alphabets against A-Z or KRYPTOS (either role); k = 3 on the theme pairs only (no dictionary alphabets). Step lists of length 2 and 3 only, counted over the whole text from letter 1 (no restart at carved rows or rows of 21, which idea 98 did test for a constant step). Key length 1-23; at lengths 17, 18, 23 there are only 7 checks, so chance survivors appear and are judged by word join and reading only; length 24+ undecided. The word join used 248,397 words (data/web2.txt plus theme and common words), not 264k. The same alphabet in both layers is skipped (folds into one key). No hidden or transposition-mixed alphabets, no transposition between layers, no third layer. Controls got a third of the dictionary alphabets each, not all.",
+  "negative": {
+    "family": "two tableaux: key word + step-pattern turning layer",
+    "hypothesis": "K4 is a repeating key word on one keyword tableau stacked with a second, different tableau that is turned by a repeating list of 2 or 3 steps (T(i+1) = T(i) + s[i mod k]), in either order",
+    "scope": "k = 2: 650 non-constant step lists x 26 starts x 2 orders x Vigenere/Beaufort per layer on 888,238 alphabet pairs (7,310 ordered pairs of A-Z/KRYPTOS/84 theme alphabets + 220,232 dictionary alphabets against A-Z and KRYPTOS in both roles); k = 3: 17,550 step lists on the 7,310 theme pairs; key lengths 1-23, exact test on the 24 clue letters; turn counted over the whole text",
+    "outcome": "Dead in scope: 0 settings pass with 8+ checks; 60 (k = 2) and 12 (k = 3) pass with exactly 7 (chance predicts about 45 and 10), none spells a dictionary key word, best reading -6.50 (English needs -5.1). Controls: 3 shuffled K4s on a third of the dictionary pairs give 15, 11, 8 (k = 2) and on all theme pairs 8, 20, 6 (k = 3) at exactly 7, 0 at 8+, best reading -6.49; planted 4/4 with message and key word read back",
+    "confidence": "solid"
+  },
+  "follow_ups": [
+    "Step pattern that restarts at the carved rows (K4 letters 1, 5, 36, 67) or rows of 21: the same scanner with g(i) from idea 98, k = 2 only",
+    "k = 3 step lists on dictionary alphabets against A-Z/KRYPTOS (about 880k pairs x 0.5 s: roughly 120 CPU-hours as written; splitting the lanes by position mod k should cut that a lot)"
+  ]
+}
