@@ -66,5 +66,26 @@ def test_seed_ideas_and_prompts_are_complete():
     assert all("{{%s}}" % k in i for k in ("N", "QUEUE", "SUGGESTIONS"))
 
 
+
+def test_usage_limits_are_recognised_and_shared():
+    from datetime import datetime, timezone
+    tmp = Path(tempfile.mkdtemp())
+    try:
+        s = swarm(tmp)
+        at = datetime(2026, 11, 20, 17, 15, tzinfo=timezone.utc)                 # 18:15 in Budapest
+        assert s.limit_wait("You've hit your 5-hour limit \u00b7 resets 7pm (Europe/Budapest)", at) == ("limit", 45 * 60 + 180)
+        assert s.limit_wait("hit your 5-hour limit \u00b7 resets 9:20pm (America/New_York)", at) == ("limit", 545 * 60 + 180)
+        assert s.limit_wait("You've hit your 5-hour limit \u00b7 resets 6pm (Europe/Budapest)", at)[1] > 23 * 3600  # tomorrow
+        assert s.limit_wait("You've reached your Fable limit. Switch to another model", at) == ("limit", 1800)
+        assert s.limit_wait("Failed to authenticate. API Error: 401 OAuth access token is invalid.", at) == ("login", 1800)
+        assert s.limit_wait("dead-in-scope: the key-length limit of idea 99 was reached at 8", at) == (None, 0)
+        assert s.paused_for() == 0
+        s.pause("limit", 600)
+        assert 590 <= s.paused_for() <= 600
+        s.pause("limit", 60)                                                        # a shorter pause never cuts it
+        assert s.paused_for() >= 590
+    finally:
+        os.environ.pop("KRYPTOS_SWARM_HOME", None)
+
 if __name__ == "__main__":
     _runner.run(globals())
