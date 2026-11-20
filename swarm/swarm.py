@@ -68,6 +68,69 @@ def log(msg):
     print("[%s] %s" % (now(), msg), flush=True)
 
 
+# ------------------------------------------------------------------ usage limits and login failures
+
+LIMIT_RE = re.compile(r"hit your [\w-]+ limit|reached your [\w-]+ limit|usage limit (?:was |has been )?reached", re.I)
+AUTH_RE = re.compile(r"Failed to authenticate|OAuth access token is invalid|Please run /login|Invalid API key", re.I)
+RESET_RE = re.compile(r"resets\s+(?:at\s+)?(\d{1,2})(?::(\d{2}))?\s*(am|pm)?\s*(?:\(([\w/+-]+)\))?", re.I)
+
+
+def limit_wait(text, at=None):
+    """Did this session end on a usage limit or a login failure? Returns (kind, seconds to wait) or (None, 0).
+    A limit that names its reset time ("resets 7pm (Europe/Budapest)") waits until 3 minutes after it; otherwise 30 min."""
+    tail = text[-4000:]
+    if AUTH_RE.search(tail):
+        return "login", 1800
+    if not LIMIT_RE.search(tail):
+        return None, 0
+    m = RESET_RE.search(tail)
+    if not m:
+        return "limit", 1800
+    hour, minute, ampm, zone = int(m.group(1)), int(m.group(2) or 0), (m.group(3) or "").lower(), m.group(4)
+    if ampm == "pm" and hour < 12:
+        hour += 12
+    if ampm == "am" and hour == 12:
+        hour = 0
+    try:
+        from zoneinfo import ZoneInfo
+        tz = ZoneInfo(zone) if zone else timezone.utc
+    except Exception:
+        return "limit", 1800
+    cur = (at or datetime.now(timezone.utc)).astimezone(tz)
+    reset = cur.replace(hour=hour % 24, minute=minute, second=0, microsecond=0)
+    if reset <= cur:
+        reset = reset.fromtimestamp(reset.timestamp() + 86400, tz)
+    return "limit", int((reset - cur).total_seconds()) + 180
+
+
+def paused_for():
+    """Seconds left before any role may start a new agent session (shared by all roles)."""
+    f = home() / "limit_until"
+    try:
+        return max(0, int(float(f.read_text().split()[0]) - time.time()))
+    except (OSError, ValueError, IndexError):
+        return 0
+
+
+def pause(kind, secs):
+    """Hold every role until the limit resets (keeps the later time if one is already set)."""
+    until = max(time.time() + secs, time.time() + paused_for())
+    with locked():
+        (home() / "limit_until").write_text("%d %s\n" % (until, kind))
+    log("usage %s: no new sessions until %s" % (kind, datetime.fromtimestamp(until, timezone.utc).strftime("%Y-%m-%dT%H:%MZ")))
+    if kind == "login":
+        alert("agent login failed: log in again (claude auth login), the swarm retries every 30 min")
+
+
+def wait_if_paused():
+    """Sleep in short steps while a usage pause is on. Returns True if it slept."""
+    left = paused_for()
+    if not left:
+        return False
+    time.sleep(min(left, 300))
+    return True
+
+
 @contextlib.contextmanager
 def locked():
     """One process at a time may change the queue."""
@@ -192,11 +255,12 @@ def agent_cmd():
 
 
 def run_agent(prompt, cwd, logfile, extra_env, timeout):
-    """Run one headless agent session. Returns (exit code or 'timeout', seconds)."""
+    """Run one headless agent session. Returns (exit code or 'timeout', seconds, the session's output)."""
     env = dict(os.environ, KRYPTOS_SWARM_HOME=str(home()), **extra_env)
     t = time.time()
     with open(logfile, "a") as out:
         out.write("\n===== %s =====\n" % now())
+        start = out.tell()
         out.flush()
         p = subprocess.Popen(agent_cmd(), cwd=str(cwd), stdin=subprocess.PIPE, stdout=out, stderr=subprocess.STDOUT,
                              env=env, text=True, start_new_session=True)
@@ -207,7 +271,10 @@ def run_agent(prompt, cwd, logfile, extra_env, timeout):
             os.killpg(p.pid, signal.SIGKILL)
             p.wait()
             code = "timeout"
-    return code, time.time() - t
+    with open(logfile, errors="replace") as f:
+        f.seek(start)
+        text = f.read()
+    return code, time.time() - t, text
 
 
 def worktree(name):
@@ -285,6 +352,8 @@ def worker(name, max_ideas=0):
         except RuntimeError as e:
             alert("worker %s stopped: %s" % (name, e))
             return
+        if wait_if_paused():
+            continue
         idea = claim(name)
         if not idea:
             time.sleep(env_int("SWARM_IDLE_SLEEP", 120))
@@ -293,8 +362,8 @@ def worker(name, max_ideas=0):
         log("worker %s takes idea %d: %s" % (name, i, idea["title"]))
         prompt = fill("WORKER_PROMPT.md", ID=i, TITLE=idea["title"], WHY=idea["why"], PLAN=idea["plan"],
                       CLUE=idea.get("clue", ""), WORKER=name, HOURS=env_int("SWARM_IDEA_HOURS", 4))
-        code, secs = run_agent(prompt, wt, h / "logs" / ("%s.log" % name), {"SWARM_WORKER": name, "SWARM_IDEA": str(i)},
-                               env_int("SWARM_IDEA_HOURS", 4) * 3600)
+        code, secs, text = run_agent(prompt, wt, h / "logs" / ("%s.log" % name), {"SWARM_WORKER": name, "SWARM_IDEA": str(i)},
+                                     env_int("SWARM_IDEA_HOURS", 4) * 3600)
         card, why = read_card(wt, i)
         if card:
             try:
@@ -312,6 +381,14 @@ def worker(name, max_ideas=0):
             done += 1
             backoff = base
             continue
+        kind, wait = limit_wait(text)
+        if kind:                             # not the idea's fault: put it back as it was and hold every role
+            update(i, status="open", attempts=idea["attempts"] - 1, last_error="stopped by usage %s after %d s" % (kind, secs))
+            log("worker %s: idea %d stopped by usage %s; re-queued without using an attempt" % (name, i, kind))
+            git("reset", "--hard", "-q", cwd=wt, check=False)
+            git("clean", "-fdq", cwd=wt, check=False)
+            pause(kind, wait)
+            continue
         retry = idea["attempts"] < env_int("SWARM_MAX_ATTEMPTS", 2)
         update(i, status="open" if retry else "failed", last_error="%s (agent exit %s after %d s)" % (why, code, secs))
         log("worker %s: idea %d not completed: %s%s" % (name, i, why, "; re-queued" if retry else "; marked failed"))
@@ -327,6 +404,8 @@ def ideator():
     (h / "logs").mkdir(parents=True, exist_ok=True)
     log("ideator starting")
     while not stopping():
+        if wait_if_paused():
+            continue
         n_open = sum(1 for x in load_ideas() if x["status"] == "open")
         if n_open >= env_int("SWARM_LOW_WATER", 6):
             time.sleep(env_int("SWARM_IDLE_SLEEP", 120))
@@ -341,9 +420,13 @@ def ideator():
         sug = h / "suggestions.jsonl"
         prompt = fill("IDEATOR_PROMPT.md", N=want, QUEUE=queue, SUGGESTIONS=sug.read_text() if sug.exists() else "(none)")
         before = len(load_ideas())
-        code, secs = run_agent(prompt, wt, h / "logs" / "ideator.log", {"SWARM_WORKER": "ideator"}, 2 * 3600)
+        code, secs, text = run_agent(prompt, wt, h / "logs" / "ideator.log", {"SWARM_WORKER": "ideator"}, 2 * 3600)
         added = len(load_ideas()) - before
         log("ideator added %d ideas (agent exit %s, %d s)" % (added, code, secs))
+        kind, wait = limit_wait(text)
+        if kind:
+            pause(kind, wait)
+            continue
         if added == 0:
             time.sleep(1800 if secs > 120 else 3600)
     log("ideator stopping")
@@ -456,6 +539,9 @@ def cmd_status(a):
         counts[x["status"]] = counts.get(x["status"], 0) + 1
     print("swarm home: %s%s" % (home(), "   (STOP requested)" if stopping() else ""))
     print("ideas: " + (", ".join("%d %s" % (v, k) for k, v in sorted(counts.items())) or "none"))
+    left = paused_for()
+    if left:
+        print("PAUSED for a usage limit: about %d min left (.swarm/limit_until)" % (left // 60 + 1))
     for x in ideas:
         extra = x.get("worker", "")
         if x["status"] in ("done", "merged"):
