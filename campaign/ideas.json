@@ -958,5 +958,12 @@
   "script": "attacks/158_recited_list_keys.py",
   "est_min": 16,
   "why": "Scheidt: simple, can be remembered, run years later. The longest keys anyone carries in the head are recited lists: ONE TWO THREE..., NORTH NORTH BY EAST NORTHNORTHEAST... (EASTNORTHEAST is itself a point of that list), the 24 hours, months, days, the planets on top of the World Clock, EINS ZWEI DREI. Earlier text keys were sculpture texts, single words and unknown English judged by a noisy score; no named list was run as an exact key."
+ },
+ {
+  "id": "159",
+  "title": "Letter shapes: clue pairs one stroke apart in three fixed shape codings (16-segment, 5x7 dots, stroke list), against random and alphabet-distance-matched pairings; plus the model 'shape change at pattern places, repeating key elsewhere'",
+  "script": "attacks/159_letter_shapes.py",
+  "est_min": 33,
+  "why": "Sanborn cut every letter out of copper by hand and spoke of his own visual systems; the plaintext sheets were for screen cutting. Seven or eight of the 24 clue pairs are the same letter or differ by one stroke of a stencil letter (E/F, R/P at 28 and 66, O/Q, I/T, S/S, K/K, maybe L/V). No test here has ever looked at letter SHAPES; Bean closeness in the alphabet may be this effect seen sideways."
  }
 ]
