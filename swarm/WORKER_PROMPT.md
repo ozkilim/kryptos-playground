@@ -31,6 +31,22 @@ Nobody is watching; do not ask questions. You have about {{HOURS}} hours of wall
 * Write `tests/test_idea_{{ID}}.py`: a fast planted test (under 10 seconds) in the style of `tests/test_round11.py`,
   ending with `if __name__ == "__main__": _runner.run(globals())`.
 
+## Ideas the clue letters cannot decide
+
+Many ideas, especially physical, visual or human ones (reading orders, overlays, mirror text, the clock, K1-K3 as
+instructions), do not fix enough to be killed by the 24 clue letters, or give the clue letters no special role.
+Do not force such an idea into a big keyword-alphabet battery, and do not stretch it into something a person
+could not do by hand: test the idea as stated, faithfully, with its natural variants.
+
+* Judge it by **readability**: produce the full 97-letter decryption for each setting and score it with
+  `kryptos.score.english_score` (quadgrams) and `kryptos.score.word_coverage`. Also report whether the clue words
+  EASTNORTHEAST and BERLINCLOCK appear where they should, when the idea predicts that.
+* **Controls:** run the identical procedure on shuffled K4s (at least 20) and report where K4's best score falls in
+  that distribution. Only a K4 score far outside the controls AND a decryption that reads as English is a signal.
+* **Planted test:** build a message the idea's way from English text and show the procedure finds it.
+* If the idea needs information that is not in the repository (a photograph, a measurement you do not have), write
+  the card as `untestable` and say exactly what data would make it testable.
+
 ## Files you may change
 
 Only these. Anything else you change is thrown away:
