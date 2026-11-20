@@ -1,0 +1,21 @@
+{
+  "id": 142,
+  "title": "Plain autokey 9-14 letters back or ahead with a repeating word of 2-4 on top, decided by chains, on 666,993 keyword tableaux",
+  "verdict": "dead-in-scope",
+  "k4_result": "0 of 228,220,939,894,272 settings pass (666,993 alphabets x 5 layouts x Vigenere/Beaufort x fed letter numbered in M/A-Z/KRYPTOS x sign x look-back/look-ahead x lag 9-14 x every word of 2, 3 and 4 letters). A setting passes only if all its chains close: 15, 14, 13, 12, 11, 11 chains at lags 9-14, so 7 to 13 exact checks remain after the word letters are solved. Chance predicts 0.021 passes in the full run (0.01 each at lags 13 and 14 with a word of 4). Nothing to decrypt.",
+  "controls": "3 shuffled K4s, each on a different third of the alphabets (222,331 each, one full pass together): 0 / 0 / 0 settings pass. Same picture as K4.",
+  "planted": "6/6",
+  "tested": 228220939894272,
+  "scope_limits": "Lags 9-14 only (lags 15 and up with a word are not run; lags 15-23 would leave 3-7 checks after a word of 2-4). Words of 2-4 letters only, as free numbers added to the key. Plain feed only (cipher feed is idea 90). Tableaux: A-Z, KRYPTOS, dictionary keyword alphabets and their two transposition-mixed forms; hidden or non-dictionary alphabets are not covered. The word indexes the place of the letter being enciphered (i mod p) with the count starting at K4's first letter; a word restarted elsewhere is the same test for p = 2-4 only if the restart is a fixed shift (it is: any phase is another word). Clue positions taken as exact. In a few views the clue letters tie down less than the whole word (e.g. Beaufort with the fed letter numbered like the plaintext, lag 13/14, word of 3: only the sum of the three letters); there the solver lists the whole family (676 words), and none arose for K4 or the controls. Controls ran on a third of the alphabets each, not on all.",
+  "negative": {
+    "family": "Plaintext autokey at a long lag plus a repeating word",
+    "hypothesis": "K4's key is the plaintext itself read 9-14 letters back (or ahead) plus a remembered word of 2-4 letters, on a keyword tableau.",
+    "scope": "key[i] = sign * number(P[i -/+ L]) + word[i mod p], L = 9..14, p = 2, 3, 4 (all 26^p words), look-back and look-ahead, Vigenere and Beaufort form, 666,993 alphabets (A-Z, KRYPTOS, dictionary keyword alphabets and their two transposition-mixed forms) in 5 layouts, fed letter numbered in M, A-Z or KRYPTOS, added or subtracted; exact chain test through the unknown letters between clue letters, 7-13 checks after the word; 2.28e14 settings.",
+    "outcome": "Dead in scope: 0 settings pass all chains (chance predicts 0.021; controls: 3 shuffled K4s on a third of the alphabets each, 0 / 0 / 0; planted 6/6 found with word and alphabet named among 9,000 alphabets, read back 90-97 of 97 letters at -4.19 to -4.58 on the big model).",
+    "confidence": "solid"
+  },
+  "follow_ups": [
+    "The same chain solver at lags 15-23 with a word of 2: chains 9, 8, 7, 7, 9, 11, 11, 9, 7 leave 5-9 checks; lags 15, 19, 20, 21, 22 keep 7+ and are exact, the others would need the forced text (65-97 letters) read on the big model as in idea 100's low-lag stage.",
+    "Lags 9-12 with a word of 5-7: chains 15, 14, 13, 12 still leave 7+ checks for p up to 8, 7, 6, 5; the plan builder in kryptos/idea142_wordchain.py already handles any p (cost grows only where a branch of 26 is needed)."
+  ]
+}
