@@ -965,5 +965,12 @@
   "script": "attacks/159_letter_shapes.py",
   "est_min": 33,
   "why": "Sanborn cut every letter out of copper by hand and spoke of his own visual systems; the plaintext sheets were for screen cutting. Seven or eight of the 24 clue pairs are the same letter or differ by one stroke of a stencil letter (E/F, R/P at 28 and 66, O/Q, I/T, S/S, K/K, maybe L/V). No test here has ever looked at letter SHAPES; Bean closeness in the alphabet may be this effect seen sideways."
+ },
+ {
+  "id": "160",
+  "title": "Find the letter on the panel, write its neighbour: search-and-step through 50 readings of the carved texts, 30 offsets, 5 pointer rules, every start cell, in both roles (decoder searches the K4 letter; encoder searches the plain letter)",
+  "script": "attacks/160_find_letter_write_neighbour.py",
+  "est_min": 15,
+  "why": "K3 says: slowly ... upper left-hand corner ... peered in; Sanborn: you only need to be able to read, and the earlier text holds instructions for later text. A hand code that needs no arithmetic: keep a finger on the carved panel, move on to the next place where the letter occurs, and write the letter beside it (or one step EAST-NORTH-EAST of it: right, up, right). The output is as flat as the K1/K2 ciphertext it is read from. Ideas 85 and 106 used K4 letters as COUNTS; nobody has searched for the letter itself."
  }
 ]
