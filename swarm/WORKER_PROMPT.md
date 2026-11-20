@@ -78,3 +78,5 @@ planted answers, the scope limits, and anything surprising.
 * Never run `python -m kryptos submit` (the official check costs money). Never use any network service.
 * A result of nothing is a good result. Report it plainly, with its scope limits. Do not stretch a negative.
 * Do not depend on K5 or on any data that is not in this repository.
+* For the big English word list use `kryptos.data.WORDS` (data/web2.txt), never `/usr/share/dict/words`: the
+  system list differs between machines, and the swarm may run on Linux.

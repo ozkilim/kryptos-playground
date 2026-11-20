@@ -14,6 +14,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
+# The big English word list: Webster's Second (1934, public domain), the macOS /usr/share/dict/words.
+# Kept in the repo so every machine searches the same 235,976 words (Linux ships a different list).
+WORDS = str(DATA_DIR / "web2.txt")
 
 
 def _path(pid):

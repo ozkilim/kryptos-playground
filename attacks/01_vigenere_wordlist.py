@@ -5,7 +5,7 @@ This has been tried to death and won't crack K4 (see `python -m kryptos
 cribkeys`: the crib keystream isn't periodic). It's here as a baseline and
 to show the loop.
 
-  python attacks/01_vigenere_wordlist.py               # data/keys.txt + /usr/share/dict/words
+  python attacks/01_vigenere_wordlist.py               # data/keys.txt + data/web2.txt
   python attacks/01_vigenere_wordlist.py words.txt     # your own list
 """
 import sys

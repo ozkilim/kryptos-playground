@@ -4,9 +4,9 @@ Hand keys are words or phrases (PALIMPSEST, ABSCISSA, KRYPTOS). Requiring that t
 undecidable long-key region into an exact, fully determined test: no free key slots,
 so English scoring is decisive again.
 """
-from .data import ROOT, letters, load
+from .data import ROOT, WORDS, letters, load
 
-DICT = "/usr/share/dict/words"
+DICT = WORDS
 
 
 def _read(path):

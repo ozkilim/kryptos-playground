@@ -80,9 +80,9 @@ def crack_periodic(ct, max_period=16, n_periods=4, variants=VARIANTS, alphabets=
 
 def default_wordlist():
     """Keys to try: data/keys.txt (Kryptos-themed) + the system dictionary."""
-    from ..data import DATA_DIR
+    from ..data import DATA_DIR, WORDS
     words = []
-    for path in (DATA_DIR / "keys.txt", "/usr/share/dict/words"):
+    for path in (DATA_DIR / "keys.txt", WORDS):
         try:
             with open(path) as f:
                 words += [w.strip().upper() for w in f if w.strip().isalpha() and not w.startswith("#")]

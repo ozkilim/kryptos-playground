@@ -14,7 +14,7 @@ bigger corpus with:  python tools/build_ngrams.py some_books/*.txt
 import math
 from collections import Counter
 
-from .data import DATA_DIR, letters
+from .data import DATA_DIR, WORDS, letters
 
 ENGLISH_FREQ = {
     "A": 8.17, "B": 1.49, "C": 2.78, "D": 4.25, "E": 12.70, "F": 2.23,
@@ -86,13 +86,13 @@ _WORDS = None
 
 
 def word_coverage(text, min_len=4, max_len=15):
-    """Fraction of letters covered by dictionary words (/usr/share/dict/words +
+    """Fraction of letters covered by dictionary words (data/web2.txt +
     data/keys.txt) of at least min_len letters, best non-overlapping cover.
     A second English check that doesn't share the quadgram model's quirks."""
     global _WORDS
     if _WORDS is None:
         _WORDS = set()
-        for path in ("/usr/share/dict/words", str(DATA_DIR / "keys.txt")):
+        for path in (WORDS, str(DATA_DIR / "keys.txt")):
             try:
                 with open(path) as f:
                     _WORDS |= {w.strip().upper() for w in f

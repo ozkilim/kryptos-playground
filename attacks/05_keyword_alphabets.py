@@ -10,7 +10,7 @@ For every dictionary word as the alphabet keyword, and every key period 1-13,
 it checks whether the 24 clue letters agree on a repeating key. Pure crib
 consistency, no decryption, ~2.5M hypotheses per minute.
 
-  python attacks/05_keyword_alphabets.py            # data/keys.txt + /usr/share/dict/words
+  python attacks/05_keyword_alphabets.py            # data/keys.txt + data/web2.txt
   python attacks/05_keyword_alphabets.py words.txt
 """
 import sys

@@ -20,7 +20,7 @@ import math
 import random
 from array import array
 
-from .data import DATA_DIR
+from .data import DATA_DIR, WORDS
 from .idea106_words import FIXES, K1_WORDS, K2_WORDS, K3_WORDS, MORSE_WORDS
 from .round11 import SMOKE, pmap
 
@@ -250,7 +250,7 @@ class Scorer:
         # unseen quadgrams and buries a short English stretch in noise.
         self.floor = min(self.q.values()) - 0.05
         words = set()
-        for path in ("/usr/share/dict/words", str(DATA_DIR / "keys.txt")):
+        for path in (WORDS, str(DATA_DIR / "keys.txt")):
             try:
                 with open(path) as f:
                     for w in f:
